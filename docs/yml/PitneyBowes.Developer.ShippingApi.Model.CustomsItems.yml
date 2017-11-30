@@ -1,0 +1,696 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  commentId: T:PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  id: CustomsItems
+  parent: PitneyBowes.Developer.ShippingApi.Model
+  children:
+  - PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description
+  - PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode
+  - PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode
+  - PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity
+  - PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice
+  - PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight
+  langs:
+  - csharp
+  - vb
+  name: CustomsItems
+  nameWithType: CustomsItems
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  type: Class
+  source:
+    id: CustomsItems
+    path: ''
+    startLine: 7701
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: 'public class CustomsItems : ICustomsItems'
+    content.vb: >-
+      Public Class CustomsItems
+          Implements ICustomsItems
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ICustomsItems
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description
+  id: Description
+  parent: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: CustomsItems.Description
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description
+  type: Property
+  source:
+    id: Description
+    path: ''
+    startLine: 7707
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the description.\n"
+  example: []
+  syntax:
+    content: public virtual string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The description.
+    content.vb: Public Overridable Property Description As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ICustomsItems.Description
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity
+  id: Quantity
+  parent: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  langs:
+  - csharp
+  - vb
+  name: Quantity
+  nameWithType: CustomsItems.Quantity
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity
+  type: Property
+  source:
+    id: Quantity
+    path: ''
+    startLine: 7712
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the quantity.\n"
+  example: []
+  syntax:
+    content: public virtual int Quantity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The quantity.
+    content.vb: Public Overridable Property Quantity As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ICustomsItems.Quantity
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice
+  id: UnitPrice
+  parent: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  langs:
+  - csharp
+  - vb
+  name: UnitPrice
+  nameWithType: CustomsItems.UnitPrice
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice
+  type: Property
+  source:
+    id: UnitPrice
+    path: ''
+    startLine: 7717
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the unit price.\n"
+  example: []
+  syntax:
+    content: public virtual decimal UnitPrice { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The unit price.
+    content.vb: Public Overridable Property UnitPrice As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitPrice
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight
+  id: UnitWeight
+  parent: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  langs:
+  - csharp
+  - vb
+  name: UnitWeight
+  nameWithType: CustomsItems.UnitWeight
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight
+  type: Property
+  source:
+    id: UnitWeight
+    path: ''
+    startLine: 7722
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the unit weight.\n"
+  example: []
+  syntax:
+    content: public virtual IParcelWeight UnitWeight { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IParcelWeight
+      description: The unit weight.
+    content.vb: Public Overridable Property UnitWeight As IParcelWeight
+  overload: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitWeight
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode
+  id: HSTariffCode
+  parent: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  langs:
+  - csharp
+  - vb
+  name: HSTariffCode
+  nameWithType: CustomsItems.HSTariffCode
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode
+  type: Property
+  source:
+    id: HSTariffCode
+    path: ''
+    startLine: 7727
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nHarmonized Tariff associated with the commodity.\n"
+  example: []
+  syntax:
+    content: public virtual string HSTariffCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: Harmonized Tariff associated with the commodity.code.
+    content.vb: Public Overridable Property HSTariffCode As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ICustomsItems.HSTariffCode
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode
+  id: OriginCountryCode
+  parent: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+  langs:
+  - csharp
+  - vb
+  name: OriginCountryCode
+  nameWithType: CustomsItems.OriginCountryCode
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode
+  type: Property
+  source:
+    id: OriginCountryCode
+    path: ''
+    startLine: 7732
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nThe county code of the shipment origin. Use ISO 3166-1 alpha-2 standard values.\n"
+  example: []
+  syntax:
+    content: public virtual string OriginCountryCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The origin country code.
+    content.vb: Public Overridable Property OriginCountryCode As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ICustomsItems.OriginCountryCode
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  commentId: N:PitneyBowes.Developer.ShippingApi.Model
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Model
+  nameWithType: PitneyBowes.Developer.ShippingApi.Model
+  fullName: PitneyBowes.Developer.ShippingApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICustomsItems
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ICustomsItems
+  nameWithType: ICustomsItems
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description
+  isExternal: false
+  name: Description
+  nameWithType: CustomsItems.Description
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Description
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems.Description
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsItems.Description
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  isExternal: false
+  name: Description
+  nameWithType: ICustomsItems.Description
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity
+  isExternal: false
+  name: Quantity
+  nameWithType: CustomsItems.Quantity
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.Quantity
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems.Quantity
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsItems.Quantity
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  isExternal: false
+  name: Quantity
+  nameWithType: ICustomsItems.Quantity
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems.Quantity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice
+  isExternal: false
+  name: UnitPrice
+  nameWithType: CustomsItems.UnitPrice
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitPrice
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitPrice
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitPrice
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  isExternal: false
+  name: UnitPrice
+  nameWithType: ICustomsItems.UnitPrice
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitPrice
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight
+  isExternal: false
+  name: UnitWeight
+  nameWithType: CustomsItems.UnitWeight
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.UnitWeight
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitWeight
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitWeight
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  isExternal: false
+  name: UnitWeight
+  nameWithType: ICustomsItems.UnitWeight
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems.UnitWeight
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcelWeight
+  nameWithType: IParcelWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode
+  isExternal: false
+  name: HSTariffCode
+  nameWithType: CustomsItems.HSTariffCode
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.HSTariffCode
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems.HSTariffCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsItems.HSTariffCode
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  isExternal: false
+  name: HSTariffCode
+  nameWithType: ICustomsItems.HSTariffCode
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems.HSTariffCode
+- uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode
+  isExternal: false
+  name: OriginCountryCode
+  nameWithType: CustomsItems.OriginCountryCode
+  fullName: PitneyBowes.Developer.ShippingApi.Model.CustomsItems.OriginCountryCode
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems.OriginCountryCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsItems.OriginCountryCode
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  isExternal: false
+  name: OriginCountryCode
+  nameWithType: ICustomsItems.OriginCountryCode
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems.OriginCountryCode

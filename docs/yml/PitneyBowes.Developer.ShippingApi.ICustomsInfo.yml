@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  id: ICustomsInfo
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation
+  - PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue
+  langs:
+  - csharp
+  - vb
+  name: ICustomsInfo
+  nameWithType: ICustomsInfo
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  type: Interface
+  source:
+    id: ICustomsInfo
+    path: ''
+    startLine: 951
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nChild interface for customs information.\n"
+  example: []
+  syntax:
+    content: public interface ICustomsInfo
+    content.vb: Public Interface ICustomsInfo
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport
+  id: ReasonForExport
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: ReasonForExport
+  nameWithType: ICustomsInfo.ReasonForExport
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport
+  type: Property
+  source:
+    id: ReasonForExport
+    path: ''
+    startLine: 957
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the reason for export.\n"
+  example: []
+  syntax:
+    content: ReasonForExport ReasonForExport { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.ReasonForExport
+      description: The reason for export.
+    content.vb: Property ReasonForExport As ReasonForExport
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation
+  id: ReasonForExportExplanation
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: ReasonForExportExplanation
+  nameWithType: ICustomsInfo.ReasonForExportExplanation
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation
+  type: Property
+  source:
+    id: ReasonForExportExplanation
+    path: ''
+    startLine: 962
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nRequired if the ``reasonForExport`` field is set to ``OTHER``.\n"
+  example: []
+  syntax:
+    content: string ReasonForExportExplanation { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The reason for export explanation.
+    content.vb: Property ReasonForExportExplanation As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments
+  id: Comments
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: Comments
+  nameWithType: ICustomsInfo.Comments
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments
+  type: Property
+  source:
+    id: Comments
+    path: ''
+    startLine: 967
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the comments.\n"
+  example: []
+  syntax:
+    content: string Comments { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The comments.
+    content.vb: Property Comments As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber
+  id: InvoiceNumber
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: InvoiceNumber
+  nameWithType: ICustomsInfo.InvoiceNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber
+  type: Property
+  source:
+    id: InvoiceNumber
+    path: ''
+    startLine: 972
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe commercial invoice number assigned by the exported.\n"
+  example: []
+  syntax:
+    content: string InvoiceNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The invoice number.
+    content.vb: Property InvoiceNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference
+  id: ImporterCustomsReference
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: ImporterCustomsReference
+  nameWithType: ICustomsInfo.ImporterCustomsReference
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference
+  type: Property
+  source:
+    id: ImporterCustomsReference
+    path: ''
+    startLine: 977
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nA reference number used by the imported. For example, a PO number or insured number.\n"
+  example: []
+  syntax:
+    content: string ImporterCustomsReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The importer customs reference.
+    content.vb: Property ImporterCustomsReference As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber
+  id: InsuredNumber
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: InsuredNumber
+  nameWithType: ICustomsInfo.InsuredNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber
+  type: Property
+  source:
+    id: InsuredNumber
+    path: ''
+    startLine: 984
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nIf the sender wishes to insure the contents, they complete an insurance\nreceipt and affix the insured numbered label to the package.The\ninsured number label is what this field represents.\n"
+  example: []
+  syntax:
+    content: string InsuredNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The insured number.
+    content.vb: Property InsuredNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount
+  id: InsuredAmount
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: InsuredAmount
+  nameWithType: ICustomsInfo.InsuredAmount
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount
+  type: Property
+  source:
+    id: InsuredAmount
+    path: ''
+    startLine: 989
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe declared value of the item for insurance purposes expressed in USD.\n"
+  example: []
+  syntax:
+    content: decimal InsuredAmount { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The insured amount.
+    content.vb: Property InsuredAmount As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue
+  id: SdrValue
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: SdrValue
+  nameWithType: ICustomsInfo.SdrValue
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue
+  type: Property
+  source:
+    id: SdrValue
+    path: ''
+    startLine: 995
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nWhen an international parcel is insured, the insured value must be\nexpressed in Special Drawing Rights values.E.g. $100 USD = 66.87 SDR.\n"
+  example: []
+  syntax:
+    content: decimal SdrValue { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The sdr value.
+    content.vb: Property SdrValue As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC
+  id: EELPFC
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: EELPFC
+  nameWithType: ICustomsInfo.EELPFC
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC
+  type: Property
+  source:
+    id: EELPFC
+    path: ''
+    startLine: 1002
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nEEI/PFC is the Electronic Export Information and Proof of Filing\nCitation.Both are required if the item you are shipping\ninternationally is valued over $2,500 USD per schedule b export codes.\n"
+  example: []
+  syntax:
+    content: string EELPFC { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The eelpfc.
+    content.vb: Property EELPFC As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference
+  id: FromCustomsReference
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: FromCustomsReference
+  nameWithType: ICustomsInfo.FromCustomsReference
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference
+  type: Property
+  source:
+    id: FromCustomsReference
+    path: ''
+    startLine: 1009
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nFree form reference information provided by the requestor of the\nshipment.Depending on the carrier this information may or may not be\nrendered on the customs documents.\n"
+  example: []
+  syntax:
+    content: string FromCustomsReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: From customs reference.
+    content.vb: Property FromCustomsReference As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue
+  id: CustomsDeclaredValue
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: CustomsDeclaredValue
+  nameWithType: ICustomsInfo.CustomsDeclaredValue
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue
+  type: Property
+  source:
+    id: CustomsDeclaredValue
+    path: ''
+    startLine: 1014
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe value of the item that is going to be declared in customs.\n"
+  example: []
+  syntax:
+    content: decimal CustomsDeclaredValue { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The customs declared value.
+    content.vb: Property CustomsDeclaredValue As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode
+  id: CurrencyCode
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: CurrencyCode
+  nameWithType: ICustomsInfo.CurrencyCode
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode
+  type: Property
+  source:
+    id: CurrencyCode
+    path: ''
+    startLine: 1020
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nType of currency referenced in the piece price. Use three uppercase\nletters, per ISO 4217. For example: ``USD``, ``CAD``, ``EUR``.\n"
+  example: []
+  syntax:
+    content: string CurrencyCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The currency code.
+    content.vb: Property CurrencyCode As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber
+  id: LicenseNumber
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: LicenseNumber
+  nameWithType: ICustomsInfo.LicenseNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber
+  type: Property
+  source:
+    id: LicenseNumber
+    path: ''
+    startLine: 1025
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe export license number associated with the commodity.\n"
+  example: []
+  syntax:
+    content: string LicenseNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The license number.
+    content.vb: Property LicenseNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber
+  id: CertificateNumber
+  parent: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  langs:
+  - csharp
+  - vb
+  name: CertificateNumber
+  nameWithType: ICustomsInfo.CertificateNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber
+  type: Property
+  source:
+    id: CertificateNumber
+    path: ''
+    startLine: 1030
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe certificate number associated with the commodity.\n"
+  example: []
+  syntax:
+    content: string CertificateNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The certificate number.
+    content.vb: Property CertificateNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport
+  isExternal: false
+  name: ReasonForExport
+  nameWithType: ICustomsInfo.ReasonForExport
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExport
+- uid: PitneyBowes.Developer.ShippingApi.ReasonForExport
+  commentId: T:PitneyBowes.Developer.ShippingApi.ReasonForExport
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ReasonForExport
+  nameWithType: ReasonForExport
+  fullName: PitneyBowes.Developer.ShippingApi.ReasonForExport
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation
+  isExternal: false
+  name: ReasonForExportExplanation
+  nameWithType: ICustomsInfo.ReasonForExportExplanation
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ReasonForExportExplanation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments
+  isExternal: false
+  name: Comments
+  nameWithType: ICustomsInfo.Comments
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.Comments
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber
+  isExternal: false
+  name: InvoiceNumber
+  nameWithType: ICustomsInfo.InvoiceNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InvoiceNumber
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference
+  isExternal: false
+  name: ImporterCustomsReference
+  nameWithType: ICustomsInfo.ImporterCustomsReference
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.ImporterCustomsReference
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber
+  isExternal: false
+  name: InsuredNumber
+  nameWithType: ICustomsInfo.InsuredNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredNumber
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount
+  isExternal: false
+  name: InsuredAmount
+  nameWithType: ICustomsInfo.InsuredAmount
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.InsuredAmount
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue
+  isExternal: false
+  name: SdrValue
+  nameWithType: ICustomsInfo.SdrValue
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.SdrValue
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC
+  isExternal: false
+  name: EELPFC
+  nameWithType: ICustomsInfo.EELPFC
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.EELPFC
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference
+  isExternal: false
+  name: FromCustomsReference
+  nameWithType: ICustomsInfo.FromCustomsReference
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.FromCustomsReference
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue
+  isExternal: false
+  name: CustomsDeclaredValue
+  nameWithType: ICustomsInfo.CustomsDeclaredValue
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CustomsDeclaredValue
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode
+  isExternal: false
+  name: CurrencyCode
+  nameWithType: ICustomsInfo.CurrencyCode
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CurrencyCode
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber
+  isExternal: false
+  name: LicenseNumber
+  nameWithType: ICustomsInfo.LicenseNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.LicenseNumber
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber
+  isExternal: false
+  name: CertificateNumber
+  nameWithType: ICustomsInfo.CertificateNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo.CertificateNumber

@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.TransactionType
+  commentId: T:PitneyBowes.Developer.ShippingApi.TransactionType
+  id: TransactionType
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_FUND
+  - PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_PRINT
+  - PitneyBowes.Developer.ShippingApi.TransactionType.POSTAQGE_REFUND
+  langs:
+  - csharp
+  - vb
+  name: TransactionType
+  nameWithType: TransactionType
+  fullName: PitneyBowes.Developer.ShippingApi.TransactionType
+  type: Enum
+  source:
+    id: TransactionType
+    path: ''
+    startLine: 626
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nTransaction type in the tracking report.\n"
+  example: []
+  syntax:
+    content: public enum TransactionType
+    content.vb: Public Enum TransactionType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_PRINT
+  commentId: F:PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_PRINT
+  id: POSTAGE_PRINT
+  parent: PitneyBowes.Developer.ShippingApi.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: POSTAGE_PRINT
+  nameWithType: TransactionType.POSTAGE_PRINT
+  fullName: PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_PRINT
+  type: Field
+  source:
+    id: POSTAGE_PRINT
+    path: ''
+    startLine: 628
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: POSTAGE_PRINT = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.TransactionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_FUND
+  commentId: F:PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_FUND
+  id: POSTAGE_FUND
+  parent: PitneyBowes.Developer.ShippingApi.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: POSTAGE_FUND
+  nameWithType: TransactionType.POSTAGE_FUND
+  fullName: PitneyBowes.Developer.ShippingApi.TransactionType.POSTAGE_FUND
+  type: Field
+  source:
+    id: POSTAGE_FUND
+    path: ''
+    startLine: 629
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: POSTAGE_FUND = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.TransactionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.TransactionType.POSTAQGE_REFUND
+  commentId: F:PitneyBowes.Developer.ShippingApi.TransactionType.POSTAQGE_REFUND
+  id: POSTAQGE_REFUND
+  parent: PitneyBowes.Developer.ShippingApi.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: POSTAQGE_REFUND
+  nameWithType: TransactionType.POSTAQGE_REFUND
+  fullName: PitneyBowes.Developer.ShippingApi.TransactionType.POSTAQGE_REFUND
+  type: Field
+  source:
+    id: POSTAQGE_REFUND
+    path: ''
+    startLine: 630
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: POSTAQGE_REFUND = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.TransactionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.TransactionType
+  commentId: T:PitneyBowes.Developer.ShippingApi.TransactionType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: TransactionType
+  nameWithType: TransactionType
+  fullName: PitneyBowes.Developer.ShippingApi.TransactionType

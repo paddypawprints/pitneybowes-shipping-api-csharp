@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  id: ShippingApiResponse
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors
+  - PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus
+  - PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime
+  langs:
+  - csharp
+  - vb
+  name: ShippingApiResponse
+  nameWithType: ShippingApiResponse
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  type: Class
+  source:
+    id: ShippingApiResponse
+    path: ''
+    startLine: 12600
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public class ShippingApiResponse
+    content.vb: Public Class ShippingApiResponse
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus
+  id: HttpStatus
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  langs:
+  - csharp
+  - vb
+  name: HttpStatus
+  nameWithType: ShippingApiResponse.HttpStatus
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus
+  type: Property
+  source:
+    id: HttpStatus
+    path: ''
+    startLine: 12603
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public HttpStatusCode HttpStatus { get; set; }
+    parameters: []
+    return:
+      type: HttpStatusCode
+    content.vb: Public Property HttpStatus As HttpStatusCode
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime
+  id: RequestTime
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  langs:
+  - csharp
+  - vb
+  name: RequestTime
+  nameWithType: ShippingApiResponse.RequestTime
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime
+  type: Property
+  source:
+    id: RequestTime
+    path: ''
+    startLine: 12604
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public TimeSpan RequestTime { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property RequestTime As TimeSpan
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors
+  id: Errors
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  langs:
+  - csharp
+  - vb
+  name: Errors
+  nameWithType: ShippingApiResponse.Errors
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors
+  type: Property
+  source:
+    id: Errors
+    path: ''
+    startLine: 12605
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public List<ErrorDetail> Errors { get; set; }
+    parameters: []
+    return:
+      type: List{PitneyBowes.Developer.ShippingApi.ErrorDetail}
+    content.vb: Public Property Errors As List(Of ErrorDetail)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus
+  isExternal: false
+  name: HttpStatus
+  nameWithType: ShippingApiResponse.HttpStatus
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.HttpStatus
+- uid: HttpStatusCode
+  commentId: '!:HttpStatusCode'
+  isExternal: true
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: HttpStatusCode
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime
+  isExternal: false
+  name: RequestTime
+  nameWithType: ShippingApiResponse.RequestTime
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.RequestTime
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors
+  isExternal: false
+  name: Errors
+  nameWithType: ShippingApiResponse.Errors
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse.Errors
+- uid: List{PitneyBowes.Developer.ShippingApi.ErrorDetail}
+  commentId: '!:List{PitneyBowes.Developer.ShippingApi.ErrorDetail}'
+  definition: List`1
+  name: List<ErrorDetail>
+  nameWithType: List<ErrorDetail>
+  fullName: List<PitneyBowes.Developer.ShippingApi.ErrorDetail>
+  nameWithType.vb: List(Of ErrorDetail)
+  fullName.vb: List(Of PitneyBowes.Developer.ShippingApi.ErrorDetail)
+  name.vb: List(Of ErrorDetail)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ErrorDetail
+    name: ErrorDetail
+    nameWithType: ErrorDetail
+    fullName: PitneyBowes.Developer.ShippingApi.ErrorDetail
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ErrorDetail
+    name: ErrorDetail
+    nameWithType: ErrorDetail
+    fullName: PitneyBowes.Developer.ShippingApi.ErrorDetail
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

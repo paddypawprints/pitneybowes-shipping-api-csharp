@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods
+  id: DocumentsMethods
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  children:
+  - PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream(PitneyBowes.Developer.ShippingApi.IDocument,Stream,Func{Stream,System.Int32,Stream},System.Boolean,PitneyBowes.Developer.ShippingApi.ISession)
+  langs:
+  - csharp
+  - vb
+  name: DocumentsMethods
+  nameWithType: DocumentsMethods
+  fullName: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods
+  type: Class
+  source:
+    id: DocumentsMethods
+    path: ''
+    startLine: 3851
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static class DocumentsMethods
+    content.vb: Public Module DocumentsMethods
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream(PitneyBowes.Developer.ShippingApi.IDocument,Stream,Func{Stream,System.Int32,Stream},System.Boolean,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream(PitneyBowes.Developer.ShippingApi.IDocument,Stream,Func{Stream,System.Int32,Stream},System.Boolean,PitneyBowes.Developer.ShippingApi.ISession)
+  id: WriteToStream(PitneyBowes.Developer.ShippingApi.IDocument,Stream,Func{Stream,System.Int32,Stream},System.Boolean,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods
+  langs:
+  - csharp
+  - vb
+  name: WriteToStream(IDocument, Stream, Func<Stream, Int32, Stream>, Boolean, ISession)
+  nameWithType: DocumentsMethods.WriteToStream(IDocument, Stream, Func<Stream, Int32, Stream>, Boolean, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream(PitneyBowes.Developer.ShippingApi.IDocument, Stream, Func<Stream, System.Int32, Stream>, System.Boolean, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: WriteToStream
+    path: ''
+    startLine: 3865
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  summary: "\nWrites a document to a stream. Figures out file format and content type and performs the appropriate action to get the document. \nThe stream will have the actual document contents.\n"
+  example: []
+  syntax:
+    content: public static Task WriteToStream(IDocument document, Stream stream, Func<Stream, int, Stream> nextPageAction = null, bool disposeStream = false, ISession session = null)
+    parameters:
+    - id: document
+      type: PitneyBowes.Developer.ShippingApi.IDocument
+      description: Document to stram.
+    - id: stream
+      type: Stream
+      description: Stream.
+    - id: nextPageAction
+      type: Func{Stream,System.Int32,Stream}
+      description: "Next page action. In the event there are multiple pages, this method allows the caller to close the current stream and open \\\na new one - to copy each document to a separate file, for instance. "
+    - id: disposeStream
+      type: System.Boolean
+      description: >
+        If set to <code>true</code> dispose stream. This should be set for multipage documents because an exception might leave the stream open
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+      description: Session.
+    return:
+      type: Task
+      description: The to stream.
+    content.vb: Public Shared Function WriteToStream(document As IDocument, stream As Stream, nextPageAction As Func(Of Stream, Integer, Stream) = Nothing, disposeStream As Boolean = False, session As ISession = Nothing) As Task
+  overload: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream*
+  nameWithType.vb: DocumentsMethods.WriteToStream(IDocument, Stream, Func(Of Stream, Int32, Stream), Boolean, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream(PitneyBowes.Developer.ShippingApi.IDocument, Stream, Func(Of Stream, System.Int32, Stream), System.Boolean, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: WriteToStream(IDocument, Stream, Func(Of Stream, Int32, Stream), Boolean, ISession)
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Method
+  commentId: N:PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Method
+  nameWithType: PitneyBowes.Developer.ShippingApi.Method
+  fullName: PitneyBowes.Developer.ShippingApi.Method
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream
+  isExternal: false
+  name: WriteToStream
+  nameWithType: DocumentsMethods.WriteToStream
+  fullName: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods.WriteToStream
+- uid: PitneyBowes.Developer.ShippingApi.IDocument
+  commentId: T:PitneyBowes.Developer.ShippingApi.IDocument
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IDocument
+  nameWithType: IDocument
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Func{Stream,System.Int32,Stream}
+  commentId: '!:Func{Stream,System.Int32,Stream}'
+  definition: Func`3
+  name: Func<Stream, Int32, Stream>
+  nameWithType: Func<Stream, Int32, Stream>
+  fullName: Func<Stream, System.Int32, Stream>
+  nameWithType.vb: Func(Of Stream, Int32, Stream)
+  fullName.vb: Func(Of Stream, System.Int32, Stream)
+  name.vb: Func(Of Stream, Int32, Stream)
+  spec.csharp:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: PitneyBowes.Developer.ShippingApi.ISession
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISession
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ISession
+  nameWithType: ISession
+  fullName: PitneyBowes.Developer.ShippingApi.ISession
+- uid: Task
+  commentId: '!:Task'
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: Func`3
+  commentId: '!:Func`3'
+  isExternal: true
+  name: Func<, , >
+  nameWithType: Func<, , >
+  fullName: Func<, , >
+  nameWithType.vb: Func(Of , , )
+  fullName.vb: Func(Of , , )
+  name.vb: Func(Of , , )
+  spec.csharp:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

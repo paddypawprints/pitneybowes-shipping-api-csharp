@@ -1,0 +1,692 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  id: ParcelFluent`1
+  parent: PitneyBowes.Developer.ShippingApi.Fluent
+  children:
+  - PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Create
+  - PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.CurrencyCode(System.String)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Dimension(System.Decimal,System.Decimal,System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfDimension)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent{`0})~`0
+  - PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.ValueOfGoods(System.Decimal)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Weight(System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfWeight)
+  langs:
+  - csharp
+  - vb
+  name: ParcelFluent<T>
+  nameWithType: ParcelFluent<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>
+  type: Class
+  source:
+    id: ParcelFluent
+    path: ''
+    startLine: 3014
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: >-
+      public class ParcelFluent<T>
+          where T : IParcel, new ()
+    typeParameters:
+    - id: T
+    content.vb: Public Class ParcelFluent(Of T As {IParcel, New})
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: ParcelFluent(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T)
+  name.vb: ParcelFluent(Of T)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Create
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Create
+  id: Create
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: ParcelFluent<T>.Create()
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Create()
+  type: Method
+  source:
+    id: Create
+    path: ''
+    startLine: 3018
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public static ParcelFluent<T> Create()
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    content.vb: Public Shared Function Create As ParcelFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Create*
+  nameWithType.vb: ParcelFluent(Of T).Create()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Create()
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent{`0})~`0
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent{`0})~`0
+  id: op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent{`0})~`0
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Implicit(ParcelFluent<T> to T)
+  nameWithType: ParcelFluent<T>.Implicit(ParcelFluent<T> to T)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T> to T)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: ''
+    startLine: 3031
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public static implicit operator T(ParcelFluent<T> p)
+    parameters:
+    - id: p
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    return:
+      type: '{T}'
+    content.vb: Public Shared Widening Operator CType(p As ParcelFluent(Of T)) As T
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.op_Implicit*
+  nameWithType.vb: ParcelFluent(Of T).Widening(ParcelFluent(Of T) to T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Widening(PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T) to T)
+  name.vb: Widening(ParcelFluent(Of T) to T)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Dimension(System.Decimal,System.Decimal,System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfDimension)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Dimension(System.Decimal,System.Decimal,System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfDimension)
+  id: Dimension(System.Decimal,System.Decimal,System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfDimension)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Dimension(Decimal, Decimal, Decimal, UnitOfDimension)
+  nameWithType: ParcelFluent<T>.Dimension(Decimal, Decimal, Decimal, UnitOfDimension)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Dimension(System.Decimal, System.Decimal, System.Decimal, PitneyBowes.Developer.ShippingApi.UnitOfDimension)
+  type: Method
+  source:
+    id: Dimension
+    path: ''
+    startLine: 3036
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ParcelFluent<T> Dimension(decimal l, decimal h, decimal w, UnitOfDimension u = UnitOfDimension.IN)
+    parameters:
+    - id: l
+      type: System.Decimal
+    - id: h
+      type: System.Decimal
+    - id: w
+      type: System.Decimal
+    - id: u
+      type: PitneyBowes.Developer.ShippingApi.UnitOfDimension
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    content.vb: Public Function Dimension(l As Decimal, h As Decimal, w As Decimal, u As UnitOfDimension = UnitOfDimension.IN) As ParcelFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Dimension*
+  nameWithType.vb: ParcelFluent(Of T).Dimension(Decimal, Decimal, Decimal, UnitOfDimension)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Dimension(System.Decimal, System.Decimal, System.Decimal, PitneyBowes.Developer.ShippingApi.UnitOfDimension)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Weight(System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfWeight)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Weight(System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfWeight)
+  id: Weight(System.Decimal,PitneyBowes.Developer.ShippingApi.UnitOfWeight)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Weight(Decimal, UnitOfWeight)
+  nameWithType: ParcelFluent<T>.Weight(Decimal, UnitOfWeight)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Weight(System.Decimal, PitneyBowes.Developer.ShippingApi.UnitOfWeight)
+  type: Method
+  source:
+    id: Weight
+    path: ''
+    startLine: 3043
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ParcelFluent<T> Weight(decimal d, UnitOfWeight unit = UnitOfWeight.OZ)
+    parameters:
+    - id: d
+      type: System.Decimal
+    - id: unit
+      type: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    content.vb: Public Function Weight(d As Decimal, unit As UnitOfWeight = UnitOfWeight.OZ) As ParcelFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Weight*
+  nameWithType.vb: ParcelFluent(Of T).Weight(Decimal, UnitOfWeight)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Weight(System.Decimal, PitneyBowes.Developer.ShippingApi.UnitOfWeight)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.ValueOfGoods(System.Decimal)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.ValueOfGoods(System.Decimal)
+  id: ValueOfGoods(System.Decimal)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  langs:
+  - csharp
+  - vb
+  name: ValueOfGoods(Decimal)
+  nameWithType: ParcelFluent<T>.ValueOfGoods(Decimal)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.ValueOfGoods(System.Decimal)
+  type: Method
+  source:
+    id: ValueOfGoods
+    path: ''
+    startLine: 3049
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ParcelFluent<T> ValueOfGoods(decimal d)
+    parameters:
+    - id: d
+      type: System.Decimal
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    content.vb: Public Function ValueOfGoods(d As Decimal) As ParcelFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.ValueOfGoods*
+  nameWithType.vb: ParcelFluent(Of T).ValueOfGoods(Decimal)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).ValueOfGoods(System.Decimal)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.CurrencyCode(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.CurrencyCode(System.String)
+  id: CurrencyCode(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  langs:
+  - csharp
+  - vb
+  name: CurrencyCode(String)
+  nameWithType: ParcelFluent<T>.CurrencyCode(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.CurrencyCode(System.String)
+  type: Method
+  source:
+    id: CurrencyCode
+    path: ''
+    startLine: 3055
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ParcelFluent<T> CurrencyCode(string s)
+    parameters:
+    - id: s
+      type: System.String
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    content.vb: Public Function CurrencyCode(s As String) As ParcelFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.CurrencyCode*
+  nameWithType.vb: ParcelFluent(Of T).CurrencyCode(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).CurrencyCode(System.String)
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Fluent
+  commentId: N:PitneyBowes.Developer.ShippingApi.Fluent
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Fluent
+  nameWithType: PitneyBowes.Developer.ShippingApi.Fluent
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Create*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Create
+  isExternal: false
+  name: Create
+  nameWithType: ParcelFluent<T>.Create
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Create
+  nameWithType.vb: ParcelFluent(Of T).Create
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Create
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+  parent: PitneyBowes.Developer.ShippingApi.Fluent
+  isExternal: false
+  name: ParcelFluent<T>
+  nameWithType: ParcelFluent<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>
+  nameWithType.vb: ParcelFluent(Of T)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T)
+  name.vb: ParcelFluent(Of T)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    name: ParcelFluent
+    nameWithType: ParcelFluent
+    fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    name: ParcelFluent
+    nameWithType: ParcelFluent
+    fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.op_Implicit*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.op_Implicit
+  isExternal: false
+  name: Implicit
+  nameWithType: ParcelFluent<T>.Implicit
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Implicit
+  nameWithType.vb: ParcelFluent(Of T).Widening
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Widening
+  name.vb: Widening
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Dimension*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Dimension
+  isExternal: false
+  name: Dimension
+  nameWithType: ParcelFluent<T>.Dimension
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Dimension
+  nameWithType.vb: ParcelFluent(Of T).Dimension
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Dimension
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: PitneyBowes.Developer.ShippingApi.UnitOfDimension
+  commentId: T:PitneyBowes.Developer.ShippingApi.UnitOfDimension
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: UnitOfDimension
+  nameWithType: UnitOfDimension
+  fullName: PitneyBowes.Developer.ShippingApi.UnitOfDimension
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Weight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.Weight
+  isExternal: false
+  name: Weight
+  nameWithType: ParcelFluent<T>.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.Weight
+  nameWithType.vb: ParcelFluent(Of T).Weight
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).Weight
+- uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: UnitOfWeight
+  nameWithType: UnitOfWeight
+  fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.ValueOfGoods*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.ValueOfGoods
+  isExternal: false
+  name: ValueOfGoods
+  nameWithType: ParcelFluent<T>.ValueOfGoods
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.ValueOfGoods
+  nameWithType.vb: ParcelFluent(Of T).ValueOfGoods
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).ValueOfGoods
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.CurrencyCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1.CurrencyCode
+  isExternal: false
+  name: CurrencyCode
+  nameWithType: ParcelFluent<T>.CurrencyCode
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent<T>.CurrencyCode
+  nameWithType.vb: ParcelFluent(Of T).CurrencyCode
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent(Of T).CurrencyCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,460 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  commentId: T:PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  id: SerializationRegistry
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.SerializationRegistry.#ctor
+  - PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter(Type)
+  - PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes``2
+  langs:
+  - csharp
+  - vb
+  name: SerializationRegistry
+  nameWithType: SerializationRegistry
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  type: Class
+  source:
+    id: SerializationRegistry
+    path: ''
+    startLine: 12810
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public class SerializationRegistry
+    content.vb: Public Class SerializationRegistry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry.#ctor
+  commentId: M:PitneyBowes.Developer.ShippingApi.SerializationRegistry.#ctor
+  id: '#ctor'
+  parent: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  langs:
+  - csharp
+  - vb
+  name: SerializationRegistry()
+  nameWithType: SerializationRegistry.SerializationRegistry()
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry.SerializationRegistry()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 12815
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public SerializationRegistry()
+    content.vb: Public Sub New
+  overload: PitneyBowes.Developer.ShippingApi.SerializationRegistry.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter(Type)
+  commentId: M:PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter(Type)
+  id: GetConverter(Type)
+  parent: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetConverter(Type)
+  nameWithType: SerializationRegistry.GetConverter(Type)
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter(Type)
+  type: Method
+  source:
+    id: GetConverter
+    path: ''
+    startLine: 12825
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public JsonConverter GetConverter(Type type)
+    parameters:
+    - id: type
+      type: Type
+    return:
+      type: JsonConverter
+    content.vb: Public Function GetConverter(type As Type) As JsonConverter
+  overload: PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes``2
+  commentId: M:PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes``2
+  id: RegisterSerializationTypes``2
+  parent: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  langs:
+  - csharp
+  - vb
+  name: RegisterSerializationTypes<I, T>()
+  nameWithType: SerializationRegistry.RegisterSerializationTypes<I, T>()
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes<I, T>()
+  type: Method
+  source:
+    id: RegisterSerializationTypes
+    path: ''
+    startLine: 12834
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: 'public void RegisterSerializationTypes<I, T>()where T : I'
+    typeParameters:
+    - id: I
+    - id: T
+    content.vb: Public Sub RegisterSerializationTypes(Of I, T As I)
+  overload: PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes*
+  nameWithType.vb: SerializationRegistry.RegisterSerializationTypes(Of I, T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes(Of I, T)()
+  name.vb: RegisterSerializationTypes(Of I, T)()
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry.#ctor*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.SerializationRegistry.#ctor
+  isExternal: false
+  name: SerializationRegistry
+  nameWithType: SerializationRegistry.SerializationRegistry
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry.SerializationRegistry
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter
+  isExternal: false
+  name: GetConverter
+  nameWithType: SerializationRegistry.GetConverter
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry.GetConverter
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: JsonConverter
+  commentId: '!:JsonConverter'
+  isExternal: true
+  name: JsonConverter
+  nameWithType: JsonConverter
+  fullName: JsonConverter
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes
+  isExternal: false
+  name: RegisterSerializationTypes
+  nameWithType: SerializationRegistry.RegisterSerializationTypes
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry.RegisterSerializationTypes

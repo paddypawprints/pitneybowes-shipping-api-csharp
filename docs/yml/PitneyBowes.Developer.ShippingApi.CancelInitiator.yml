@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.CancelInitiator
+  commentId: T:PitneyBowes.Developer.ShippingApi.CancelInitiator
+  id: CancelInitiator
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.CancelInitiator.SHIPPER
+  langs:
+  - csharp
+  - vb
+  name: CancelInitiator
+  nameWithType: CancelInitiator
+  fullName: PitneyBowes.Developer.ShippingApi.CancelInitiator
+  type: Enum
+  source:
+    id: CancelInitiator
+    path: ''
+    startLine: 56
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nParty cancelling a shipment.\n"
+  example: []
+  syntax:
+    content: public enum CancelInitiator
+    content.vb: Public Enum CancelInitiator
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.CancelInitiator.SHIPPER
+  commentId: F:PitneyBowes.Developer.ShippingApi.CancelInitiator.SHIPPER
+  id: SHIPPER
+  parent: PitneyBowes.Developer.ShippingApi.CancelInitiator
+  langs:
+  - csharp
+  - vb
+  name: SHIPPER
+  nameWithType: CancelInitiator.SHIPPER
+  fullName: PitneyBowes.Developer.ShippingApi.CancelInitiator.SHIPPER
+  type: Field
+  source:
+    id: SHIPPER
+    path: ''
+    startLine: 58
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: SHIPPER = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.CancelInitiator
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.CancelInitiator
+  commentId: T:PitneyBowes.Developer.ShippingApi.CancelInitiator
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: CancelInitiator
+  nameWithType: CancelInitiator
+  fullName: PitneyBowes.Developer.ShippingApi.CancelInitiator

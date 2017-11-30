@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAutoRefill
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAutoRefill
+   ">
+    <meta name="generator" content="docfx 2.25.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill">
+  
+  
+  <h1 id="PitneyBowes_Developer_ShippingApi_IAutoRefill" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill" class="text-break">Interface IAutoRefill
+  </h1>
+  <div class="markdown level0 summary"><p>Root object for customer account Auto Refill functionality.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PitneyBowes.Developer.ShippingApi.html">PitneyBowes.Developer.ShippingApi</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PitneyBowes_Developer_ShippingApi_IAutoRefill_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAutoRefill</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PitneyBowes_Developer_ShippingApi_IAutoRefill_AddAmount_" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.AddAmount*"></a>
+  <h4 id="PitneyBowes_Developer_ShippingApi_IAutoRefill_AddAmount" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.AddAmount">AddAmount</h4>
+  <div class="markdown level1 summary"><p>This field is <em>required</em> in a request if you are doing any of the following:</p>
+<ul>
+<li>enabling automatic refill</li>
+<li>updating the threshold</li>
+<li>updating the refill amount
+If you do <em>not</em> include this field, the value is set to <code>null</code>, which
+effectively disables automatic refill for the account.</li>
+</ul>
+<p>For recommended settings, see :ref:<code>when-does-auto-refill-trigger</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">decimal AddAmount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><p>The amount added to the merchant&apos;s PB Postage Account when the balance
+falls below the <code>threshold</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PitneyBowes_Developer_ShippingApi_IAutoRefill_Enabled_" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.Enabled*"></a>
+  <h4 id="PitneyBowes_Developer_ShippingApi_IAutoRefill_Enabled" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.Enabled">Enabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this <a class="xref" href="PitneyBowes.Developer.ShippingApi.IAutoRefill.html">IAutoRefill</a>
+is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Enabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if enabled; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PitneyBowes_Developer_ShippingApi_IAutoRefill_MerchantID_" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.MerchantID*"></a>
+  <h4 id="PitneyBowes_Developer_ShippingApi_IAutoRefill_MerchantID" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.MerchantID">MerchantID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string MerchantID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PitneyBowes_Developer_ShippingApi_IAutoRefill_Threshold_" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.Threshold*"></a>
+  <h4 id="PitneyBowes_Developer_ShippingApi_IAutoRefill_Threshold" data-uid="PitneyBowes.Developer.ShippingApi.IAutoRefill.Threshold">Threshold</h4>
+  <div class="markdown level1 summary"><p>This field is <em>required</em> in a request if you are doing any of the following:</p>
+<ul>
+<li>enabling automatic refill</li>
+<li>updating the threshold</li>
+<li>updating the refill amount
+If you do <em>not</em> include this field, the value is set to <code>null</code>, which
+effectively disables automatic refill for the account.
+For recommended settings, see :ref:<code>when-does-auto-refill-trigger</code>.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">decimal Threshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><p>The amount at which the merchant&apos;s PB Postage Account is refilled. The
+account refills when the balance falls below this value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

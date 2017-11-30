@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  id: ICcPaymentDetails
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress
+  - PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber
+  - PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate
+  - PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber
+  - PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType
+  langs:
+  - csharp
+  - vb
+  name: ICcPaymentDetails
+  nameWithType: ICcPaymentDetails
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  type: Interface
+  source:
+    id: ICcPaymentDetails
+    path: ''
+    startLine: 866
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface ICcPaymentDetails
+    content.vb: Public Interface ICcPaymentDetails
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType
+  id: CcType
+  parent: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: CcType
+  nameWithType: ICcPaymentDetails.CcType
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType
+  type: Property
+  source:
+    id: CcType
+    path: ''
+    startLine: 868
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: CreditCardType CcType { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.CreditCardType
+    content.vb: Property CcType As CreditCardType
+  overload: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber
+  id: CcTokenNumber
+  parent: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: CcTokenNumber
+  nameWithType: ICcPaymentDetails.CcTokenNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber
+  type: Property
+  source:
+    id: CcTokenNumber
+    path: ''
+    startLine: 869
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string CcTokenNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CcTokenNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate
+  id: CcExpirationDate
+  parent: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: CcExpirationDate
+  nameWithType: ICcPaymentDetails.CcExpirationDate
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate
+  type: Property
+  source:
+    id: CcExpirationDate
+    path: ''
+    startLine: 870
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string CcExpirationDate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CcExpirationDate As String
+  overload: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber
+  id: CccvvNumber
+  parent: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: CccvvNumber
+  nameWithType: ICcPaymentDetails.CccvvNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber
+  type: Property
+  source:
+    id: CccvvNumber
+    path: ''
+    startLine: 871
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string CccvvNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CccvvNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress
+  id: CcAddress
+  parent: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: CcAddress
+  nameWithType: ICcPaymentDetails.CcAddress
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress
+  type: Property
+  source:
+    id: CcAddress
+    path: ''
+    startLine: 872
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IAddress CcAddress { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    content.vb: Property CcAddress As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType
+  isExternal: false
+  name: CcType
+  nameWithType: ICcPaymentDetails.CcType
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcType
+- uid: PitneyBowes.Developer.ShippingApi.CreditCardType
+  commentId: T:PitneyBowes.Developer.ShippingApi.CreditCardType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: CreditCardType
+  nameWithType: CreditCardType
+  fullName: PitneyBowes.Developer.ShippingApi.CreditCardType
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber
+  isExternal: false
+  name: CcTokenNumber
+  nameWithType: ICcPaymentDetails.CcTokenNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcTokenNumber
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate
+  isExternal: false
+  name: CcExpirationDate
+  nameWithType: ICcPaymentDetails.CcExpirationDate
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcExpirationDate
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber
+  isExternal: false
+  name: CccvvNumber
+  nameWithType: ICcPaymentDetails.CccvvNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CccvvNumber
+- uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress
+  isExternal: false
+  name: CcAddress
+  nameWithType: ICcPaymentDetails.CcAddress
+  fullName: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails.CcAddress
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress

@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum ShipmentOption
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum ShipmentOption
+   ">
+    <meta name="generator" content="docfx 2.25.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PitneyBowes.Developer.ShippingApi.ShipmentOption">
+  
+  
+  <h1 id="PitneyBowes_Developer_ShippingApi_ShipmentOption" data-uid="PitneyBowes.Developer.ShippingApi.ShipmentOption" class="text-break">Enum ShipmentOption
+  </h1>
+  <div class="markdown level0 summary"><p>Shipment options.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PitneyBowes.Developer.ShippingApi.html">PitneyBowes.Developer.ShippingApi</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PitneyBowes_Developer_ShippingApi_ShipmentOption_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum ShipmentOption</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_ADD_TO_MANIFEST">ADD_TO_MANIFEST</td>
+        <td><p>Set this value to true in order to make this shipment eligible to be included in the end-of-day manifest.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_DESTINATION_ENTRY_FACILITY">DESTINATION_ENTRY_FACILITY</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_ENCLOSED_MAIL_CLASS">ENCLOSED_MAIL_CLASS</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_ENCLOSED_PARCEL_TYPE">ENCLOSED_PARCEL_TYPE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_ENCLOSED_PAYMENT_METHOD">ENCLOSED_PAYMENT_METHOD</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_FUTURE_SHIPMENT_DATE">FUTURE_SHIPMENT_DATE</td>
+        <td><p>This field can be used if the shipment label is to be tendered at a future date. 
+The format of the field is YYYY-MM-DD or YYYY-MM-DD HH:MM:SS where the time format is in UTC.
+Note: Shipment date can be advanced only up to 7 days of the shipment print date.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_HIDE_TOTAL_CARRIER_CHARGE">HIDE_TOTAL_CARRIER_CHARGE</td>
+        <td><p>Set the value to true in order to hide the carrier shipping charge on the label.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_MINIMAL_ADDRESS_VALIDATION">MINIMAL_ADDRESS_VALIDATION</td>
+        <td><p>When set to true, only City, State, and PostalCode (zip) are validated for fromAddress and toAddress.
+Note: Applicable only to domestic address.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_NON_DELIVERY_OPTION">NON_DELIVERY_OPTION</td>
+        <td><p>Use this field for instructions in case the package is not delivered. Valid values are return, abandon, and redirect.
+Note: This applies to international labels ONLY.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_ORIGIN_ENTRY_FACILITY">ORIGIN_ENTRY_FACILITY</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_PRINT_CUSTOM_MESSAGE_1">PRINT_CUSTOM_MESSAGE_1</td>
+        <td><p>This is a user-specified message that gets printed on the face of the label. 
+A string of up to 50 characters can be printed on the label.
+Note: This applies to domestic labels ONLY</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_PRINT_CUSTOM_MESSAGE_2">PRINT_CUSTOM_MESSAGE_2</td>
+        <td><p>This is a user-specified message that gets printed on the bottom of the label. 
+A string of up to 50 characters can be printed on the label.
+Note: This applies to domestic labels ONLY</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_SHIPPER_BASE_CHARGE">SHIPPER_BASE_CHARGE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_SHIPPER_ID">SHIPPER_ID</td>
+        <td><p>The Shipper ID of the merchant on whose behalf the label is being printed. 
+The merchant�s Shipper ID is found in the postalReportingNumber field in the merchant object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_SHIPPER_TOTAL_CHARGE">SHIPPER_TOTAL_CHARGE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_SHIPPING_LABEL_RECEIPT">SHIPPING_LABEL_RECEIPT</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="PitneyBowes_Developer_ShippingApi_ShipmentOption_SHIPPING_LABEL_SENDER_SIGNATURE">SHIPPING_LABEL_SENDER_SIGNATURE</td>
+        <td><p>Adds the sender�s signature and the date on CN22 and CP72 shipping labels.
+Enter the signature as a string. The sender�s signature date is automatically populated.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

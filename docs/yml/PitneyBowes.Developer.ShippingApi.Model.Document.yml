@@ -1,0 +1,927 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document
+  commentId: T:PitneyBowes.Developer.ShippingApi.Model.Document
+  id: Document
+  parent: PitneyBowes.Developer.ShippingApi.Model
+  children:
+  - PitneyBowes.Developer.ShippingApi.Model.Document.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  - PitneyBowes.Developer.ShippingApi.Model.Document.Contents
+  - PitneyBowes.Developer.ShippingApi.Model.Document.ContentType
+  - PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat
+  - PitneyBowes.Developer.ShippingApi.Model.Document.Pages
+  - PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption
+  - PitneyBowes.Developer.ShippingApi.Model.Document.Size
+  - PitneyBowes.Developer.ShippingApi.Model.Document.Type
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: Document
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document
+  type: Class
+  source:
+    id: Document
+    path: ''
+    startLine: 7821
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\n    /// File Format Content type   Size       Label Type\nPDF         URL            DOC_8X11   Domestic\n                       DOC_4X6    APO/FPO\n                       DOC_6X4    International(CN22, CP72-A, CP72-B)\nPNG         BASE64         DOC_8X11   Domestic\n                       DOC_4X6    APO/FPO\n                       DOC_6X4    International(CN22, CP72-A, CP72-B)\nZPL2        BASE64         DOC_4x6    Domestic\n                       DOC_6X4    APO/FPO\n                                  International(CN22, CP72-A, CP72-B)\n"
+  example: []
+  syntax:
+    content: 'public class Document : IDocument'
+    content.vb: >-
+      Public Class Document
+          Implements IDocument
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Type
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Document.Type
+  id: Type
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Document.Type
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Type
+  type: Property
+  source:
+    id: Type
+    path: ''
+    startLine: 7827
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the type.\n"
+  example: []
+  syntax:
+    content: public virtual DocumentType Type { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.DocumentType
+      description: The type.
+    content.vb: Public Overridable Property Type As DocumentType
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.Type*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.Type
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Size
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Document.Size
+  id: Size
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Document.Size
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Size
+  type: Property
+  source:
+    id: Size
+    path: ''
+    startLine: 7833
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nRecommended document/label size. Actual document/label size depends on\nthe carrier.\n"
+  example: []
+  syntax:
+    content: public virtual Size Size { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Size
+      description: The size.
+    content.vb: Public Overridable Property Size As Size
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.Size*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.Size
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat
+  id: FileFormat
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: FileFormat
+  nameWithType: Document.FileFormat
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat
+  type: Property
+  source:
+    id: FileFormat
+    path: ''
+    startLine: 7838
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the file format.\n"
+  example: []
+  syntax:
+    content: public virtual FileFormat FileFormat { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.FileFormat
+      description: The file format.
+    content.vb: Public Overridable Property FileFormat As FileFormat
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.FileFormat
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.ContentType
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Document.ContentType
+  id: ContentType
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: Document.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.ContentType
+  type: Property
+  source:
+    id: ContentType
+    path: ''
+    startLine: 7843
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the type of the content.\n"
+  example: []
+  syntax:
+    content: public virtual ContentType ContentType { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.ContentType
+      description: The type of the content.
+    content.vb: Public Overridable Property ContentType As ContentType
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.ContentType*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.ContentType
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption
+  id: PrintDialogOption
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: PrintDialogOption
+  nameWithType: Document.PrintDialogOption
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption
+  type: Property
+  source:
+    id: PrintDialogOption
+    path: ''
+    startLine: 7849
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\n*PDF documents only*. This defines an option to embed script that can\nrender an interactive print dialog box for the end user within the\nshipment document/label.        /// "
+  example: []
+  syntax:
+    content: public virtual PrintDialogOption PrintDialogOption { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+      description: The print dialog option.
+    content.vb: Public Overridable Property PrintDialogOption As PrintDialogOption
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.PrintDialogOption
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Contents
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Document.Contents
+  id: Contents
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: Contents
+  nameWithType: Document.Contents
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Contents
+  type: Property
+  source:
+    id: Contents
+    path: ''
+    startLine: 7855
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nWhen ``contentType`` is ``URL``, this is the URL to access the shipment\nlabel or manifest.\n"
+  example: []
+  syntax:
+    content: public virtual string Contents { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The contents.
+    content.vb: Public Overridable Property Contents As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.Contents*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.Contents
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Pages
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Document.Pages
+  id: Pages
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: Pages
+  nameWithType: Document.Pages
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Pages
+  type: Property
+  source:
+    id: Pages
+    path: ''
+    startLine: 7862
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nWhen ``contentType`` is ``BASE64``, this field value will have the encoded\nbase64 string of the shipment label.This structure will repeat if\nthere are multiple pages.\n"
+  example: []
+  syntax:
+    content: public virtual IEnumerable<IPage> Pages { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IPage}
+      description: The pages.
+    content.vb: Public Overridable Property Pages As IEnumerable(Of IPage)
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.Pages*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.Pages
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Model.Document.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  id: AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  parent: PitneyBowes.Developer.ShippingApi.Model.Document
+  langs:
+  - csharp
+  - vb
+  name: AddPage(IPage)
+  nameWithType: Document.AddPage(IPage)
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  type: Method
+  source:
+    id: AddPage
+    path: ''
+    startLine: 7863
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual void AddPage(IPage s)
+    parameters:
+    - id: s
+      type: PitneyBowes.Developer.ShippingApi.IPage
+    content.vb: Public Overridable Sub AddPage(s As IPage)
+  overload: PitneyBowes.Developer.ShippingApi.Model.Document.AddPage*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IDocument.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  commentId: N:PitneyBowes.Developer.ShippingApi.Model
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Model
+  nameWithType: PitneyBowes.Developer.ShippingApi.Model
+  fullName: PitneyBowes.Developer.ShippingApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.IDocument
+  commentId: T:PitneyBowes.Developer.ShippingApi.IDocument
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IDocument
+  nameWithType: IDocument
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Type*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.Type
+  isExternal: false
+  name: Type
+  nameWithType: Document.Type
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Type
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.Type
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDocument.Type
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: Type
+  nameWithType: IDocument.Type
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.Type
+- uid: PitneyBowes.Developer.ShippingApi.DocumentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.DocumentType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: DocumentType
+  nameWithType: DocumentType
+  fullName: PitneyBowes.Developer.ShippingApi.DocumentType
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Size*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.Size
+  isExternal: false
+  name: Size
+  nameWithType: Document.Size
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Size
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.Size
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDocument.Size
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: Size
+  nameWithType: IDocument.Size
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.Size
+- uid: PitneyBowes.Developer.ShippingApi.Size
+  commentId: T:PitneyBowes.Developer.ShippingApi.Size
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Size
+  nameWithType: Size
+  fullName: PitneyBowes.Developer.ShippingApi.Size
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat
+  isExternal: false
+  name: FileFormat
+  nameWithType: Document.FileFormat
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.FileFormat
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.FileFormat
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDocument.FileFormat
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: FileFormat
+  nameWithType: IDocument.FileFormat
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.FileFormat
+- uid: PitneyBowes.Developer.ShippingApi.FileFormat
+  commentId: T:PitneyBowes.Developer.ShippingApi.FileFormat
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: FileFormat
+  nameWithType: FileFormat
+  fullName: PitneyBowes.Developer.ShippingApi.FileFormat
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.ContentType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.ContentType
+  isExternal: false
+  name: ContentType
+  nameWithType: Document.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.ContentType
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.ContentType
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDocument.ContentType
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: ContentType
+  nameWithType: IDocument.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.ContentType
+- uid: PitneyBowes.Developer.ShippingApi.ContentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.ContentType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ContentType
+  nameWithType: ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.ContentType
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption
+  isExternal: false
+  name: PrintDialogOption
+  nameWithType: Document.PrintDialogOption
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.PrintDialogOption
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.PrintDialogOption
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDocument.PrintDialogOption
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: PrintDialogOption
+  nameWithType: IDocument.PrintDialogOption
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.PrintDialogOption
+- uid: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  commentId: T:PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PrintDialogOption
+  nameWithType: PrintDialogOption
+  fullName: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Contents*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.Contents
+  isExternal: false
+  name: Contents
+  nameWithType: Document.Contents
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Contents
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.Contents
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDocument.Contents
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: Contents
+  nameWithType: IDocument.Contents
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.Contents
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.Pages*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.Pages
+  isExternal: false
+  name: Pages
+  nameWithType: Document.Pages
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.Pages
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.Pages
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDocument.Pages
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: Pages
+  nameWithType: IDocument.Pages
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.Pages
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IPage}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IPage}'
+  definition: IEnumerable`1
+  name: IEnumerable<IPage>
+  nameWithType: IEnumerable<IPage>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IPage>
+  nameWithType.vb: IEnumerable(Of IPage)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IPage)
+  name.vb: IEnumerable(Of IPage)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IPage
+    name: IPage
+    nameWithType: IPage
+    fullName: PitneyBowes.Developer.ShippingApi.IPage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IPage
+    name: IPage
+    nameWithType: IPage
+    fullName: PitneyBowes.Developer.ShippingApi.IPage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Model.Document.AddPage*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Document.AddPage
+  isExternal: false
+  name: AddPage
+  nameWithType: Document.AddPage
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Document.AddPage
+- uid: PitneyBowes.Developer.ShippingApi.IDocument.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IDocument.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  parent: PitneyBowes.Developer.ShippingApi.IDocument
+  isExternal: false
+  name: AddPage(IPage)
+  nameWithType: IDocument.AddPage(IPage)
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IDocument.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+    name: AddPage
+    nameWithType: IDocument.AddPage
+    fullName: PitneyBowes.Developer.ShippingApi.IDocument.AddPage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: PitneyBowes.Developer.ShippingApi.IPage
+    name: IPage
+    nameWithType: IPage
+    fullName: PitneyBowes.Developer.ShippingApi.IPage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IDocument.AddPage(PitneyBowes.Developer.ShippingApi.IPage)
+    name: AddPage
+    nameWithType: IDocument.AddPage
+    fullName: PitneyBowes.Developer.ShippingApi.IDocument.AddPage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: PitneyBowes.Developer.ShippingApi.IPage
+    name: IPage
+    nameWithType: IPage
+    fullName: PitneyBowes.Developer.ShippingApi.IPage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.IPage
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPage
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IPage
+  nameWithType: IPage
+  fullName: PitneyBowes.Developer.ShippingApi.IPage

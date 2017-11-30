@@ -1,0 +1,998 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  id: ReportProviderBase
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  children:
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery(Expression)
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery``1(Expression)
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute(Expression)
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``1(Expression)
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``1(Expression,System.Boolean)
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``4(Expression,System.Boolean,Func{``2,IEnumerable{``1}},Action{``2})
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression(Expression)
+  - PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction``2(Expression,``1)
+  langs:
+  - csharp
+  - vb
+  name: ReportProviderBase
+  nameWithType: ReportProviderBase
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  type: Class
+  source:
+    id: ReportProviderBase
+    path: ''
+    startLine: 9476
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public abstract class ReportProviderBase
+    content.vb: Public MustInherit Class ReportProviderBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsReportProvider
+  - PitneyBowes.Developer.ShippingApi.Method.TransactionsReportProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery(Expression)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery(Expression)
+  id: CreateQuery(Expression)
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: CreateQuery(Expression)
+  nameWithType: ReportProviderBase.CreateQuery(Expression)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery(Expression)
+  type: Method
+  source:
+    id: CreateQuery
+    path: ''
+    startLine: 9478
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public virtual IQueryable CreateQuery(Expression expression)
+    parameters:
+    - id: expression
+      type: Expression
+    return:
+      type: IQueryable
+    content.vb: Public Overridable Function CreateQuery(expression As Expression) As IQueryable
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``4(Expression,System.Boolean,Func{``2,IEnumerable{``1}},Action{``2})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``4(Expression,System.Boolean,Func{``2,IEnumerable{``1}},Action{``2})
+  id: Execute``4(Expression,System.Boolean,Func{``2,IEnumerable{``1}},Action{``2})
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: Execute<TResult, ReportItem, Request, RequestFinder>(Expression, Boolean, Func<Request, IEnumerable<ReportItem>>, Action<Request>)
+  nameWithType: ReportProviderBase.Execute<TResult, ReportItem, Request, RequestFinder>(Expression, Boolean, Func<Request, IEnumerable<ReportItem>>, Action<Request>)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute<TResult, ReportItem, Request, RequestFinder>(Expression, System.Boolean, Func<Request, IEnumerable<ReportItem>>, Action<Request>)
+  type: Method
+  source:
+    id: Execute
+    path: ''
+    startLine: 9491
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: 'public object Execute<TResult, ReportItem, Request, RequestFinder>(Expression expression, bool isEnumerable, Func<Request, IEnumerable<ReportItem>> reportService, Action<Request> initializeRequest)where Request : IReportRequest, new ()where RequestFinder : RequestFinderVisitor<Request, ReportItem>, new ()'
+    parameters:
+    - id: expression
+      type: Expression
+    - id: isEnumerable
+      type: System.Boolean
+    - id: reportService
+      type: Func{{Request},IEnumerable{{ReportItem}}}
+    - id: initializeRequest
+      type: Action{{Request}}
+    typeParameters:
+    - id: TResult
+    - id: ReportItem
+    - id: Request
+    - id: RequestFinder
+    return:
+      type: System.Object
+    content.vb: Public Function Execute(Of TResult, ReportItem, Request As {IReportRequest, New}, RequestFinder As {RequestFinderVisitor(Of Request, ReportItem), New})(expression As Expression, isEnumerable As Boolean, reportService As Func(Of Request, IEnumerable(Of ReportItem)), initializeRequest As Action(Of Request)) As Object
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute*
+  nameWithType.vb: ReportProviderBase.Execute(Of TResult, ReportItem, Request, RequestFinder)(Expression, Boolean, Func(Of Request, IEnumerable(Of ReportItem)), Action(Of Request))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute(Of TResult, ReportItem, Request, RequestFinder)(Expression, System.Boolean, Func(Of Request, IEnumerable(Of ReportItem)), Action(Of Request))
+  name.vb: Execute(Of TResult, ReportItem, Request, RequestFinder)(Expression, Boolean, Func(Of Request, IEnumerable(Of ReportItem)), Action(Of Request))
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction``2(Expression,``1)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction``2(Expression,``1)
+  id: ReplaceWhereByTransaction``2(Expression,``1)
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: ReplaceWhereByTransaction<TResult, ReportItem>(Expression, ReportItem)
+  nameWithType: ReportProviderBase.ReplaceWhereByTransaction<TResult, ReportItem>(Expression, ReportItem)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction<TResult, ReportItem>(Expression, ReportItem)
+  type: Method
+  source:
+    id: ReplaceWhereByTransaction
+    path: ''
+    startLine: 9520
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public Expression ReplaceWhereByTransaction<TResult, ReportItem>(Expression expression, ReportItem items)
+    parameters:
+    - id: expression
+      type: Expression
+    - id: items
+      type: '{ReportItem}'
+    typeParameters:
+    - id: TResult
+    - id: ReportItem
+    return:
+      type: Expression
+    content.vb: Public Function ReplaceWhereByTransaction(Of TResult, ReportItem)(expression As Expression, items As ReportItem) As Expression
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction*
+  nameWithType.vb: ReportProviderBase.ReplaceWhereByTransaction(Of TResult, ReportItem)(Expression, ReportItem)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction(Of TResult, ReportItem)(Expression, ReportItem)
+  name.vb: ReplaceWhereByTransaction(Of TResult, ReportItem)(Expression, ReportItem)
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression(Expression)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression(Expression)
+  id: GetWhereExpression(Expression)
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: GetWhereExpression(Expression)
+  nameWithType: ReportProviderBase.GetWhereExpression(Expression)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression(Expression)
+  type: Method
+  source:
+    id: GetWhereExpression
+    path: ''
+    startLine: 9530
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public LambdaExpression GetWhereExpression(Expression expression)
+    parameters:
+    - id: expression
+      type: Expression
+    return:
+      type: LambdaExpression
+    content.vb: Public Function GetWhereExpression(expression As Expression) As LambdaExpression
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``1(Expression)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``1(Expression)
+  id: Execute``1(Expression)
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: Execute<TResult>(Expression)
+  nameWithType: ReportProviderBase.Execute<TResult>(Expression)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute<TResult>(Expression)
+  type: Method
+  source:
+    id: Execute
+    path: ''
+    startLine: 9545
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public virtual TResult Execute<TResult>(Expression expression)
+    parameters:
+    - id: expression
+      type: Expression
+    typeParameters:
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function Execute(Of TResult)(expression As Expression) As TResult
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute*
+  nameWithType.vb: ReportProviderBase.Execute(Of TResult)(Expression)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute(Of TResult)(Expression)
+  name.vb: Execute(Of TResult)(Expression)
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute(Expression)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute(Expression)
+  id: Execute(Expression)
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: Execute(Expression)
+  nameWithType: ReportProviderBase.Execute(Expression)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute(Expression)
+  type: Method
+  source:
+    id: Execute
+    path: ''
+    startLine: 9552
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public virtual object Execute(Expression expression)
+    parameters:
+    - id: expression
+      type: Expression
+    return:
+      type: System.Object
+    content.vb: Public Overridable Function Execute(expression As Expression) As Object
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery``1(Expression)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery``1(Expression)
+  id: CreateQuery``1(Expression)
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: CreateQuery<TResult>(Expression)
+  nameWithType: ReportProviderBase.CreateQuery<TResult>(Expression)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery<TResult>(Expression)
+  type: Method
+  source:
+    id: CreateQuery
+    path: ''
+    startLine: 9566
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public abstract IQueryable<TResult> CreateQuery<TResult>(Expression expression)
+    parameters:
+    - id: expression
+      type: Expression
+    typeParameters:
+    - id: TResult
+    return:
+      type: IQueryable{{TResult}}
+    content.vb: Public MustOverride Function CreateQuery(Of TResult)(expression As Expression) As IQueryable(Of TResult)
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery*
+  nameWithType.vb: ReportProviderBase.CreateQuery(Of TResult)(Expression)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery(Of TResult)(Expression)
+  name.vb: CreateQuery(Of TResult)(Expression)
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``1(Expression,System.Boolean)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute``1(Expression,System.Boolean)
+  id: Execute``1(Expression,System.Boolean)
+  parent: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+  langs:
+  - csharp
+  - vb
+  name: Execute<TResult>(Expression, Boolean)
+  nameWithType: ReportProviderBase.Execute<TResult>(Expression, Boolean)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute<TResult>(Expression, System.Boolean)
+  type: Method
+  source:
+    id: Execute
+    path: ''
+    startLine: 9567
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public abstract object Execute<TResult>(Expression expression, bool IsEnumerable)
+    parameters:
+    - id: expression
+      type: Expression
+    - id: IsEnumerable
+      type: System.Boolean
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Object
+    content.vb: Public MustOverride Function Execute(Of TResult)(expression As Expression, IsEnumerable As Boolean) As Object
+  overload: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute*
+  nameWithType.vb: ReportProviderBase.Execute(Of TResult)(Expression, Boolean)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute(Of TResult)(Expression, System.Boolean)
+  name.vb: Execute(Of TResult)(Expression, Boolean)
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Method
+  commentId: N:PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Method
+  nameWithType: PitneyBowes.Developer.ShippingApi.Method
+  fullName: PitneyBowes.Developer.ShippingApi.Method
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery
+  isExternal: false
+  name: CreateQuery
+  nameWithType: ReportProviderBase.CreateQuery
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.CreateQuery
+- uid: Expression
+  isExternal: true
+  name: Expression
+  nameWithType: Expression
+  fullName: Expression
+- uid: IQueryable
+  commentId: '!:IQueryable'
+  isExternal: true
+  name: IQueryable
+  nameWithType: IQueryable
+  fullName: IQueryable
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute
+  isExternal: false
+  name: Execute
+  nameWithType: ReportProviderBase.Execute
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.Execute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Func{{Request},IEnumerable{{ReportItem}}}
+  commentId: '!:Func{``2,IEnumerable{``1}}'
+  definition: Func`2
+  name: Func<Request, IEnumerable<ReportItem>>
+  nameWithType: Func<Request, IEnumerable<ReportItem>>
+  fullName: Func<Request, IEnumerable<ReportItem>>
+  nameWithType.vb: Func(Of Request, IEnumerable(Of ReportItem))
+  fullName.vb: Func(Of Request, IEnumerable(Of ReportItem))
+  name.vb: Func(Of Request, IEnumerable(Of ReportItem))
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Request
+    nameWithType: Request
+    fullName: Request
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ReportItem
+    nameWithType: ReportItem
+    fullName: ReportItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Request
+    nameWithType: Request
+    fullName: Request
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ReportItem
+    nameWithType: ReportItem
+    fullName: ReportItem
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{{Request}}
+  commentId: '!:Action{``2}'
+  definition: Action`1
+  name: Action<Request>
+  nameWithType: Action<Request>
+  fullName: Action<Request>
+  nameWithType.vb: Action(Of Request)
+  fullName.vb: Action(Of Request)
+  name.vb: Action(Of Request)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Request
+    nameWithType: Request
+    fullName: Request
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Request
+    nameWithType: Request
+    fullName: Request
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction
+  isExternal: false
+  name: ReplaceWhereByTransaction
+  nameWithType: ReportProviderBase.ReplaceWhereByTransaction
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.ReplaceWhereByTransaction
+- uid: '{ReportItem}'
+  commentId: '!:ReportItem'
+  definition: ReportItem
+  name: ReportItem
+  nameWithType: ReportItem
+  fullName: ReportItem
+- uid: ReportItem
+  commentId: '!:ReportItem'
+  isExternal: false
+  name: ReportItem
+  nameWithType: ReportItem
+  fullName: ReportItem
+- uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression
+  isExternal: false
+  name: GetWhereExpression
+  nameWithType: ReportProviderBase.GetWhereExpression
+  fullName: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase.GetWhereExpression
+- uid: LambdaExpression
+  commentId: '!:LambdaExpression'
+  isExternal: true
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: LambdaExpression
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  commentId: '!:TResult'
+  isExternal: false
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: IQueryable{{TResult}}
+  commentId: '!:IQueryable{``0}'
+  definition: IQueryable`1
+  name: IQueryable<TResult>
+  nameWithType: IQueryable<TResult>
+  fullName: IQueryable<TResult>
+  nameWithType.vb: IQueryable(Of TResult)
+  fullName.vb: IQueryable(Of TResult)
+  name.vb: IQueryable(Of TResult)
+  spec.csharp:
+  - uid: IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueryable`1
+  isExternal: true
+  name: IQueryable<>
+  nameWithType: IQueryable<>
+  fullName: IQueryable<>
+  nameWithType.vb: IQueryable(Of )
+  fullName.vb: IQueryable(Of )
+  name.vb: IQueryable(Of )
+  spec.csharp:
+  - uid: IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

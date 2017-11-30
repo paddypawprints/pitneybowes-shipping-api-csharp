@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISpecialServices
+  id: ISpecialServices
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  - PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee
+  - PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters
+  - PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId
+  - PitneyBowes.Developer.ShippingApi.ISpecialServices.Value
+  langs:
+  - csharp
+  - vb
+  name: ISpecialServices
+  nameWithType: ISpecialServices
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices
+  type: Interface
+  source:
+    id: ISpecialServices
+    path: ''
+    startLine: 1949
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface ISpecialServices
+    content.vb: Public Interface ISpecialServices
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId
+  id: SpecialServiceId
+  parent: PitneyBowes.Developer.ShippingApi.ISpecialServices
+  langs:
+  - csharp
+  - vb
+  name: SpecialServiceId
+  nameWithType: ISpecialServices.SpecialServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId
+  type: Property
+  source:
+    id: SpecialServiceId
+    path: ''
+    startLine: 1955
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the special service identifier.\n"
+  example: []
+  syntax:
+    content: SpecialServiceCodes SpecialServiceId { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+      description: The special service identifier.
+    content.vb: Property SpecialServiceId As SpecialServiceCodes
+  overload: PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters
+  id: InputParameters
+  parent: PitneyBowes.Developer.ShippingApi.ISpecialServices
+  langs:
+  - csharp
+  - vb
+  name: InputParameters
+  nameWithType: ISpecialServices.InputParameters
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters
+  type: Property
+  source:
+    id: InputParameters
+    path: ''
+    startLine: 1960
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the input parameters.\n"
+  example: []
+  syntax:
+    content: IEnumerable<IParameter> InputParameters { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter}
+      description: The input parameters.
+    content.vb: Property InputParameters As IEnumerable(Of IParameter)
+  overload: PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  id: AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  parent: PitneyBowes.Developer.ShippingApi.ISpecialServices
+  langs:
+  - csharp
+  - vb
+  name: AddParameter(IParameter)
+  nameWithType: ISpecialServices.AddParameter(IParameter)
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  type: Method
+  source:
+    id: AddParameter
+    path: ''
+    startLine: 1965
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nAdds the parameter.\n"
+  example: []
+  syntax:
+    content: void AddParameter(IParameter p)
+    parameters:
+    - id: p
+      type: PitneyBowes.Developer.ShippingApi.IParameter
+      description: Parameter.
+    content.vb: Sub AddParameter(p As IParameter)
+  overload: PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter*
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.Value
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISpecialServices.Value
+  id: Value
+  parent: PitneyBowes.Developer.ShippingApi.ISpecialServices
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ISpecialServices.Value
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.Value
+  type: Property
+  source:
+    id: Value
+    path: ''
+    startLine: 1970
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the value.\n"
+  example: []
+  syntax:
+    content: decimal Value { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The value.
+    content.vb: Property Value As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.ISpecialServices.Value*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee
+  id: Fee
+  parent: PitneyBowes.Developer.ShippingApi.ISpecialServices
+  langs:
+  - csharp
+  - vb
+  name: Fee
+  nameWithType: ISpecialServices.Fee
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee
+  type: Property
+  source:
+    id: Fee
+    path: ''
+    startLine: 1975
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the fee.\n"
+  example: []
+  syntax:
+    content: decimal Fee { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The fee.
+    content.vb: Property Fee As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId
+  isExternal: false
+  name: SpecialServiceId
+  nameWithType: ISpecialServices.SpecialServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.SpecialServiceId
+- uid: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+  commentId: T:PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: SpecialServiceCodes
+  nameWithType: SpecialServiceCodes
+  fullName: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters
+  isExternal: false
+  name: InputParameters
+  nameWithType: ISpecialServices.InputParameters
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.InputParameters
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter}'
+  definition: IEnumerable`1
+  name: IEnumerable<IParameter>
+  nameWithType: IEnumerable<IParameter>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IParameter>
+  nameWithType.vb: IEnumerable(Of IParameter)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IParameter)
+  name.vb: IEnumerable(Of IParameter)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IParameter
+    name: IParameter
+    nameWithType: IParameter
+    fullName: PitneyBowes.Developer.ShippingApi.IParameter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IParameter
+    name: IParameter
+    nameWithType: IParameter
+    fullName: PitneyBowes.Developer.ShippingApi.IParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter
+  isExternal: false
+  name: AddParameter
+  nameWithType: ISpecialServices.AddParameter
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.AddParameter
+- uid: PitneyBowes.Developer.ShippingApi.IParameter
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParameter
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParameter
+  nameWithType: IParameter
+  fullName: PitneyBowes.Developer.ShippingApi.IParameter
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.Value*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ISpecialServices.Value
+  isExternal: false
+  name: Value
+  nameWithType: ISpecialServices.Value
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.Value
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee
+  isExternal: false
+  name: Fee
+  nameWithType: ISpecialServices.Fee
+  fullName: PitneyBowes.Developer.ShippingApi.ISpecialServices.Fee

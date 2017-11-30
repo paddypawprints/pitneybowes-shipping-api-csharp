@@ -1,0 +1,1046 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  id: MerchantMethods
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  children:
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials``1(PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount``1(PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register``1(PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render``1(PitneyBowes.Developer.ShippingApi.Method.RenderRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup``1(PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  langs:
+  - csharp
+  - vb
+  name: MerchantMethods
+  nameWithType: MerchantMethods
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  type: Class
+  source:
+    id: MerchantMethods
+    path: ''
+    startLine: 4197
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static class MerchantMethods
+    content.vb: Public Module MerchantMethods
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render``1(PitneyBowes.Developer.ShippingApi.Method.RenderRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render``1(PitneyBowes.Developer.ShippingApi.Method.RenderRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: Render``1(PitneyBowes.Developer.ShippingApi.Method.RenderRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: Render<RenderResponse>(RenderRequest, ISession)
+  nameWithType: MerchantMethods.Render<RenderResponse>(RenderRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render<RenderResponse>(PitneyBowes.Developer.ShippingApi.Method.RenderRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: Render
+    path: ''
+    startLine: 4199
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<RenderResponse>> Render<RenderResponse>(RenderRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.RenderRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: RenderResponse
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{RenderResponse}}}
+    content.vb: Public Shared Function Render(Of RenderResponse)(request As RenderRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of RenderResponse))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render*
+  nameWithType.vb: MerchantMethods.Render(Of RenderResponse)(RenderRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render(Of RenderResponse)(PitneyBowes.Developer.ShippingApi.Method.RenderRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: Render(Of RenderResponse)(RenderRequest, ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup``1(PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup``1(PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: Signup``1(PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: Signup<IMerchant>(MerchantSignupRequest, ISession)
+  nameWithType: MerchantMethods.Signup<IMerchant>(MerchantSignupRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup<IMerchant>(PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: Signup
+    path: ''
+    startLine: 4203
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<IMerchant>> Signup<IMerchant>(MerchantSignupRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: IMerchant
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IMerchant}}}
+    content.vb: Public Shared Function Signup(Of IMerchant)(request As MerchantSignupRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of IMerchant))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup*
+  nameWithType.vb: MerchantMethods.Signup(Of IMerchant)(MerchantSignupRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup(Of IMerchant)(PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: Signup(Of IMerchant)(MerchantSignupRequest, ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials``1(PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials``1(PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: Credentials``1(PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: Credentials<IMerchant>(MerchantCredentialsRequest, ISession)
+  nameWithType: MerchantMethods.Credentials<IMerchant>(MerchantCredentialsRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials<IMerchant>(PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: Credentials
+    path: ''
+    startLine: 4208
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<IMerchant>> Credentials<IMerchant>(MerchantCredentialsRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: IMerchant
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IMerchant}}}
+    content.vb: Public Shared Function Credentials(Of IMerchant)(request As MerchantCredentialsRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of IMerchant))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials*
+  nameWithType.vb: MerchantMethods.Credentials(Of IMerchant)(MerchantCredentialsRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials(Of IMerchant)(PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: Credentials(Of IMerchant)(MerchantCredentialsRequest, ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register``1(PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register``1(PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: Register``1(PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: Register<IMerchant>(MerchantRegisterRequest, ISession)
+  nameWithType: MerchantMethods.Register<IMerchant>(MerchantRegisterRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register<IMerchant>(PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: Register
+    path: ''
+    startLine: 4212
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<IMerchant>> Register<IMerchant>(MerchantRegisterRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: IMerchant
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IMerchant}}}
+    content.vb: Public Shared Function Register(Of IMerchant)(request As MerchantRegisterRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of IMerchant))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register*
+  nameWithType.vb: MerchantMethods.Register(Of IMerchant)(MerchantRegisterRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register(Of IMerchant)(PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: Register(Of IMerchant)(MerchantRegisterRequest, ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: AutoRefillRule``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: AutoRefillRule<IAutoRefill>(MerchantAutoRefillRuleRequest, ISession)
+  nameWithType: MerchantMethods.AutoRefillRule<IAutoRefill>(MerchantAutoRefillRuleRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule<IAutoRefill>(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: AutoRefillRule
+    path: ''
+    startLine: 4217
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<IAutoRefill>> AutoRefillRule<IAutoRefill>(MerchantAutoRefillRuleRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: IAutoRefill
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IAutoRefill}}}
+    content.vb: Public Shared Function AutoRefillRule(Of IAutoRefill)(request As MerchantAutoRefillRuleRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of IAutoRefill))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule*
+  nameWithType.vb: MerchantMethods.AutoRefillRule(Of IAutoRefill)(MerchantAutoRefillRuleRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule(Of IAutoRefill)(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: AutoRefillRule(Of IAutoRefill)(MerchantAutoRefillRuleRequest, ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: UpdateAutoRefill<IAutoRefill>(MerchantAutoRefillRuleRequest, ISession)
+  nameWithType: MerchantMethods.UpdateAutoRefill<IAutoRefill>(MerchantAutoRefillRuleRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill<IAutoRefill>(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: UpdateAutoRefill
+    path: ''
+    startLine: 4222
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<IAutoRefill>> UpdateAutoRefill<IAutoRefill>(MerchantAutoRefillRuleRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: IAutoRefill
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IAutoRefill}}}
+    content.vb: Public Shared Function UpdateAutoRefill(Of IAutoRefill)(request As MerchantAutoRefillRuleRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of IAutoRefill))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill*
+  nameWithType.vb: MerchantMethods.UpdateAutoRefill(Of IAutoRefill)(MerchantAutoRefillRuleRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill(Of IAutoRefill)(PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: UpdateAutoRefill(Of IAutoRefill)(MerchantAutoRefillRuleRequest, ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: UpdateAutoRefill``1(PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: UpdateAutoRefill<AccountBalanceResponse>(AccountBalanceRequest, ISession)
+  nameWithType: MerchantMethods.UpdateAutoRefill<AccountBalanceResponse>(AccountBalanceRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill<AccountBalanceResponse>(PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: UpdateAutoRefill
+    path: ''
+    startLine: 4226
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<AccountBalanceResponse>> UpdateAutoRefill<AccountBalanceResponse>(AccountBalanceRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: AccountBalanceResponse
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{AccountBalanceResponse}}}
+    content.vb: Public Shared Function UpdateAutoRefill(Of AccountBalanceResponse)(request As AccountBalanceRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of AccountBalanceResponse))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill*
+  nameWithType.vb: MerchantMethods.UpdateAutoRefill(Of AccountBalanceResponse)(AccountBalanceRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill(Of AccountBalanceResponse)(PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: UpdateAutoRefill(Of AccountBalanceResponse)(AccountBalanceRequest, ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount``1(PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount``1(PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  id: MerchantDeactivateAccount``1(PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+  langs:
+  - csharp
+  - vb
+  name: MerchantDeactivateAccount<IMerchant>(MerchantDeactivateRequest, ISession)
+  nameWithType: MerchantMethods.MerchantDeactivateAccount<IMerchant>(MerchantDeactivateRequest, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount<IMerchant>(PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: MerchantDeactivateAccount
+    path: ''
+    startLine: 4230
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public static Task<ShippingApiResponse<IMerchant>> MerchantDeactivateAccount<IMerchant>(MerchantDeactivateRequest request, ISession session = null)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    typeParameters:
+    - id: IMerchant
+    return:
+      type: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IMerchant}}}
+    content.vb: Public Shared Function MerchantDeactivateAccount(Of IMerchant)(request As MerchantDeactivateRequest, session As ISession = Nothing) As Task(Of ShippingApiResponse(Of IMerchant))
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount*
+  nameWithType.vb: MerchantMethods.MerchantDeactivateAccount(Of IMerchant)(MerchantDeactivateRequest, ISession)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount(Of IMerchant)(PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest, PitneyBowes.Developer.ShippingApi.ISession)
+  name.vb: MerchantDeactivateAccount(Of IMerchant)(MerchantDeactivateRequest, ISession)
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Method
+  commentId: N:PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Method
+  nameWithType: PitneyBowes.Developer.ShippingApi.Method
+  fullName: PitneyBowes.Developer.ShippingApi.Method
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render
+  isExternal: false
+  name: Render
+  nameWithType: MerchantMethods.Render
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Render
+- uid: PitneyBowes.Developer.ShippingApi.Method.RenderRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.RenderRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: RenderRequest
+  nameWithType: RenderRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.RenderRequest
+- uid: PitneyBowes.Developer.ShippingApi.ISession
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISession
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ISession
+  nameWithType: ISession
+  fullName: PitneyBowes.Developer.ShippingApi.ISession
+- uid: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{RenderResponse}}}
+  commentId: '!:Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{``0}}'
+  definition: Task`1
+  name: Task<ShippingApiResponse<RenderResponse>>
+  nameWithType: Task<ShippingApiResponse<RenderResponse>>
+  fullName: Task<PitneyBowes.Developer.ShippingApi.ShippingApiResponse<RenderResponse>>
+  nameWithType.vb: Task(Of ShippingApiResponse(Of RenderResponse))
+  fullName.vb: Task(Of PitneyBowes.Developer.ShippingApi.ShippingApiResponse(Of RenderResponse))
+  name.vb: Task(Of ShippingApiResponse(Of RenderResponse))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: RenderResponse
+    nameWithType: RenderResponse
+    fullName: RenderResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: RenderResponse
+    nameWithType: RenderResponse
+    fullName: RenderResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup
+  isExternal: false
+  name: Signup
+  nameWithType: MerchantMethods.Signup
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Signup
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: MerchantSignupRequest
+  nameWithType: MerchantSignupRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest
+- uid: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IMerchant}}}
+  commentId: '!:Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{``0}}'
+  definition: Task`1
+  name: Task<ShippingApiResponse<IMerchant>>
+  nameWithType: Task<ShippingApiResponse<IMerchant>>
+  fullName: Task<PitneyBowes.Developer.ShippingApi.ShippingApiResponse<IMerchant>>
+  nameWithType.vb: Task(Of ShippingApiResponse(Of IMerchant))
+  fullName.vb: Task(Of PitneyBowes.Developer.ShippingApi.ShippingApiResponse(Of IMerchant))
+  name.vb: Task(Of ShippingApiResponse(Of IMerchant))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: IMerchant
+    nameWithType: IMerchant
+    fullName: IMerchant
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: IMerchant
+    nameWithType: IMerchant
+    fullName: IMerchant
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials
+  isExternal: false
+  name: Credentials
+  nameWithType: MerchantMethods.Credentials
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Credentials
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: MerchantCredentialsRequest
+  nameWithType: MerchantCredentialsRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register
+  isExternal: false
+  name: Register
+  nameWithType: MerchantMethods.Register
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.Register
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: MerchantRegisterRequest
+  nameWithType: MerchantRegisterRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule
+  isExternal: false
+  name: AutoRefillRule
+  nameWithType: MerchantMethods.AutoRefillRule
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.AutoRefillRule
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: MerchantAutoRefillRuleRequest
+  nameWithType: MerchantAutoRefillRuleRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest
+- uid: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{IAutoRefill}}}
+  commentId: '!:Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{``0}}'
+  definition: Task`1
+  name: Task<ShippingApiResponse<IAutoRefill>>
+  nameWithType: Task<ShippingApiResponse<IAutoRefill>>
+  fullName: Task<PitneyBowes.Developer.ShippingApi.ShippingApiResponse<IAutoRefill>>
+  nameWithType.vb: Task(Of ShippingApiResponse(Of IAutoRefill))
+  fullName.vb: Task(Of PitneyBowes.Developer.ShippingApi.ShippingApiResponse(Of IAutoRefill))
+  name.vb: Task(Of ShippingApiResponse(Of IAutoRefill))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: IAutoRefill
+    nameWithType: IAutoRefill
+    fullName: IAutoRefill
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: IAutoRefill
+    nameWithType: IAutoRefill
+    fullName: IAutoRefill
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill
+  isExternal: false
+  name: UpdateAutoRefill
+  nameWithType: MerchantMethods.UpdateAutoRefill
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.UpdateAutoRefill
+- uid: PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: AccountBalanceRequest
+  nameWithType: AccountBalanceRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest
+- uid: Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{{AccountBalanceResponse}}}
+  commentId: '!:Task{PitneyBowes.Developer.ShippingApi.ShippingApiResponse{``0}}'
+  definition: Task`1
+  name: Task<ShippingApiResponse<AccountBalanceResponse>>
+  nameWithType: Task<ShippingApiResponse<AccountBalanceResponse>>
+  fullName: Task<PitneyBowes.Developer.ShippingApi.ShippingApiResponse<AccountBalanceResponse>>
+  nameWithType.vb: Task(Of ShippingApiResponse(Of AccountBalanceResponse))
+  fullName.vb: Task(Of PitneyBowes.Developer.ShippingApi.ShippingApiResponse(Of AccountBalanceResponse))
+  name.vb: Task(Of ShippingApiResponse(Of AccountBalanceResponse))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: AccountBalanceResponse
+    nameWithType: AccountBalanceResponse
+    fullName: AccountBalanceResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse
+    nameWithType: ShippingApiResponse
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: AccountBalanceResponse
+    nameWithType: AccountBalanceResponse
+    fullName: AccountBalanceResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount
+  isExternal: false
+  name: MerchantDeactivateAccount
+  nameWithType: MerchantMethods.MerchantDeactivateAccount
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods.MerchantDeactivateAccount
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: MerchantDeactivateRequest
+  nameWithType: MerchantDeactivateRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest

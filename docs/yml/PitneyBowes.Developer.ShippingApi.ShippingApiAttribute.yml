@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  id: ShippingApiAttribute
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.#ctor(System.String)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  - PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  langs:
+  - csharp
+  - vb
+  name: ShippingApiAttribute
+  nameWithType: ShippingApiAttribute
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  type: Class
+  source:
+    id: ShippingApiAttribute
+    path: ''
+    startLine: 11401
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: 'public class ShippingApiAttribute : Attribute'
+    content.vb: >-
+      Public Class ShippingApiAttribute
+          Inherits Attribute
+  inheritance:
+  - Attribute
+  derivedClasses:
+  - PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  - PitneyBowes.Developer.ShippingApi.ShippingApiQueryAttribute
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  id: Name
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ShippingApiAttribute.Name
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 11403
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  id: Format
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: ShippingApiAttribute.Format
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  type: Property
+  source:
+    id: Format
+    path: ''
+    startLine: 11404
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public string Format { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Format As String
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.#ctor(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  langs:
+  - csharp
+  - vb
+  name: ShippingApiAttribute(String)
+  nameWithType: ShippingApiAttribute.ShippingApiAttribute(String)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.ShippingApiAttribute(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11405
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingApiAttribute(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(name As String)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: Attribute
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: Attribute
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  isExternal: false
+  name: Name
+  nameWithType: ShippingApiAttribute.Name
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  isExternal: false
+  name: Format
+  nameWithType: ShippingApiAttribute.Format
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.#ctor*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.#ctor
+  isExternal: false
+  name: ShippingApiAttribute
+  nameWithType: ShippingApiAttribute.ShippingApiAttribute
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.ShippingApiAttribute

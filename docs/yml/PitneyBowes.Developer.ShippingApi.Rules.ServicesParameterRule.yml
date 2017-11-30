@@ -1,0 +1,660 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  id: ServicesParameterRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  children:
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required
+  langs:
+  - csharp
+  - vb
+  name: ServicesParameterRule
+  nameWithType: ServicesParameterRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  type: Class
+  source:
+    id: ServicesParameterRule
+    path: ''
+    startLine: 10501
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public class ServicesParameterRule
+    content.vb: Public Class ServicesParameterRule
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name
+  id: Name
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ServicesParameterRule.Name
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 10504
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName
+  id: BrandedName
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: BrandedName
+  nameWithType: ServicesParameterRule.BrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName
+  type: Property
+  source:
+    id: BrandedName
+    path: ''
+    startLine: 10506
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string BrandedName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BrandedName As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required
+  id: Required
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: ServicesParameterRule.Required
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required
+  type: Property
+  source:
+    id: Required
+    path: ''
+    startLine: 10508
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public Boolean Required { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property Required As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue
+  id: MinValue
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: ServicesParameterRule.MinValue
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue
+  type: Property
+  source:
+    id: MinValue
+    path: ''
+    startLine: 10510
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public Decimal MinValue { get; set; }
+    parameters: []
+    return:
+      type: Decimal
+    content.vb: Public Property MinValue As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue
+  id: MaxValue
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: ServicesParameterRule.MaxValue
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue
+  type: Property
+  source:
+    id: MaxValue
+    path: ''
+    startLine: 10512
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public Decimal MaxValue { get; set; }
+    parameters: []
+    return:
+      type: Decimal
+    content.vb: Public Property MaxValue As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue
+  id: FreeValue
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: FreeValue
+  nameWithType: ServicesParameterRule.FreeValue
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue
+  type: Property
+  source:
+    id: FreeValue
+    path: ''
+    startLine: 10514
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public Decimal FreeValue { get; set; }
+    parameters: []
+    return:
+      type: Decimal
+    content.vb: Public Property FreeValue As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format
+  id: Format
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: ServicesParameterRule.Format
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format
+  type: Property
+  source:
+    id: Format
+    path: ''
+    startLine: 10516
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string Format { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Format As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description
+  id: Description
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ServicesParameterRule.Description
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description
+  type: Property
+  source:
+    id: Description
+    path: ''
+    startLine: 10518
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  commentId: N:PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  nameWithType: PitneyBowes.Developer.ShippingApi.Rules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name
+  isExternal: false
+  name: Name
+  nameWithType: ServicesParameterRule.Name
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName
+  isExternal: false
+  name: BrandedName
+  nameWithType: ServicesParameterRule.BrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.BrandedName
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required
+  isExternal: false
+  name: Required
+  nameWithType: ServicesParameterRule.Required
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Required
+- uid: Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: Boolean
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue
+  isExternal: false
+  name: MinValue
+  nameWithType: ServicesParameterRule.MinValue
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MinValue
+- uid: Decimal
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: Decimal
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue
+  isExternal: false
+  name: MaxValue
+  nameWithType: ServicesParameterRule.MaxValue
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.MaxValue
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue
+  isExternal: false
+  name: FreeValue
+  nameWithType: ServicesParameterRule.FreeValue
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.FreeValue
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format
+  isExternal: false
+  name: Format
+  nameWithType: ServicesParameterRule.Format
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Format
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description
+  isExternal: false
+  name: Description
+  nameWithType: ServicesParameterRule.Description
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule.Description

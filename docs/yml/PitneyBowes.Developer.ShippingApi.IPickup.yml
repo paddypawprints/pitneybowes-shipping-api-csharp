@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IPickup
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPickup
+  id: IPickup
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  - PitneyBowes.Developer.ShippingApi.IPickup.Carrier
+  - PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation
+  - PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress
+  - PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber
+  - PitneyBowes.Developer.ShippingApi.IPickup.PickupDate
+  - PitneyBowes.Developer.ShippingApi.IPickup.PickupId
+  - PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary
+  - PitneyBowes.Developer.ShippingApi.IPickup.Reference
+  - PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions
+  - PitneyBowes.Developer.ShippingApi.IPickup.TransactionId
+  langs:
+  - csharp
+  - vb
+  name: IPickup
+  nameWithType: IPickup
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup
+  type: Interface
+  source:
+    id: IPickup
+    path: ''
+    startLine: 1672
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface IPickup
+    content.vb: Public Interface IPickup
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.TransactionId
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.TransactionId
+  id: TransactionId
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: TransactionId
+  nameWithType: IPickup.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.TransactionId
+  type: Property
+  source:
+    id: TransactionId
+    path: ''
+    startLine: 1678
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nUnique transaction identifier.\n"
+  example: []
+  syntax:
+    content: string TransactionId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The transaction identifier.
+    content.vb: Property TransactionId As String
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.TransactionId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress
+  id: PickupAddress
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: PickupAddress
+  nameWithType: IPickup.PickupAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress
+  type: Property
+  source:
+    id: PickupAddress
+    path: ''
+    startLine: 1683
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the pickup address. Required.\n"
+  example: []
+  syntax:
+    content: IAddress PickupAddress { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+      description: The pickup address.
+    content.vb: Property PickupAddress As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.Carrier
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.Carrier
+  id: Carrier
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: Carrier
+  nameWithType: IPickup.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.Carrier
+  type: Property
+  source:
+    id: Carrier
+    path: ''
+    startLine: 1688
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the carrier.\n"
+  example: []
+  syntax:
+    content: Carrier Carrier { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Carrier
+      description: The carrier. Only USPS supported.
+    content.vb: Property Carrier As Carrier
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.Carrier*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary
+  id: PickupSummary
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: PickupSummary
+  nameWithType: IPickup.PickupSummary
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary
+  type: Property
+  source:
+    id: PickupSummary
+    path: ''
+    startLine: 1693
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe parcel descriptions. Each object in the array describes a group of parcels.\n"
+  example: []
+  syntax:
+    content: IEnumerable<IPickupCount> PickupSummary { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IPickupCount}
+      description: The pickup summary.
+    content.vb: Property PickupSummary As IEnumerable(Of IPickupCount)
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  id: AddPickupCount(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: AddPickupCount(IPickupCount)
+  nameWithType: IPickup.AddPickupCount(IPickupCount)
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  type: Method
+  source:
+    id: AddPickupCount
+    path: ''
+    startLine: 1694
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: void AddPickupCount(IPickupCount p)
+    parameters:
+    - id: p
+      type: PitneyBowes.Developer.ShippingApi.IPickupCount
+    content.vb: Sub AddPickupCount(p As IPickupCount)
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount*
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.Reference
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.Reference
+  id: Reference
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: IPickup.Reference
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.Reference
+  type: Property
+  source:
+    id: Reference
+    path: ''
+    startLine: 1699
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the reference.\n"
+  example: []
+  syntax:
+    content: string Reference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The reference.
+    content.vb: Property Reference As String
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.Reference*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation
+  id: PackageLocation
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: PackageLocation
+  nameWithType: IPickup.PackageLocation
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation
+  type: Property
+  source:
+    id: PackageLocation
+    path: ''
+    startLine: 1704
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the package location.\n"
+  example: []
+  syntax:
+    content: PackageLocation PackageLocation { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+      description: The package location.
+    content.vb: Property PackageLocation As PackageLocation
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions
+  id: SpecialInstructions
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: SpecialInstructions
+  nameWithType: IPickup.SpecialInstructions
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions
+  type: Property
+  source:
+    id: SpecialInstructions
+    path: ''
+    startLine: 1709
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the special instructions. Required if PackageLocation = Other\n"
+  example: []
+  syntax:
+    content: string SpecialInstructions { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The special instructions.
+    content.vb: Property SpecialInstructions As String
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupDate
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.PickupDate
+  id: PickupDate
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: PickupDate
+  nameWithType: IPickup.PickupDate
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupDate
+  type: Property
+  source:
+    id: PickupDate
+    path: ''
+    startLine: 1714
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the pickup date. Response only.\n"
+  example: []
+  syntax:
+    content: DateTime PickupDate { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+      description: The pickup date.
+    content.vb: Property PickupDate As DateTime
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.PickupDate*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber
+  id: PickupConfirmationNumber
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: PickupConfirmationNumber
+  nameWithType: IPickup.PickupConfirmationNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber
+  type: Property
+  source:
+    id: PickupConfirmationNumber
+    path: ''
+    startLine: 1719
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the pickup confirmation number. Response only.\n"
+  example: []
+  syntax:
+    content: string PickupConfirmationNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The pickup confirmation number.
+    content.vb: Property PickupConfirmationNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupId
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickup.PickupId
+  id: PickupId
+  parent: PitneyBowes.Developer.ShippingApi.IPickup
+  langs:
+  - csharp
+  - vb
+  name: PickupId
+  nameWithType: IPickup.PickupId
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupId
+  type: Property
+  source:
+    id: PickupId
+    path: ''
+    startLine: 1724
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the pickup identifier. Response only.\n"
+  example: []
+  syntax:
+    content: string PickupId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The pickup identifier.
+    content.vb: Property PickupId As String
+  overload: PitneyBowes.Developer.ShippingApi.IPickup.PickupId*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.TransactionId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.TransactionId
+  isExternal: false
+  name: TransactionId
+  nameWithType: IPickup.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.TransactionId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress
+  isExternal: false
+  name: PickupAddress
+  nameWithType: IPickup.PickupAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupAddress
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.Carrier*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.Carrier
+  isExternal: false
+  name: Carrier
+  nameWithType: IPickup.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.Carrier
+- uid: PitneyBowes.Developer.ShippingApi.Carrier
+  commentId: T:PitneyBowes.Developer.ShippingApi.Carrier
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Carrier
+  nameWithType: Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Carrier
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary
+  isExternal: false
+  name: PickupSummary
+  nameWithType: IPickup.PickupSummary
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupSummary
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IPickupCount}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IPickupCount}'
+  definition: IEnumerable`1
+  name: IEnumerable<IPickupCount>
+  nameWithType: IEnumerable<IPickupCount>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IPickupCount>
+  nameWithType.vb: IEnumerable(Of IPickupCount)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IPickupCount)
+  name.vb: IEnumerable(Of IPickupCount)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IPickupCount
+    name: IPickupCount
+    nameWithType: IPickupCount
+    fullName: PitneyBowes.Developer.ShippingApi.IPickupCount
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IPickupCount
+    name: IPickupCount
+    nameWithType: IPickupCount
+    fullName: PitneyBowes.Developer.ShippingApi.IPickupCount
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount
+  isExternal: false
+  name: AddPickupCount
+  nameWithType: IPickup.AddPickupCount
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.AddPickupCount
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPickupCount
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IPickupCount
+  nameWithType: IPickupCount
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.Reference*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.Reference
+  isExternal: false
+  name: Reference
+  nameWithType: IPickup.Reference
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.Reference
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation
+  isExternal: false
+  name: PackageLocation
+  nameWithType: IPickup.PackageLocation
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PackageLocation
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation
+  commentId: T:PitneyBowes.Developer.ShippingApi.PackageLocation
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PackageLocation
+  nameWithType: PackageLocation
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions
+  isExternal: false
+  name: SpecialInstructions
+  nameWithType: IPickup.SpecialInstructions
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.SpecialInstructions
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupDate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.PickupDate
+  isExternal: false
+  name: PickupDate
+  nameWithType: IPickup.PickupDate
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupDate
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber
+  isExternal: false
+  name: PickupConfirmationNumber
+  nameWithType: IPickup.PickupConfirmationNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupConfirmationNumber
+- uid: PitneyBowes.Developer.ShippingApi.IPickup.PickupId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickup.PickupId
+  isExternal: false
+  name: PickupId
+  nameWithType: IPickup.PickupId
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup.PickupId

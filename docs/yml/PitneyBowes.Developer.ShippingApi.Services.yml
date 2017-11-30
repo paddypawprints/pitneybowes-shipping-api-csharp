@@ -1,0 +1,511 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Services
+  commentId: T:PitneyBowes.Developer.ShippingApi.Services
+  id: Services
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.Services.EM
+  - PitneyBowes.Developer.ShippingApi.Services.EMI
+  - PitneyBowes.Developer.ShippingApi.Services.FCM
+  - PitneyBowes.Developer.ShippingApi.Services.FCMI
+  - PitneyBowes.Developer.ShippingApi.Services.FCPIS
+  - PitneyBowes.Developer.ShippingApi.Services.LIB
+  - PitneyBowes.Developer.ShippingApi.Services.MEDIA
+  - PitneyBowes.Developer.ShippingApi.Services.MIX
+  - PitneyBowes.Developer.ShippingApi.Services.MKTMAIL
+  - PitneyBowes.Developer.ShippingApi.Services.PER
+  - PitneyBowes.Developer.ShippingApi.Services.PM
+  - PitneyBowes.Developer.ShippingApi.Services.PMI
+  - PitneyBowes.Developer.ShippingApi.Services.PMOD
+  - PitneyBowes.Developer.ShippingApi.Services.PRCLSEL
+  - PitneyBowes.Developer.ShippingApi.Services.STDPOST
+  langs:
+  - csharp
+  - vb
+  name: Services
+  nameWithType: Services
+  fullName: PitneyBowes.Developer.ShippingApi.Services
+  type: Enum
+  source:
+    id: Services
+    path: ''
+    startLine: 350
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nCarrier Services.\n"
+  example: []
+  syntax:
+    content: public enum Services
+    content.vb: Public Enum Services
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.Services.FCM
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.FCM
+  id: FCM
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: FCM
+  nameWithType: Services.FCM
+  fullName: PitneyBowes.Developer.ShippingApi.Services.FCM
+  type: Field
+  source:
+    id: FCM
+    path: ''
+    startLine: 355
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nUSPS First Class Mail\n"
+  example: []
+  syntax:
+    content: FCM = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.PM
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.PM
+  id: PM
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: PM
+  nameWithType: Services.PM
+  fullName: PitneyBowes.Developer.ShippingApi.Services.PM
+  type: Field
+  source:
+    id: PM
+    path: ''
+    startLine: 359
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPriority Mail\n"
+  example: []
+  syntax:
+    content: PM = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.EM
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.EM
+  id: EM
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: EM
+  nameWithType: Services.EM
+  fullName: PitneyBowes.Developer.ShippingApi.Services.EM
+  type: Field
+  source:
+    id: EM
+    path: ''
+    startLine: 363
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPriority Mail Express \n"
+  example: []
+  syntax:
+    content: EM = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.STDPOST
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.STDPOST
+  id: STDPOST
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: STDPOST
+  nameWithType: Services.STDPOST
+  fullName: PitneyBowes.Developer.ShippingApi.Services.STDPOST
+  type: Field
+  source:
+    id: STDPOST
+    path: ''
+    startLine: 367
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nStandard Post\n"
+  example: []
+  syntax:
+    content: STDPOST = 3
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.PRCLSEL
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.PRCLSEL
+  id: PRCLSEL
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: PRCLSEL
+  nameWithType: Services.PRCLSEL
+  fullName: PitneyBowes.Developer.ShippingApi.Services.PRCLSEL
+  type: Field
+  source:
+    id: PRCLSEL
+    path: ''
+    startLine: 371
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nParcel Select\n"
+  example: []
+  syntax:
+    content: PRCLSEL = 4
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.MEDIA
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.MEDIA
+  id: MEDIA
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: MEDIA
+  nameWithType: Services.MEDIA
+  fullName: PitneyBowes.Developer.ShippingApi.Services.MEDIA
+  type: Field
+  source:
+    id: MEDIA
+    path: ''
+    startLine: 375
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nMedia Mail\n"
+  example: []
+  syntax:
+    content: MEDIA = 5
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.LIB
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.LIB
+  id: LIB
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: LIB
+  nameWithType: Services.LIB
+  fullName: PitneyBowes.Developer.ShippingApi.Services.LIB
+  type: Field
+  source:
+    id: LIB
+    path: ''
+    startLine: 379
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nLibrary Mail\n"
+  example: []
+  syntax:
+    content: LIB = 6
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.FCMI
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.FCMI
+  id: FCMI
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: FCMI
+  nameWithType: Services.FCMI
+  fullName: PitneyBowes.Developer.ShippingApi.Services.FCMI
+  type: Field
+  source:
+    id: FCMI
+    path: ''
+    startLine: 383
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nFirst Class International\n"
+  example: []
+  syntax:
+    content: FCMI = 7
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.FCPIS
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.FCPIS
+  id: FCPIS
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: FCPIS
+  nameWithType: Services.FCPIS
+  fullName: PitneyBowes.Developer.ShippingApi.Services.FCPIS
+  type: Field
+  source:
+    id: FCPIS
+    path: ''
+    startLine: 387
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nFirst Class Package International Service\n"
+  example: []
+  syntax:
+    content: FCPIS = 8
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.EMI
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.EMI
+  id: EMI
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: EMI
+  nameWithType: Services.EMI
+  fullName: PitneyBowes.Developer.ShippingApi.Services.EMI
+  type: Field
+  source:
+    id: EMI
+    path: ''
+    startLine: 391
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPriority Mail Express International\n"
+  example: []
+  syntax:
+    content: EMI = 9
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.PMI
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.PMI
+  id: PMI
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: PMI
+  nameWithType: Services.PMI
+  fullName: PitneyBowes.Developer.ShippingApi.Services.PMI
+  type: Field
+  source:
+    id: PMI
+    path: ''
+    startLine: 395
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPriority Mail International\n"
+  example: []
+  syntax:
+    content: PMI = 10
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.MKTMAIL
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.MKTMAIL
+  id: MKTMAIL
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: MKTMAIL
+  nameWithType: Services.MKTMAIL
+  fullName: PitneyBowes.Developer.ShippingApi.Services.MKTMAIL
+  type: Field
+  source:
+    id: MKTMAIL
+    path: ''
+    startLine: 399
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPMOD: Marketing Mail\n"
+  example: []
+  syntax:
+    content: MKTMAIL = 11
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.PER
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.PER
+  id: PER
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: PER
+  nameWithType: Services.PER
+  fullName: PitneyBowes.Developer.ShippingApi.Services.PER
+  type: Field
+  source:
+    id: PER
+    path: ''
+    startLine: 403
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPMOD: Periodicals\n"
+  example: []
+  syntax:
+    content: PER = 12
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.MIX
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.MIX
+  id: MIX
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: MIX
+  nameWithType: Services.MIX
+  fullName: PitneyBowes.Developer.ShippingApi.Services.MIX
+  type: Field
+  source:
+    id: MIX
+    path: ''
+    startLine: 407
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPMOD: Only very specific combinations are allowed. The shipper is responsible for following USPS rules. PB does not provide validation.\n"
+  example: []
+  syntax:
+    content: MIX = 13
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Services.PMOD
+  commentId: F:PitneyBowes.Developer.ShippingApi.Services.PMOD
+  id: PMOD
+  parent: PitneyBowes.Developer.ShippingApi.Services
+  langs:
+  - csharp
+  - vb
+  name: PMOD
+  nameWithType: Services.PMOD
+  fullName: PitneyBowes.Developer.ShippingApi.Services.PMOD
+  type: Field
+  source:
+    id: PMOD
+    path: ''
+    startLine: 411
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPriority Mail Open and Distribute\n"
+  example: []
+  syntax:
+    content: PMOD = 14
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Services
+  commentId: T:PitneyBowes.Developer.ShippingApi.Services
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Services
+  nameWithType: Services
+  fullName: PitneyBowes.Developer.ShippingApi.Services

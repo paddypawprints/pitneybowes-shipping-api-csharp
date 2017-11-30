@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  commentId: T:PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  id: SBRPrintStatus
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.SBRPrintStatus.NULL
+  - PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRCharged
+  - PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRPrinted
+  langs:
+  - csharp
+  - vb
+  name: SBRPrintStatus
+  nameWithType: SBRPrintStatus
+  fullName: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  type: Enum
+  source:
+    id: SBRPrintStatus
+    path: ''
+    startLine: 331
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nScan based return package status.\n"
+  example: []
+  syntax:
+    content: public enum SBRPrintStatus
+    content.vb: Public Enum SBRPrintStatus
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRPrinted
+  commentId: F:PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRPrinted
+  id: SBRPrinted
+  parent: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  langs:
+  - csharp
+  - vb
+  name: SBRPrinted
+  nameWithType: SBRPrintStatus.SBRPrinted
+  fullName: PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRPrinted
+  type: Field
+  source:
+    id: SBRPrinted
+    path: ''
+    startLine: 333
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: SBRPrinted = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRCharged
+  commentId: F:PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRCharged
+  id: SBRCharged
+  parent: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  langs:
+  - csharp
+  - vb
+  name: SBRCharged
+  nameWithType: SBRPrintStatus.SBRCharged
+  fullName: PitneyBowes.Developer.ShippingApi.SBRPrintStatus.SBRCharged
+  type: Field
+  source:
+    id: SBRCharged
+    path: ''
+    startLine: 334
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: SBRCharged = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.SBRPrintStatus.NULL
+  commentId: F:PitneyBowes.Developer.ShippingApi.SBRPrintStatus.NULL
+  id: "NULL"
+  parent: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  langs:
+  - csharp
+  - vb
+  name: "NULL"
+  nameWithType: SBRPrintStatus.NULL
+  fullName: PitneyBowes.Developer.ShippingApi.SBRPrintStatus.NULL
+  type: Field
+  source:
+    id: "NULL"
+    path: ''
+    startLine: 335
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: NULL = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  commentId: T:PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: SBRPrintStatus
+  nameWithType: SBRPrintStatus
+  fullName: PitneyBowes.Developer.ShippingApi.SBRPrintStatus

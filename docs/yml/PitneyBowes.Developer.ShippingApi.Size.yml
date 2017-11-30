@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Size
+  commentId: T:PitneyBowes.Developer.ShippingApi.Size
+  id: Size
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.Size.DOC_4X6
+  - PitneyBowes.Developer.ShippingApi.Size.DOC_8X11
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Size
+  fullName: PitneyBowes.Developer.ShippingApi.Size
+  type: Enum
+  source:
+    id: Size
+    path: ''
+    startLine: 341
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nDocument Size.\n"
+  example: []
+  syntax:
+    content: public enum Size
+    content.vb: Public Enum Size
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.Size.DOC_4X6
+  commentId: F:PitneyBowes.Developer.ShippingApi.Size.DOC_4X6
+  id: DOC_4X6
+  parent: PitneyBowes.Developer.ShippingApi.Size
+  langs:
+  - csharp
+  - vb
+  name: DOC_4X6
+  nameWithType: Size.DOC_4X6
+  fullName: PitneyBowes.Developer.ShippingApi.Size.DOC_4X6
+  type: Field
+  source:
+    id: DOC_4X6
+    path: ''
+    startLine: 343
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: DOC_4X6 = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Size
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Size.DOC_8X11
+  commentId: F:PitneyBowes.Developer.ShippingApi.Size.DOC_8X11
+  id: DOC_8X11
+  parent: PitneyBowes.Developer.ShippingApi.Size
+  langs:
+  - csharp
+  - vb
+  name: DOC_8X11
+  nameWithType: Size.DOC_8X11
+  fullName: PitneyBowes.Developer.ShippingApi.Size.DOC_8X11
+  type: Field
+  source:
+    id: DOC_8X11
+    path: ''
+    startLine: 344
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: DOC_8X11 = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Size
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Size
+  commentId: T:PitneyBowes.Developer.ShippingApi.Size
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Size
+  nameWithType: Size
+  fullName: PitneyBowes.Developer.ShippingApi.Size

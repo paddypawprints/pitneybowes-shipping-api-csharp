@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IPage
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPage
+  id: IPage
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IPage.Contents
+  langs:
+  - csharp
+  - vb
+  name: IPage
+  nameWithType: IPage
+  fullName: PitneyBowes.Developer.ShippingApi.IPage
+  type: Interface
+  source:
+    id: IPage
+    path: ''
+    startLine: 1441
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nHolds a page of a document returned by CreateShipment or Manifest.\n"
+  example: []
+  syntax:
+    content: public interface IPage
+    content.vb: Public Interface IPage
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IPage.Contents
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPage.Contents
+  id: Contents
+  parent: PitneyBowes.Developer.ShippingApi.IPage
+  langs:
+  - csharp
+  - vb
+  name: Contents
+  nameWithType: IPage.Contents
+  fullName: PitneyBowes.Developer.ShippingApi.IPage.Contents
+  type: Property
+  source:
+    id: Contents
+    path: ''
+    startLine: 1447
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the contents.\n"
+  example: []
+  syntax:
+    content: string Contents { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The contents.
+    content.vb: Property Contents As String
+  overload: PitneyBowes.Developer.ShippingApi.IPage.Contents*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IPage.Contents*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPage.Contents
+  isExternal: false
+  name: Contents
+  nameWithType: IPage.Contents
+  fullName: PitneyBowes.Developer.ShippingApi.IPage.Contents
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

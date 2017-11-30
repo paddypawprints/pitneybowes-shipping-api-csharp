@@ -1,0 +1,1916 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Session
+  commentId: T:PitneyBowes.Developer.ShippingApi.Session
+  id: Session
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.Session.#ctor
+  - PitneyBowes.Developer.ShippingApi.Session.AddConfigItem
+  - PitneyBowes.Developer.ShippingApi.Session.AuthToken
+  - PitneyBowes.Developer.ShippingApi.Session.Counters
+  - PitneyBowes.Developer.ShippingApi.Session.EndPoint
+  - PitneyBowes.Developer.ShippingApi.Session.GetAPISecret
+  - PitneyBowes.Developer.ShippingApi.Session.GetConfigItem
+  - PitneyBowes.Developer.ShippingApi.Session.LogConfigError
+  - PitneyBowes.Developer.ShippingApi.Session.LogDebug
+  - PitneyBowes.Developer.ShippingApi.Session.LogError
+  - PitneyBowes.Developer.ShippingApi.Session.LogWarning
+  - PitneyBowes.Developer.ShippingApi.Session.Record
+  - PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite
+  - PitneyBowes.Developer.ShippingApi.Session.RecordPath
+  - PitneyBowes.Developer.ShippingApi.Session.Requester
+  - PitneyBowes.Developer.ShippingApi.Session.Retries
+  - PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry
+  - PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions
+  - PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds
+  - PitneyBowes.Developer.ShippingApi.Session.UpdateCounters(System.String,System.Boolean,TimeSpan)
+  - PitneyBowes.Developer.ShippingApi.Session.UserAgent
+  langs:
+  - csharp
+  - vb
+  name: Session
+  nameWithType: Session
+  fullName: PitneyBowes.Developer.ShippingApi.Session
+  type: Class
+  source:
+    id: Session
+    path: ''
+    startLine: 11320
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nVarious environmental items that get injected into most methods. They can be overridden to configure the system.\n"
+  example: []
+  syntax:
+    content: 'public class Session : ISession'
+    content.vb: >-
+      Public Class Session
+          Implements ISession
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Session.#ctor
+  commentId: M:PitneyBowes.Developer.ShippingApi.Session.#ctor
+  id: '#ctor'
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: Session()
+  nameWithType: Session.Session()
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Session()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11324
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Session()
+    content.vb: Public Sub New
+  overload: PitneyBowes.Developer.ShippingApi.Session.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry
+  id: SerializationRegistry
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: SerializationRegistry
+  nameWithType: Session.SerializationRegistry
+  fullName: PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry
+  type: Property
+  source:
+    id: SerializationRegistry
+    path: ''
+    startLine: 11345
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public SerializationRegistry SerializationRegistry { get; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+    content.vb: Public ReadOnly Property SerializationRegistry As SerializationRegistry
+  overload: PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.SerializationRegistry
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PitneyBowes.Developer.ShippingApi.Session.Requester
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.Requester
+  id: Requester
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: Requester
+  nameWithType: Session.Requester
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Requester
+  type: Property
+  source:
+    id: Requester
+    path: ''
+    startLine: 11346
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public IHttpRequest Requester { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IHttpRequest
+    content.vb: Public Property Requester As IHttpRequest
+  overload: PitneyBowes.Developer.ShippingApi.Session.Requester*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.Requester
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.AuthToken
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.AuthToken
+  id: AuthToken
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: AuthToken
+  nameWithType: Session.AuthToken
+  fullName: PitneyBowes.Developer.ShippingApi.Session.AuthToken
+  type: Property
+  source:
+    id: AuthToken
+    path: ''
+    startLine: 11347
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Token AuthToken { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Token
+    content.vb: Public Property AuthToken As Token
+  overload: PitneyBowes.Developer.ShippingApi.Session.AuthToken*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.AuthToken
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.UserAgent
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.UserAgent
+  id: UserAgent
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: UserAgent
+  nameWithType: Session.UserAgent
+  fullName: PitneyBowes.Developer.ShippingApi.Session.UserAgent
+  type: Property
+  source:
+    id: UserAgent
+    path: ''
+    startLine: 11348
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public string UserAgent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserAgent As String
+  overload: PitneyBowes.Developer.ShippingApi.Session.UserAgent*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.UserAgent
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds
+  id: TimeOutMilliseconds
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: TimeOutMilliseconds
+  nameWithType: Session.TimeOutMilliseconds
+  fullName: PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds
+  type: Property
+  source:
+    id: TimeOutMilliseconds
+    path: ''
+    startLine: 11349
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public int TimeOutMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TimeOutMilliseconds As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.Retries
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.Retries
+  id: Retries
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: Retries
+  nameWithType: Session.Retries
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Retries
+  type: Property
+  source:
+    id: Retries
+    path: ''
+    startLine: 11350
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public int Retries { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Retries As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Session.Retries*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.Retries
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions
+  id: ThrowExceptions
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: ThrowExceptions
+  nameWithType: Session.ThrowExceptions
+  fullName: PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions
+  type: Property
+  source:
+    id: ThrowExceptions
+    path: ''
+    startLine: 11351
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public bool ThrowExceptions { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ThrowExceptions As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.ThrowExceptions
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.GetConfigItem
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.GetConfigItem
+  id: GetConfigItem
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: GetConfigItem
+  nameWithType: Session.GetConfigItem
+  fullName: PitneyBowes.Developer.ShippingApi.Session.GetConfigItem
+  type: Property
+  source:
+    id: GetConfigItem
+    path: ''
+    startLine: 11352
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Func<string, string> GetConfigItem { get; set; }
+    parameters: []
+    return:
+      type: Func{System.String,System.String}
+    content.vb: Public Property GetConfigItem As Func(Of String, String)
+  overload: PitneyBowes.Developer.ShippingApi.Session.GetConfigItem*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.GetConfigItem
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.AddConfigItem
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.AddConfigItem
+  id: AddConfigItem
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: AddConfigItem
+  nameWithType: Session.AddConfigItem
+  fullName: PitneyBowes.Developer.ShippingApi.Session.AddConfigItem
+  type: Property
+  source:
+    id: AddConfigItem
+    path: ''
+    startLine: 11353
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Action<string, string> AddConfigItem { get; set; }
+    parameters: []
+    return:
+      type: Action{System.String,System.String}
+    content.vb: Public Property AddConfigItem As Action(Of String, String)
+  overload: PitneyBowes.Developer.ShippingApi.Session.AddConfigItem*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.AddConfigItem
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogWarning
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.LogWarning
+  id: LogWarning
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: LogWarning
+  nameWithType: Session.LogWarning
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogWarning
+  type: Property
+  source:
+    id: LogWarning
+    path: ''
+    startLine: 11354
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Action<string> LogWarning { get; set; }
+    parameters: []
+    return:
+      type: Action{System.String}
+    content.vb: Public Property LogWarning As Action(Of String)
+  overload: PitneyBowes.Developer.ShippingApi.Session.LogWarning*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.LogWarning
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogError
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.LogError
+  id: LogError
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: LogError
+  nameWithType: Session.LogError
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogError
+  type: Property
+  source:
+    id: LogError
+    path: ''
+    startLine: 11355
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Action<string> LogError { get; set; }
+    parameters: []
+    return:
+      type: Action{System.String}
+    content.vb: Public Property LogError As Action(Of String)
+  overload: PitneyBowes.Developer.ShippingApi.Session.LogError*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.LogError
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogConfigError
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.LogConfigError
+  id: LogConfigError
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: LogConfigError
+  nameWithType: Session.LogConfigError
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogConfigError
+  type: Property
+  source:
+    id: LogConfigError
+    path: ''
+    startLine: 11356
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Action<string> LogConfigError { get; set; }
+    parameters: []
+    return:
+      type: Action{System.String}
+    content.vb: Public Property LogConfigError As Action(Of String)
+  overload: PitneyBowes.Developer.ShippingApi.Session.LogConfigError*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.LogConfigError
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogDebug
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.LogDebug
+  id: LogDebug
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: LogDebug
+  nameWithType: Session.LogDebug
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogDebug
+  type: Property
+  source:
+    id: LogDebug
+    path: ''
+    startLine: 11357
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Action<string> LogDebug { get; set; }
+    parameters: []
+    return:
+      type: Action{System.String}
+    content.vb: Public Property LogDebug As Action(Of String)
+  overload: PitneyBowes.Developer.ShippingApi.Session.LogDebug*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.LogDebug
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.GetAPISecret
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.GetAPISecret
+  id: GetAPISecret
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: GetAPISecret
+  nameWithType: Session.GetAPISecret
+  fullName: PitneyBowes.Developer.ShippingApi.Session.GetAPISecret
+  type: Property
+  source:
+    id: GetAPISecret
+    path: ''
+    startLine: 11358
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Func<StringBuilder> GetAPISecret { get; set; }
+    parameters: []
+    return:
+      type: Func{StringBuilder}
+    content.vb: Public Property GetAPISecret As Func(Of StringBuilder)
+  overload: PitneyBowes.Developer.ShippingApi.Session.GetAPISecret*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.GetAPISecret
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.EndPoint
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.EndPoint
+  id: EndPoint
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: EndPoint
+  nameWithType: Session.EndPoint
+  fullName: PitneyBowes.Developer.ShippingApi.Session.EndPoint
+  type: Property
+  source:
+    id: EndPoint
+    path: ''
+    startLine: 11359
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public string EndPoint { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EndPoint As String
+  overload: PitneyBowes.Developer.ShippingApi.Session.EndPoint*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.EndPoint
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.Record
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.Record
+  id: Record
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: Record
+  nameWithType: Session.Record
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Record
+  type: Property
+  source:
+    id: Record
+    path: ''
+    startLine: 11360
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public bool Record { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Record As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Session.Record*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.Record
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.RecordPath
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.RecordPath
+  id: RecordPath
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: RecordPath
+  nameWithType: Session.RecordPath
+  fullName: PitneyBowes.Developer.ShippingApi.Session.RecordPath
+  type: Property
+  source:
+    id: RecordPath
+    path: ''
+    startLine: 11361
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public string RecordPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RecordPath As String
+  overload: PitneyBowes.Developer.ShippingApi.Session.RecordPath*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.RecordPath
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite
+  id: RecordOverwrite
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: RecordOverwrite
+  nameWithType: Session.RecordOverwrite
+  fullName: PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite
+  type: Property
+  source:
+    id: RecordOverwrite
+    path: ''
+    startLine: 11362
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public bool RecordOverwrite { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RecordOverwrite As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.RecordOverwrite
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.Counters
+  commentId: P:PitneyBowes.Developer.ShippingApi.Session.Counters
+  id: Counters
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: Counters
+  nameWithType: Session.Counters
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Counters
+  type: Property
+  source:
+    id: Counters
+    path: ''
+    startLine: 11364
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public Dictionary<string, Counters> Counters { get; set; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,PitneyBowes.Developer.ShippingApi.Counters}
+    content.vb: Public Property Counters As Dictionary(Of String, Counters)
+  overload: PitneyBowes.Developer.ShippingApi.Session.Counters*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.Counters
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Session.UpdateCounters(System.String,System.Boolean,TimeSpan)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Session.UpdateCounters(System.String,System.Boolean,TimeSpan)
+  id: UpdateCounters(System.String,System.Boolean,TimeSpan)
+  parent: PitneyBowes.Developer.ShippingApi.Session
+  langs:
+  - csharp
+  - vb
+  name: UpdateCounters(String, Boolean, TimeSpan)
+  nameWithType: Session.UpdateCounters(String, Boolean, TimeSpan)
+  fullName: PitneyBowes.Developer.ShippingApi.Session.UpdateCounters(System.String, System.Boolean, TimeSpan)
+  type: Method
+  source:
+    id: UpdateCounters
+    path: ''
+    startLine: 11366
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public void UpdateCounters(string uri, bool success, TimeSpan time)
+    parameters:
+    - id: uri
+      type: System.String
+    - id: success
+      type: System.Boolean
+    - id: time
+      type: TimeSpan
+    content.vb: Public Sub UpdateCounters(uri As String, success As Boolean, time As TimeSpan)
+  overload: PitneyBowes.Developer.ShippingApi.Session.UpdateCounters*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters(System.String,System.Boolean,TimeSpan)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.ISession
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISession
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ISession
+  nameWithType: ISession
+  fullName: PitneyBowes.Developer.ShippingApi.ISession
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Session.#ctor*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.#ctor
+  isExternal: false
+  name: Session
+  nameWithType: Session.Session
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Session
+- uid: PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry
+  isExternal: false
+  name: SerializationRegistry
+  nameWithType: Session.SerializationRegistry
+  fullName: PitneyBowes.Developer.ShippingApi.Session.SerializationRegistry
+- uid: PitneyBowes.Developer.ShippingApi.ISession.SerializationRegistry
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.SerializationRegistry
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: SerializationRegistry
+  nameWithType: ISession.SerializationRegistry
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.SerializationRegistry
+- uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  commentId: T:PitneyBowes.Developer.ShippingApi.SerializationRegistry
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: SerializationRegistry
+  nameWithType: SerializationRegistry
+  fullName: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+- uid: PitneyBowes.Developer.ShippingApi.Session.Requester*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.Requester
+  isExternal: false
+  name: Requester
+  nameWithType: Session.Requester
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Requester
+- uid: PitneyBowes.Developer.ShippingApi.ISession.Requester
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.Requester
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: Requester
+  nameWithType: ISession.Requester
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.Requester
+- uid: PitneyBowes.Developer.ShippingApi.IHttpRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.IHttpRequest
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IHttpRequest
+  nameWithType: IHttpRequest
+  fullName: PitneyBowes.Developer.ShippingApi.IHttpRequest
+- uid: PitneyBowes.Developer.ShippingApi.Session.AuthToken*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.AuthToken
+  isExternal: false
+  name: AuthToken
+  nameWithType: Session.AuthToken
+  fullName: PitneyBowes.Developer.ShippingApi.Session.AuthToken
+- uid: PitneyBowes.Developer.ShippingApi.ISession.AuthToken
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.AuthToken
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: AuthToken
+  nameWithType: ISession.AuthToken
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.AuthToken
+- uid: PitneyBowes.Developer.ShippingApi.Token
+  commentId: T:PitneyBowes.Developer.ShippingApi.Token
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Token
+  nameWithType: Token
+  fullName: PitneyBowes.Developer.ShippingApi.Token
+- uid: PitneyBowes.Developer.ShippingApi.Session.UserAgent*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.UserAgent
+  isExternal: false
+  name: UserAgent
+  nameWithType: Session.UserAgent
+  fullName: PitneyBowes.Developer.ShippingApi.Session.UserAgent
+- uid: PitneyBowes.Developer.ShippingApi.ISession.UserAgent
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.UserAgent
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: UserAgent
+  nameWithType: ISession.UserAgent
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.UserAgent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds
+  isExternal: false
+  name: TimeOutMilliseconds
+  nameWithType: Session.TimeOutMilliseconds
+  fullName: PitneyBowes.Developer.ShippingApi.Session.TimeOutMilliseconds
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: PitneyBowes.Developer.ShippingApi.Session.Retries*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.Retries
+  isExternal: false
+  name: Retries
+  nameWithType: Session.Retries
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Retries
+- uid: PitneyBowes.Developer.ShippingApi.ISession.Retries
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.Retries
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: Retries
+  nameWithType: ISession.Retries
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.Retries
+- uid: PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions
+  isExternal: false
+  name: ThrowExceptions
+  nameWithType: Session.ThrowExceptions
+  fullName: PitneyBowes.Developer.ShippingApi.Session.ThrowExceptions
+- uid: PitneyBowes.Developer.ShippingApi.ISession.ThrowExceptions
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.ThrowExceptions
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: ThrowExceptions
+  nameWithType: ISession.ThrowExceptions
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.ThrowExceptions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: PitneyBowes.Developer.ShippingApi.Session.GetConfigItem*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.GetConfigItem
+  isExternal: false
+  name: GetConfigItem
+  nameWithType: Session.GetConfigItem
+  fullName: PitneyBowes.Developer.ShippingApi.Session.GetConfigItem
+- uid: PitneyBowes.Developer.ShippingApi.ISession.GetConfigItem
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.GetConfigItem
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: GetConfigItem
+  nameWithType: ISession.GetConfigItem
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.GetConfigItem
+- uid: Func{System.String,System.String}
+  commentId: '!:Func{System.String,System.String}'
+  definition: Func`2
+  name: Func<String, String>
+  nameWithType: Func<String, String>
+  fullName: Func<System.String, System.String>
+  nameWithType.vb: Func(Of String, String)
+  fullName.vb: Func(Of System.String, System.String)
+  name.vb: Func(Of String, String)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Session.AddConfigItem*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.AddConfigItem
+  isExternal: false
+  name: AddConfigItem
+  nameWithType: Session.AddConfigItem
+  fullName: PitneyBowes.Developer.ShippingApi.Session.AddConfigItem
+- uid: PitneyBowes.Developer.ShippingApi.ISession.AddConfigItem
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.AddConfigItem
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: AddConfigItem
+  nameWithType: ISession.AddConfigItem
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.AddConfigItem
+- uid: Action{System.String,System.String}
+  commentId: '!:Action{System.String,System.String}'
+  definition: Action`2
+  name: Action<String, String>
+  nameWithType: Action<String, String>
+  fullName: Action<System.String, System.String>
+  nameWithType.vb: Action(Of String, String)
+  fullName.vb: Action(Of System.String, System.String)
+  name.vb: Action(Of String, String)
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`2
+  isExternal: true
+  name: Action<, >
+  nameWithType: Action<, >
+  fullName: Action<, >
+  nameWithType.vb: Action(Of , )
+  fullName.vb: Action(Of , )
+  name.vb: Action(Of , )
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogWarning*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.LogWarning
+  isExternal: false
+  name: LogWarning
+  nameWithType: Session.LogWarning
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogWarning
+- uid: PitneyBowes.Developer.ShippingApi.ISession.LogWarning
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.LogWarning
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: LogWarning
+  nameWithType: ISession.LogWarning
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.LogWarning
+- uid: Action{System.String}
+  commentId: '!:Action{System.String}'
+  definition: Action`1
+  name: Action<String>
+  nameWithType: Action<String>
+  fullName: Action<System.String>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: Action(Of System.String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogError*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.LogError
+  isExternal: false
+  name: LogError
+  nameWithType: Session.LogError
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogError
+- uid: PitneyBowes.Developer.ShippingApi.ISession.LogError
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.LogError
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: LogError
+  nameWithType: ISession.LogError
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.LogError
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogConfigError*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.LogConfigError
+  isExternal: false
+  name: LogConfigError
+  nameWithType: Session.LogConfigError
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogConfigError
+- uid: PitneyBowes.Developer.ShippingApi.ISession.LogConfigError
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.LogConfigError
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: LogConfigError
+  nameWithType: ISession.LogConfigError
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.LogConfigError
+- uid: PitneyBowes.Developer.ShippingApi.Session.LogDebug*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.LogDebug
+  isExternal: false
+  name: LogDebug
+  nameWithType: Session.LogDebug
+  fullName: PitneyBowes.Developer.ShippingApi.Session.LogDebug
+- uid: PitneyBowes.Developer.ShippingApi.ISession.LogDebug
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.LogDebug
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: LogDebug
+  nameWithType: ISession.LogDebug
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.LogDebug
+- uid: PitneyBowes.Developer.ShippingApi.Session.GetAPISecret*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.GetAPISecret
+  isExternal: false
+  name: GetAPISecret
+  nameWithType: Session.GetAPISecret
+  fullName: PitneyBowes.Developer.ShippingApi.Session.GetAPISecret
+- uid: PitneyBowes.Developer.ShippingApi.ISession.GetAPISecret
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.GetAPISecret
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: GetAPISecret
+  nameWithType: ISession.GetAPISecret
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.GetAPISecret
+- uid: Func{StringBuilder}
+  commentId: '!:Func{StringBuilder}'
+  definition: Func`1
+  name: Func<StringBuilder>
+  nameWithType: Func<StringBuilder>
+  fullName: Func<StringBuilder>
+  nameWithType.vb: Func(Of StringBuilder)
+  fullName.vb: Func(Of StringBuilder)
+  name.vb: Func(Of StringBuilder)
+  spec.csharp:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: StringBuilder
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: StringBuilder
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`1
+  isExternal: true
+  name: Func<>
+  nameWithType: Func<>
+  fullName: Func<>
+  nameWithType.vb: Func(Of )
+  fullName.vb: Func(Of )
+  name.vb: Func(Of )
+  spec.csharp:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Session.EndPoint*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.EndPoint
+  isExternal: false
+  name: EndPoint
+  nameWithType: Session.EndPoint
+  fullName: PitneyBowes.Developer.ShippingApi.Session.EndPoint
+- uid: PitneyBowes.Developer.ShippingApi.ISession.EndPoint
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.EndPoint
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: EndPoint
+  nameWithType: ISession.EndPoint
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.EndPoint
+- uid: PitneyBowes.Developer.ShippingApi.Session.Record*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.Record
+  isExternal: false
+  name: Record
+  nameWithType: Session.Record
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Record
+- uid: PitneyBowes.Developer.ShippingApi.ISession.Record
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.Record
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: Record
+  nameWithType: ISession.Record
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.Record
+- uid: PitneyBowes.Developer.ShippingApi.Session.RecordPath*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.RecordPath
+  isExternal: false
+  name: RecordPath
+  nameWithType: Session.RecordPath
+  fullName: PitneyBowes.Developer.ShippingApi.Session.RecordPath
+- uid: PitneyBowes.Developer.ShippingApi.ISession.RecordPath
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.RecordPath
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: RecordPath
+  nameWithType: ISession.RecordPath
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.RecordPath
+- uid: PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite
+  isExternal: false
+  name: RecordOverwrite
+  nameWithType: Session.RecordOverwrite
+  fullName: PitneyBowes.Developer.ShippingApi.Session.RecordOverwrite
+- uid: PitneyBowes.Developer.ShippingApi.ISession.RecordOverwrite
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.RecordOverwrite
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: RecordOverwrite
+  nameWithType: ISession.RecordOverwrite
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.RecordOverwrite
+- uid: PitneyBowes.Developer.ShippingApi.Session.Counters*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.Counters
+  isExternal: false
+  name: Counters
+  nameWithType: Session.Counters
+  fullName: PitneyBowes.Developer.ShippingApi.Session.Counters
+- uid: PitneyBowes.Developer.ShippingApi.ISession.Counters
+  commentId: P:PitneyBowes.Developer.ShippingApi.ISession.Counters
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: false
+  name: Counters
+  nameWithType: ISession.Counters
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.Counters
+- uid: Dictionary{System.String,PitneyBowes.Developer.ShippingApi.Counters}
+  commentId: '!:Dictionary{System.String,PitneyBowes.Developer.ShippingApi.Counters}'
+  definition: Dictionary`2
+  name: Dictionary<String, Counters>
+  nameWithType: Dictionary<String, Counters>
+  fullName: Dictionary<System.String, PitneyBowes.Developer.ShippingApi.Counters>
+  nameWithType.vb: Dictionary(Of String, Counters)
+  fullName.vb: Dictionary(Of System.String, PitneyBowes.Developer.ShippingApi.Counters)
+  name.vb: Dictionary(Of String, Counters)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.Counters
+    name: Counters
+    nameWithType: Counters
+    fullName: PitneyBowes.Developer.ShippingApi.Counters
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.Counters
+    name: Counters
+    nameWithType: Counters
+    fullName: PitneyBowes.Developer.ShippingApi.Counters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Session.UpdateCounters*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Session.UpdateCounters
+  isExternal: false
+  name: UpdateCounters
+  nameWithType: Session.UpdateCounters
+  fullName: PitneyBowes.Developer.ShippingApi.Session.UpdateCounters
+- uid: PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters(System.String,System.Boolean,TimeSpan)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters(System.String,System.Boolean,TimeSpan)
+  parent: PitneyBowes.Developer.ShippingApi.ISession
+  isExternal: true
+  name: UpdateCounters(String, Boolean, TimeSpan)
+  nameWithType: ISession.UpdateCounters(String, Boolean, TimeSpan)
+  fullName: PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters(System.String, System.Boolean, TimeSpan)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters(System.String,System.Boolean,TimeSpan)
+    name: UpdateCounters
+    nameWithType: ISession.UpdateCounters
+    fullName: PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters(System.String,System.Boolean,TimeSpan)
+    name: UpdateCounters
+    nameWithType: ISession.UpdateCounters
+    fullName: PitneyBowes.Developer.ShippingApi.ISession.UpdateCounters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan

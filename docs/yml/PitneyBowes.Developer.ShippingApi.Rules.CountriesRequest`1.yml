@@ -1,0 +1,1111 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  id: CountriesRequest`1
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  children:
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Authorization
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Carrier
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.ContentType
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetHeaders
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetUri(System.String)
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.OriginCountryCode
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingSuffix
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  langs:
+  - csharp
+  - vb
+  name: CountriesRequest<T>
+  nameWithType: CountriesRequest<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>
+  type: Class
+  source:
+    id: CountriesRequest
+    path: ''
+    startLine: 10812
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: 'public class CountriesRequest<T> : IShippingApiRequest where T : Country, new ()'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class CountriesRequest(Of T As {Country, New})
+          Implements IShippingApiRequest
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: CountriesRequest(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T)
+  name.vb: CountriesRequest(Of T)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingSuffix
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingSuffix
+  id: RecordingSuffix
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: RecordingSuffix
+  nameWithType: CountriesRequest<T>.RecordingSuffix
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.RecordingSuffix
+  type: Property
+  source:
+    id: RecordingSuffix
+    path: ''
+    startLine: 10815
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string RecordingSuffix { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RecordingSuffix As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingSuffix*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+  nameWithType.vb: CountriesRequest(Of T).RecordingSuffix
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).RecordingSuffix
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  id: RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: RecordingFullPath(String, ISession)
+  nameWithType: CountriesRequest<T>.RecordingFullPath(String, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.RecordingFullPath(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: RecordingFullPath
+    path: ''
+    startLine: 10816
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string RecordingFullPath(string resource, ISession session)
+    parameters:
+    - id: resource
+      type: System.String
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    return:
+      type: System.String
+    content.vb: Public Function RecordingFullPath(resource As String, session As ISession) As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingFullPath*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  nameWithType.vb: CountriesRequest(Of T).RecordingFullPath(String, ISession)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).RecordingFullPath(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Carrier
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Carrier
+  id: Carrier
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: Carrier
+  nameWithType: CountriesRequest<T>.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.Carrier
+  type: Property
+  source:
+    id: Carrier
+    path: ''
+    startLine: 10821
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public Carrier Carrier { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Carrier
+    content.vb: Public Property Carrier As Carrier
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Carrier*
+  nameWithType.vb: CountriesRequest(Of T).Carrier
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).Carrier
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.OriginCountryCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.OriginCountryCode
+  id: OriginCountryCode
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: OriginCountryCode
+  nameWithType: CountriesRequest<T>.OriginCountryCode
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.OriginCountryCode
+  type: Property
+  source:
+    id: OriginCountryCode
+    path: ''
+    startLine: 10824
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string OriginCountryCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OriginCountryCode As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.OriginCountryCode*
+  nameWithType.vb: CountriesRequest(Of T).OriginCountryCode
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).OriginCountryCode
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetUri(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetUri(System.String)
+  id: GetUri(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: GetUri(String)
+  nameWithType: CountriesRequest<T>.GetUri(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.GetUri(System.String)
+  type: Method
+  source:
+    id: GetUri
+    path: ''
+    startLine: 10827
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string GetUri(string baseUrl)
+    parameters:
+    - id: baseUrl
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetUri(baseUrl As String) As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetUri*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  nameWithType.vb: CountriesRequest(Of T).GetUri(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).GetUri(System.String)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetHeaders
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetHeaders
+  id: GetHeaders
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: GetHeaders()
+  nameWithType: CountriesRequest<T>.GetHeaders()
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.GetHeaders()
+  type: Method
+  source:
+    id: GetHeaders
+    path: ''
+    startLine: 10835
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders()
+    return:
+      type: IEnumerable{Tuple{PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute,System.String,System.String}}
+    content.vb: Public Function GetHeaders As IEnumerable(Of Tuple(Of ShippingApiHeaderAttribute, String, String))
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetHeaders*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  nameWithType.vb: CountriesRequest(Of T).GetHeaders()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).GetHeaders()
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  id: SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: SerializeBody(StreamWriter, ISession)
+  nameWithType: CountriesRequest<T>.SerializeBody(StreamWriter, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.SerializeBody(StreamWriter, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: SerializeBody
+    path: ''
+    startLine: 10840
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public void SerializeBody(StreamWriter writer, ISession session)
+    parameters:
+    - id: writer
+      type: StreamWriter
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    content.vb: Public Sub SerializeBody(writer As StreamWriter, session As ISession)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.SerializeBody*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  nameWithType.vb: CountriesRequest(Of T).SerializeBody(StreamWriter, ISession)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).SerializeBody(StreamWriter, PitneyBowes.Developer.ShippingApi.ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.ContentType
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.ContentType
+  id: ContentType
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: CountriesRequest<T>.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.ContentType
+  type: Property
+  source:
+    id: ContentType
+    path: ''
+    startLine: 10845
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string ContentType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ContentType As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.ContentType*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+  nameWithType.vb: CountriesRequest(Of T).ContentType
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).ContentType
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Authorization
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Authorization
+  id: Authorization
+  parent: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  langs:
+  - csharp
+  - vb
+  name: Authorization
+  nameWithType: CountriesRequest<T>.Authorization
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.Authorization
+  type: Property
+  source:
+    id: Authorization
+    path: ''
+    startLine: 10849
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public StringBuilder Authorization { get; set; }
+    parameters: []
+    return:
+      type: StringBuilder
+    content.vb: Public Property Authorization As StringBuilder
+  overload: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Authorization*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+  nameWithType.vb: CountriesRequest(Of T).Authorization
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).Authorization
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  commentId: N:PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  nameWithType: PitneyBowes.Developer.ShippingApi.Rules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IShippingApiRequest
+  nameWithType: IShippingApiRequest
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingSuffix*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingSuffix
+  isExternal: false
+  name: RecordingSuffix
+  nameWithType: CountriesRequest<T>.RecordingSuffix
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.RecordingSuffix
+  nameWithType.vb: CountriesRequest(Of T).RecordingSuffix
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).RecordingSuffix
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: RecordingSuffix
+  nameWithType: IShippingApiRequest.RecordingSuffix
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingFullPath*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.RecordingFullPath
+  isExternal: false
+  name: RecordingFullPath
+  nameWithType: CountriesRequest<T>.RecordingFullPath
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.RecordingFullPath
+  nameWithType.vb: CountriesRequest(Of T).RecordingFullPath
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).RecordingFullPath
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: true
+  name: RecordingFullPath(String, ISession)
+  nameWithType: IShippingApiRequest.RecordingFullPath(String, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+    name: RecordingFullPath
+    nameWithType: IShippingApiRequest.RecordingFullPath
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+    name: RecordingFullPath
+    nameWithType: IShippingApiRequest.RecordingFullPath
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.ISession
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISession
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ISession
+  nameWithType: ISession
+  fullName: PitneyBowes.Developer.ShippingApi.ISession
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Carrier*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Carrier
+  isExternal: false
+  name: Carrier
+  nameWithType: CountriesRequest<T>.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.Carrier
+  nameWithType.vb: CountriesRequest(Of T).Carrier
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).Carrier
+- uid: PitneyBowes.Developer.ShippingApi.Carrier
+  commentId: T:PitneyBowes.Developer.ShippingApi.Carrier
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Carrier
+  nameWithType: Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Carrier
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.OriginCountryCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.OriginCountryCode
+  isExternal: false
+  name: OriginCountryCode
+  nameWithType: CountriesRequest<T>.OriginCountryCode
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.OriginCountryCode
+  nameWithType.vb: CountriesRequest(Of T).OriginCountryCode
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).OriginCountryCode
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetUri*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetUri
+  isExternal: false
+  name: GetUri
+  nameWithType: CountriesRequest<T>.GetUri
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.GetUri
+  nameWithType.vb: CountriesRequest(Of T).GetUri
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).GetUri
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: true
+  name: GetUri(String)
+  nameWithType: IShippingApiRequest.GetUri(String)
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+    name: GetUri
+    nameWithType: IShippingApiRequest.GetUri
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+    name: GetUri
+    nameWithType: IShippingApiRequest.GetUri
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetHeaders*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.GetHeaders
+  isExternal: false
+  name: GetHeaders
+  nameWithType: CountriesRequest<T>.GetHeaders
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.GetHeaders
+  nameWithType.vb: CountriesRequest(Of T).GetHeaders
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).GetHeaders
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: GetHeaders()
+  nameWithType: IShippingApiRequest.GetHeaders()
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders()
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+    name: GetHeaders
+    nameWithType: IShippingApiRequest.GetHeaders
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+    name: GetHeaders
+    nameWithType: IShippingApiRequest.GetHeaders
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable{Tuple{PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute,System.String,System.String}}
+  commentId: '!:IEnumerable{Tuple{PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute,System.String,System.String}}'
+  definition: IEnumerable`1
+  name: IEnumerable<Tuple<ShippingApiHeaderAttribute, String, String>>
+  nameWithType: IEnumerable<Tuple<ShippingApiHeaderAttribute, String, String>>
+  fullName: IEnumerable<Tuple<PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute, System.String, System.String>>
+  nameWithType.vb: IEnumerable(Of Tuple(Of ShippingApiHeaderAttribute, String, String))
+  fullName.vb: IEnumerable(Of Tuple(Of PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute, System.String, System.String))
+  name.vb: IEnumerable(Of Tuple(Of ShippingApiHeaderAttribute, String, String))
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Tuple`3
+    name: Tuple
+    nameWithType: Tuple
+    fullName: Tuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+    name: ShippingApiHeaderAttribute
+    nameWithType: ShippingApiHeaderAttribute
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Tuple`3
+    name: Tuple
+    nameWithType: Tuple
+    fullName: Tuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+    name: ShippingApiHeaderAttribute
+    nameWithType: ShippingApiHeaderAttribute
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.SerializeBody*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.SerializeBody
+  isExternal: false
+  name: SerializeBody
+  nameWithType: CountriesRequest<T>.SerializeBody
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.SerializeBody
+  nameWithType.vb: CountriesRequest(Of T).SerializeBody
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).SerializeBody
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: true
+  name: SerializeBody(StreamWriter, ISession)
+  nameWithType: IShippingApiRequest.SerializeBody(StreamWriter, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter, PitneyBowes.Developer.ShippingApi.ISession)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+    name: SerializeBody
+    nameWithType: IShippingApiRequest.SerializeBody
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: StreamWriter
+    name: StreamWriter
+    nameWithType: StreamWriter
+    fullName: StreamWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+    name: SerializeBody
+    nameWithType: IShippingApiRequest.SerializeBody
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: StreamWriter
+    name: StreamWriter
+    nameWithType: StreamWriter
+    fullName: StreamWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: StreamWriter
+  isExternal: true
+  name: StreamWriter
+  nameWithType: StreamWriter
+  fullName: StreamWriter
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.ContentType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.ContentType
+  isExternal: false
+  name: ContentType
+  nameWithType: CountriesRequest<T>.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.ContentType
+  nameWithType.vb: CountriesRequest(Of T).ContentType
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).ContentType
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: ContentType
+  nameWithType: IShippingApiRequest.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Authorization*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1.Authorization
+  isExternal: false
+  name: Authorization
+  nameWithType: CountriesRequest<T>.Authorization
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>.Authorization
+  nameWithType.vb: CountriesRequest(Of T).Authorization
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T).Authorization
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: Authorization
+  nameWithType: IShippingApiRequest.Authorization
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+- uid: StringBuilder
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: StringBuilder

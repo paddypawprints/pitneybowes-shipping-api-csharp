@@ -1,0 +1,1202 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  id: ShippingApiRequest
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery(System.Object,StringBuilder)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders(System.Object)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri(System.String)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters(System.Object,StringBuilder)
+  langs:
+  - csharp
+  - vb
+  name: ShippingApiRequest
+  nameWithType: ShippingApiRequest
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  type: Class
+  source:
+    id: ShippingApiRequest
+    path: ''
+    startLine: 12155
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: 'public abstract class ShippingApiRequest : IShippingApiRequest'
+    content.vb: >-
+      Public MustInherit Class ShippingApiRequest
+          Implements IShippingApiRequest
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest
+  - PitneyBowes.Developer.ShippingApi.Method.CancelShipmentRequest
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsReportRequest
+  - PitneyBowes.Developer.ShippingApi.Method.PickupCancelRequest
+  - PitneyBowes.Developer.ShippingApi.Method.RenderRequest
+  - PitneyBowes.Developer.ShippingApi.Method.ReportRequest
+  - PitneyBowes.Developer.ShippingApi.Method.ReprintManifestRequest
+  - PitneyBowes.Developer.ShippingApi.Method.ReprintShipmentRequest
+  - PitneyBowes.Developer.ShippingApi.Method.RetryManifestRequest
+  - PitneyBowes.Developer.ShippingApi.Method.TrackingRequest
+  - PitneyBowes.Developer.ShippingApi.Rules.RatingServicesRequest
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType
+  id: ContentType
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: ShippingApiRequest.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType
+  type: Property
+  source:
+    id: ContentType
+    path: ''
+    startLine: 12157
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public abstract string ContentType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride ReadOnly Property ContentType As String
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization
+  id: Authorization
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: Authorization
+  nameWithType: ShippingApiRequest.Authorization
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization
+  type: Property
+  source:
+    id: Authorization
+    path: ''
+    startLine: 12158
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public abstract StringBuilder Authorization { get; set; }
+    parameters: []
+    return:
+      type: StringBuilder
+    content.vb: Public MustOverride Property Authorization As StringBuilder
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix
+  id: RecordingSuffix
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: RecordingSuffix
+  nameWithType: ShippingApiRequest.RecordingSuffix
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix
+  type: Property
+  source:
+    id: RecordingSuffix
+    path: ''
+    startLine: 12163
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nWhen recording a response, add a suffix to make the  filename unique\n"
+  example: []
+  syntax:
+    content: public virtual string RecordingSuffix { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property RecordingSuffix As String
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  id: RecordingFullPath(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: RecordingFullPath(IShippingApiRequest, String, ISession)
+  nameWithType: ShippingApiRequest.RecordingFullPath(IShippingApiRequest, String, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(PitneyBowes.Developer.ShippingApi.IShippingApiRequest, System.String, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: RecordingFullPath
+    path: ''
+    startLine: 12165
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static string RecordingFullPath(IShippingApiRequest request, string resource, ISession session)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+    - id: resource
+      type: System.String
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    return:
+      type: System.String
+    content.vb: Public Shared Function RecordingFullPath(request As IShippingApiRequest, resource As String, session As ISession) As String
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery(System.Object,StringBuilder)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery(System.Object,StringBuilder)
+  id: AddRequestQuery(System.Object,StringBuilder)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: AddRequestQuery(Object, StringBuilder)
+  nameWithType: ShippingApiRequest.AddRequestQuery(Object, StringBuilder)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery(System.Object, StringBuilder)
+  type: Method
+  source:
+    id: AddRequestQuery
+    path: ''
+    startLine: 12234
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static void AddRequestQuery(object o, StringBuilder uri)
+    parameters:
+    - id: o
+      type: System.Object
+    - id: uri
+      type: StringBuilder
+    content.vb: Public Shared Sub AddRequestQuery(o As Object, uri As StringBuilder)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  id: SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: SerializeBody(StreamWriter, ISession)
+  nameWithType: ShippingApiRequest.SerializeBody(StreamWriter, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(StreamWriter, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: SerializeBody
+    path: ''
+    startLine: 12261
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public virtual void SerializeBody(StreamWriter writer, ISession session)
+    parameters:
+    - id: writer
+      type: StreamWriter
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    content.vb: Public Overridable Sub SerializeBody(writer As StreamWriter, session As ISession)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  id: SerializeBody(PitneyBowes.Developer.ShippingApi.IShippingApiRequest,StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: SerializeBody(IShippingApiRequest, StreamWriter, ISession)
+  nameWithType: ShippingApiRequest.SerializeBody(IShippingApiRequest, StreamWriter, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody(PitneyBowes.Developer.ShippingApi.IShippingApiRequest, StreamWriter, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: SerializeBody
+    path: ''
+    startLine: 12266
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static void SerializeBody(IShippingApiRequest request, StreamWriter writer, ISession session)
+    parameters:
+    - id: request
+      type: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+    - id: writer
+      type: StreamWriter
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    content.vb: Public Shared Sub SerializeBody(request As IShippingApiRequest, writer As StreamWriter, session As ISession)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri(System.String)
+  id: GetUri(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: GetUri(String)
+  nameWithType: ShippingApiRequest.GetUri(String)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri(System.String)
+  type: Method
+  source:
+    id: GetUri
+    path: ''
+    startLine: 12303
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public virtual string GetUri(string baseUrl)
+    parameters:
+    - id: baseUrl
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Overridable Function GetUri(baseUrl As String) As String
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters(System.Object,StringBuilder)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters(System.Object,StringBuilder)
+  id: SubstitueResourceParameters(System.Object,StringBuilder)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: SubstitueResourceParameters(Object, StringBuilder)
+  nameWithType: ShippingApiRequest.SubstitueResourceParameters(Object, StringBuilder)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters(System.Object, StringBuilder)
+  type: Method
+  source:
+    id: SubstitueResourceParameters
+    path: ''
+    startLine: 12311
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static void SubstitueResourceParameters(object request, StringBuilder uri)
+    parameters:
+    - id: request
+      type: System.Object
+    - id: uri
+      type: StringBuilder
+    content.vb: Public Shared Sub SubstitueResourceParameters(request As Object, uri As StringBuilder)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders(System.Object)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders(System.Object)
+  id: GetHeaders(System.Object)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: GetHeaders(Object)
+  nameWithType: ShippingApiRequest.GetHeaders(Object)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders(System.Object)
+  type: Method
+  source:
+    id: GetHeaders
+    path: ''
+    startLine: 12357
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders(object o)
+    parameters:
+    - id: o
+      type: System.Object
+    return:
+      type: IEnumerable{Tuple{PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute,System.String,System.String}}
+    content.vb: Public Shared Function GetHeaders(o As Object) As IEnumerable(Of Tuple(Of ShippingApiHeaderAttribute, String, String))
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders
+  id: GetHeaders
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: GetHeaders()
+  nameWithType: ShippingApiRequest.GetHeaders()
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders()
+  type: Method
+  source:
+    id: GetHeaders
+    path: ''
+    startLine: 12396
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public virtual IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders()
+    return:
+      type: IEnumerable{Tuple{PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute,System.String,System.String}}
+    content.vb: Public Overridable Function GetHeaders As IEnumerable(Of Tuple(Of ShippingApiHeaderAttribute, String, String))
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  id: RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+  langs:
+  - csharp
+  - vb
+  name: RecordingFullPath(String, ISession)
+  nameWithType: ShippingApiRequest.RecordingFullPath(String, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: RecordingFullPath
+    path: ''
+    startLine: 12401
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public string RecordingFullPath(string resource, ISession session)
+    parameters:
+    - id: resource
+      type: System.String
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    return:
+      type: System.String
+    content.vb: Public Function RecordingFullPath(resource As String, session As ISession) As String
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IShippingApiRequest
+  nameWithType: IShippingApiRequest
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType
+  isExternal: false
+  name: ContentType
+  nameWithType: ShippingApiRequest.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.ContentType
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: ContentType
+  nameWithType: IShippingApiRequest.ContentType
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.ContentType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization
+  isExternal: false
+  name: Authorization
+  nameWithType: ShippingApiRequest.Authorization
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.Authorization
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: Authorization
+  nameWithType: IShippingApiRequest.Authorization
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.Authorization
+- uid: StringBuilder
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: StringBuilder
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix
+  isExternal: false
+  name: RecordingSuffix
+  nameWithType: ShippingApiRequest.RecordingSuffix
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingSuffix
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: RecordingSuffix
+  nameWithType: IShippingApiRequest.RecordingSuffix
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingSuffix
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath
+  isExternal: false
+  name: RecordingFullPath
+  nameWithType: ShippingApiRequest.RecordingFullPath
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.RecordingFullPath
+- uid: PitneyBowes.Developer.ShippingApi.ISession
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISession
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ISession
+  nameWithType: ISession
+  fullName: PitneyBowes.Developer.ShippingApi.ISession
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery
+  isExternal: false
+  name: AddRequestQuery
+  nameWithType: ShippingApiRequest.AddRequestQuery
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.AddRequestQuery
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody
+  isExternal: false
+  name: SerializeBody
+  nameWithType: ShippingApiRequest.SerializeBody
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SerializeBody
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: true
+  name: SerializeBody(StreamWriter, ISession)
+  nameWithType: IShippingApiRequest.SerializeBody(StreamWriter, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter, PitneyBowes.Developer.ShippingApi.ISession)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+    name: SerializeBody
+    nameWithType: IShippingApiRequest.SerializeBody
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: StreamWriter
+    name: StreamWriter
+    nameWithType: StreamWriter
+    fullName: StreamWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody(StreamWriter,PitneyBowes.Developer.ShippingApi.ISession)
+    name: SerializeBody
+    nameWithType: IShippingApiRequest.SerializeBody
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.SerializeBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: StreamWriter
+    name: StreamWriter
+    nameWithType: StreamWriter
+    fullName: StreamWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: StreamWriter
+  isExternal: true
+  name: StreamWriter
+  nameWithType: StreamWriter
+  fullName: StreamWriter
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri
+  isExternal: false
+  name: GetUri
+  nameWithType: ShippingApiRequest.GetUri
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetUri
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: true
+  name: GetUri(String)
+  nameWithType: IShippingApiRequest.GetUri(String)
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+    name: GetUri
+    nameWithType: IShippingApiRequest.GetUri
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri(System.String)
+    name: GetUri
+    nameWithType: IShippingApiRequest.GetUri
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters
+  isExternal: false
+  name: SubstitueResourceParameters
+  nameWithType: ShippingApiRequest.SubstitueResourceParameters
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.SubstitueResourceParameters
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders
+  isExternal: false
+  name: GetHeaders
+  nameWithType: ShippingApiRequest.GetHeaders
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiRequest.GetHeaders
+- uid: IEnumerable{Tuple{PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute,System.String,System.String}}
+  commentId: '!:IEnumerable{Tuple{PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute,System.String,System.String}}'
+  definition: IEnumerable`1
+  name: IEnumerable<Tuple<ShippingApiHeaderAttribute, String, String>>
+  nameWithType: IEnumerable<Tuple<ShippingApiHeaderAttribute, String, String>>
+  fullName: IEnumerable<Tuple<PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute, System.String, System.String>>
+  nameWithType.vb: IEnumerable(Of Tuple(Of ShippingApiHeaderAttribute, String, String))
+  fullName.vb: IEnumerable(Of Tuple(Of PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute, System.String, System.String))
+  name.vb: IEnumerable(Of Tuple(Of ShippingApiHeaderAttribute, String, String))
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Tuple`3
+    name: Tuple
+    nameWithType: Tuple
+    fullName: Tuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+    name: ShippingApiHeaderAttribute
+    nameWithType: ShippingApiHeaderAttribute
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Tuple`3
+    name: Tuple
+    nameWithType: Tuple
+    fullName: Tuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+    name: ShippingApiHeaderAttribute
+    nameWithType: ShippingApiHeaderAttribute
+    fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: false
+  name: GetHeaders()
+  nameWithType: IShippingApiRequest.GetHeaders()
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders()
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+    name: GetHeaders
+    nameWithType: IShippingApiRequest.GetHeaders
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+    name: GetHeaders
+    nameWithType: IShippingApiRequest.GetHeaders
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.GetHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+  isExternal: true
+  name: RecordingFullPath(String, ISession)
+  nameWithType: IShippingApiRequest.RecordingFullPath(String, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+    name: RecordingFullPath
+    nameWithType: IShippingApiRequest.RecordingFullPath
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+    name: RecordingFullPath
+    nameWithType: IShippingApiRequest.RecordingFullPath
+    fullName: PitneyBowes.Developer.ShippingApi.IShippingApiRequest.RecordingFullPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+    nameWithType: ISession
+    fullName: PitneyBowes.Developer.ShippingApi.ISession
+  - name: )
+    nameWithType: )
+    fullName: )

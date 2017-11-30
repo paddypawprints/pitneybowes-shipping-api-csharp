@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  commentId: T:PitneyBowes.Developer.ShippingApi.ITransactionSort
+  id: ITransactionSort
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  langs:
+  - csharp
+  - vb
+  name: ITransactionSort
+  nameWithType: ITransactionSort
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  type: Interface
+  source:
+    id: ITransactionSort
+    path: ''
+    startLine: 2145
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface ITransactionSort
+    content.vb: Public Interface ITransactionSort
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  id: Ascending
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  langs:
+  - csharp
+  - vb
+  name: Ascending
+  nameWithType: ITransactionSort.Ascending
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  type: Property
+  source:
+    id: Ascending
+    path: ''
+    startLine: 2148
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Ascending { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Ascending As String
+  overload: PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  id: Direction
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: ITransactionSort.Direction
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  type: Property
+  source:
+    id: Direction
+    path: ''
+    startLine: 2149
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Direction { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Direction As String
+  overload: PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  id: IgnoreCase
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  langs:
+  - csharp
+  - vb
+  name: IgnoreCase
+  nameWithType: ITransactionSort.IgnoreCase
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  type: Property
+  source:
+    id: IgnoreCase
+    path: ''
+    startLine: 2150
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string IgnoreCase { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property IgnoreCase As String
+  overload: PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  id: NullHandling
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  langs:
+  - csharp
+  - vb
+  name: NullHandling
+  nameWithType: ITransactionSort.NullHandling
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  type: Property
+  source:
+    id: NullHandling
+    path: ''
+    startLine: 2151
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string NullHandling { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property NullHandling As String
+  overload: PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  id: Property
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  langs:
+  - csharp
+  - vb
+  name: Property
+  nameWithType: ITransactionSort.Property
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  type: Property
+  source:
+    id: Property
+    path: ''
+    startLine: 2152
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Property { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Property As String
+  overload: PitneyBowes.Developer.ShippingApi.ITransactionSort.Property*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  isExternal: false
+  name: Ascending
+  nameWithType: ITransactionSort.Ascending
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  isExternal: false
+  name: Direction
+  nameWithType: ITransactionSort.Direction
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  isExternal: false
+  name: IgnoreCase
+  nameWithType: ITransactionSort.IgnoreCase
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  isExternal: false
+  name: NullHandling
+  nameWithType: ITransactionSort.NullHandling
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Property*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  isExternal: false
+  name: Property
+  nameWithType: ITransactionSort.Property
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Property

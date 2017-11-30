@@ -1,0 +1,1375 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  id: ShipmentFluent`1
+  parent: PitneyBowes.Developer.ShippingApi.Fluent
+  children:
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.#ctor
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AltReturnAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Create
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Customs(PitneyBowes.Developer.ShippingApi.ICustoms)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Documents(IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument})
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.MinimalAddressValidation(System.String)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent{`0})~`0
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Parcel(PitneyBowes.Developer.ShippingApi.IParcel)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Rates(IEnumerable{PitneyBowes.Developer.ShippingApi.IRates})
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentOptions(IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions})
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentType(PitneyBowes.Developer.ShippingApi.ShipmentType)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipperRatePlan(System.String)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ToAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.TransactionId(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ShipmentFluent<T>
+  nameWithType: ShipmentFluent<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>
+  type: Class
+  source:
+    id: ShipmentFluent
+    path: ''
+    startLine: 3386
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: >-
+      public class ShipmentFluent<T>
+          where T : IShipment, new ()
+    typeParameters:
+    - id: T
+    content.vb: Public Class ShipmentFluent(Of T As {IShipment, New})
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: ShipmentFluent(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T)
+  name.vb: ShipmentFluent(Of T)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent{`0})~`0
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent{`0})~`0
+  id: op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent{`0})~`0
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Implicit(ShipmentFluent<T> to T)
+  nameWithType: ShipmentFluent<T>.Implicit(ShipmentFluent<T> to T)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T> to T)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: ''
+    startLine: 3390
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public static implicit operator T(ShipmentFluent<T> s)
+    parameters:
+    - id: s
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    return:
+      type: '{T}'
+    content.vb: Public Shared Widening Operator CType(s As ShipmentFluent(Of T)) As T
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.op_Implicit*
+  nameWithType.vb: ShipmentFluent(Of T).Widening(ShipmentFluent(Of T) to T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Widening(PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T) to T)
+  name.vb: Widening(ShipmentFluent(Of T) to T)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Create
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Create
+  id: Create
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: ShipmentFluent<T>.Create()
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Create()
+  type: Method
+  source:
+    id: Create
+    path: ''
+    startLine: 3395
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public static ShipmentFluent<T> Create()
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Shared Function Create As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Create*
+  nameWithType.vb: ShipmentFluent(Of T).Create()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Create()
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.#ctor
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.#ctor
+  id: '#ctor'
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: ShipmentFluent()
+  nameWithType: ShipmentFluent<T>.ShipmentFluent()
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipmentFluent()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3404
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent()
+    content.vb: Public Sub New
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.#ctor*
+  nameWithType.vb: ShipmentFluent(Of T).ShipmentFluent()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipmentFluent()
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentType(PitneyBowes.Developer.ShippingApi.ShipmentType)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentType(PitneyBowes.Developer.ShippingApi.ShipmentType)
+  id: ShipmentType(PitneyBowes.Developer.ShippingApi.ShipmentType)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: ShipmentType(ShipmentType)
+  nameWithType: ShipmentFluent<T>.ShipmentType(ShipmentType)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipmentType(PitneyBowes.Developer.ShippingApi.ShipmentType)
+  type: Method
+  source:
+    id: ShipmentType
+    path: ''
+    startLine: 3409
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> ShipmentType(ShipmentType t)
+    parameters:
+    - id: t
+      type: PitneyBowes.Developer.ShippingApi.ShipmentType
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function ShipmentType(t As ShipmentType) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentType*
+  nameWithType.vb: ShipmentFluent(Of T).ShipmentType(ShipmentType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipmentType(PitneyBowes.Developer.ShippingApi.ShipmentType)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.TransactionId(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.TransactionId(System.String)
+  id: TransactionId(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: TransactionId(String)
+  nameWithType: ShipmentFluent<T>.TransactionId(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.TransactionId(System.String)
+  type: Method
+  source:
+    id: TransactionId
+    path: ''
+    startLine: 3414
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> TransactionId(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function TransactionId(id As String) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.TransactionId*
+  nameWithType.vb: ShipmentFluent(Of T).TransactionId(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).TransactionId(System.String)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.MinimalAddressValidation(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.MinimalAddressValidation(System.String)
+  id: MinimalAddressValidation(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: MinimalAddressValidation(String)
+  nameWithType: ShipmentFluent<T>.MinimalAddressValidation(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.MinimalAddressValidation(System.String)
+  type: Method
+  source:
+    id: MinimalAddressValidation
+    path: ''
+    startLine: 3419
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> MinimalAddressValidation(string m)
+    parameters:
+    - id: m
+      type: System.String
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function MinimalAddressValidation(m As String) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.MinimalAddressValidation*
+  nameWithType.vb: ShipmentFluent(Of T).MinimalAddressValidation(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).MinimalAddressValidation(System.String)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipperRatePlan(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipperRatePlan(System.String)
+  id: ShipperRatePlan(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: ShipperRatePlan(String)
+  nameWithType: ShipmentFluent<T>.ShipperRatePlan(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipperRatePlan(System.String)
+  type: Method
+  source:
+    id: ShipperRatePlan
+    path: ''
+    startLine: 3424
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> ShipperRatePlan(string r)
+    parameters:
+    - id: r
+      type: System.String
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function ShipperRatePlan(r As String) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipperRatePlan*
+  nameWithType.vb: ShipmentFluent(Of T).ShipperRatePlan(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipperRatePlan(System.String)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  id: FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: FromAddress(IAddress)
+  nameWithType: ShipmentFluent<T>.FromAddress(IAddress)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  type: Method
+  source:
+    id: FromAddress
+    path: ''
+    startLine: 3429
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> FromAddress(IAddress a)
+    parameters:
+    - id: a
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function FromAddress(a As IAddress) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.FromAddress*
+  nameWithType.vb: ShipmentFluent(Of T).FromAddress(IAddress)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ToAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ToAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  id: ToAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: ToAddress(IAddress)
+  nameWithType: ShipmentFluent<T>.ToAddress(IAddress)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ToAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  type: Method
+  source:
+    id: ToAddress
+    path: ''
+    startLine: 3434
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> ToAddress(IAddress a)
+    parameters:
+    - id: a
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function ToAddress(a As IAddress) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ToAddress*
+  nameWithType.vb: ShipmentFluent(Of T).ToAddress(IAddress)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ToAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AltReturnAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AltReturnAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  id: AltReturnAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AltReturnAddress(IAddress)
+  nameWithType: ShipmentFluent<T>.AltReturnAddress(IAddress)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AltReturnAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  type: Method
+  source:
+    id: AltReturnAddress
+    path: ''
+    startLine: 3439
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> AltReturnAddress(IAddress a)
+    parameters:
+    - id: a
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function AltReturnAddress(a As IAddress) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AltReturnAddress*
+  nameWithType.vb: ShipmentFluent(Of T).AltReturnAddress(IAddress)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AltReturnAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Parcel(PitneyBowes.Developer.ShippingApi.IParcel)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Parcel(PitneyBowes.Developer.ShippingApi.IParcel)
+  id: Parcel(PitneyBowes.Developer.ShippingApi.IParcel)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Parcel(IParcel)
+  nameWithType: ShipmentFluent<T>.Parcel(IParcel)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Parcel(PitneyBowes.Developer.ShippingApi.IParcel)
+  type: Method
+  source:
+    id: Parcel
+    path: ''
+    startLine: 3444
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> Parcel(IParcel p)
+    parameters:
+    - id: p
+      type: PitneyBowes.Developer.ShippingApi.IParcel
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function Parcel(p As IParcel) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Parcel*
+  nameWithType.vb: ShipmentFluent(Of T).Parcel(IParcel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Parcel(PitneyBowes.Developer.ShippingApi.IParcel)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Rates(IEnumerable{PitneyBowes.Developer.ShippingApi.IRates})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Rates(IEnumerable{PitneyBowes.Developer.ShippingApi.IRates})
+  id: Rates(IEnumerable{PitneyBowes.Developer.ShippingApi.IRates})
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Rates(IEnumerable<IRates>)
+  nameWithType: ShipmentFluent<T>.Rates(IEnumerable<IRates>)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Rates(IEnumerable<PitneyBowes.Developer.ShippingApi.IRates>)
+  type: Method
+  source:
+    id: Rates
+    path: ''
+    startLine: 3449
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> Rates(IEnumerable<IRates> r)
+    parameters:
+    - id: r
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IRates}
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function Rates(r As IEnumerable(Of IRates)) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Rates*
+  nameWithType.vb: ShipmentFluent(Of T).Rates(IEnumerable(Of IRates))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Rates(IEnumerable(Of PitneyBowes.Developer.ShippingApi.IRates))
+  name.vb: Rates(IEnumerable(Of IRates))
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  id: AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AddRates(IRates)
+  nameWithType: ShipmentFluent<T>.AddRates(IRates)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  type: Method
+  source:
+    id: AddRates
+    path: ''
+    startLine: 3454
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> AddRates(IRates r)
+    parameters:
+    - id: r
+      type: PitneyBowes.Developer.ShippingApi.IRates
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function AddRates(r As IRates) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddRates*
+  nameWithType.vb: ShipmentFluent(Of T).AddRates(IRates)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Documents(IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Documents(IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument})
+  id: Documents(IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument})
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Documents(IEnumerable<IDocument>)
+  nameWithType: ShipmentFluent<T>.Documents(IEnumerable<IDocument>)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Documents(IEnumerable<PitneyBowes.Developer.ShippingApi.IDocument>)
+  type: Method
+  source:
+    id: Documents
+    path: ''
+    startLine: 3459
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> Documents(IEnumerable<IDocument> d)
+    parameters:
+    - id: d
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument}
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function Documents(d As IEnumerable(Of IDocument)) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Documents*
+  nameWithType.vb: ShipmentFluent(Of T).Documents(IEnumerable(Of IDocument))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Documents(IEnumerable(Of PitneyBowes.Developer.ShippingApi.IDocument))
+  name.vb: Documents(IEnumerable(Of IDocument))
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  id: AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AddDocument(IDocument)
+  nameWithType: ShipmentFluent<T>.AddDocument(IDocument)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  type: Method
+  source:
+    id: AddDocument
+    path: ''
+    startLine: 3464
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> AddDocument(IDocument d)
+    parameters:
+    - id: d
+      type: PitneyBowes.Developer.ShippingApi.IDocument
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function AddDocument(d As IDocument) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddDocument*
+  nameWithType.vb: ShipmentFluent(Of T).AddDocument(IDocument)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentOptions(IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentOptions(IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions})
+  id: ShipmentOptions(IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions})
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: ShipmentOptions(IEnumerable<IShipmentOptions>)
+  nameWithType: ShipmentFluent<T>.ShipmentOptions(IEnumerable<IShipmentOptions>)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipmentOptions(IEnumerable<PitneyBowes.Developer.ShippingApi.IShipmentOptions>)
+  type: Method
+  source:
+    id: ShipmentOptions
+    path: ''
+    startLine: 3469
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> ShipmentOptions(IEnumerable<IShipmentOptions> o)
+    parameters:
+    - id: o
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions}
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function ShipmentOptions(o As IEnumerable(Of IShipmentOptions)) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentOptions*
+  nameWithType.vb: ShipmentFluent(Of T).ShipmentOptions(IEnumerable(Of IShipmentOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipmentOptions(IEnumerable(Of PitneyBowes.Developer.ShippingApi.IShipmentOptions))
+  name.vb: ShipmentOptions(IEnumerable(Of IShipmentOptions))
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  id: AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AddShipmentOptions(IShipmentOptions)
+  nameWithType: ShipmentFluent<T>.AddShipmentOptions(IShipmentOptions)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  type: Method
+  source:
+    id: AddShipmentOptions
+    path: ''
+    startLine: 3474
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> AddShipmentOptions(IShipmentOptions o)
+    parameters:
+    - id: o
+      type: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function AddShipmentOptions(o As IShipmentOptions) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddShipmentOptions*
+  nameWithType.vb: ShipmentFluent(Of T).AddShipmentOptions(IShipmentOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Customs(PitneyBowes.Developer.ShippingApi.ICustoms)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Customs(PitneyBowes.Developer.ShippingApi.ICustoms)
+  id: Customs(PitneyBowes.Developer.ShippingApi.ICustoms)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Customs(ICustoms)
+  nameWithType: ShipmentFluent<T>.Customs(ICustoms)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Customs(PitneyBowes.Developer.ShippingApi.ICustoms)
+  type: Method
+  source:
+    id: Customs
+    path: ''
+    startLine: 3479
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ShipmentFluent<T> Customs(ICustoms c)
+    parameters:
+    - id: c
+      type: PitneyBowes.Developer.ShippingApi.ICustoms
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    content.vb: Public Function Customs(c As ICustoms) As ShipmentFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Customs*
+  nameWithType.vb: ShipmentFluent(Of T).Customs(ICustoms)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Customs(PitneyBowes.Developer.ShippingApi.ICustoms)
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Fluent
+  commentId: N:PitneyBowes.Developer.ShippingApi.Fluent
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Fluent
+  nameWithType: PitneyBowes.Developer.ShippingApi.Fluent
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.op_Implicit*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.op_Implicit
+  isExternal: false
+  name: Implicit
+  nameWithType: ShipmentFluent<T>.Implicit
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Implicit
+  nameWithType.vb: ShipmentFluent(Of T).Widening
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Widening
+  name.vb: Widening
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+  parent: PitneyBowes.Developer.ShippingApi.Fluent
+  isExternal: false
+  name: ShipmentFluent<T>
+  nameWithType: ShipmentFluent<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>
+  nameWithType.vb: ShipmentFluent(Of T)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T)
+  name.vb: ShipmentFluent(Of T)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    name: ShipmentFluent
+    nameWithType: ShipmentFluent
+    fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    name: ShipmentFluent
+    nameWithType: ShipmentFluent
+    fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Create*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Create
+  isExternal: false
+  name: Create
+  nameWithType: ShipmentFluent<T>.Create
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Create
+  nameWithType.vb: ShipmentFluent(Of T).Create
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Create
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.#ctor*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.#ctor
+  isExternal: false
+  name: ShipmentFluent
+  nameWithType: ShipmentFluent<T>.ShipmentFluent
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipmentFluent
+  nameWithType.vb: ShipmentFluent(Of T).ShipmentFluent
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipmentFluent
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentType
+  isExternal: false
+  name: ShipmentType
+  nameWithType: ShipmentFluent<T>.ShipmentType
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipmentType
+  nameWithType.vb: ShipmentFluent(Of T).ShipmentType
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipmentType
+- uid: PitneyBowes.Developer.ShippingApi.ShipmentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShipmentType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ShipmentType
+  nameWithType: ShipmentType
+  fullName: PitneyBowes.Developer.ShippingApi.ShipmentType
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.TransactionId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.TransactionId
+  isExternal: false
+  name: TransactionId
+  nameWithType: ShipmentFluent<T>.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.TransactionId
+  nameWithType.vb: ShipmentFluent(Of T).TransactionId
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).TransactionId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.MinimalAddressValidation*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.MinimalAddressValidation
+  isExternal: false
+  name: MinimalAddressValidation
+  nameWithType: ShipmentFluent<T>.MinimalAddressValidation
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.MinimalAddressValidation
+  nameWithType.vb: ShipmentFluent(Of T).MinimalAddressValidation
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).MinimalAddressValidation
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipperRatePlan*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipperRatePlan
+  isExternal: false
+  name: ShipperRatePlan
+  nameWithType: ShipmentFluent<T>.ShipperRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipperRatePlan
+  nameWithType.vb: ShipmentFluent(Of T).ShipperRatePlan
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipperRatePlan
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.FromAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.FromAddress
+  isExternal: false
+  name: FromAddress
+  nameWithType: ShipmentFluent<T>.FromAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.FromAddress
+  nameWithType.vb: ShipmentFluent(Of T).FromAddress
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).FromAddress
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ToAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ToAddress
+  isExternal: false
+  name: ToAddress
+  nameWithType: ShipmentFluent<T>.ToAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ToAddress
+  nameWithType.vb: ShipmentFluent(Of T).ToAddress
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ToAddress
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AltReturnAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AltReturnAddress
+  isExternal: false
+  name: AltReturnAddress
+  nameWithType: ShipmentFluent<T>.AltReturnAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AltReturnAddress
+  nameWithType.vb: ShipmentFluent(Of T).AltReturnAddress
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AltReturnAddress
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Parcel*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Parcel
+  isExternal: false
+  name: Parcel
+  nameWithType: ShipmentFluent<T>.Parcel
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Parcel
+  nameWithType.vb: ShipmentFluent(Of T).Parcel
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Parcel
+- uid: PitneyBowes.Developer.ShippingApi.IParcel
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcel
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcel
+  nameWithType: IParcel
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Rates*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Rates
+  isExternal: false
+  name: Rates
+  nameWithType: ShipmentFluent<T>.Rates
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Rates
+  nameWithType.vb: ShipmentFluent(Of T).Rates
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Rates
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IRates}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IRates}'
+  definition: IEnumerable`1
+  name: IEnumerable<IRates>
+  nameWithType: IEnumerable<IRates>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IRates>
+  nameWithType.vb: IEnumerable(Of IRates)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IRates)
+  name.vb: IEnumerable(Of IRates)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IRates
+    name: IRates
+    nameWithType: IRates
+    fullName: PitneyBowes.Developer.ShippingApi.IRates
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IRates
+    name: IRates
+    nameWithType: IRates
+    fullName: PitneyBowes.Developer.ShippingApi.IRates
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddRates*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddRates
+  isExternal: false
+  name: AddRates
+  nameWithType: ShipmentFluent<T>.AddRates
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AddRates
+  nameWithType.vb: ShipmentFluent(Of T).AddRates
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AddRates
+- uid: PitneyBowes.Developer.ShippingApi.IRates
+  commentId: T:PitneyBowes.Developer.ShippingApi.IRates
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IRates
+  nameWithType: IRates
+  fullName: PitneyBowes.Developer.ShippingApi.IRates
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Documents*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Documents
+  isExternal: false
+  name: Documents
+  nameWithType: ShipmentFluent<T>.Documents
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Documents
+  nameWithType.vb: ShipmentFluent(Of T).Documents
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Documents
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument}'
+  definition: IEnumerable`1
+  name: IEnumerable<IDocument>
+  nameWithType: IEnumerable<IDocument>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IDocument>
+  nameWithType.vb: IEnumerable(Of IDocument)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IDocument)
+  name.vb: IEnumerable(Of IDocument)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IDocument
+    name: IDocument
+    nameWithType: IDocument
+    fullName: PitneyBowes.Developer.ShippingApi.IDocument
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IDocument
+    name: IDocument
+    nameWithType: IDocument
+    fullName: PitneyBowes.Developer.ShippingApi.IDocument
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddDocument*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddDocument
+  isExternal: false
+  name: AddDocument
+  nameWithType: ShipmentFluent<T>.AddDocument
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AddDocument
+  nameWithType.vb: ShipmentFluent(Of T).AddDocument
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AddDocument
+- uid: PitneyBowes.Developer.ShippingApi.IDocument
+  commentId: T:PitneyBowes.Developer.ShippingApi.IDocument
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IDocument
+  nameWithType: IDocument
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentOptions*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.ShipmentOptions
+  isExternal: false
+  name: ShipmentOptions
+  nameWithType: ShipmentFluent<T>.ShipmentOptions
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.ShipmentOptions
+  nameWithType.vb: ShipmentFluent(Of T).ShipmentOptions
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).ShipmentOptions
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions}'
+  definition: IEnumerable`1
+  name: IEnumerable<IShipmentOptions>
+  nameWithType: IEnumerable<IShipmentOptions>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IShipmentOptions>
+  nameWithType.vb: IEnumerable(Of IShipmentOptions)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  name.vb: IEnumerable(Of IShipmentOptions)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    name: IShipmentOptions
+    nameWithType: IShipmentOptions
+    fullName: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    name: IShipmentOptions
+    nameWithType: IShipmentOptions
+    fullName: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddShipmentOptions*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.AddShipmentOptions
+  isExternal: false
+  name: AddShipmentOptions
+  nameWithType: ShipmentFluent<T>.AddShipmentOptions
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.AddShipmentOptions
+  nameWithType.vb: ShipmentFluent(Of T).AddShipmentOptions
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).AddShipmentOptions
+- uid: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  commentId: T:PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IShipmentOptions
+  nameWithType: IShipmentOptions
+  fullName: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Customs*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1.Customs
+  isExternal: false
+  name: Customs
+  nameWithType: ShipmentFluent<T>.Customs
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent<T>.Customs
+  nameWithType.vb: ShipmentFluent(Of T).Customs
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent(Of T).Customs
+- uid: PitneyBowes.Developer.ShippingApi.ICustoms
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICustoms
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ICustoms
+  nameWithType: ICustoms
+  fullName: PitneyBowes.Developer.ShippingApi.ICustoms

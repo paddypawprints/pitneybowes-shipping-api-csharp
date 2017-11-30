@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AddressessMethods
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AddressessMethods
+   ">
+    <meta name="generator" content="docfx 2.25.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PitneyBowes.Developer.ShippingApi.Method.AddressessMethods">
+  
+  
+  <h1 id="PitneyBowes_Developer_ShippingApi_Method_AddressessMethods" data-uid="PitneyBowes.Developer.ShippingApi.Method.AddressessMethods" class="text-break">Class AddressessMethods
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AddressessMethods</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PitneyBowes.Developer.ShippingApi.Method.html">PitneyBowes.Developer.ShippingApi.Method</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PitneyBowes_Developer_ShippingApi_Method_AddressessMethods_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AddressessMethods</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PitneyBowes_Developer_ShippingApi_Method_AddressessMethods_VerifyAddress_" data-uid="PitneyBowes.Developer.ShippingApi.Method.AddressessMethods.VerifyAddress*"></a>
+  <h4 id="PitneyBowes_Developer_ShippingApi_Method_AddressessMethods_VerifyAddress__1___0_PitneyBowes_Developer_ShippingApi_ISession_" data-uid="PitneyBowes.Developer.ShippingApi.Method.AddressessMethods.VerifyAddress``1(``0,PitneyBowes.Developer.ShippingApi.ISession)">VerifyAddress&lt;T&gt;(T, ISession)</h4>
+  <div class="markdown level1 summary"><p>Address validation verifies and cleanses postal addresses within the United
+States to help ensure packages are rated accurately and shipments arrive at
+their final destinations on time.This API call sends an address to be
+verified.The response returns a valid address.</p>
+<ol>
+<li><p>Only U.S. domestic addresses are validated using this POST operation at this time.</p>
+</li>
+<li><p>Addresses are validated by the Pitney Bowes Address Validation (AV) engine.</p>
+</li>
+<li><p>Complete addresses, including address line(s) and city/state/zip are always
+validated by default. An error is returned if validation fails.</p>
+</li>
+<li>When the <code>minimalAddressValidation</code> query parameter flag is set to true,
+the address line(s) are left as is and are not formatted, re-arranged or
+included in the validation check.Only the city/state/zip line is
+checked for validity.
+** Note:** When using this option, please ensure that street addresses on
+the labels are actually deliverable, as street addresses are not
+validated by the Pitney Bowes AV engine.</li>
+<li><p>When the <code>minimalAddressValidation</code> query parameter flag is set to false (by
+default), the complete address, address line(s) and city/state/zip line
+are included in the validation check.</p>
+</li>
+<li><p>Address validation returns 2-digit delivery points when available. You can find
+more information on delivery points at the |delivery-points.
+<a href="https://en.wikipedia.org/wiki/Delivery_point" target="_blank">Wikipedia Delivery Point page</a></p>
+</li>
+<li><p>If validation fails, you can use the :doc:<code>/api/post-address-suggest</code> API call
+to provide suggestions that could result in the address passing
+verification in a subsequent Address Validation API call.</p>
+</li>
+</ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;ShippingApiResponse&lt;T&gt;&gt; VerifyAddress&lt;T&gt;(T request, ISession session = null)where T : IAddress, new ()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PitneyBowes.Developer.ShippingApi.ISession.html">ISession</a></td>
+        <td><span class="parametername">session</span></td>
+        <td><p>Session.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="PitneyBowes.Developer.ShippingApi.ShippingApiResponse%601.html">ShippingApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>The address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The 1st type parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PitneyBowes_Developer_ShippingApi_Method_AddressessMethods_VerifySuggestAddress_" data-uid="PitneyBowes.Developer.ShippingApi.Method.AddressessMethods.VerifySuggestAddress*"></a>
+  <h4 id="PitneyBowes_Developer_ShippingApi_Method_AddressessMethods_VerifySuggestAddress__1___0_PitneyBowes_Developer_ShippingApi_ISession_" data-uid="PitneyBowes.Developer.ShippingApi.Method.AddressessMethods.VerifySuggestAddress``1(``0,PitneyBowes.Developer.ShippingApi.ISession)">VerifySuggestAddress&lt;T&gt;(T, ISession)</h4>
+  <div class="markdown level1 summary"><p>Verifies the suggest address. This POST operation obtains suggested addresses in cases where the
+Address Validation API call has returned an error.</p>
+<ol>
+<li><p>The suggested addresses are <strong>not</strong> validated addresses. You must reissue
+the API call.</p>
+</li>
+<li><p>Some suggestions might not be valid delivery points. This is especially
+true for range suggestions. For example, if the suggested valid range for a
+street is 1-100, the Suggest Addresses API call will consider all numbers 
+the range to be valid, even if the only valid delivery points are
+numbers 12, 24, and 36.</p>
+</li>
+<li><p>The operation provides several types of suggestions:</p>
+</li>
+<li>Range suggestions:</li>
+<li>Primary number range (e.g., street number, PO Box number)</li>
+<li>Secondary number range(e.g., suite number, apartment number</li>
+<li>Street Name</li>
+<li>City Name</li>
+<li>Company Name</li>
+<li><p>Puerto Rican Urbanization</p>
+</li>
+<li><p>The suggested addresses are <strong>not</strong> sorted by best match.</p>
+</li>
+<li><p>The API returns a maximum of 20 suggestions.</p>
+</li>
+<li><p>Some addresses might return no suggestions. If there are no
+suggestions, the <code>suggestions</code> object is not returned.</p>
+</li>
+</ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;ShippingApiResponse&lt;VerifySuggestResponse&gt;&gt; VerifySuggestAddress&lt;T&gt;(T request, ISession session = null)where T : IAddress, new ()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PitneyBowes.Developer.ShippingApi.ISession.html">ISession</a></td>
+        <td><span class="parametername">session</span></td>
+        <td><p>Session.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="PitneyBowes.Developer.ShippingApi.ShippingApiResponse%601.html">ShippingApiResponse</a>&lt;<a class="xref" href="PitneyBowes.Developer.ShippingApi.Method.VerifySuggestResponse.html">VerifySuggestResponse</a>&gt;&gt;</td>
+        <td><p>The suggest address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The 1st type parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

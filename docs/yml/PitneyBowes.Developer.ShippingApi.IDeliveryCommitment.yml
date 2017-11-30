@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  commentId: T:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  id: IDeliveryCommitment
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails
+  - PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime
+  - PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee
+  - PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays
+  - PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays
+  langs:
+  - csharp
+  - vb
+  name: IDeliveryCommitment
+  nameWithType: IDeliveryCommitment
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  type: Interface
+  source:
+    id: IDeliveryCommitment
+    path: ''
+    startLine: 1128
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nTime in transit for the shipment.\n"
+  example: []
+  syntax:
+    content: public interface IDeliveryCommitment
+    content.vb: Public Interface IDeliveryCommitment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays
+  id: MinEstimatedNumberOfDays
+  parent: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  langs:
+  - csharp
+  - vb
+  name: MinEstimatedNumberOfDays
+  nameWithType: IDeliveryCommitment.MinEstimatedNumberOfDays
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays
+  type: Property
+  source:
+    id: MinEstimatedNumberOfDays
+    path: ''
+    startLine: 1134
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe minimum number of delivery days.\n"
+  example: []
+  syntax:
+    content: string MinEstimatedNumberOfDays { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The minimum estimated number of days.
+    content.vb: Property MinEstimatedNumberOfDays As String
+  overload: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays
+  id: MaxEstimatedNumberOfDays
+  parent: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  langs:
+  - csharp
+  - vb
+  name: MaxEstimatedNumberOfDays
+  nameWithType: IDeliveryCommitment.MaxEstimatedNumberOfDays
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays
+  type: Property
+  source:
+    id: MaxEstimatedNumberOfDays
+    path: ''
+    startLine: 1139
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the max estimated number of days.\n"
+  example: []
+  syntax:
+    content: string MaxEstimatedNumberOfDays { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The max estimated number of days.
+    content.vb: Property MaxEstimatedNumberOfDays As String
+  overload: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime
+  id: EstimatedDeliveryDateTime
+  parent: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  langs:
+  - csharp
+  - vb
+  name: EstimatedDeliveryDateTime
+  nameWithType: IDeliveryCommitment.EstimatedDeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime
+  type: Property
+  source:
+    id: EstimatedDeliveryDateTime
+    path: ''
+    startLine: 1144
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the estimated delivery date time.\n"
+  example: []
+  syntax:
+    content: string EstimatedDeliveryDateTime { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The estimated delivery date time.
+    content.vb: Property EstimatedDeliveryDateTime As String
+  overload: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee
+  id: Guarantee
+  parent: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  langs:
+  - csharp
+  - vb
+  name: Guarantee
+  nameWithType: IDeliveryCommitment.Guarantee
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee
+  type: Property
+  source:
+    id: Guarantee
+    path: ''
+    startLine: 1149
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nWhether the delivery is guaranteed by the carrier.\n"
+  example: []
+  syntax:
+    content: string Guarantee { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The guarantee.
+    content.vb: Property Guarantee As String
+  overload: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails
+  commentId: P:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails
+  id: AdditionalDetails
+  parent: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  langs:
+  - csharp
+  - vb
+  name: AdditionalDetails
+  nameWithType: IDeliveryCommitment.AdditionalDetails
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails
+  type: Property
+  source:
+    id: AdditionalDetails
+    path: ''
+    startLine: 1154
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThese are carrier specific details that may be provided.\n"
+  example: []
+  syntax:
+    content: string AdditionalDetails { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The additional details.
+    content.vb: Property AdditionalDetails As String
+  overload: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays
+  isExternal: false
+  name: MinEstimatedNumberOfDays
+  nameWithType: IDeliveryCommitment.MinEstimatedNumberOfDays
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MinEstimatedNumberOfDays
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays
+  isExternal: false
+  name: MaxEstimatedNumberOfDays
+  nameWithType: IDeliveryCommitment.MaxEstimatedNumberOfDays
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.MaxEstimatedNumberOfDays
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime
+  isExternal: false
+  name: EstimatedDeliveryDateTime
+  nameWithType: IDeliveryCommitment.EstimatedDeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.EstimatedDeliveryDateTime
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee
+  isExternal: false
+  name: Guarantee
+  nameWithType: IDeliveryCommitment.Guarantee
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.Guarantee
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails
+  isExternal: false
+  name: AdditionalDetails
+  nameWithType: IDeliveryCommitment.AdditionalDetails
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment.AdditionalDetails

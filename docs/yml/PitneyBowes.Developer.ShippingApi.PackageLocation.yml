@@ -1,0 +1,307 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation
+  commentId: T:PitneyBowes.Developer.ShippingApi.PackageLocation
+  id: PackageLocation
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.BackDoor
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.FrontDoor
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.InAtMailbox
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.KnockonDoorRingBell
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.MailRoom
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.Office
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.Other
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.Reception
+  - PitneyBowes.Developer.ShippingApi.PackageLocation.SideDoor
+  langs:
+  - csharp
+  - vb
+  name: PackageLocation
+  nameWithType: PackageLocation
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation
+  type: Enum
+  source:
+    id: PackageLocation
+    path: ''
+    startLine: 148
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPackage location for pickup.\n"
+  example: []
+  syntax:
+    content: public enum PackageLocation
+    content.vb: Public Enum PackageLocation
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.FrontDoor
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.FrontDoor
+  id: FrontDoor
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: FrontDoor
+  nameWithType: PackageLocation.FrontDoor
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.FrontDoor
+  type: Field
+  source:
+    id: FrontDoor
+    path: ''
+    startLine: 150
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: FrontDoor = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.BackDoor
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.BackDoor
+  id: BackDoor
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: BackDoor
+  nameWithType: PackageLocation.BackDoor
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.BackDoor
+  type: Field
+  source:
+    id: BackDoor
+    path: ''
+    startLine: 151
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: BackDoor = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.SideDoor
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.SideDoor
+  id: SideDoor
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: SideDoor
+  nameWithType: PackageLocation.SideDoor
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.SideDoor
+  type: Field
+  source:
+    id: SideDoor
+    path: ''
+    startLine: 152
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: SideDoor = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.KnockonDoorRingBell
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.KnockonDoorRingBell
+  id: KnockonDoorRingBell
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: KnockonDoorRingBell
+  nameWithType: PackageLocation.KnockonDoorRingBell
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.KnockonDoorRingBell
+  type: Field
+  source:
+    id: KnockonDoorRingBell
+    path: ''
+    startLine: 153
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: KnockonDoorRingBell = 3
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.MailRoom
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.MailRoom
+  id: MailRoom
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: MailRoom
+  nameWithType: PackageLocation.MailRoom
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.MailRoom
+  type: Field
+  source:
+    id: MailRoom
+    path: ''
+    startLine: 154
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: MailRoom = 4
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.Office
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.Office
+  id: Office
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: Office
+  nameWithType: PackageLocation.Office
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.Office
+  type: Field
+  source:
+    id: Office
+    path: ''
+    startLine: 155
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: Office = 5
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.Reception
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.Reception
+  id: Reception
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: Reception
+  nameWithType: PackageLocation.Reception
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.Reception
+  type: Field
+  source:
+    id: Reception
+    path: ''
+    startLine: 156
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: Reception = 6
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.InAtMailbox
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.InAtMailbox
+  id: InAtMailbox
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: InAtMailbox
+  nameWithType: PackageLocation.InAtMailbox
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.InAtMailbox
+  type: Field
+  source:
+    id: InAtMailbox
+    path: ''
+    startLine: 157
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: InAtMailbox = 7
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation.Other
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageLocation.Other
+  id: Other
+  parent: PitneyBowes.Developer.ShippingApi.PackageLocation
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: PackageLocation.Other
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation.Other
+  type: Field
+  source:
+    id: Other
+    path: ''
+    startLine: 158
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: Other = 8
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageLocation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.PackageLocation
+  commentId: T:PitneyBowes.Developer.ShippingApi.PackageLocation
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PackageLocation
+  nameWithType: PackageLocation
+  fullName: PitneyBowes.Developer.ShippingApi.PackageLocation

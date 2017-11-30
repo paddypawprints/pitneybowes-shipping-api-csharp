@@ -1,0 +1,852 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IShipment
+  commentId: T:PitneyBowes.Developer.ShippingApi.IShipment
+  id: IShipment
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IShipment.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  - PitneyBowes.Developer.ShippingApi.IShipment.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  - PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  - PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress
+  - PitneyBowes.Developer.ShippingApi.IShipment.Customs
+  - PitneyBowes.Developer.ShippingApi.IShipment.Documents
+  - PitneyBowes.Developer.ShippingApi.IShipment.FromAddress
+  - PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation
+  - PitneyBowes.Developer.ShippingApi.IShipment.Parcel
+  - PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber
+  - PitneyBowes.Developer.ShippingApi.IShipment.Rates
+  - PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId
+  - PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions
+  - PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType
+  - PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan
+  - PitneyBowes.Developer.ShippingApi.IShipment.ToAddress
+  - PitneyBowes.Developer.ShippingApi.IShipment.TransactionId
+  langs:
+  - csharp
+  - vb
+  name: IShipment
+  nameWithType: IShipment
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment
+  type: Interface
+  source:
+    id: IShipment
+    path: ''
+    startLine: 1882
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface IShipment
+    content.vb: Public Interface IShipment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.TransactionId
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.TransactionId
+  id: TransactionId
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: TransactionId
+  nameWithType: IShipment.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.TransactionId
+  type: Property
+  source:
+    id: TransactionId
+    path: ''
+    startLine: 1884
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string TransactionId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TransactionId As String
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.TransactionId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation
+  id: MinimalAddressValidation
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: MinimalAddressValidation
+  nameWithType: IShipment.MinimalAddressValidation
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation
+  type: Property
+  source:
+    id: MinimalAddressValidation
+    path: ''
+    startLine: 1885
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string MinimalAddressValidation { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property MinimalAddressValidation As String
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan
+  id: ShipperRatePlan
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: ShipperRatePlan
+  nameWithType: IShipment.ShipperRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan
+  type: Property
+  source:
+    id: ShipperRatePlan
+    path: ''
+    startLine: 1886
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string ShipperRatePlan { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ShipperRatePlan As String
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.FromAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.FromAddress
+  id: FromAddress
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: FromAddress
+  nameWithType: IShipment.FromAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.FromAddress
+  type: Property
+  source:
+    id: FromAddress
+    path: ''
+    startLine: 1887
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IAddress FromAddress { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    content.vb: Property FromAddress As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.FromAddress*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ToAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.ToAddress
+  id: ToAddress
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: ToAddress
+  nameWithType: IShipment.ToAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ToAddress
+  type: Property
+  source:
+    id: ToAddress
+    path: ''
+    startLine: 1888
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IAddress ToAddress { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    content.vb: Property ToAddress As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.ToAddress*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress
+  id: AltReturnAddress
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: AltReturnAddress
+  nameWithType: IShipment.AltReturnAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress
+  type: Property
+  source:
+    id: AltReturnAddress
+    path: ''
+    startLine: 1889
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IAddress AltReturnAddress { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    content.vb: Property AltReturnAddress As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Parcel
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.Parcel
+  id: Parcel
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: Parcel
+  nameWithType: IShipment.Parcel
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Parcel
+  type: Property
+  source:
+    id: Parcel
+    path: ''
+    startLine: 1890
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IParcel Parcel { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IParcel
+    content.vb: Property Parcel As IParcel
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.Parcel*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Rates
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.Rates
+  id: Rates
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: Rates
+  nameWithType: IShipment.Rates
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Rates
+  type: Property
+  source:
+    id: Rates
+    path: ''
+    startLine: 1891
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IEnumerable<IRates> Rates { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IRates}
+    content.vb: Property Rates As IEnumerable(Of IRates)
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.Rates*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShipment.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  id: AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: AddRates(IRates)
+  nameWithType: IShipment.AddRates(IRates)
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AddRates(PitneyBowes.Developer.ShippingApi.IRates)
+  type: Method
+  source:
+    id: AddRates
+    path: ''
+    startLine: 1892
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IRates AddRates(IRates r)
+    parameters:
+    - id: r
+      type: PitneyBowes.Developer.ShippingApi.IRates
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IRates
+    content.vb: Function AddRates(r As IRates) As IRates
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.AddRates*
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Documents
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.Documents
+  id: Documents
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: Documents
+  nameWithType: IShipment.Documents
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Documents
+  type: Property
+  source:
+    id: Documents
+    path: ''
+    startLine: 1893
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IEnumerable<IDocument> Documents { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument}
+    content.vb: Property Documents As IEnumerable(Of IDocument)
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.Documents*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShipment.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  id: AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: AddDocument(IDocument)
+  nameWithType: IShipment.AddDocument(IDocument)
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AddDocument(PitneyBowes.Developer.ShippingApi.IDocument)
+  type: Method
+  source:
+    id: AddDocument
+    path: ''
+    startLine: 1894
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IDocument AddDocument(IDocument d)
+    parameters:
+    - id: d
+      type: PitneyBowes.Developer.ShippingApi.IDocument
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IDocument
+    content.vb: Function AddDocument(d As IDocument) As IDocument
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.AddDocument*
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions
+  id: ShipmentOptions
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: ShipmentOptions
+  nameWithType: IShipment.ShipmentOptions
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions
+  type: Property
+  source:
+    id: ShipmentOptions
+    path: ''
+    startLine: 1895
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IEnumerable<IShipmentOptions> ShipmentOptions { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions}
+    content.vb: Property ShipmentOptions As IEnumerable(Of IShipmentOptions)
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  commentId: M:PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  id: AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: AddShipmentOptions(IShipmentOptions)
+  nameWithType: IShipment.AddShipmentOptions(IShipmentOptions)
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions(PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  type: Method
+  source:
+    id: AddShipmentOptions
+    path: ''
+    startLine: 1896
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IShipmentOptions AddShipmentOptions(IShipmentOptions o)
+    parameters:
+    - id: o
+      type: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    content.vb: Function AddShipmentOptions(o As IShipmentOptions) As IShipmentOptions
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions*
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Customs
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.Customs
+  id: Customs
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: Customs
+  nameWithType: IShipment.Customs
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Customs
+  type: Property
+  source:
+    id: Customs
+    path: ''
+    startLine: 1897
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: ICustoms Customs { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.ICustoms
+    content.vb: Property Customs As ICustoms
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.Customs*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType
+  id: ShipmentType
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: ShipmentType
+  nameWithType: IShipment.ShipmentType
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType
+  type: Property
+  source:
+    id: ShipmentType
+    path: ''
+    startLine: 1898
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: ShipmentType ShipmentType { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.ShipmentType
+    content.vb: Property ShipmentType As ShipmentType
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId
+  id: ShipmentId
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: ShipmentId
+  nameWithType: IShipment.ShipmentId
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId
+  type: Property
+  source:
+    id: ShipmentId
+    path: ''
+    startLine: 1899
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string ShipmentId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ShipmentId As String
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber
+  id: ParcelTrackingNumber
+  parent: PitneyBowes.Developer.ShippingApi.IShipment
+  langs:
+  - csharp
+  - vb
+  name: ParcelTrackingNumber
+  nameWithType: IShipment.ParcelTrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber
+  type: Property
+  source:
+    id: ParcelTrackingNumber
+    path: ''
+    startLine: 1900
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string ParcelTrackingNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ParcelTrackingNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.TransactionId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.TransactionId
+  isExternal: false
+  name: TransactionId
+  nameWithType: IShipment.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.TransactionId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation
+  isExternal: false
+  name: MinimalAddressValidation
+  nameWithType: IShipment.MinimalAddressValidation
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.MinimalAddressValidation
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan
+  isExternal: false
+  name: ShipperRatePlan
+  nameWithType: IShipment.ShipperRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipperRatePlan
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.FromAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.FromAddress
+  isExternal: false
+  name: FromAddress
+  nameWithType: IShipment.FromAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.FromAddress
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ToAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.ToAddress
+  isExternal: false
+  name: ToAddress
+  nameWithType: IShipment.ToAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ToAddress
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress
+  isExternal: false
+  name: AltReturnAddress
+  nameWithType: IShipment.AltReturnAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AltReturnAddress
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Parcel*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.Parcel
+  isExternal: false
+  name: Parcel
+  nameWithType: IShipment.Parcel
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Parcel
+- uid: PitneyBowes.Developer.ShippingApi.IParcel
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcel
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcel
+  nameWithType: IParcel
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Rates*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.Rates
+  isExternal: false
+  name: Rates
+  nameWithType: IShipment.Rates
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Rates
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IRates}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IRates}'
+  definition: IEnumerable`1
+  name: IEnumerable<IRates>
+  nameWithType: IEnumerable<IRates>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IRates>
+  nameWithType.vb: IEnumerable(Of IRates)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IRates)
+  name.vb: IEnumerable(Of IRates)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IRates
+    name: IRates
+    nameWithType: IRates
+    fullName: PitneyBowes.Developer.ShippingApi.IRates
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IRates
+    name: IRates
+    nameWithType: IRates
+    fullName: PitneyBowes.Developer.ShippingApi.IRates
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AddRates*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.AddRates
+  isExternal: false
+  name: AddRates
+  nameWithType: IShipment.AddRates
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AddRates
+- uid: PitneyBowes.Developer.ShippingApi.IRates
+  commentId: T:PitneyBowes.Developer.ShippingApi.IRates
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IRates
+  nameWithType: IRates
+  fullName: PitneyBowes.Developer.ShippingApi.IRates
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Documents*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.Documents
+  isExternal: false
+  name: Documents
+  nameWithType: IShipment.Documents
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Documents
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IDocument}'
+  definition: IEnumerable`1
+  name: IEnumerable<IDocument>
+  nameWithType: IEnumerable<IDocument>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IDocument>
+  nameWithType.vb: IEnumerable(Of IDocument)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IDocument)
+  name.vb: IEnumerable(Of IDocument)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IDocument
+    name: IDocument
+    nameWithType: IDocument
+    fullName: PitneyBowes.Developer.ShippingApi.IDocument
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IDocument
+    name: IDocument
+    nameWithType: IDocument
+    fullName: PitneyBowes.Developer.ShippingApi.IDocument
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AddDocument*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.AddDocument
+  isExternal: false
+  name: AddDocument
+  nameWithType: IShipment.AddDocument
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AddDocument
+- uid: PitneyBowes.Developer.ShippingApi.IDocument
+  commentId: T:PitneyBowes.Developer.ShippingApi.IDocument
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IDocument
+  nameWithType: IDocument
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions
+  isExternal: false
+  name: ShipmentOptions
+  nameWithType: IShipment.ShipmentOptions
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentOptions
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IShipmentOptions}'
+  definition: IEnumerable`1
+  name: IEnumerable<IShipmentOptions>
+  nameWithType: IEnumerable<IShipmentOptions>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IShipmentOptions>
+  nameWithType.vb: IEnumerable(Of IShipmentOptions)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IShipmentOptions)
+  name.vb: IEnumerable(Of IShipmentOptions)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    name: IShipmentOptions
+    nameWithType: IShipmentOptions
+    fullName: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    name: IShipmentOptions
+    nameWithType: IShipmentOptions
+    fullName: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions
+  isExternal: false
+  name: AddShipmentOptions
+  nameWithType: IShipment.AddShipmentOptions
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.AddShipmentOptions
+- uid: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  commentId: T:PitneyBowes.Developer.ShippingApi.IShipmentOptions
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IShipmentOptions
+  nameWithType: IShipmentOptions
+  fullName: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.Customs*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.Customs
+  isExternal: false
+  name: Customs
+  nameWithType: IShipment.Customs
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.Customs
+- uid: PitneyBowes.Developer.ShippingApi.ICustoms
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICustoms
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ICustoms
+  nameWithType: ICustoms
+  fullName: PitneyBowes.Developer.ShippingApi.ICustoms
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType
+  isExternal: false
+  name: ShipmentType
+  nameWithType: IShipment.ShipmentType
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentType
+- uid: PitneyBowes.Developer.ShippingApi.ShipmentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShipmentType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ShipmentType
+  nameWithType: ShipmentType
+  fullName: PitneyBowes.Developer.ShippingApi.ShipmentType
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId
+  isExternal: false
+  name: ShipmentId
+  nameWithType: IShipment.ShipmentId
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ShipmentId
+- uid: PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber
+  isExternal: false
+  name: ParcelTrackingNumber
+  nameWithType: IShipment.ParcelTrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IShipment.ParcelTrackingNumber

@@ -1,0 +1,405 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant
+  commentId: T:PitneyBowes.Developer.ShippingApi.IMerchant
+  id: IMerchant
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate
+  - PitneyBowes.Developer.ShippingApi.IMerchant.Email
+  - PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount
+  - PitneyBowes.Developer.ShippingApi.IMerchant.FullName
+  - PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus
+  - PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason
+  - PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber
+  - PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber
+  - PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate
+  - PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount
+  langs:
+  - csharp
+  - vb
+  name: IMerchant
+  nameWithType: IMerchant
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant
+  type: Interface
+  source:
+    id: IMerchant
+    path: ''
+    startLine: 1402
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface IMerchant
+    content.vb: Public Interface IMerchant
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.FullName
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.FullName
+  id: FullName
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: FullName
+  nameWithType: IMerchant.FullName
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.FullName
+  type: Property
+  source:
+    id: FullName
+    path: ''
+    startLine: 1404
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string FullName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property FullName As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.FullName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.Email
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.Email
+  id: Email
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: IMerchant.Email
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.Email
+  type: Property
+  source:
+    id: Email
+    path: ''
+    startLine: 1405
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Email As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.Email*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate
+  id: RegisteredDate
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: RegisteredDate
+  nameWithType: IMerchant.RegisteredDate
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate
+  type: Property
+  source:
+    id: RegisteredDate
+    path: ''
+    startLine: 1406
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: DateTimeOffset RegisteredDate { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Property RegisteredDate As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber
+  id: PaymentAccountNumber
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: PaymentAccountNumber
+  nameWithType: IMerchant.PaymentAccountNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber
+  type: Property
+  source:
+    id: PaymentAccountNumber
+    path: ''
+    startLine: 1407
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string PaymentAccountNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property PaymentAccountNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount
+  id: EnterpriseAccount
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: EnterpriseAccount
+  nameWithType: IMerchant.EnterpriseAccount
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount
+  type: Property
+  source:
+    id: EnterpriseAccount
+    path: ''
+    startLine: 1408
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string EnterpriseAccount { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property EnterpriseAccount As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount
+  id: SubscriptionAccount
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionAccount
+  nameWithType: IMerchant.SubscriptionAccount
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount
+  type: Property
+  source:
+    id: SubscriptionAccount
+    path: ''
+    startLine: 1409
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string SubscriptionAccount { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SubscriptionAccount As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber
+  id: PostalReportingNumber
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: PostalReportingNumber
+  nameWithType: IMerchant.PostalReportingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber
+  type: Property
+  source:
+    id: PostalReportingNumber
+    path: ''
+    startLine: 1410
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string PostalReportingNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property PostalReportingNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus
+  id: MerchantStatus
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: MerchantStatus
+  nameWithType: IMerchant.MerchantStatus
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus
+  type: Property
+  source:
+    id: MerchantStatus
+    path: ''
+    startLine: 1411
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string MerchantStatus { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property MerchantStatus As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason
+  id: MerchantStatusReason
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: MerchantStatusReason
+  nameWithType: IMerchant.MerchantStatusReason
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason
+  type: Property
+  source:
+    id: MerchantStatusReason
+    path: ''
+    startLine: 1412
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string MerchantStatusReason { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property MerchantStatusReason As String
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate
+  commentId: P:PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate
+  id: DeactivatedDate
+  parent: PitneyBowes.Developer.ShippingApi.IMerchant
+  langs:
+  - csharp
+  - vb
+  name: DeactivatedDate
+  nameWithType: IMerchant.DeactivatedDate
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate
+  type: Property
+  source:
+    id: DeactivatedDate
+    path: ''
+    startLine: 1413
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: DateTimeOffset DeactivatedDate { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Property DeactivatedDate As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.FullName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.FullName
+  isExternal: false
+  name: FullName
+  nameWithType: IMerchant.FullName
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.FullName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.Email*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.Email
+  isExternal: false
+  name: Email
+  nameWithType: IMerchant.Email
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.Email
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate
+  isExternal: false
+  name: RegisteredDate
+  nameWithType: IMerchant.RegisteredDate
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.RegisteredDate
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: DateTimeOffset
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber
+  isExternal: false
+  name: PaymentAccountNumber
+  nameWithType: IMerchant.PaymentAccountNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.PaymentAccountNumber
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount
+  isExternal: false
+  name: EnterpriseAccount
+  nameWithType: IMerchant.EnterpriseAccount
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.EnterpriseAccount
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount
+  isExternal: false
+  name: SubscriptionAccount
+  nameWithType: IMerchant.SubscriptionAccount
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.SubscriptionAccount
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber
+  isExternal: false
+  name: PostalReportingNumber
+  nameWithType: IMerchant.PostalReportingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.PostalReportingNumber
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus
+  isExternal: false
+  name: MerchantStatus
+  nameWithType: IMerchant.MerchantStatus
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatus
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason
+  isExternal: false
+  name: MerchantStatusReason
+  nameWithType: IMerchant.MerchantStatusReason
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.MerchantStatusReason
+- uid: PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate
+  isExternal: false
+  name: DeactivatedDate
+  nameWithType: IMerchant.DeactivatedDate
+  fullName: PitneyBowes.Developer.ShippingApi.IMerchant.DeactivatedDate

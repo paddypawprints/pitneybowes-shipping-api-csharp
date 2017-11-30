@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="pitneybowes-shipping-api-csharp Status">
+    <Files>
+      <File FileName="src/fluent/USPSExtensionMethods.cs" Line="63" Column="1" />
+      <File FileName="src/contract/Enums.cs" Line="56" Column="19" />
+      <File FileName="src/contract/IAddress.cs" Line="29" Column="1" />
+      <File FileName="src/model/Address.cs" Line="1" Column="1" />
+      <File FileName="src/contract/IAutoRefill.cs" Line="40" Column="1" />
+      <File FileName="src/contract/ICcPaymentDetails.cs" Line="26" Column="1" />
+      <File FileName="src/contract/ICustoms.cs" Line="27" Column="1" />
+      <File FileName="src/contract/ICustomsInfo.cs" Line="29" Column="1" />
+      <File FileName="src/contract/ICustomsItems.cs" Line="31" Column="1" />
+      <File FileName="src/contract/IDeliveryCommitment.cs" Line="29" Column="1" />
+      <File FileName="src/contract/IDocument.cs" Line="40" Column="1" />
+      <File FileName="src/contract/IManifest.cs" Line="32" Column="1" />
+      <File FileName="src/contract/IMerchant.cs" Line="24" Column="1" />
+      <File FileName="src/contract/IPage.cs" Line="1" Column="1" />
+      <File FileName="src/contract/IParameter.cs" Line="1" Column="1" />
+      <File FileName="src/contract/IParcel.cs" Line="29" Column="1" />
+      <File FileName="src/contract/IParcelDimension.cs" Line="25" Column="1" />
+      <File FileName="src/contract/IParcelWeight.cs" Line="25" Column="1" />
+      <File FileName="src/contract/IPaymentInfo.cs" Line="26" Column="1" />
+      <File FileName="src/contract/IPickup.cs" Line="25" Column="1" />
+      <File FileName="src/contract/IPickupCount.cs" Line="22" Column="1" />
+      <File FileName="src/contract/IPpPaymentDetails.cs" Line="28" Column="6" />
+      <File FileName="src/contract/IRates.cs" Line="24" Column="1" />
+      <File FileName="src/contract/IShipment.cs" Line="24" Column="1" />
+      <File FileName="src/contract/IShipmentOptions.cs" Line="1" Column="1" />
+      <File FileName="src/contract/ISpecialServices.cs" Line="24" Column="1" />
+      <File FileName="src/contract/ITrackingEvent.cs" Line="24" Column="1" />
+      <File FileName="src/contract/ITrackingStatus.cs" Line="25" Column="1" />
+      <File FileName="src/contract/ITransaction.cs" Line="27" Column="1" />
+      <File FileName="src/contract/ITransactionSort.cs" Line="30" Column="25" />
+      <File FileName="src/contract/IUserInfo.cs" Line="22" Column="1" />
+      <File FileName="src/method/Addresses.cs" Line="59" Column="1" />
+      <File FileName="src/method/Documents.cs" Line="1" Column="1" />
+      <File FileName="src/method/Manifest.cs" Line="63" Column="1" />
+      <File FileName="src/method/Merchant.cs" Line="240" Column="1" />
+      <File FileName="src/method/Pickup.cs" Line="106" Column="1" />
+      <File FileName="src/method/Rates.cs" Line="26" Column="1" />
+      <File FileName="src/method/Shipments.cs" Line="69" Column="1" />
+      <File FileName="src/method/Tracking.cs" Line="50" Column="1" />
+      <File FileName="src/docfx.json" Line="1" Column="1" />
+      <File FileName="pitneybowes-shipping-api-csharp Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.example PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug OSX" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/patrickfarry/api2/test/pitneybowes-shipping-api-csharp/examples/example.core/Program.cs" relfile="examples/example.core/Program.cs" line="391" column="1" />
+      <Breakpoint file="/Users/patrickfarry/api2/test/pitneybowes-shipping-api-csharp/src/webservice/request/ShippingApiRequest.cs" relfile="src/webservice/request/ShippingApiRequest.cs" line="212" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Patrick Farry" Email="Patrick.Farry@pb.com" Copyright="Pitney Bowes, 2017" Company="Pitney Bowes" Trademark="" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.generateWrapper PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

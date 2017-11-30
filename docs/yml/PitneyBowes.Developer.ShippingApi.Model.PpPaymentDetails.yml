@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails
+  commentId: T:PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails
+  id: PpPaymentDetails
+  parent: PitneyBowes.Developer.ShippingApi.Model
+  children:
+  - PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN
+  - PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN
+  langs:
+  - csharp
+  - vb
+  name: PpPaymentDetails
+  nameWithType: PpPaymentDetails
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails
+  type: Class
+  source:
+    id: PpPaymentDetails
+    path: ''
+    startLine: 8374
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: 'public class PpPaymentDetails : IPpPaymentDetails'
+    content.vb: >-
+      Public Class PpPaymentDetails
+          Implements IPpPaymentDetails
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IPpPaymentDetails
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN
+  id: EncryptedTIN
+  parent: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: EncryptedTIN
+  nameWithType: PpPaymentDetails.EncryptedTIN
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN
+  type: Property
+  source:
+    id: EncryptedTIN
+    path: ''
+    startLine: 8376
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string EncryptedTIN { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property EncryptedTIN As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedTIN
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN
+  id: EncryptedBPN
+  parent: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: EncryptedBPN
+  nameWithType: PpPaymentDetails.EncryptedBPN
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN
+  type: Property
+  source:
+    id: EncryptedBPN
+    path: ''
+    startLine: 8377
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string EncryptedBPN { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property EncryptedBPN As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedBPN
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  commentId: N:PitneyBowes.Developer.ShippingApi.Model
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Model
+  nameWithType: PitneyBowes.Developer.ShippingApi.Model
+  fullName: PitneyBowes.Developer.ShippingApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPpPaymentDetails
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IPpPaymentDetails
+  nameWithType: IPpPaymentDetails
+  fullName: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN
+  isExternal: false
+  name: EncryptedTIN
+  nameWithType: PpPaymentDetails.EncryptedTIN
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedTIN
+- uid: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedTIN
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedTIN
+  parent: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails
+  isExternal: false
+  name: EncryptedTIN
+  nameWithType: IPpPaymentDetails.EncryptedTIN
+  fullName: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedTIN
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN
+  isExternal: false
+  name: EncryptedBPN
+  nameWithType: PpPaymentDetails.EncryptedBPN
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails.EncryptedBPN
+- uid: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedBPN
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedBPN
+  parent: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails
+  isExternal: false
+  name: EncryptedBPN
+  nameWithType: IPpPaymentDetails.EncryptedBPN
+  fullName: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails.EncryptedBPN

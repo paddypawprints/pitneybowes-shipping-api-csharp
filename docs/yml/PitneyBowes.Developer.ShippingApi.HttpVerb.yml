@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.HttpVerb
+  commentId: T:PitneyBowes.Developer.ShippingApi.HttpVerb
+  id: HttpVerb
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.HttpVerb.DELETE
+  - PitneyBowes.Developer.ShippingApi.HttpVerb.GET
+  - PitneyBowes.Developer.ShippingApi.HttpVerb.POST
+  - PitneyBowes.Developer.ShippingApi.HttpVerb.PUT
+  langs:
+  - csharp
+  - vb
+  name: HttpVerb
+  nameWithType: HttpVerb
+  fullName: PitneyBowes.Developer.ShippingApi.HttpVerb
+  type: Enum
+  source:
+    id: HttpVerb
+    path: ''
+    startLine: 11236
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public enum HttpVerb
+    content.vb: Public Enum HttpVerb
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.HttpVerb.POST
+  commentId: F:PitneyBowes.Developer.ShippingApi.HttpVerb.POST
+  id: POST
+  parent: PitneyBowes.Developer.ShippingApi.HttpVerb
+  langs:
+  - csharp
+  - vb
+  name: POST
+  nameWithType: HttpVerb.POST
+  fullName: PitneyBowes.Developer.ShippingApi.HttpVerb.POST
+  type: Field
+  source:
+    id: POST
+    path: ''
+    startLine: 11238
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: POST = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.HttpVerb
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.HttpVerb.PUT
+  commentId: F:PitneyBowes.Developer.ShippingApi.HttpVerb.PUT
+  id: PUT
+  parent: PitneyBowes.Developer.ShippingApi.HttpVerb
+  langs:
+  - csharp
+  - vb
+  name: PUT
+  nameWithType: HttpVerb.PUT
+  fullName: PitneyBowes.Developer.ShippingApi.HttpVerb.PUT
+  type: Field
+  source:
+    id: PUT
+    path: ''
+    startLine: 11238
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: PUT = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.HttpVerb
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.HttpVerb.GET
+  commentId: F:PitneyBowes.Developer.ShippingApi.HttpVerb.GET
+  id: GET
+  parent: PitneyBowes.Developer.ShippingApi.HttpVerb
+  langs:
+  - csharp
+  - vb
+  name: GET
+  nameWithType: HttpVerb.GET
+  fullName: PitneyBowes.Developer.ShippingApi.HttpVerb.GET
+  type: Field
+  source:
+    id: GET
+    path: ''
+    startLine: 11238
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: GET = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.HttpVerb
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.HttpVerb.DELETE
+  commentId: F:PitneyBowes.Developer.ShippingApi.HttpVerb.DELETE
+  id: DELETE
+  parent: PitneyBowes.Developer.ShippingApi.HttpVerb
+  langs:
+  - csharp
+  - vb
+  name: DELETE
+  nameWithType: HttpVerb.DELETE
+  fullName: PitneyBowes.Developer.ShippingApi.HttpVerb.DELETE
+  type: Field
+  source:
+    id: DELETE
+    path: ''
+    startLine: 11238
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: DELETE = 3
+    return:
+      type: PitneyBowes.Developer.ShippingApi.HttpVerb
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.HttpVerb
+  commentId: T:PitneyBowes.Developer.ShippingApi.HttpVerb
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: HttpVerb
+  nameWithType: HttpVerb
+  fullName: PitneyBowes.Developer.ShippingApi.HttpVerb

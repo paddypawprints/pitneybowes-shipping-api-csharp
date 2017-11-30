@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.AddressStatus
+  commentId: T:PitneyBowes.Developer.ShippingApi.AddressStatus
+  id: AddressStatus
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.AddressStatus.NOT_CHANGED
+  - PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_AND_NOT_CHANGED
+  - PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_CHANGED
+  langs:
+  - csharp
+  - vb
+  name: AddressStatus
+  nameWithType: AddressStatus
+  fullName: PitneyBowes.Developer.ShippingApi.AddressStatus
+  type: Enum
+  source:
+    id: AddressStatus
+    path: ''
+    startLine: 22
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nStatus of an address after a call to the Shipping API address validation method.\n"
+  example: []
+  syntax:
+    content: public enum AddressStatus
+    content.vb: Public Enum AddressStatus
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_CHANGED
+  commentId: F:PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_CHANGED
+  id: VALIDATED_CHANGED
+  parent: PitneyBowes.Developer.ShippingApi.AddressStatus
+  langs:
+  - csharp
+  - vb
+  name: VALIDATED_CHANGED
+  nameWithType: AddressStatus.VALIDATED_CHANGED
+  fullName: PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_CHANGED
+  type: Field
+  source:
+    id: VALIDATED_CHANGED
+    path: ''
+    startLine: 27
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe address was corrected by the system.\n"
+  example: []
+  syntax:
+    content: VALIDATED_CHANGED = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.AddressStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_AND_NOT_CHANGED
+  commentId: F:PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_AND_NOT_CHANGED
+  id: VALIDATED_AND_NOT_CHANGED
+  parent: PitneyBowes.Developer.ShippingApi.AddressStatus
+  langs:
+  - csharp
+  - vb
+  name: VALIDATED_AND_NOT_CHANGED
+  nameWithType: AddressStatus.VALIDATED_AND_NOT_CHANGED
+  fullName: PitneyBowes.Developer.ShippingApi.AddressStatus.VALIDATED_AND_NOT_CHANGED
+  type: Field
+  source:
+    id: VALIDATED_AND_NOT_CHANGED
+    path: ''
+    startLine: 31
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe address was validates the system.\n"
+  example: []
+  syntax:
+    content: VALIDATED_AND_NOT_CHANGED = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.AddressStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.AddressStatus.NOT_CHANGED
+  commentId: F:PitneyBowes.Developer.ShippingApi.AddressStatus.NOT_CHANGED
+  id: NOT_CHANGED
+  parent: PitneyBowes.Developer.ShippingApi.AddressStatus
+  langs:
+  - csharp
+  - vb
+  name: NOT_CHANGED
+  nameWithType: AddressStatus.NOT_CHANGED
+  fullName: PitneyBowes.Developer.ShippingApi.AddressStatus.NOT_CHANGED
+  type: Field
+  source:
+    id: NOT_CHANGED
+    path: ''
+    startLine: 35
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nThe address has not been validated, or could not be validated.\n"
+  example: []
+  syntax:
+    content: NOT_CHANGED = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.AddressStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.AddressStatus
+  commentId: T:PitneyBowes.Developer.ShippingApi.AddressStatus
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: AddressStatus
+  nameWithType: AddressStatus
+  fullName: PitneyBowes.Developer.ShippingApi.AddressStatus

@@ -1,0 +1,2202 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  commentId: T:PitneyBowes.Developer.ShippingApi.Model.Transaction
+  id: Transaction
+  parent: PitneyBowes.Developer.ShippingApi.Model
+  children:
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces
+  - PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone
+  langs:
+  - csharp
+  - vb
+  name: Transaction
+  nameWithType: Transaction
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  type: Class
+  source:
+    id: Transaction
+    path: ''
+    startLine: 8742
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: 'public class Transaction : ITransaction'
+    content.vb: >-
+      Public Class Transaction
+          Implements ITransaction
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId
+  id: TransactionId
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: TransactionId
+  nameWithType: Transaction.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId
+  type: Property
+  source:
+    id: TransactionId
+    path: ''
+    startLine: 8744
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string TransactionId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property TransactionId As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.TransactionId
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime
+  id: TransactionDateTime
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: TransactionDateTime
+  nameWithType: Transaction.TransactionDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime
+  type: Property
+  source:
+    id: TransactionDateTime
+    path: ''
+    startLine: 8745
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual DateTimeOffset TransactionDateTime { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Public Overridable Property TransactionDateTime As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.TransactionDateTime
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType
+  id: TransactionType
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: TransactionType
+  nameWithType: Transaction.TransactionType
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType
+  type: Property
+  source:
+    id: TransactionType
+    path: ''
+    startLine: 8746
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual TransactionType TransactionType { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.TransactionType
+    content.vb: Public Overridable Property TransactionType As TransactionType
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.TransactionType
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName
+  id: DeveloperName
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DeveloperName
+  nameWithType: Transaction.DeveloperName
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName
+  type: Property
+  source:
+    id: DeveloperName
+    path: ''
+    startLine: 8747
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DeveloperName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DeveloperName As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId
+  id: DeveloperId
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DeveloperId
+  nameWithType: Transaction.DeveloperId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId
+  type: Property
+  source:
+    id: DeveloperId
+    path: ''
+    startLine: 8748
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DeveloperId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DeveloperId As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperId
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod
+  id: DeveloperPostagePaymentMethod
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DeveloperPostagePaymentMethod
+  nameWithType: Transaction.DeveloperPostagePaymentMethod
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod
+  type: Property
+  source:
+    id: DeveloperPostagePaymentMethod
+    path: ''
+    startLine: 8749
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DeveloperPostagePaymentMethod { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DeveloperPostagePaymentMethod As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperPostagePaymentMethod
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan
+  id: DeveloperRatePlan
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DeveloperRatePlan
+  nameWithType: Transaction.DeveloperRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan
+  type: Property
+  source:
+    id: DeveloperRatePlan
+    path: ''
+    startLine: 8750
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DeveloperRatePlan { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DeveloperRatePlan As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperRatePlan
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount
+  id: DeveloperRateAmount
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DeveloperRateAmount
+  nameWithType: Transaction.DeveloperRateAmount
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount
+  type: Property
+  source:
+    id: DeveloperRateAmount
+    path: ''
+    startLine: 8751
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? DeveloperRateAmount { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property DeveloperRateAmount As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance
+  id: DeveloperPostagePaymentAccountBalance
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DeveloperPostagePaymentAccountBalance
+  nameWithType: Transaction.DeveloperPostagePaymentAccountBalance
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance
+  type: Property
+  source:
+    id: DeveloperPostagePaymentAccountBalance
+    path: ''
+    startLine: 8752
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? DeveloperPostagePaymentAccountBalance { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property DeveloperPostagePaymentAccountBalance As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName
+  id: MerchantName
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: MerchantName
+  nameWithType: Transaction.MerchantName
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName
+  type: Property
+  source:
+    id: MerchantName
+    path: ''
+    startLine: 8753
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string MerchantName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property MerchantName As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.MerchantName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId
+  id: MerchantId
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: MerchantId
+  nameWithType: Transaction.MerchantId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId
+  type: Property
+  source:
+    id: MerchantId
+    path: ''
+    startLine: 8754
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string MerchantId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property MerchantId As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.MerchantId
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod
+  id: MerchantPostageAccountPaymentMethod
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: MerchantPostageAccountPaymentMethod
+  nameWithType: Transaction.MerchantPostageAccountPaymentMethod
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod
+  type: Property
+  source:
+    id: MerchantPostageAccountPaymentMethod
+    path: ''
+    startLine: 8755
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string MerchantPostageAccountPaymentMethod { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property MerchantPostageAccountPaymentMethod As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.MerchantPostageAccountPaymentMethod
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan
+  id: MerchantRatePlan
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: MerchantRatePlan
+  nameWithType: Transaction.MerchantRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan
+  type: Property
+  source:
+    id: MerchantRatePlan
+    path: ''
+    startLine: 8756
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string MerchantRatePlan { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property MerchantRatePlan As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.MerchantRatePlan
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate
+  id: MerchantRate
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: MerchantRate
+  nameWithType: Transaction.MerchantRate
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate
+  type: Property
+  source:
+    id: MerchantRate
+    path: ''
+    startLine: 8757
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? MerchantRate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property MerchantRate As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance
+  id: ShipperPostagePaymentAccountBalance
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: ShipperPostagePaymentAccountBalance
+  nameWithType: Transaction.ShipperPostagePaymentAccountBalance
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance
+  type: Property
+  source:
+    id: ShipperPostagePaymentAccountBalance
+    path: ''
+    startLine: 8758
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? ShipperPostagePaymentAccountBalance { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property ShipperPostagePaymentAccountBalance As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee
+  id: LabelFee
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: LabelFee
+  nameWithType: Transaction.LabelFee
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee
+  type: Property
+  source:
+    id: LabelFee
+    path: ''
+    startLine: 8759
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? LabelFee { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property LabelFee As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber
+  id: ParcelTrackingNumber
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: ParcelTrackingNumber
+  nameWithType: Transaction.ParcelTrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber
+  type: Property
+  source:
+    id: ParcelTrackingNumber
+    path: ''
+    startLine: 8760
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string ParcelTrackingNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property ParcelTrackingNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.ParcelTrackingNumber
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces
+  id: WeightInOunces
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: WeightInOunces
+  nameWithType: Transaction.WeightInOunces
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces
+  type: Property
+  source:
+    id: WeightInOunces
+    path: ''
+    startLine: 8761
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? WeightInOunces { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property WeightInOunces As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone
+  id: Zone
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: Zone
+  nameWithType: Transaction.Zone
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone
+  type: Property
+  source:
+    id: Zone
+    path: ''
+    startLine: 8762
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual int ? Zone { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overridable Property Zone As Integer?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.Zone
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches
+  id: PackageLengthInInches
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: PackageLengthInInches
+  nameWithType: Transaction.PackageLengthInInches
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches
+  type: Property
+  source:
+    id: PackageLengthInInches
+    path: ''
+    startLine: 8763
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? PackageLengthInInches { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property PackageLengthInInches As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches
+  id: PackageWidthInInches
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: PackageWidthInInches
+  nameWithType: Transaction.PackageWidthInInches
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches
+  type: Property
+  source:
+    id: PackageWidthInInches
+    path: ''
+    startLine: 8764
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? PackageWidthInInches { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property PackageWidthInInches As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches
+  id: PackageHeightInInches
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: PackageHeightInInches
+  nameWithType: Transaction.PackageHeightInInches
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches
+  type: Property
+  source:
+    id: PackageHeightInInches
+    path: ''
+    startLine: 8765
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? PackageHeightInInches { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property PackageHeightInInches As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator
+  id: PackageTypeIndicator
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: PackageTypeIndicator
+  nameWithType: Transaction.PackageTypeIndicator
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator
+  type: Property
+  source:
+    id: PackageTypeIndicator
+    path: ''
+    startLine: 8766
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual PackageTypeIndicator? PackageTypeIndicator { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{PitneyBowes.Developer.ShippingApi.PackageTypeIndicator}
+    content.vb: Public Overridable Property PackageTypeIndicator As PackageTypeIndicator?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.PackageTypeIndicator
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType
+  id: PackageType
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: PackageType
+  nameWithType: Transaction.PackageType
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType
+  type: Property
+  source:
+    id: PackageType
+    path: ''
+    startLine: 8767
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual ParcelType? PackageType { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{PitneyBowes.Developer.ShippingApi.ParcelType}
+    content.vb: Public Overridable Property PackageType As ParcelType?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.PackageType
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass
+  id: MailClass
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: MailClass
+  nameWithType: Transaction.MailClass
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass
+  type: Property
+  source:
+    id: MailClass
+    path: ''
+    startLine: 8768
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string MailClass { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property MailClass As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.MailClass
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup
+  id: InternationalCountryPriceGroup
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: InternationalCountryPriceGroup
+  nameWithType: Transaction.InternationalCountryPriceGroup
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup
+  type: Property
+  source:
+    id: InternationalCountryPriceGroup
+    path: ''
+    startLine: 8769
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string InternationalCountryPriceGroup { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property InternationalCountryPriceGroup As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.InternationalCountryPriceGroup
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress
+  id: OriginationAddress
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: OriginationAddress
+  nameWithType: Transaction.OriginationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress
+  type: Property
+  source:
+    id: OriginationAddress
+    path: ''
+    startLine: 8770
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string OriginationAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property OriginationAddress As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.OriginationAddress
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip
+  id: OriginZip
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: OriginZip
+  nameWithType: Transaction.OriginZip
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip
+  type: Property
+  source:
+    id: OriginZip
+    path: ''
+    startLine: 8771
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string OriginZip { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property OriginZip As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.OriginZip
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress
+  id: DestinationAddress
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DestinationAddress
+  nameWithType: Transaction.DestinationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress
+  type: Property
+  source:
+    id: DestinationAddress
+    path: ''
+    startLine: 8772
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DestinationAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DestinationAddress As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.DestinationAddress
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip
+  id: DestinationZip
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DestinationZip
+  nameWithType: Transaction.DestinationZip
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip
+  type: Property
+  source:
+    id: DestinationZip
+    path: ''
+    startLine: 8773
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DestinationZip { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DestinationZip As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.DestinationZip
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry
+  id: DestinationCountry
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DestinationCountry
+  nameWithType: Transaction.DestinationCountry
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry
+  type: Property
+  source:
+    id: DestinationCountry
+    path: ''
+    startLine: 8774
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DestinationCountry { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DestinationCountry As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.DestinationCountry
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount
+  id: PostageDepositAmount
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: PostageDepositAmount
+  nameWithType: Transaction.PostageDepositAmount
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount
+  type: Property
+  source:
+    id: PostageDepositAmount
+    path: ''
+    startLine: 8775
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? PostageDepositAmount { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property PostageDepositAmount As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee
+  id: CreditCardFee
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: CreditCardFee
+  nameWithType: Transaction.CreditCardFee
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee
+  type: Property
+  source:
+    id: CreditCardFee
+    path: ''
+    startLine: 8776
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal? CreditCardFee { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Decimal}
+    content.vb: Public Overridable Property CreditCardFee As Decimal?
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus
+  id: RefundStatus
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: RefundStatus
+  nameWithType: Transaction.RefundStatus
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus
+  type: Property
+  source:
+    id: RefundStatus
+    path: ''
+    startLine: 8777
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string RefundStatus { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property RefundStatus As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.RefundStatus
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason
+  id: RefundDenialReason
+  parent: PitneyBowes.Developer.ShippingApi.Model.Transaction
+  langs:
+  - csharp
+  - vb
+  name: RefundDenialReason
+  nameWithType: Transaction.RefundDenialReason
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason
+  type: Property
+  source:
+    id: RefundDenialReason
+    path: ''
+    startLine: 8778
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string RefundDenialReason { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property RefundDenialReason As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransaction.RefundDenialReason
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  commentId: N:PitneyBowes.Developer.ShippingApi.Model
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Model
+  nameWithType: PitneyBowes.Developer.ShippingApi.Model
+  fullName: PitneyBowes.Developer.ShippingApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction
+  commentId: T:PitneyBowes.Developer.ShippingApi.ITransaction
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ITransaction
+  nameWithType: ITransaction
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId
+  isExternal: false
+  name: TransactionId
+  nameWithType: Transaction.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionId
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.TransactionId
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.TransactionId
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: TransactionId
+  nameWithType: ITransaction.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.TransactionId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime
+  isExternal: false
+  name: TransactionDateTime
+  nameWithType: Transaction.TransactionDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionDateTime
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.TransactionDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.TransactionDateTime
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: TransactionDateTime
+  nameWithType: ITransaction.TransactionDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.TransactionDateTime
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: DateTimeOffset
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType
+  isExternal: false
+  name: TransactionType
+  nameWithType: Transaction.TransactionType
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.TransactionType
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.TransactionType
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.TransactionType
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: TransactionType
+  nameWithType: ITransaction.TransactionType
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.TransactionType
+- uid: PitneyBowes.Developer.ShippingApi.TransactionType
+  commentId: T:PitneyBowes.Developer.ShippingApi.TransactionType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: TransactionType
+  nameWithType: TransactionType
+  fullName: PitneyBowes.Developer.ShippingApi.TransactionType
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName
+  isExternal: false
+  name: DeveloperName
+  nameWithType: Transaction.DeveloperName
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperName
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperName
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperName
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: DeveloperName
+  nameWithType: ITransaction.DeveloperName
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperName
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId
+  isExternal: false
+  name: DeveloperId
+  nameWithType: Transaction.DeveloperId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperId
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperId
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperId
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: DeveloperId
+  nameWithType: ITransaction.DeveloperId
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperId
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod
+  isExternal: false
+  name: DeveloperPostagePaymentMethod
+  nameWithType: Transaction.DeveloperPostagePaymentMethod
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentMethod
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperPostagePaymentMethod
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperPostagePaymentMethod
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: DeveloperPostagePaymentMethod
+  nameWithType: ITransaction.DeveloperPostagePaymentMethod
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperPostagePaymentMethod
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan
+  isExternal: false
+  name: DeveloperRatePlan
+  nameWithType: Transaction.DeveloperRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRatePlan
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperRatePlan
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperRatePlan
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: DeveloperRatePlan
+  nameWithType: ITransaction.DeveloperRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.DeveloperRatePlan
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount
+  isExternal: false
+  name: DeveloperRateAmount
+  nameWithType: Transaction.DeveloperRateAmount
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperRateAmount
+- uid: System.Nullable{Decimal}
+  commentId: T:System.Nullable{Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  nameWithType: Nullable<Decimal>
+  fullName: System.Nullable<Decimal>
+  nameWithType.vb: Nullable(Of Decimal)
+  fullName.vb: System.Nullable(Of Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Decimal
+    name: Decimal
+    nameWithType: Decimal
+    fullName: Decimal
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Decimal
+    name: Decimal
+    nameWithType: Decimal
+    fullName: Decimal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance
+  isExternal: false
+  name: DeveloperPostagePaymentAccountBalance
+  nameWithType: Transaction.DeveloperPostagePaymentAccountBalance
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DeveloperPostagePaymentAccountBalance
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName
+  isExternal: false
+  name: MerchantName
+  nameWithType: Transaction.MerchantName
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantName
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantName
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.MerchantName
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: MerchantName
+  nameWithType: ITransaction.MerchantName
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantName
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId
+  isExternal: false
+  name: MerchantId
+  nameWithType: Transaction.MerchantId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantId
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantId
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.MerchantId
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: MerchantId
+  nameWithType: ITransaction.MerchantId
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantId
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod
+  isExternal: false
+  name: MerchantPostageAccountPaymentMethod
+  nameWithType: Transaction.MerchantPostageAccountPaymentMethod
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantPostageAccountPaymentMethod
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantPostageAccountPaymentMethod
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.MerchantPostageAccountPaymentMethod
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: MerchantPostageAccountPaymentMethod
+  nameWithType: ITransaction.MerchantPostageAccountPaymentMethod
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantPostageAccountPaymentMethod
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan
+  isExternal: false
+  name: MerchantRatePlan
+  nameWithType: Transaction.MerchantRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRatePlan
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantRatePlan
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.MerchantRatePlan
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: MerchantRatePlan
+  nameWithType: ITransaction.MerchantRatePlan
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.MerchantRatePlan
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate
+  isExternal: false
+  name: MerchantRate
+  nameWithType: Transaction.MerchantRate
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MerchantRate
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance
+  isExternal: false
+  name: ShipperPostagePaymentAccountBalance
+  nameWithType: Transaction.ShipperPostagePaymentAccountBalance
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.ShipperPostagePaymentAccountBalance
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee
+  isExternal: false
+  name: LabelFee
+  nameWithType: Transaction.LabelFee
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.LabelFee
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber
+  isExternal: false
+  name: ParcelTrackingNumber
+  nameWithType: Transaction.ParcelTrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.ParcelTrackingNumber
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.ParcelTrackingNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.ParcelTrackingNumber
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: ParcelTrackingNumber
+  nameWithType: ITransaction.ParcelTrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.ParcelTrackingNumber
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces
+  isExternal: false
+  name: WeightInOunces
+  nameWithType: Transaction.WeightInOunces
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.WeightInOunces
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone
+  isExternal: false
+  name: Zone
+  nameWithType: Transaction.Zone
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.Zone
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.Zone
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.Zone
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: Zone
+  nameWithType: ITransaction.Zone
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.Zone
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches
+  isExternal: false
+  name: PackageLengthInInches
+  nameWithType: Transaction.PackageLengthInInches
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageLengthInInches
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches
+  isExternal: false
+  name: PackageWidthInInches
+  nameWithType: Transaction.PackageWidthInInches
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageWidthInInches
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches
+  isExternal: false
+  name: PackageHeightInInches
+  nameWithType: Transaction.PackageHeightInInches
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageHeightInInches
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator
+  isExternal: false
+  name: PackageTypeIndicator
+  nameWithType: Transaction.PackageTypeIndicator
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageTypeIndicator
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.PackageTypeIndicator
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.PackageTypeIndicator
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: PackageTypeIndicator
+  nameWithType: ITransaction.PackageTypeIndicator
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.PackageTypeIndicator
+- uid: System.Nullable{PitneyBowes.Developer.ShippingApi.PackageTypeIndicator}
+  commentId: T:System.Nullable{PitneyBowes.Developer.ShippingApi.PackageTypeIndicator}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<PackageTypeIndicator>
+  nameWithType: Nullable<PackageTypeIndicator>
+  fullName: System.Nullable<PitneyBowes.Developer.ShippingApi.PackageTypeIndicator>
+  nameWithType.vb: Nullable(Of PackageTypeIndicator)
+  fullName.vb: System.Nullable(Of PitneyBowes.Developer.ShippingApi.PackageTypeIndicator)
+  name.vb: Nullable(Of PackageTypeIndicator)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.PackageTypeIndicator
+    name: PackageTypeIndicator
+    nameWithType: PackageTypeIndicator
+    fullName: PitneyBowes.Developer.ShippingApi.PackageTypeIndicator
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.PackageTypeIndicator
+    name: PackageTypeIndicator
+    nameWithType: PackageTypeIndicator
+    fullName: PitneyBowes.Developer.ShippingApi.PackageTypeIndicator
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType
+  isExternal: false
+  name: PackageType
+  nameWithType: Transaction.PackageType
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PackageType
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.PackageType
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.PackageType
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: PackageType
+  nameWithType: ITransaction.PackageType
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.PackageType
+- uid: System.Nullable{PitneyBowes.Developer.ShippingApi.ParcelType}
+  commentId: T:System.Nullable{PitneyBowes.Developer.ShippingApi.ParcelType}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<ParcelType>
+  nameWithType: Nullable<ParcelType>
+  fullName: System.Nullable<PitneyBowes.Developer.ShippingApi.ParcelType>
+  nameWithType.vb: Nullable(Of ParcelType)
+  fullName.vb: System.Nullable(Of PitneyBowes.Developer.ShippingApi.ParcelType)
+  name.vb: Nullable(Of ParcelType)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ParcelType
+    name: ParcelType
+    nameWithType: ParcelType
+    fullName: PitneyBowes.Developer.ShippingApi.ParcelType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ParcelType
+    name: ParcelType
+    nameWithType: ParcelType
+    fullName: PitneyBowes.Developer.ShippingApi.ParcelType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass
+  isExternal: false
+  name: MailClass
+  nameWithType: Transaction.MailClass
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.MailClass
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.MailClass
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.MailClass
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: MailClass
+  nameWithType: ITransaction.MailClass
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.MailClass
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup
+  isExternal: false
+  name: InternationalCountryPriceGroup
+  nameWithType: Transaction.InternationalCountryPriceGroup
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.InternationalCountryPriceGroup
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.InternationalCountryPriceGroup
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.InternationalCountryPriceGroup
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: InternationalCountryPriceGroup
+  nameWithType: ITransaction.InternationalCountryPriceGroup
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.InternationalCountryPriceGroup
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress
+  isExternal: false
+  name: OriginationAddress
+  nameWithType: Transaction.OriginationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginationAddress
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.OriginationAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.OriginationAddress
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: OriginationAddress
+  nameWithType: ITransaction.OriginationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.OriginationAddress
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip
+  isExternal: false
+  name: OriginZip
+  nameWithType: Transaction.OriginZip
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.OriginZip
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.OriginZip
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.OriginZip
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: OriginZip
+  nameWithType: ITransaction.OriginZip
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.OriginZip
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress
+  isExternal: false
+  name: DestinationAddress
+  nameWithType: Transaction.DestinationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationAddress
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.DestinationAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.DestinationAddress
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: DestinationAddress
+  nameWithType: ITransaction.DestinationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.DestinationAddress
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip
+  isExternal: false
+  name: DestinationZip
+  nameWithType: Transaction.DestinationZip
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationZip
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.DestinationZip
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.DestinationZip
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: DestinationZip
+  nameWithType: ITransaction.DestinationZip
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.DestinationZip
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry
+  isExternal: false
+  name: DestinationCountry
+  nameWithType: Transaction.DestinationCountry
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.DestinationCountry
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.DestinationCountry
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.DestinationCountry
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: DestinationCountry
+  nameWithType: ITransaction.DestinationCountry
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.DestinationCountry
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount
+  isExternal: false
+  name: PostageDepositAmount
+  nameWithType: Transaction.PostageDepositAmount
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.PostageDepositAmount
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee
+  isExternal: false
+  name: CreditCardFee
+  nameWithType: Transaction.CreditCardFee
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.CreditCardFee
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus
+  isExternal: false
+  name: RefundStatus
+  nameWithType: Transaction.RefundStatus
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundStatus
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.RefundStatus
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.RefundStatus
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: RefundStatus
+  nameWithType: ITransaction.RefundStatus
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.RefundStatus
+- uid: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason
+  isExternal: false
+  name: RefundDenialReason
+  nameWithType: Transaction.RefundDenialReason
+  fullName: PitneyBowes.Developer.ShippingApi.Model.Transaction.RefundDenialReason
+- uid: PitneyBowes.Developer.ShippingApi.ITransaction.RefundDenialReason
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransaction.RefundDenialReason
+  parent: PitneyBowes.Developer.ShippingApi.ITransaction
+  isExternal: false
+  name: RefundDenialReason
+  nameWithType: ITransaction.RefundDenialReason
+  fullName: PitneyBowes.Developer.ShippingApi.ITransaction.RefundDenialReason

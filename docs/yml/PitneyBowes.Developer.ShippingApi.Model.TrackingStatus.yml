@@ -1,0 +1,1483 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  commentId: T:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  id: TrackingStatus
+  parent: PitneyBowes.Developer.ShippingApi.Model
+  children:
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight
+  - PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM
+  langs:
+  - csharp
+  - vb
+  name: TrackingStatus
+  nameWithType: TrackingStatus
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  type: Class
+  source:
+    id: TrackingStatus
+    path: ''
+    startLine: 8697
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: 'public class TrackingStatus : ITrackingStatus'
+    content.vb: >-
+      Public Class TrackingStatus
+          Implements ITrackingStatus
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount
+  id: PackageCount
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: PackageCount
+  nameWithType: TrackingStatus.PackageCount
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount
+  type: Property
+  source:
+    id: PackageCount
+    path: ''
+    startLine: 8699
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string PackageCount { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property PackageCount As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.PackageCount
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier
+  id: Carrier
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: Carrier
+  nameWithType: TrackingStatus.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier
+  type: Property
+  source:
+    id: Carrier
+    path: ''
+    startLine: 8700
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string Carrier { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Carrier As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.Carrier
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber
+  id: TrackingNumber
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: TrackingNumber
+  nameWithType: TrackingStatus.TrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber
+  type: Property
+  source:
+    id: TrackingNumber
+    path: ''
+    startLine: 8701
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string TrackingNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property TrackingNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.TrackingNumber
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber
+  id: ReferenceNumber
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: ReferenceNumber
+  nameWithType: TrackingStatus.ReferenceNumber
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber
+  type: Property
+  source:
+    id: ReferenceNumber
+    path: ''
+    startLine: 8702
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string ReferenceNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property ReferenceNumber As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReferenceNumber
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status
+  id: Status
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: TrackingStatus.Status
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status
+  type: Property
+  source:
+    id: Status
+    path: ''
+    startLine: 8703
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual TrackingStatusCode Status { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.TrackingStatusCode
+    content.vb: Public Overridable Property Status As TrackingStatusCode
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.Status
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime
+  id: UpdatedDateTime
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: UpdatedDateTime
+  nameWithType: TrackingStatus.UpdatedDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime
+  type: Property
+  source:
+    id: UpdatedDateTime
+    path: ''
+    startLine: 8704
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual DateTimeOffset UpdatedDateTime { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Public Overridable Property UpdatedDateTime As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.UpdatedDateTime
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime
+  id: ShipDateTime
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: ShipDateTime
+  nameWithType: TrackingStatus.ShipDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime
+  type: Property
+  source:
+    id: ShipDateTime
+    path: ''
+    startLine: 8705
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual DateTimeOffset ShipDateTime { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Public Overridable Property ShipDateTime As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.ShipDateTime
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime
+  id: EstimatedDeliveryDateTime
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: EstimatedDeliveryDateTime
+  nameWithType: TrackingStatus.EstimatedDeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime
+  type: Property
+  source:
+    id: EstimatedDeliveryDateTime
+    path: ''
+    startLine: 8706
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual DateTimeOffset EstimatedDeliveryDateTime { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Public Overridable Property EstimatedDeliveryDateTime As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.EstimatedDeliveryDateTime
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime
+  id: DeliveryDateTime
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: DeliveryDateTime
+  nameWithType: TrackingStatus.DeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime
+  type: Property
+  source:
+    id: DeliveryDateTime
+    path: ''
+    startLine: 8707
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual DateTimeOffset DeliveryDateTime { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Public Overridable Property DeliveryDateTime As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryDateTime
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation
+  id: DeliveryLocation
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: DeliveryLocation
+  nameWithType: TrackingStatus.DeliveryLocation
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation
+  type: Property
+  source:
+    id: DeliveryLocation
+    path: ''
+    startLine: 8708
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DeliveryLocation { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DeliveryLocation As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocation
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription
+  id: DeliveryLocationDescription
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: DeliveryLocationDescription
+  nameWithType: TrackingStatus.DeliveryLocationDescription
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription
+  type: Property
+  source:
+    id: DeliveryLocationDescription
+    path: ''
+    startLine: 8709
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string DeliveryLocationDescription { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DeliveryLocationDescription As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocationDescription
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy
+  id: SignedBy
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: SignedBy
+  nameWithType: TrackingStatus.SignedBy
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy
+  type: Property
+  source:
+    id: SignedBy
+    path: ''
+    startLine: 8710
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string SignedBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property SignedBy As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.SignedBy
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight
+  id: Weight
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: TrackingStatus.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight
+  type: Property
+  source:
+    id: Weight
+    path: ''
+    startLine: 8711
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual Decimal Weight { get; set; }
+    parameters: []
+    return:
+      type: Decimal
+    content.vb: Public Overridable Property Weight As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.Weight
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM
+  id: WeightOUM
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: WeightOUM
+  nameWithType: TrackingStatus.WeightOUM
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM
+  type: Property
+  source:
+    id: WeightOUM
+    path: ''
+    startLine: 8712
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual UnitOfWeight? WeightOUM { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{PitneyBowes.Developer.ShippingApi.UnitOfWeight}
+    content.vb: Public Overridable Property WeightOUM As UnitOfWeight?
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.WeightOUM
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate
+  id: ReattemptDate
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: ReattemptDate
+  nameWithType: TrackingStatus.ReattemptDate
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate
+  type: Property
+  source:
+    id: ReattemptDate
+    path: ''
+    startLine: 8713
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string ReattemptDate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property ReattemptDate As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptDate
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime
+  id: ReattemptTime
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: ReattemptTime
+  nameWithType: TrackingStatus.ReattemptTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime
+  type: Property
+  source:
+    id: ReattemptTime
+    path: ''
+    startLine: 8714
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual DateTime ReattemptTime { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Overridable Property ReattemptTime As DateTime
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptTime
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress
+  id: DestinationAddress
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: DestinationAddress
+  nameWithType: TrackingStatus.DestinationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress
+  type: Property
+  source:
+    id: DestinationAddress
+    path: ''
+    startLine: 8715
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual IAddress DestinationAddress { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    content.vb: Public Overridable Property DestinationAddress As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.DestinationAddress
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress
+  id: SenderAddress
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: SenderAddress
+  nameWithType: TrackingStatus.SenderAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress
+  type: Property
+  source:
+    id: SenderAddress
+    path: ''
+    startLine: 8716
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual IAddress SenderAddress { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    content.vb: Public Overridable Property SenderAddress As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.SenderAddress
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList
+  id: ScanDetailsList
+  parent: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+  langs:
+  - csharp
+  - vb
+  name: ScanDetailsList
+  nameWithType: TrackingStatus.ScanDetailsList
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList
+  type: Property
+  source:
+    id: ScanDetailsList
+    path: ''
+    startLine: 8717
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual IEnumerable<ITrackingEvent> ScanDetailsList { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.ITrackingEvent}
+    content.vb: Public Overridable Property ScanDetailsList As IEnumerable(Of ITrackingEvent)
+  overload: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITrackingStatus.ScanDetailsList
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  commentId: N:PitneyBowes.Developer.ShippingApi.Model
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Model
+  nameWithType: PitneyBowes.Developer.ShippingApi.Model
+  fullName: PitneyBowes.Developer.ShippingApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  commentId: T:PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ITrackingStatus
+  nameWithType: ITrackingStatus
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount
+  isExternal: false
+  name: PackageCount
+  nameWithType: TrackingStatus.PackageCount
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.PackageCount
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.PackageCount
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.PackageCount
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: PackageCount
+  nameWithType: ITrackingStatus.PackageCount
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.PackageCount
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier
+  isExternal: false
+  name: Carrier
+  nameWithType: TrackingStatus.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Carrier
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.Carrier
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.Carrier
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: Carrier
+  nameWithType: ITrackingStatus.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.Carrier
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber
+  isExternal: false
+  name: TrackingNumber
+  nameWithType: TrackingStatus.TrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.TrackingNumber
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.TrackingNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.TrackingNumber
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: TrackingNumber
+  nameWithType: ITrackingStatus.TrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.TrackingNumber
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber
+  isExternal: false
+  name: ReferenceNumber
+  nameWithType: TrackingStatus.ReferenceNumber
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReferenceNumber
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReferenceNumber
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReferenceNumber
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: ReferenceNumber
+  nameWithType: ITrackingStatus.ReferenceNumber
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReferenceNumber
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status
+  isExternal: false
+  name: Status
+  nameWithType: TrackingStatus.Status
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Status
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.Status
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.Status
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: Status
+  nameWithType: ITrackingStatus.Status
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.Status
+- uid: PitneyBowes.Developer.ShippingApi.TrackingStatusCode
+  commentId: T:PitneyBowes.Developer.ShippingApi.TrackingStatusCode
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: TrackingStatusCode
+  nameWithType: TrackingStatusCode
+  fullName: PitneyBowes.Developer.ShippingApi.TrackingStatusCode
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime
+  isExternal: false
+  name: UpdatedDateTime
+  nameWithType: TrackingStatus.UpdatedDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.UpdatedDateTime
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.UpdatedDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.UpdatedDateTime
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: UpdatedDateTime
+  nameWithType: ITrackingStatus.UpdatedDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.UpdatedDateTime
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: DateTimeOffset
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime
+  isExternal: false
+  name: ShipDateTime
+  nameWithType: TrackingStatus.ShipDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ShipDateTime
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ShipDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.ShipDateTime
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: ShipDateTime
+  nameWithType: ITrackingStatus.ShipDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ShipDateTime
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime
+  isExternal: false
+  name: EstimatedDeliveryDateTime
+  nameWithType: TrackingStatus.EstimatedDeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.EstimatedDeliveryDateTime
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.EstimatedDeliveryDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.EstimatedDeliveryDateTime
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: EstimatedDeliveryDateTime
+  nameWithType: ITrackingStatus.EstimatedDeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.EstimatedDeliveryDateTime
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime
+  isExternal: false
+  name: DeliveryDateTime
+  nameWithType: TrackingStatus.DeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryDateTime
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryDateTime
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: DeliveryDateTime
+  nameWithType: ITrackingStatus.DeliveryDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryDateTime
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation
+  isExternal: false
+  name: DeliveryLocation
+  nameWithType: TrackingStatus.DeliveryLocation
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocation
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocation
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocation
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: DeliveryLocation
+  nameWithType: ITrackingStatus.DeliveryLocation
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocation
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription
+  isExternal: false
+  name: DeliveryLocationDescription
+  nameWithType: TrackingStatus.DeliveryLocationDescription
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DeliveryLocationDescription
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocationDescription
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocationDescription
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: DeliveryLocationDescription
+  nameWithType: ITrackingStatus.DeliveryLocationDescription
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DeliveryLocationDescription
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy
+  isExternal: false
+  name: SignedBy
+  nameWithType: TrackingStatus.SignedBy
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SignedBy
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.SignedBy
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.SignedBy
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: SignedBy
+  nameWithType: ITrackingStatus.SignedBy
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.SignedBy
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight
+  isExternal: false
+  name: Weight
+  nameWithType: TrackingStatus.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.Weight
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.Weight
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.Weight
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: Weight
+  nameWithType: ITrackingStatus.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.Weight
+- uid: Decimal
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: Decimal
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM
+  isExternal: false
+  name: WeightOUM
+  nameWithType: TrackingStatus.WeightOUM
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.WeightOUM
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.WeightOUM
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.WeightOUM
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: WeightOUM
+  nameWithType: ITrackingStatus.WeightOUM
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.WeightOUM
+- uid: System.Nullable{PitneyBowes.Developer.ShippingApi.UnitOfWeight}
+  commentId: T:System.Nullable{PitneyBowes.Developer.ShippingApi.UnitOfWeight}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<UnitOfWeight>
+  nameWithType: Nullable<UnitOfWeight>
+  fullName: System.Nullable<PitneyBowes.Developer.ShippingApi.UnitOfWeight>
+  nameWithType.vb: Nullable(Of UnitOfWeight)
+  fullName.vb: System.Nullable(Of PitneyBowes.Developer.ShippingApi.UnitOfWeight)
+  name.vb: Nullable(Of UnitOfWeight)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+    name: UnitOfWeight
+    nameWithType: UnitOfWeight
+    fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+    name: UnitOfWeight
+    nameWithType: UnitOfWeight
+    fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate
+  isExternal: false
+  name: ReattemptDate
+  nameWithType: TrackingStatus.ReattemptDate
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptDate
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptDate
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptDate
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: ReattemptDate
+  nameWithType: ITrackingStatus.ReattemptDate
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptDate
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime
+  isExternal: false
+  name: ReattemptTime
+  nameWithType: TrackingStatus.ReattemptTime
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ReattemptTime
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptTime
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: ReattemptTime
+  nameWithType: ITrackingStatus.ReattemptTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ReattemptTime
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress
+  isExternal: false
+  name: DestinationAddress
+  nameWithType: TrackingStatus.DestinationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.DestinationAddress
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DestinationAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.DestinationAddress
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: DestinationAddress
+  nameWithType: ITrackingStatus.DestinationAddress
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.DestinationAddress
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress
+  isExternal: false
+  name: SenderAddress
+  nameWithType: TrackingStatus.SenderAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.SenderAddress
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.SenderAddress
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.SenderAddress
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: SenderAddress
+  nameWithType: ITrackingStatus.SenderAddress
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.SenderAddress
+- uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList
+  isExternal: false
+  name: ScanDetailsList
+  nameWithType: TrackingStatus.ScanDetailsList
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus.ScanDetailsList
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ScanDetailsList
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingStatus.ScanDetailsList
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+  isExternal: false
+  name: ScanDetailsList
+  nameWithType: ITrackingStatus.ScanDetailsList
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingStatus.ScanDetailsList
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.ITrackingEvent}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.ITrackingEvent}'
+  definition: IEnumerable`1
+  name: IEnumerable<ITrackingEvent>
+  nameWithType: IEnumerable<ITrackingEvent>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.ITrackingEvent>
+  nameWithType.vb: IEnumerable(Of ITrackingEvent)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.ITrackingEvent)
+  name.vb: IEnumerable(Of ITrackingEvent)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+    name: ITrackingEvent
+    nameWithType: ITrackingEvent
+    fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+    name: ITrackingEvent
+    nameWithType: ITrackingEvent
+    fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

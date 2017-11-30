@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  commentId: T:PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  id: PrintDialogOption
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.PrintDialogOption.EMBED_PRINT_DIALOG
+  - PitneyBowes.Developer.ShippingApi.PrintDialogOption.NO_PRINT_DIALOG
+  langs:
+  - csharp
+  - vb
+  name: PrintDialogOption
+  nameWithType: PrintDialogOption
+  fullName: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  type: Enum
+  source:
+    id: PrintDialogOption
+    path: ''
+    startLine: 300
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPDF documents only.This defines an option to embed script that can render an interactive print dialog box for the end user within the shipment document/label.\n"
+  example: []
+  syntax:
+    content: public enum PrintDialogOption
+    content.vb: Public Enum PrintDialogOption
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.PrintDialogOption.NO_PRINT_DIALOG
+  commentId: F:PitneyBowes.Developer.ShippingApi.PrintDialogOption.NO_PRINT_DIALOG
+  id: NO_PRINT_DIALOG
+  parent: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  langs:
+  - csharp
+  - vb
+  name: NO_PRINT_DIALOG
+  nameWithType: PrintDialogOption.NO_PRINT_DIALOG
+  fullName: PitneyBowes.Developer.ShippingApi.PrintDialogOption.NO_PRINT_DIALOG
+  type: Field
+  source:
+    id: NO_PRINT_DIALOG
+    path: ''
+    startLine: 303
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: NO_PRINT_DIALOG = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PrintDialogOption.EMBED_PRINT_DIALOG
+  commentId: F:PitneyBowes.Developer.ShippingApi.PrintDialogOption.EMBED_PRINT_DIALOG
+  id: EMBED_PRINT_DIALOG
+  parent: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  langs:
+  - csharp
+  - vb
+  name: EMBED_PRINT_DIALOG
+  nameWithType: PrintDialogOption.EMBED_PRINT_DIALOG
+  fullName: PitneyBowes.Developer.ShippingApi.PrintDialogOption.EMBED_PRINT_DIALOG
+  type: Field
+  source:
+    id: EMBED_PRINT_DIALOG
+    path: ''
+    startLine: 304
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: EMBED_PRINT_DIALOG = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  commentId: T:PitneyBowes.Developer.ShippingApi.PrintDialogOption
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PrintDialogOption
+  nameWithType: PrintDialogOption
+  fullName: PitneyBowes.Developer.ShippingApi.PrintDialogOption

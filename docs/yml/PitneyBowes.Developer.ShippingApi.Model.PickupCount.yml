@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount
+  commentId: T:PitneyBowes.Developer.ShippingApi.Model.PickupCount
+  id: PickupCount
+  parent: PitneyBowes.Developer.ShippingApi.Model
+  children:
+  - PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count
+  - PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId
+  - PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight
+  langs:
+  - csharp
+  - vb
+  name: PickupCount
+  nameWithType: PickupCount
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PickupCount
+  type: Class
+  source:
+    id: PickupCount
+    path: ''
+    startLine: 8329
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: 'public class PickupCount : IPickupCount'
+    content.vb: >-
+      Public Class PickupCount
+          Implements IPickupCount
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IPickupCount
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId
+  id: ServiceId
+  parent: PitneyBowes.Developer.ShippingApi.Model.PickupCount
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: PickupCount.ServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId
+  type: Property
+  source:
+    id: ServiceId
+    path: ''
+    startLine: 8335
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the service identifier. Note this is a subset of the full set of services.\n"
+  example: []
+  syntax:
+    content: public virtual PickupService ServiceId { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+      description: The service identifier.
+    content.vb: Public Overridable Property ServiceId As PickupService
+  overload: PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count
+  id: Count
+  parent: PitneyBowes.Developer.ShippingApi.Model.PickupCount
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: PickupCount.Count
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count
+  type: Property
+  source:
+    id: Count
+    path: ''
+    startLine: 8341
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the count. The number of parcels for each service type requested. This field\nis used only in the request.It is not returned in the response.\n"
+  example: []
+  syntax:
+    content: public virtual int Count { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The count.
+    content.vb: Public Overridable Property Count As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight
+  id: TotalWeight
+  parent: PitneyBowes.Developer.ShippingApi.Model.PickupCount
+  langs:
+  - csharp
+  - vb
+  name: TotalWeight
+  nameWithType: PickupCount.TotalWeight
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight
+  type: Property
+  source:
+    id: TotalWeight
+    path: ''
+    startLine: 8346
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  summary: "\nGets or sets the total weight.\n"
+  example: []
+  syntax:
+    content: public virtual IParcelWeight TotalWeight { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IParcelWeight
+      description: The total weight.
+    content.vb: Public Overridable Property TotalWeight As IParcelWeight
+  overload: PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  commentId: N:PitneyBowes.Developer.ShippingApi.Model
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Model
+  nameWithType: PitneyBowes.Developer.ShippingApi.Model
+  fullName: PitneyBowes.Developer.ShippingApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPickupCount
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IPickupCount
+  nameWithType: IPickupCount
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId
+  isExternal: false
+  name: ServiceId
+  nameWithType: PickupCount.ServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PickupCount.ServiceId
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  parent: PitneyBowes.Developer.ShippingApi.IPickupCount
+  isExternal: false
+  name: ServiceId
+  nameWithType: IPickupCount.ServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+- uid: PitneyBowes.Developer.ShippingApi.PickupService
+  commentId: T:PitneyBowes.Developer.ShippingApi.PickupService
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PickupService
+  nameWithType: PickupService
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService
+- uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count
+  isExternal: false
+  name: Count
+  nameWithType: PickupCount.Count
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PickupCount.Count
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  parent: PitneyBowes.Developer.ShippingApi.IPickupCount
+  isExternal: false
+  name: Count
+  nameWithType: IPickupCount.Count
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight
+  isExternal: false
+  name: TotalWeight
+  nameWithType: PickupCount.TotalWeight
+  fullName: PitneyBowes.Developer.ShippingApi.Model.PickupCount.TotalWeight
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  parent: PitneyBowes.Developer.ShippingApi.IPickupCount
+  isExternal: false
+  name: TotalWeight
+  nameWithType: IPickupCount.TotalWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcelWeight
+  nameWithType: IParcelWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight

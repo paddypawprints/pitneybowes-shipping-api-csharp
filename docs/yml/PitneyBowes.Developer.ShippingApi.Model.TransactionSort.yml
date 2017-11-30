@@ -1,0 +1,608 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  commentId: T:PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  id: TransactionSort
+  parent: PitneyBowes.Developer.ShippingApi.Model
+  children:
+  - PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending
+  - PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction
+  - PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase
+  - PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling
+  - PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property
+  langs:
+  - csharp
+  - vb
+  name: TransactionSort
+  nameWithType: TransactionSort
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  type: Class
+  source:
+    id: TransactionSort
+    path: ''
+    startLine: 8801
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: 'public class TransactionSort : ITransactionSort'
+    content.vb: >-
+      Public Class TransactionSort
+          Implements ITransactionSort
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending
+  id: Ascending
+  parent: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  langs:
+  - csharp
+  - vb
+  name: Ascending
+  nameWithType: TransactionSort.Ascending
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending
+  type: Property
+  source:
+    id: Ascending
+    path: ''
+    startLine: 8803
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string Ascending { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Ascending As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction
+  id: Direction
+  parent: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: TransactionSort.Direction
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction
+  type: Property
+  source:
+    id: Direction
+    path: ''
+    startLine: 8804
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string Direction { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Direction As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase
+  id: IgnoreCase
+  parent: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  langs:
+  - csharp
+  - vb
+  name: IgnoreCase
+  nameWithType: TransactionSort.IgnoreCase
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase
+  type: Property
+  source:
+    id: IgnoreCase
+    path: ''
+    startLine: 8805
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string IgnoreCase { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property IgnoreCase As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling
+  id: NullHandling
+  parent: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  langs:
+  - csharp
+  - vb
+  name: NullHandling
+  nameWithType: TransactionSort.NullHandling
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling
+  type: Property
+  source:
+    id: NullHandling
+    path: ''
+    startLine: 8806
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string NullHandling { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property NullHandling As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property
+  commentId: P:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property
+  id: Property
+  parent: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+  langs:
+  - csharp
+  - vb
+  name: Property
+  nameWithType: TransactionSort.Property
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property
+  type: Property
+  source:
+    id: Property
+    path: ''
+    startLine: 8807
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Model
+  syntax:
+    content: public virtual string Property { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Property As String
+  overload: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  commentId: N:PitneyBowes.Developer.ShippingApi.Model
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Model
+  nameWithType: PitneyBowes.Developer.ShippingApi.Model
+  fullName: PitneyBowes.Developer.ShippingApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  commentId: T:PitneyBowes.Developer.ShippingApi.ITransactionSort
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ITransactionSort
+  nameWithType: ITransactionSort
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending
+  isExternal: false
+  name: Ascending
+  nameWithType: TransactionSort.Ascending
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Ascending
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  isExternal: false
+  name: Ascending
+  nameWithType: ITransactionSort.Ascending
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Ascending
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction
+  isExternal: false
+  name: Direction
+  nameWithType: TransactionSort.Direction
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Direction
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  isExternal: false
+  name: Direction
+  nameWithType: ITransactionSort.Direction
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Direction
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase
+  isExternal: false
+  name: IgnoreCase
+  nameWithType: TransactionSort.IgnoreCase
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.IgnoreCase
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  isExternal: false
+  name: IgnoreCase
+  nameWithType: ITransactionSort.IgnoreCase
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.IgnoreCase
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling
+  isExternal: false
+  name: NullHandling
+  nameWithType: TransactionSort.NullHandling
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.NullHandling
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  isExternal: false
+  name: NullHandling
+  nameWithType: ITransactionSort.NullHandling
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.NullHandling
+- uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property
+  isExternal: false
+  name: Property
+  nameWithType: TransactionSort.Property
+  fullName: PitneyBowes.Developer.ShippingApi.Model.TransactionSort.Property
+- uid: PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITransactionSort.Property
+  parent: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  isExternal: false
+  name: Property
+  nameWithType: ITransactionSort.Property
+  fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort.Property

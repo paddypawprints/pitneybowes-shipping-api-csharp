@@ -1,0 +1,803 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  commentId: T:PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  id: InterfaceExtensions
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAddress)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAutoRefill)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustoms)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsInfo)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsItems)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDeliveryCommitment)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDocument)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IManifest)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickup)
+  - PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  langs:
+  - csharp
+  - vb
+  name: InterfaceExtensions
+  nameWithType: InterfaceExtensions
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  type: Class
+  source:
+    id: InterfaceExtensions
+    path: ''
+    startLine: 1781
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static class InterfaceExtensions
+    content.vb: Public Module InterfaceExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAddress)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAddress)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.IAddress)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(IAddress)
+  nameWithType: InterfaceExtensions.IsValid(IAddress)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAddress)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 760
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this IAddress a)
+    parameters:
+    - id: a
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(a As IAddress) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAutoRefill)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAutoRefill)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.IAutoRefill)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(IAutoRefill)
+  nameWithType: InterfaceExtensions.IsValid(IAutoRefill)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IAutoRefill)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 839
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this IAutoRefill a)
+    parameters:
+    - id: a
+      type: PitneyBowes.Developer.ShippingApi.IAutoRefill
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(a As IAutoRefill) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustoms)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustoms)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.ICustoms)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(ICustoms)
+  nameWithType: InterfaceExtensions.IsValid(ICustoms)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustoms)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 915
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this ICustoms customs)
+    parameters:
+    - id: customs
+      type: PitneyBowes.Developer.ShippingApi.ICustoms
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(customs As ICustoms) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsInfo)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsInfo)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.ICustomsInfo)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(ICustomsInfo)
+  nameWithType: InterfaceExtensions.IsValid(ICustomsInfo)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsInfo)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1035
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this ICustomsInfo customsInfo)
+    parameters:
+    - id: customsInfo
+      type: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(customsInfo As ICustomsInfo) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsItems)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsItems)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.ICustomsItems)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(ICustomsItems)
+  nameWithType: InterfaceExtensions.IsValid(ICustomsItems)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.ICustomsItems)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1102
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this ICustomsItems i)
+    parameters:
+    - id: i
+      type: PitneyBowes.Developer.ShippingApi.ICustomsItems
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(i As ICustomsItems) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDeliveryCommitment)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDeliveryCommitment)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.IDeliveryCommitment)
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(IDeliveryCommitment)
+  nameWithType: InterfaceExtensions.IsValid(IDeliveryCommitment)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDeliveryCommitment)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1159
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(IDeliveryCommitment d)
+    parameters:
+    - id: d
+      type: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsValid(d As IDeliveryCommitment) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDocument)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDocument)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.IDocument)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(IDocument)
+  nameWithType: InterfaceExtensions.IsValid(IDocument)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IDocument)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1258
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nFile Format Content type   Size       Label Type\nPDF         URL            DOC_8X11   Domestic\n                       DOC_4X6    APO/FPO\n                       DOC_6X4    International(CN22, CP72-A, CP72-B)\nPNG         BASE64         DOC_8X11   Domestic\n                       DOC_4X6    APO/FPO\n                       DOC_6X4    International(CN22, CP72-A, CP72-B)\nZPL2        BASE64         DOC_4x6    Domestic\n                       DOC_6X4    APO/FPO\n                                  International(CN22, CP72-A, CP72-B)\n"
+  example: []
+  syntax:
+    content: public static bool IsValid(this IDocument document)
+    parameters:
+    - id: document
+      type: PitneyBowes.Developer.ShippingApi.IDocument
+      description: Document.
+    return:
+      type: System.Boolean
+      description: <code>true</code>, if the document is valid <code>false</code> otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(document As IDocument) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IManifest)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IManifest)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.IManifest)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(IManifest)
+  nameWithType: InterfaceExtensions.IsValid(IManifest)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IManifest)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1372
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this IManifest manifest)
+    parameters:
+    - id: manifest
+      type: PitneyBowes.Developer.ShippingApi.IManifest
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(manifest As IManifest) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickup)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickup)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.IPickup)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(IPickup)
+  nameWithType: InterfaceExtensions.IsValid(IPickup)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickup)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1729
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this IPickup p)
+    parameters:
+    - id: p
+      type: PitneyBowes.Developer.ShippingApi.IPickup
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(p As IPickup) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  commentId: M:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  id: IsValid(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  isExtensionMethod: true
+  parent: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValid(IPickupCount)
+  nameWithType: InterfaceExtensions.IsValid(IPickupCount)
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid(PitneyBowes.Developer.ShippingApi.IPickupCount)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1783
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static bool IsValid(this IPickupCount c)
+    parameters:
+    - id: c
+      type: PitneyBowes.Developer.ShippingApi.IPickupCount
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsValid(c As IPickupCount) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid
+  isExternal: false
+  name: IsValid
+  nameWithType: InterfaceExtensions.IsValid
+  fullName: PitneyBowes.Developer.ShippingApi.InterfaceExtensions.IsValid
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: PitneyBowes.Developer.ShippingApi.IAutoRefill
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAutoRefill
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAutoRefill
+  nameWithType: IAutoRefill
+  fullName: PitneyBowes.Developer.ShippingApi.IAutoRefill
+- uid: PitneyBowes.Developer.ShippingApi.ICustoms
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICustoms
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ICustoms
+  nameWithType: ICustoms
+  fullName: PitneyBowes.Developer.ShippingApi.ICustoms
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICustomsInfo
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ICustomsInfo
+  nameWithType: ICustomsInfo
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+- uid: PitneyBowes.Developer.ShippingApi.ICustomsItems
+  commentId: T:PitneyBowes.Developer.ShippingApi.ICustomsItems
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ICustomsItems
+  nameWithType: ICustomsItems
+  fullName: PitneyBowes.Developer.ShippingApi.ICustomsItems
+- uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  commentId: T:PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IDeliveryCommitment
+  nameWithType: IDeliveryCommitment
+  fullName: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+- uid: PitneyBowes.Developer.ShippingApi.IDocument
+  commentId: T:PitneyBowes.Developer.ShippingApi.IDocument
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IDocument
+  nameWithType: IDocument
+  fullName: PitneyBowes.Developer.ShippingApi.IDocument
+- uid: PitneyBowes.Developer.ShippingApi.IManifest
+  commentId: T:PitneyBowes.Developer.ShippingApi.IManifest
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IManifest
+  nameWithType: IManifest
+  fullName: PitneyBowes.Developer.ShippingApi.IManifest
+- uid: PitneyBowes.Developer.ShippingApi.IPickup
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPickup
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IPickup
+  nameWithType: IPickup
+  fullName: PitneyBowes.Developer.ShippingApi.IPickup
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPickupCount
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IPickupCount
+  nameWithType: IPickupCount
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount

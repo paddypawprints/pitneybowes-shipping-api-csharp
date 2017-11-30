@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelWeight
+  id: IParcelWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement
+  - PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight
+  langs:
+  - csharp
+  - vb
+  name: IParcelWeight
+  nameWithType: IParcelWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  type: Interface
+  source:
+    id: IParcelWeight
+    path: ''
+    startLine: 1604
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nParcel weight.\n"
+  example: []
+  syntax:
+    content: public interface IParcelWeight
+    content.vb: Public Interface IParcelWeight
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight
+  commentId: P:PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight
+  id: Weight
+  parent: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: IParcelWeight.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight
+  type: Property
+  source:
+    id: Weight
+    path: ''
+    startLine: 1610
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the weight.\n"
+  example: []
+  syntax:
+    content: decimal Weight { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The weight.
+    content.vb: Property Weight As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement
+  commentId: P:PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement
+  id: UnitOfMeasurement
+  parent: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  langs:
+  - csharp
+  - vb
+  name: UnitOfMeasurement
+  nameWithType: IParcelWeight.UnitOfMeasurement
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement
+  type: Property
+  source:
+    id: UnitOfMeasurement
+    path: ''
+    startLine: 1615
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the unit of measurement.\n"
+  example: []
+  syntax:
+    content: UnitOfWeight UnitOfMeasurement { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+      description: The unit of measurement.
+    content.vb: Property UnitOfMeasurement As UnitOfWeight
+  overload: PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight
+  isExternal: false
+  name: Weight
+  nameWithType: IParcelWeight.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight.Weight
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement
+  isExternal: false
+  name: UnitOfMeasurement
+  nameWithType: IParcelWeight.UnitOfMeasurement
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight.UnitOfMeasurement
+- uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: UnitOfWeight
+  nameWithType: UnitOfWeight
+  fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight

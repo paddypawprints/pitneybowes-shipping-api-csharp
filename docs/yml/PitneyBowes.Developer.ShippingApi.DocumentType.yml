@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.DocumentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.DocumentType
+  id: DocumentType
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.DocumentType.MANIFEST
+  - PitneyBowes.Developer.ShippingApi.DocumentType.SHIPPING_LABEL
+  langs:
+  - csharp
+  - vb
+  name: DocumentType
+  nameWithType: DocumentType
+  fullName: PitneyBowes.Developer.ShippingApi.DocumentType
+  type: Enum
+  source:
+    id: DocumentType
+    path: ''
+    startLine: 90
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nDocument type - shipping label or manifest.\n"
+  example: []
+  syntax:
+    content: public enum DocumentType
+    content.vb: Public Enum DocumentType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.DocumentType.SHIPPING_LABEL
+  commentId: F:PitneyBowes.Developer.ShippingApi.DocumentType.SHIPPING_LABEL
+  id: SHIPPING_LABEL
+  parent: PitneyBowes.Developer.ShippingApi.DocumentType
+  langs:
+  - csharp
+  - vb
+  name: SHIPPING_LABEL
+  nameWithType: DocumentType.SHIPPING_LABEL
+  fullName: PitneyBowes.Developer.ShippingApi.DocumentType.SHIPPING_LABEL
+  type: Field
+  source:
+    id: SHIPPING_LABEL
+    path: ''
+    startLine: 92
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: SHIPPING_LABEL = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.DocumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.DocumentType.MANIFEST
+  commentId: F:PitneyBowes.Developer.ShippingApi.DocumentType.MANIFEST
+  id: MANIFEST
+  parent: PitneyBowes.Developer.ShippingApi.DocumentType
+  langs:
+  - csharp
+  - vb
+  name: MANIFEST
+  nameWithType: DocumentType.MANIFEST
+  fullName: PitneyBowes.Developer.ShippingApi.DocumentType.MANIFEST
+  type: Field
+  source:
+    id: MANIFEST
+    path: ''
+    startLine: 93
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: MANIFEST = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.DocumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.DocumentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.DocumentType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: DocumentType
+  nameWithType: DocumentType
+  fullName: PitneyBowes.Developer.ShippingApi.DocumentType

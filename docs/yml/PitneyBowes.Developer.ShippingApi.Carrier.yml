@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Carrier
+  commentId: T:PitneyBowes.Developer.ShippingApi.Carrier
+  id: Carrier
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.Carrier.PBPRESORT
+  - PitneyBowes.Developer.ShippingApi.Carrier.USPS
+  langs:
+  - csharp
+  - vb
+  name: Carrier
+  nameWithType: Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Carrier
+  type: Enum
+  source:
+    id: Carrier
+    path: ''
+    startLine: 41
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nShipping carriers.\n"
+  example: []
+  syntax:
+    content: public enum Carrier
+    content.vb: Public Enum Carrier
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.Carrier.USPS
+  commentId: F:PitneyBowes.Developer.ShippingApi.Carrier.USPS
+  id: USPS
+  parent: PitneyBowes.Developer.ShippingApi.Carrier
+  langs:
+  - csharp
+  - vb
+  name: USPS
+  nameWithType: Carrier.USPS
+  fullName: PitneyBowes.Developer.ShippingApi.Carrier.USPS
+  type: Field
+  source:
+    id: USPS
+    path: ''
+    startLine: 46
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nUS Postal Service\n"
+  example: []
+  syntax:
+    content: USPS = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Carrier
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.Carrier.PBPRESORT
+  commentId: F:PitneyBowes.Developer.ShippingApi.Carrier.PBPRESORT
+  id: PBPRESORT
+  parent: PitneyBowes.Developer.ShippingApi.Carrier
+  langs:
+  - csharp
+  - vb
+  name: PBPRESORT
+  nameWithType: Carrier.PBPRESORT
+  fullName: PitneyBowes.Developer.ShippingApi.Carrier.PBPRESORT
+  type: Field
+  source:
+    id: PBPRESORT
+    path: ''
+    startLine: 50
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPitney Powes Presort Services\n"
+  example: []
+  syntax:
+    content: PBPRESORT = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Carrier
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Carrier
+  commentId: T:PitneyBowes.Developer.ShippingApi.Carrier
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Carrier
+  nameWithType: Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Carrier

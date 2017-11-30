@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo
+  commentId: T:PitneyBowes.Developer.ShippingApi.IUserInfo
+  id: IUserInfo
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IUserInfo.Address
+  - PitneyBowes.Developer.ShippingApi.IUserInfo.Company
+  - PitneyBowes.Developer.ShippingApi.IUserInfo.Email
+  - PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName
+  - PitneyBowes.Developer.ShippingApi.IUserInfo.LastName
+  - PitneyBowes.Developer.ShippingApi.IUserInfo.Phone
+  langs:
+  - csharp
+  - vb
+  name: IUserInfo
+  nameWithType: IUserInfo
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo
+  type: Interface
+  source:
+    id: IUserInfo
+    path: ''
+    startLine: 2175
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface IUserInfo
+    content.vb: Public Interface IUserInfo
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName
+  commentId: P:PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName
+  id: FirstName
+  parent: PitneyBowes.Developer.ShippingApi.IUserInfo
+  langs:
+  - csharp
+  - vb
+  name: FirstName
+  nameWithType: IUserInfo.FirstName
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName
+  type: Property
+  source:
+    id: FirstName
+    path: ''
+    startLine: 2177
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string FirstName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property FirstName As String
+  overload: PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.LastName
+  commentId: P:PitneyBowes.Developer.ShippingApi.IUserInfo.LastName
+  id: LastName
+  parent: PitneyBowes.Developer.ShippingApi.IUserInfo
+  langs:
+  - csharp
+  - vb
+  name: LastName
+  nameWithType: IUserInfo.LastName
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.LastName
+  type: Property
+  source:
+    id: LastName
+    path: ''
+    startLine: 2178
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string LastName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LastName As String
+  overload: PitneyBowes.Developer.ShippingApi.IUserInfo.LastName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Company
+  commentId: P:PitneyBowes.Developer.ShippingApi.IUserInfo.Company
+  id: Company
+  parent: PitneyBowes.Developer.ShippingApi.IUserInfo
+  langs:
+  - csharp
+  - vb
+  name: Company
+  nameWithType: IUserInfo.Company
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Company
+  type: Property
+  source:
+    id: Company
+    path: ''
+    startLine: 2179
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Company { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Company As String
+  overload: PitneyBowes.Developer.ShippingApi.IUserInfo.Company*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Address
+  commentId: P:PitneyBowes.Developer.ShippingApi.IUserInfo.Address
+  id: Address
+  parent: PitneyBowes.Developer.ShippingApi.IUserInfo
+  langs:
+  - csharp
+  - vb
+  name: Address
+  nameWithType: IUserInfo.Address
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Address
+  type: Property
+  source:
+    id: Address
+    path: ''
+    startLine: 2180
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: IAddress Address { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    content.vb: Property Address As IAddress
+  overload: PitneyBowes.Developer.ShippingApi.IUserInfo.Address*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Phone
+  commentId: P:PitneyBowes.Developer.ShippingApi.IUserInfo.Phone
+  id: Phone
+  parent: PitneyBowes.Developer.ShippingApi.IUserInfo
+  langs:
+  - csharp
+  - vb
+  name: Phone
+  nameWithType: IUserInfo.Phone
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Phone
+  type: Property
+  source:
+    id: Phone
+    path: ''
+    startLine: 2181
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Phone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Phone As String
+  overload: PitneyBowes.Developer.ShippingApi.IUserInfo.Phone*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Email
+  commentId: P:PitneyBowes.Developer.ShippingApi.IUserInfo.Email
+  id: Email
+  parent: PitneyBowes.Developer.ShippingApi.IUserInfo
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: IUserInfo.Email
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Email
+  type: Property
+  source:
+    id: Email
+    path: ''
+    startLine: 2182
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Email As String
+  overload: PitneyBowes.Developer.ShippingApi.IUserInfo.Email*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName
+  isExternal: false
+  name: FirstName
+  nameWithType: IUserInfo.FirstName
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.FirstName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.LastName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IUserInfo.LastName
+  isExternal: false
+  name: LastName
+  nameWithType: IUserInfo.LastName
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.LastName
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Company*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IUserInfo.Company
+  isExternal: false
+  name: Company
+  nameWithType: IUserInfo.Company
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Company
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Address*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IUserInfo.Address
+  isExternal: false
+  name: Address
+  nameWithType: IUserInfo.Address
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Address
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Phone*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IUserInfo.Phone
+  isExternal: false
+  name: Phone
+  nameWithType: IUserInfo.Phone
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Phone
+- uid: PitneyBowes.Developer.ShippingApi.IUserInfo.Email*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IUserInfo.Email
+  isExternal: false
+  name: Email
+  nameWithType: IUserInfo.Email
+  fullName: PitneyBowes.Developer.ShippingApi.IUserInfo.Email

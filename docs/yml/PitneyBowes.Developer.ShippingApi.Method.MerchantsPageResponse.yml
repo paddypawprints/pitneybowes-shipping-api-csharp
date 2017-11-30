@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  id: MerchantsPageResponse
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  children:
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements
+  - PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages
+  langs:
+  - csharp
+  - vb
+  name: MerchantsPageResponse
+  nameWithType: MerchantsPageResponse
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  type: Class
+  source:
+    id: MerchantsPageResponse
+    path: ''
+    startLine: 8896
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public class MerchantsPageResponse
+    content.vb: Public Class MerchantsPageResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content
+  id: Content
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: MerchantsPageResponse.Content
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content
+  type: Property
+  source:
+    id: Content
+    path: ''
+    startLine: 8898
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public IEnumerable<Merchant> Content { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{Merchant}
+    content.vb: Public Property Content As IEnumerable(Of Merchant)
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages
+  id: TotalPages
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: TotalPages
+  nameWithType: MerchantsPageResponse.TotalPages
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages
+  type: Property
+  source:
+    id: TotalPages
+    path: ''
+    startLine: 8900
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public int TotalPages { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TotalPages As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements
+  id: TotalElements
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: TotalElements
+  nameWithType: MerchantsPageResponse.TotalElements
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements
+  type: Property
+  source:
+    id: TotalElements
+    path: ''
+    startLine: 8902
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public int TotalElements { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TotalElements As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage
+  id: LastPage
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: LastPage
+  nameWithType: MerchantsPageResponse.LastPage
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage
+  type: Property
+  source:
+    id: LastPage
+    path: ''
+    startLine: 8904
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public bool LastPage { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LastPage As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size
+  id: Size
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: MerchantsPageResponse.Size
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size
+  type: Property
+  source:
+    id: Size
+    path: ''
+    startLine: 8906
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public int Size { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Size As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex
+  id: PageIndex
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: PageIndex
+  nameWithType: MerchantsPageResponse.PageIndex
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex
+  type: Property
+  source:
+    id: PageIndex
+    path: ''
+    startLine: 8908
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public int PageIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PageIndex As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort
+  id: Sort
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: Sort
+  nameWithType: MerchantsPageResponse.Sort
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort
+  type: Property
+  source:
+    id: Sort
+    path: ''
+    startLine: 8910
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public IEnumerable<ITransactionSort> Sort { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.ITransactionSort}
+    content.vb: Public Property Sort As IEnumerable(Of ITransactionSort)
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count
+  id: Count
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: MerchantsPageResponse.Count
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count
+  type: Property
+  source:
+    id: Count
+    path: ''
+    startLine: 8912
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public int Count { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Count As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage
+  commentId: P:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage
+  id: FirstPage
+  parent: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+  langs:
+  - csharp
+  - vb
+  name: FirstPage
+  nameWithType: MerchantsPageResponse.FirstPage
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage
+  type: Property
+  source:
+    id: FirstPage
+    path: ''
+    startLine: 8914
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public bool FirstPage { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FirstPage As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Method
+  commentId: N:PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Method
+  nameWithType: PitneyBowes.Developer.ShippingApi.Method
+  fullName: PitneyBowes.Developer.ShippingApi.Method
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content
+  isExternal: false
+  name: Content
+  nameWithType: MerchantsPageResponse.Content
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Content
+- uid: IEnumerable{Merchant}
+  commentId: '!:IEnumerable{Merchant}'
+  definition: IEnumerable`1
+  name: IEnumerable<Merchant>
+  nameWithType: IEnumerable<Merchant>
+  fullName: IEnumerable<Merchant>
+  nameWithType.vb: IEnumerable(Of Merchant)
+  fullName.vb: IEnumerable(Of Merchant)
+  name.vb: IEnumerable(Of Merchant)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Merchant
+    name: Merchant
+    nameWithType: Merchant
+    fullName: Merchant
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Merchant
+    name: Merchant
+    nameWithType: Merchant
+    fullName: Merchant
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages
+  isExternal: false
+  name: TotalPages
+  nameWithType: MerchantsPageResponse.TotalPages
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalPages
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements
+  isExternal: false
+  name: TotalElements
+  nameWithType: MerchantsPageResponse.TotalElements
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.TotalElements
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage
+  isExternal: false
+  name: LastPage
+  nameWithType: MerchantsPageResponse.LastPage
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.LastPage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size
+  isExternal: false
+  name: Size
+  nameWithType: MerchantsPageResponse.Size
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Size
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex
+  isExternal: false
+  name: PageIndex
+  nameWithType: MerchantsPageResponse.PageIndex
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.PageIndex
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort
+  isExternal: false
+  name: Sort
+  nameWithType: MerchantsPageResponse.Sort
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Sort
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.ITransactionSort}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.ITransactionSort}'
+  definition: IEnumerable`1
+  name: IEnumerable<ITransactionSort>
+  nameWithType: IEnumerable<ITransactionSort>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.ITransactionSort>
+  nameWithType.vb: IEnumerable(Of ITransactionSort)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.ITransactionSort)
+  name.vb: IEnumerable(Of ITransactionSort)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ITransactionSort
+    name: ITransactionSort
+    nameWithType: ITransactionSort
+    fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ITransactionSort
+    name: ITransactionSort
+    nameWithType: ITransactionSort
+    fullName: PitneyBowes.Developer.ShippingApi.ITransactionSort
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count
+  isExternal: false
+  name: Count
+  nameWithType: MerchantsPageResponse.Count
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.Count
+- uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage
+  isExternal: false
+  name: FirstPage
+  nameWithType: MerchantsPageResponse.FirstPage
+  fullName: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse.FirstPage

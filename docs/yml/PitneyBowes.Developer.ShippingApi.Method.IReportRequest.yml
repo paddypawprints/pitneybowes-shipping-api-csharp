@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Method.IReportRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Method.IReportRequest
+  id: IReportRequest
+  parent: PitneyBowes.Developer.ShippingApi.Method
+  children:
+  - PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate
+  langs:
+  - csharp
+  - vb
+  name: IReportRequest
+  nameWithType: IReportRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Method.IReportRequest
+  type: Interface
+  source:
+    id: IReportRequest
+    path: ''
+    startLine: 9252
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: public interface IReportRequest
+    content.vb: Public Interface IReportRequest
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate
+  commentId: M:PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate
+  id: Validate
+  parent: PitneyBowes.Developer.ShippingApi.Method.IReportRequest
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: IReportRequest.Validate()
+  fullName: PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate()
+  type: Method
+  source:
+    id: Validate
+    path: ''
+    startLine: 9254
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Method
+  syntax:
+    content: bool Validate()
+    return:
+      type: System.Boolean
+    content.vb: Function Validate As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate*
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Method
+  commentId: N:PitneyBowes.Developer.ShippingApi.Method
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Method
+  nameWithType: PitneyBowes.Developer.ShippingApi.Method
+  fullName: PitneyBowes.Developer.ShippingApi.Method
+- uid: PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate
+  isExternal: false
+  name: Validate
+  nameWithType: IReportRequest.Validate
+  fullName: PitneyBowes.Developer.ShippingApi.Method.IReportRequest.Validate
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

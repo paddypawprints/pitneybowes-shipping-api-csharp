@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  id: ShippingApiHeaderAttribute
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.#ctor(System.String,System.Boolean)
+  - PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty
+  langs:
+  - csharp
+  - vb
+  name: ShippingApiHeaderAttribute
+  nameWithType: ShippingApiHeaderAttribute
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  type: Class
+  source:
+    id: ShippingApiHeaderAttribute
+    path: ''
+    startLine: 11412
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: 'public class ShippingApiHeaderAttribute : ShippingApiAttribute'
+    content.vb: >-
+      Public Class ShippingApiHeaderAttribute
+          Inherits ShippingApiAttribute
+  inheritance:
+  - Attribute
+  - PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  inheritedMembers:
+  - PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  - PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty
+  id: OmitIfEmpty
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  langs:
+  - csharp
+  - vb
+  name: OmitIfEmpty
+  nameWithType: ShippingApiHeaderAttribute.OmitIfEmpty
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty
+  type: Property
+  source:
+    id: OmitIfEmpty
+    path: ''
+    startLine: 11414
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public bool OmitIfEmpty { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property OmitIfEmpty As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.#ctor(System.String,System.Boolean)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+  langs:
+  - csharp
+  - vb
+  name: ShippingApiHeaderAttribute(String, Boolean)
+  nameWithType: ShippingApiHeaderAttribute.ShippingApiHeaderAttribute(String, Boolean)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.ShippingApiHeaderAttribute(System.String, System.Boolean)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11415
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingApiHeaderAttribute(string name, bool omitIfEmpty = true)
+    parameters:
+    - id: name
+      type: System.String
+    - id: omitIfEmpty
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, omitIfEmpty As Boolean = True)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: Attribute
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: Attribute
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ShippingApiAttribute
+  nameWithType: ShippingApiAttribute
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  isExternal: false
+  name: Name
+  nameWithType: ShippingApiAttribute.Name
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Name
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+  parent: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+  isExternal: false
+  name: Format
+  nameWithType: ShippingApiAttribute.Format
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute.Format
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty
+  isExternal: false
+  name: OmitIfEmpty
+  nameWithType: ShippingApiHeaderAttribute.OmitIfEmpty
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.OmitIfEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.#ctor*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.#ctor
+  isExternal: false
+  name: ShippingApiHeaderAttribute
+  nameWithType: ShippingApiHeaderAttribute.ShippingApiHeaderAttribute
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute.ShippingApiHeaderAttribute
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

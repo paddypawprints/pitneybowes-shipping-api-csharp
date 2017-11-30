@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.PaymentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.PaymentType
+  id: PaymentType
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE
+  - PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE_AND_SUBSCRIPTION
+  - PitneyBowes.Developer.ShippingApi.PaymentType.SUBSCRIPTION
+  langs:
+  - csharp
+  - vb
+  name: PaymentType
+  nameWithType: PaymentType
+  fullName: PitneyBowes.Developer.ShippingApi.PaymentType
+  type: Enum
+  source:
+    id: PaymentType
+    path: ''
+    startLine: 173
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPayment type.\n"
+  example: []
+  syntax:
+    content: public enum PaymentType
+    content.vb: Public Enum PaymentType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE_AND_SUBSCRIPTION
+  commentId: F:PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE_AND_SUBSCRIPTION
+  id: POSTAGE_AND_SUBSCRIPTION
+  parent: PitneyBowes.Developer.ShippingApi.PaymentType
+  langs:
+  - csharp
+  - vb
+  name: POSTAGE_AND_SUBSCRIPTION
+  nameWithType: PaymentType.POSTAGE_AND_SUBSCRIPTION
+  fullName: PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE_AND_SUBSCRIPTION
+  type: Field
+  source:
+    id: POSTAGE_AND_SUBSCRIPTION
+    path: ''
+    startLine: 175
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: POSTAGE_AND_SUBSCRIPTION = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PaymentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PaymentType.SUBSCRIPTION
+  commentId: F:PitneyBowes.Developer.ShippingApi.PaymentType.SUBSCRIPTION
+  id: SUBSCRIPTION
+  parent: PitneyBowes.Developer.ShippingApi.PaymentType
+  langs:
+  - csharp
+  - vb
+  name: SUBSCRIPTION
+  nameWithType: PaymentType.SUBSCRIPTION
+  fullName: PitneyBowes.Developer.ShippingApi.PaymentType.SUBSCRIPTION
+  type: Field
+  source:
+    id: SUBSCRIPTION
+    path: ''
+    startLine: 176
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: SUBSCRIPTION = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PaymentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE
+  commentId: F:PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE
+  id: POSTAGE
+  parent: PitneyBowes.Developer.ShippingApi.PaymentType
+  langs:
+  - csharp
+  - vb
+  name: POSTAGE
+  nameWithType: PaymentType.POSTAGE
+  fullName: PitneyBowes.Developer.ShippingApi.PaymentType.POSTAGE
+  type: Field
+  source:
+    id: POSTAGE
+    path: ''
+    startLine: 177
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: POSTAGE = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PaymentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.PaymentType
+  commentId: T:PitneyBowes.Developer.ShippingApi.PaymentType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PaymentType
+  nameWithType: PaymentType
+  fullName: PitneyBowes.Developer.ShippingApi.PaymentType

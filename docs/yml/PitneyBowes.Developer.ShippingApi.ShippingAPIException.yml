@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  id: ShippingAPIException
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor
+  - PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse)
+  - PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String)
+  - PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String,Exception)
+  - PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(System.String)
+  - PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(System.String,Exception)
+  - PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse
+  langs:
+  - csharp
+  - vb
+  name: ShippingAPIException
+  nameWithType: ShippingAPIException
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  type: Class
+  source:
+    id: ShippingAPIException
+    path: ''
+    startLine: 11449
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: 'public class ShippingAPIException : Exception'
+    content.vb: >-
+      Public Class ShippingAPIException
+          Inherits Exception
+  inheritance:
+  - Exception
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse
+  commentId: P:PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse
+  id: ErrorResponse
+  parent: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  langs:
+  - csharp
+  - vb
+  name: ErrorResponse
+  nameWithType: ShippingAPIException.ErrorResponse
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse
+  type: Property
+  source:
+    id: ErrorResponse
+    path: ''
+    startLine: 11451
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingApiResponse ErrorResponse { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+    content.vb: Public Property ErrorResponse As ShippingApiResponse
+  overload: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor
+  id: '#ctor'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  langs:
+  - csharp
+  - vb
+  name: ShippingAPIException()
+  nameWithType: ShippingAPIException.ShippingAPIException()
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ShippingAPIException()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11453
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingAPIException()
+    content.vb: Public Sub New
+  overload: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse)
+  id: '#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse)'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  langs:
+  - csharp
+  - vb
+  name: ShippingAPIException(ShippingApiResponse)
+  nameWithType: ShippingAPIException.ShippingAPIException(ShippingApiResponse)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ShippingAPIException(PitneyBowes.Developer.ShippingApi.ShippingApiResponse)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11457
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingAPIException(ShippingApiResponse response)
+    parameters:
+    - id: response
+      type: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+    content.vb: Public Sub New(response As ShippingApiResponse)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String)
+  id: '#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String)'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  langs:
+  - csharp
+  - vb
+  name: ShippingAPIException(ShippingApiResponse, String)
+  nameWithType: ShippingAPIException.ShippingAPIException(ShippingApiResponse, String)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ShippingAPIException(PitneyBowes.Developer.ShippingApi.ShippingApiResponse, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11462
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingAPIException(ShippingApiResponse response, string message)
+    parameters:
+    - id: response
+      type: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(response As ShippingApiResponse, message As String)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  langs:
+  - csharp
+  - vb
+  name: ShippingAPIException(String)
+  nameWithType: ShippingAPIException.ShippingAPIException(String)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ShippingAPIException(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11466
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingAPIException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(System.String,Exception)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(System.String,Exception)
+  id: '#ctor(System.String,Exception)'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  langs:
+  - csharp
+  - vb
+  name: ShippingAPIException(String, Exception)
+  nameWithType: ShippingAPIException.ShippingAPIException(String, Exception)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ShippingAPIException(System.String, Exception)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11470
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingAPIException(string message, Exception inner)
+    parameters:
+    - id: message
+      type: System.String
+    - id: inner
+      type: Exception
+    content.vb: Public Sub New(message As String, inner As Exception)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String,Exception)
+  commentId: M:PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String,Exception)
+  id: '#ctor(PitneyBowes.Developer.ShippingApi.ShippingApiResponse,System.String,Exception)'
+  parent: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+  langs:
+  - csharp
+  - vb
+  name: ShippingAPIException(ShippingApiResponse, String, Exception)
+  nameWithType: ShippingAPIException.ShippingAPIException(ShippingApiResponse, String, Exception)
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ShippingAPIException(PitneyBowes.Developer.ShippingApi.ShippingApiResponse, System.String, Exception)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 11473
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public ShippingAPIException(ShippingApiResponse response, string message, Exception inner)
+    parameters:
+    - id: response
+      type: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+    - id: message
+      type: System.String
+    - id: inner
+      type: Exception
+    content.vb: Public Sub New(response As ShippingApiResponse, message As String, inner As Exception)
+  overload: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse
+  isExternal: false
+  name: ErrorResponse
+  nameWithType: ShippingAPIException.ErrorResponse
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ErrorResponse
+- uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  commentId: T:PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ShippingApiResponse
+  nameWithType: ShippingApiResponse
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+- uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ShippingAPIException.#ctor
+  isExternal: false
+  name: ShippingAPIException
+  nameWithType: ShippingAPIException.ShippingAPIException
+  fullName: PitneyBowes.Developer.ShippingApi.ShippingAPIException.ShippingAPIException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

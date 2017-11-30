@@ -1,0 +1,335 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  commentId: T:PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  id: ITrackingEvent
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription
+  - PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType
+  langs:
+  - csharp
+  - vb
+  name: ITrackingEvent
+  nameWithType: ITrackingEvent
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  type: Interface
+  source:
+    id: ITrackingEvent
+    path: ''
+    startLine: 1999
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface ITrackingEvent
+    content.vb: Public Interface ITrackingEvent
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime
+  id: EventDateTime
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: EventDateTime
+  nameWithType: ITrackingEvent.EventDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime
+  type: Property
+  source:
+    id: EventDateTime
+    path: ''
+    startLine: 2001
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: DateTimeOffset EventDateTime { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Property EventDateTime As DateTimeOffset
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity
+  id: EventCity
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: EventCity
+  nameWithType: ITrackingEvent.EventCity
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity
+  type: Property
+  source:
+    id: EventCity
+    path: ''
+    startLine: 2002
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string EventCity { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property EventCity As String
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState
+  id: EventState
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: EventState
+  nameWithType: ITrackingEvent.EventState
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState
+  type: Property
+  source:
+    id: EventState
+    path: ''
+    startLine: 2003
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string EventState { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property EventState As String
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode
+  id: PostalCode
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: PostalCode
+  nameWithType: ITrackingEvent.PostalCode
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode
+  type: Property
+  source:
+    id: PostalCode
+    path: ''
+    startLine: 2004
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string PostalCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property PostalCode As String
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country
+  id: Country
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: Country
+  nameWithType: ITrackingEvent.Country
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country
+  type: Property
+  source:
+    id: Country
+    path: ''
+    startLine: 2005
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string Country { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Country As String
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType
+  id: ScanType
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: ScanType
+  nameWithType: ITrackingEvent.ScanType
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType
+  type: Property
+  source:
+    id: ScanType
+    path: ''
+    startLine: 2006
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string ScanType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ScanType As String
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription
+  id: ScanDescription
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: ScanDescription
+  nameWithType: ITrackingEvent.ScanDescription
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription
+  type: Property
+  source:
+    id: ScanDescription
+    path: ''
+    startLine: 2007
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string ScanDescription { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ScanDescription As String
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus
+  commentId: P:PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus
+  id: PackageStatus
+  parent: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+  langs:
+  - csharp
+  - vb
+  name: PackageStatus
+  nameWithType: ITrackingEvent.PackageStatus
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus
+  type: Property
+  source:
+    id: PackageStatus
+    path: ''
+    startLine: 2008
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: string PackageStatus { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property PackageStatus As String
+  overload: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime
+  isExternal: false
+  name: EventDateTime
+  nameWithType: ITrackingEvent.EventDateTime
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventDateTime
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: DateTimeOffset
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity
+  isExternal: false
+  name: EventCity
+  nameWithType: ITrackingEvent.EventCity
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventCity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState
+  isExternal: false
+  name: EventState
+  nameWithType: ITrackingEvent.EventState
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.EventState
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode
+  isExternal: false
+  name: PostalCode
+  nameWithType: ITrackingEvent.PostalCode
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PostalCode
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country
+  isExternal: false
+  name: Country
+  nameWithType: ITrackingEvent.Country
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.Country
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType
+  isExternal: false
+  name: ScanType
+  nameWithType: ITrackingEvent.ScanType
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanType
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription
+  isExternal: false
+  name: ScanDescription
+  nameWithType: ITrackingEvent.ScanDescription
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.ScanDescription
+- uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus
+  isExternal: false
+  name: PackageStatus
+  nameWithType: ITrackingEvent.PackageStatus
+  fullName: PitneyBowes.Developer.ShippingApi.ITrackingEvent.PackageStatus

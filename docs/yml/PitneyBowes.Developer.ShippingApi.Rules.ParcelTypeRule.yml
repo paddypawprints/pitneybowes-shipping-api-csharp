@@ -1,0 +1,1128 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  id: ParcelTypeRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  children:
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions(PitneyBowes.Developer.ShippingApi.IParcelDimension)
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight(PitneyBowes.Developer.ShippingApi.IParcelWeight)
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules
+  langs:
+  - csharp
+  - vb
+  name: ParcelTypeRule
+  nameWithType: ParcelTypeRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  type: Class
+  source:
+    id: ParcelTypeRule
+    path: ''
+    startLine: 10277
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: 'public class ParcelTypeRule : IRateRule'
+    content.vb: >-
+      Public Class ParcelTypeRule
+          Implements IRateRule
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType
+  id: ParcelType
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: ParcelType
+  nameWithType: ParcelTypeRule.ParcelType
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType
+  type: Property
+  source:
+    id: ParcelType
+    path: ''
+    startLine: 10280
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public ParcelType ParcelType { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.ParcelType
+    content.vb: Public Property ParcelType As ParcelType
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName
+  id: BrandedName
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: BrandedName
+  nameWithType: ParcelTypeRule.BrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName
+  type: Property
+  source:
+    id: BrandedName
+    path: ''
+    startLine: 10283
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string BrandedName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BrandedName As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId
+  id: RateTypeId
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: RateTypeId
+  nameWithType: ParcelTypeRule.RateTypeId
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId
+  type: Property
+  source:
+    id: RateTypeId
+    path: ''
+    startLine: 10285
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string RateTypeId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RateTypeId As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName
+  id: RateTypeBrandedName
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: RateTypeBrandedName
+  nameWithType: ParcelTypeRule.RateTypeBrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName
+  type: Property
+  source:
+    id: RateTypeBrandedName
+    path: ''
+    startLine: 10287
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string RateTypeBrandedName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RateTypeBrandedName As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable
+  id: Trackable
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: Trackable
+  nameWithType: ParcelTypeRule.Trackable
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable
+  type: Property
+  source:
+    id: Trackable
+    path: ''
+    startLine: 10289
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public Trackable Trackable { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Trackable
+    content.vb: Public Property Trackable As Trackable
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules
+  id: SpecialServiceRules
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: SpecialServiceRules
+  nameWithType: ParcelTypeRule.SpecialServiceRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules
+  type: Property
+  source:
+    id: SpecialServiceRules
+    path: ''
+    startLine: 10292
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public IndexedList<SpecialServiceCodes, SpecialServicesRule> SpecialServiceRules { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Rules.IndexedList{PitneyBowes.Developer.ShippingApi.SpecialServiceCodes,PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule}
+    content.vb: Public Property SpecialServiceRules As IndexedList(Of SpecialServiceCodes, SpecialServicesRule)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules
+  id: WeightRules
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: WeightRules
+  nameWithType: ParcelTypeRule.WeightRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules
+  type: Property
+  source:
+    id: WeightRules
+    path: ''
+    startLine: 10293
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public IEnumerable<WeightRule> WeightRules { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.Rules.WeightRule}
+    content.vb: Public Property WeightRules As IEnumerable(Of WeightRule)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules
+  id: DimensionRules
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: DimensionRules
+  nameWithType: ParcelTypeRule.DimensionRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules
+  type: Property
+  source:
+    id: DimensionRules
+    path: ''
+    startLine: 10295
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public IEnumerable<DimensionRule> DimensionRules { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.Rules.DimensionRule}
+    content.vb: Public Property DimensionRules As IEnumerable(Of DimensionRule)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId
+  id: SuggestedTrackableSpecialServiceId
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: SuggestedTrackableSpecialServiceId
+  nameWithType: ParcelTypeRule.SuggestedTrackableSpecialServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId
+  type: Property
+  source:
+    id: SuggestedTrackableSpecialServiceId
+    path: ''
+    startLine: 10297
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public SpecialServiceCodes SuggestedTrackableSpecialServiceId { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+    content.vb: Public Property SuggestedTrackableSpecialServiceId As SpecialServiceCodes
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  id: Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: Accept(IRateRuleVisitor)
+  nameWithType: ParcelTypeRule.Accept(IRateRuleVisitor)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  type: Method
+  source:
+    id: Accept
+    path: ''
+    startLine: 10313
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public void Accept(IRateRuleVisitor visitor)
+    parameters:
+    - id: visitor
+      type: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+    content.vb: Public Sub Accept(visitor As IRateRuleVisitor)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions(PitneyBowes.Developer.ShippingApi.IParcelDimension)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions(PitneyBowes.Developer.ShippingApi.IParcelDimension)
+  id: FitsDimensions(PitneyBowes.Developer.ShippingApi.IParcelDimension)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: FitsDimensions(IParcelDimension)
+  nameWithType: ParcelTypeRule.FitsDimensions(IParcelDimension)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions(PitneyBowes.Developer.ShippingApi.IParcelDimension)
+  type: Method
+  source:
+    id: FitsDimensions
+    path: ''
+    startLine: 10318
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public bool FitsDimensions(IParcelDimension dimensions)
+    parameters:
+    - id: dimensions
+      type: PitneyBowes.Developer.ShippingApi.IParcelDimension
+    return:
+      type: System.Boolean
+    content.vb: Public Function FitsDimensions(dimensions As IParcelDimension) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight(PitneyBowes.Developer.ShippingApi.IParcelWeight)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight(PitneyBowes.Developer.ShippingApi.IParcelWeight)
+  id: HoldsWeight(PitneyBowes.Developer.ShippingApi.IParcelWeight)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  langs:
+  - csharp
+  - vb
+  name: HoldsWeight(IParcelWeight)
+  nameWithType: ParcelTypeRule.HoldsWeight(IParcelWeight)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight(PitneyBowes.Developer.ShippingApi.IParcelWeight)
+  type: Method
+  source:
+    id: HoldsWeight
+    path: ''
+    startLine: 10330
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public bool HoldsWeight(IParcelWeight weight)
+    parameters:
+    - id: weight
+      type: PitneyBowes.Developer.ShippingApi.IParcelWeight
+    return:
+      type: System.Boolean
+    content.vb: Public Function HoldsWeight(weight As IParcelWeight) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  commentId: N:PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  nameWithType: PitneyBowes.Developer.ShippingApi.Rules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: IRateRule
+  nameWithType: IRateRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType
+  isExternal: false
+  name: ParcelType
+  nameWithType: ParcelTypeRule.ParcelType
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.ParcelType
+- uid: PitneyBowes.Developer.ShippingApi.ParcelType
+  commentId: T:PitneyBowes.Developer.ShippingApi.ParcelType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ParcelType
+  nameWithType: ParcelType
+  fullName: PitneyBowes.Developer.ShippingApi.ParcelType
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName
+  isExternal: false
+  name: BrandedName
+  nameWithType: ParcelTypeRule.BrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.BrandedName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId
+  isExternal: false
+  name: RateTypeId
+  nameWithType: ParcelTypeRule.RateTypeId
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeId
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName
+  isExternal: false
+  name: RateTypeBrandedName
+  nameWithType: ParcelTypeRule.RateTypeBrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.RateTypeBrandedName
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable
+  isExternal: false
+  name: Trackable
+  nameWithType: ParcelTypeRule.Trackable
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Trackable
+- uid: PitneyBowes.Developer.ShippingApi.Trackable
+  commentId: T:PitneyBowes.Developer.ShippingApi.Trackable
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Trackable
+  nameWithType: Trackable
+  fullName: PitneyBowes.Developer.ShippingApi.Trackable
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules
+  isExternal: false
+  name: SpecialServiceRules
+  nameWithType: ParcelTypeRule.SpecialServiceRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SpecialServiceRules
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList{PitneyBowes.Developer.ShippingApi.SpecialServiceCodes,PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule}
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IndexedList{PitneyBowes.Developer.ShippingApi.SpecialServiceCodes,PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule}
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  definition: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  name: IndexedList<SpecialServiceCodes, SpecialServicesRule>
+  nameWithType: IndexedList<SpecialServiceCodes, SpecialServicesRule>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<PitneyBowes.Developer.ShippingApi.SpecialServiceCodes, PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule>
+  nameWithType.vb: IndexedList(Of SpecialServiceCodes, SpecialServicesRule)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of PitneyBowes.Developer.ShippingApi.SpecialServiceCodes, PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule)
+  name.vb: IndexedList(Of SpecialServiceCodes, SpecialServicesRule)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+    name: SpecialServiceCodes
+    nameWithType: SpecialServiceCodes
+    fullName: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+    name: SpecialServicesRule
+    nameWithType: SpecialServicesRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+    name: SpecialServiceCodes
+    nameWithType: SpecialServiceCodes
+    fullName: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+    name: SpecialServicesRule
+    nameWithType: SpecialServicesRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  isExternal: false
+  name: IndexedList<K, T>
+  nameWithType: IndexedList<K, T>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>
+  nameWithType.vb: IndexedList(Of K, T)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T)
+  name.vb: IndexedList(Of K, T)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules
+  isExternal: false
+  name: WeightRules
+  nameWithType: ParcelTypeRule.WeightRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.WeightRules
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.Rules.WeightRule}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.Rules.WeightRule}'
+  definition: IEnumerable`1
+  name: IEnumerable<WeightRule>
+  nameWithType: IEnumerable<WeightRule>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.Rules.WeightRule>
+  nameWithType.vb: IEnumerable(Of WeightRule)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.Rules.WeightRule)
+  name.vb: IEnumerable(Of WeightRule)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+    name: WeightRule
+    nameWithType: WeightRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+    name: WeightRule
+    nameWithType: WeightRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules
+  isExternal: false
+  name: DimensionRules
+  nameWithType: ParcelTypeRule.DimensionRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.DimensionRules
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.Rules.DimensionRule}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.Rules.DimensionRule}'
+  definition: IEnumerable`1
+  name: IEnumerable<DimensionRule>
+  nameWithType: IEnumerable<DimensionRule>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.Rules.DimensionRule>
+  nameWithType.vb: IEnumerable(Of DimensionRule)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.Rules.DimensionRule)
+  name.vb: IEnumerable(Of DimensionRule)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+    name: DimensionRule
+    nameWithType: DimensionRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+    name: DimensionRule
+    nameWithType: DimensionRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId
+  isExternal: false
+  name: SuggestedTrackableSpecialServiceId
+  nameWithType: ParcelTypeRule.SuggestedTrackableSpecialServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.SuggestedTrackableSpecialServiceId
+- uid: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+  commentId: T:PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: SpecialServiceCodes
+  nameWithType: SpecialServiceCodes
+  fullName: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept
+  isExternal: false
+  name: Accept
+  nameWithType: ParcelTypeRule.Accept
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.Accept
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  isExternal: false
+  name: Accept(IRateRuleVisitor)
+  nameWithType: IRateRule.Accept(IRateRuleVisitor)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+    name: Accept
+    nameWithType: IRateRule.Accept
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+    name: IRateRuleVisitor
+    nameWithType: IRateRuleVisitor
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+    name: Accept
+    nameWithType: IRateRule.Accept
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+    name: IRateRuleVisitor
+    nameWithType: IRateRuleVisitor
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: IRateRuleVisitor
+  nameWithType: IRateRuleVisitor
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions
+  isExternal: false
+  name: FitsDimensions
+  nameWithType: ParcelTypeRule.FitsDimensions
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.FitsDimensions
+- uid: PitneyBowes.Developer.ShippingApi.IParcelDimension
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelDimension
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcelDimension
+  nameWithType: IParcelDimension
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelDimension
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight
+  isExternal: false
+  name: HoldsWeight
+  nameWithType: ParcelTypeRule.HoldsWeight
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule.HoldsWeight
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcelWeight
+  nameWithType: IParcelWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight

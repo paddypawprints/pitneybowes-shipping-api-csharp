@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  id: ServiceRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  children:
+  - PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  - PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName
+  - PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules
+  - PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId
+  langs:
+  - csharp
+  - vb
+  name: ServiceRule
+  nameWithType: ServiceRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  type: Class
+  source:
+    id: ServiceRule
+    path: ''
+    startLine: 10447
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: 'public class ServiceRule : IRateRule'
+    content.vb: >-
+      Public Class ServiceRule
+          Implements IRateRule
+  inheritance:
+  - System.Object
+  implements:
+  - PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId
+  id: ServiceId
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: ServiceRule.ServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId
+  type: Property
+  source:
+    id: ServiceId
+    path: ''
+    startLine: 10451
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public Services ServiceId { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Services
+    content.vb: Public Property ServiceId As Services
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName
+  id: BrandedName
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  langs:
+  - csharp
+  - vb
+  name: BrandedName
+  nameWithType: ServiceRule.BrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName
+  type: Property
+  source:
+    id: BrandedName
+    path: ''
+    startLine: 10454
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public string BrandedName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BrandedName As String
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules
+  id: ParcelTypeRules
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  langs:
+  - csharp
+  - vb
+  name: ParcelTypeRules
+  nameWithType: ServiceRule.ParcelTypeRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules
+  type: Property
+  source:
+    id: ParcelTypeRules
+    path: ''
+    startLine: 10456
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public IndexedList<ParcelType, ParcelTypeRule> ParcelTypeRules { get; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Rules.IndexedList{PitneyBowes.Developer.ShippingApi.ParcelType,PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule}
+    content.vb: Public ReadOnly Property ParcelTypeRules As IndexedList(Of ParcelType, ParcelTypeRule)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  id: Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  langs:
+  - csharp
+  - vb
+  name: Accept(IRateRuleVisitor)
+  nameWithType: ServiceRule.Accept(IRateRuleVisitor)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  type: Method
+  source:
+    id: Accept
+    path: ''
+    startLine: 10472
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public void Accept(IRateRuleVisitor visitor)
+    parameters:
+    - id: visitor
+      type: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+    content.vb: Public Sub Accept(visitor As IRateRuleVisitor)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept*
+  implements:
+  - PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  commentId: N:PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  nameWithType: PitneyBowes.Developer.ShippingApi.Rules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: IRateRule
+  nameWithType: IRateRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId
+  isExternal: false
+  name: ServiceId
+  nameWithType: ServiceRule.ServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ServiceId
+- uid: PitneyBowes.Developer.ShippingApi.Services
+  commentId: T:PitneyBowes.Developer.ShippingApi.Services
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Services
+  nameWithType: Services
+  fullName: PitneyBowes.Developer.ShippingApi.Services
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName
+  isExternal: false
+  name: BrandedName
+  nameWithType: ServiceRule.BrandedName
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.BrandedName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules
+  isExternal: false
+  name: ParcelTypeRules
+  nameWithType: ServiceRule.ParcelTypeRules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.ParcelTypeRules
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList{PitneyBowes.Developer.ShippingApi.ParcelType,PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule}
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IndexedList{PitneyBowes.Developer.ShippingApi.ParcelType,PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule}
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  definition: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  name: IndexedList<ParcelType, ParcelTypeRule>
+  nameWithType: IndexedList<ParcelType, ParcelTypeRule>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<PitneyBowes.Developer.ShippingApi.ParcelType, PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule>
+  nameWithType.vb: IndexedList(Of ParcelType, ParcelTypeRule)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of PitneyBowes.Developer.ShippingApi.ParcelType, PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule)
+  name.vb: IndexedList(Of ParcelType, ParcelTypeRule)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.ParcelType
+    name: ParcelType
+    nameWithType: ParcelType
+    fullName: PitneyBowes.Developer.ShippingApi.ParcelType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+    name: ParcelTypeRule
+    nameWithType: ParcelTypeRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.ParcelType
+    name: ParcelType
+    nameWithType: ParcelType
+    fullName: PitneyBowes.Developer.ShippingApi.ParcelType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+    name: ParcelTypeRule
+    nameWithType: ParcelTypeRule
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  isExternal: false
+  name: IndexedList<K, T>
+  nameWithType: IndexedList<K, T>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>
+  nameWithType.vb: IndexedList(Of K, T)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T)
+  name.vb: IndexedList(Of K, T)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept
+  isExternal: false
+  name: Accept
+  nameWithType: ServiceRule.Accept
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule.Accept
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  isExternal: false
+  name: Accept(IRateRuleVisitor)
+  nameWithType: IRateRule.Accept(IRateRuleVisitor)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+    name: Accept
+    nameWithType: IRateRule.Accept
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+    name: IRateRuleVisitor
+    nameWithType: IRateRuleVisitor
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept(PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor)
+    name: Accept
+    nameWithType: IRateRule.Accept
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule.Accept
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+    name: IRateRuleVisitor
+    nameWithType: IRateRuleVisitor
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: IRateRuleVisitor
+  nameWithType: IRateRuleVisitor
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor

@@ -1,0 +1,395 @@
+### YamlMime:TableOfContent
+- uid: PitneyBowes.Developer.ShippingApi
+  name: PitneyBowes.Developer.ShippingApi
+  items:
+  - uid: PitneyBowes.Developer.ShippingApi.AddressStatus
+    name: AddressStatus
+  - uid: PitneyBowes.Developer.ShippingApi.CancelInitiator
+    name: CancelInitiator
+  - uid: PitneyBowes.Developer.ShippingApi.Carrier
+    name: Carrier
+  - uid: PitneyBowes.Developer.ShippingApi.CodeGenerationAttribute
+    name: CodeGenerationAttribute
+  - uid: PitneyBowes.Developer.ShippingApi.ContentType
+    name: ContentType
+  - uid: PitneyBowes.Developer.ShippingApi.Counters
+    name: Counters
+  - uid: PitneyBowes.Developer.ShippingApi.CreditCardType
+    name: CreditCardType
+  - uid: PitneyBowes.Developer.ShippingApi.DocumentType
+    name: DocumentType
+  - uid: PitneyBowes.Developer.ShippingApi.ErrorDetail
+    name: ErrorDetail
+  - uid: PitneyBowes.Developer.ShippingApi.FileFormat
+    name: FileFormat
+  - uid: PitneyBowes.Developer.ShippingApi.Globals
+    name: Globals
+  - uid: PitneyBowes.Developer.ShippingApi.HttpVerb
+    name: HttpVerb
+  - uid: PitneyBowes.Developer.ShippingApi.IAddress
+    name: IAddress
+  - uid: PitneyBowes.Developer.ShippingApi.IAutoRefill
+    name: IAutoRefill
+  - uid: PitneyBowes.Developer.ShippingApi.ICcPaymentDetails
+    name: ICcPaymentDetails
+  - uid: PitneyBowes.Developer.ShippingApi.ICustoms
+    name: ICustoms
+  - uid: PitneyBowes.Developer.ShippingApi.ICustomsInfo
+    name: ICustomsInfo
+  - uid: PitneyBowes.Developer.ShippingApi.ICustomsItems
+    name: ICustomsItems
+  - uid: PitneyBowes.Developer.ShippingApi.IDeliveryCommitment
+    name: IDeliveryCommitment
+  - uid: PitneyBowes.Developer.ShippingApi.IDocument
+    name: IDocument
+  - uid: PitneyBowes.Developer.ShippingApi.IHttpRequest
+    name: IHttpRequest
+  - uid: PitneyBowes.Developer.ShippingApi.IManifest
+    name: IManifest
+  - uid: PitneyBowes.Developer.ShippingApi.IMerchant
+    name: IMerchant
+  - uid: PitneyBowes.Developer.ShippingApi.InterfaceExtensions
+    name: InterfaceExtensions
+  - uid: PitneyBowes.Developer.ShippingApi.IPage
+    name: IPage
+  - uid: PitneyBowes.Developer.ShippingApi.IParameter
+    name: IParameter
+  - uid: PitneyBowes.Developer.ShippingApi.IParcel
+    name: IParcel
+  - uid: PitneyBowes.Developer.ShippingApi.IParcelDimension
+    name: IParcelDimension
+  - uid: PitneyBowes.Developer.ShippingApi.IParcelWeight
+    name: IParcelWeight
+  - uid: PitneyBowes.Developer.ShippingApi.IPaymentInfo
+    name: IPaymentInfo
+  - uid: PitneyBowes.Developer.ShippingApi.IPickup
+    name: IPickup
+  - uid: PitneyBowes.Developer.ShippingApi.IPickupCount
+    name: IPickupCount
+  - uid: PitneyBowes.Developer.ShippingApi.IPpPaymentDetails
+    name: IPpPaymentDetails
+  - uid: PitneyBowes.Developer.ShippingApi.IRates
+    name: IRates
+  - uid: PitneyBowes.Developer.ShippingApi.ISession
+    name: ISession
+  - uid: PitneyBowes.Developer.ShippingApi.IShipment
+    name: IShipment
+  - uid: PitneyBowes.Developer.ShippingApi.IShipmentOptions
+    name: IShipmentOptions
+  - uid: PitneyBowes.Developer.ShippingApi.IShippingApiRequest
+    name: IShippingApiRequest
+  - uid: PitneyBowes.Developer.ShippingApi.ISpecialServices
+    name: ISpecialServices
+  - uid: PitneyBowes.Developer.ShippingApi.ITrackingEvent
+    name: ITrackingEvent
+  - uid: PitneyBowes.Developer.ShippingApi.ITrackingStatus
+    name: ITrackingStatus
+  - uid: PitneyBowes.Developer.ShippingApi.ITransaction
+    name: ITransaction
+  - uid: PitneyBowes.Developer.ShippingApi.ITransactionSort
+    name: ITransactionSort
+  - uid: PitneyBowes.Developer.ShippingApi.IUserInfo
+    name: IUserInfo
+  - uid: PitneyBowes.Developer.ShippingApi.ManifestParameter
+    name: ManifestParameter
+  - uid: PitneyBowes.Developer.ShippingApi.MerchantStatus
+    name: MerchantStatus
+  - uid: PitneyBowes.Developer.ShippingApi.NonDeliveryOption
+    name: NonDeliveryOption
+  - uid: PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+    name: PackageIdentifierType
+  - uid: PitneyBowes.Developer.ShippingApi.PackageLocation
+    name: PackageLocation
+  - uid: PitneyBowes.Developer.ShippingApi.PackageTypeIndicator
+    name: PackageTypeIndicator
+  - uid: PitneyBowes.Developer.ShippingApi.ParcelType
+    name: ParcelType
+  - uid: PitneyBowes.Developer.ShippingApi.PaymentMethod
+    name: PaymentMethod
+  - uid: PitneyBowes.Developer.ShippingApi.PaymentType
+    name: PaymentType
+  - uid: PitneyBowes.Developer.ShippingApi.PickupService
+    name: PickupService
+  - uid: PitneyBowes.Developer.ShippingApi.PrintDialogOption
+    name: PrintDialogOption
+  - uid: PitneyBowes.Developer.ShippingApi.ReasonForExport
+    name: ReasonForExport
+  - uid: PitneyBowes.Developer.ShippingApi.RecordingStream
+    name: RecordingStream
+  - uid: PitneyBowes.Developer.ShippingApi.RefundStatus
+    name: RefundStatus
+  - uid: PitneyBowes.Developer.ShippingApi.SBRPrintStatus
+    name: SBRPrintStatus
+  - uid: PitneyBowes.Developer.ShippingApi.SerializationRegistry
+    name: SerializationRegistry
+  - uid: PitneyBowes.Developer.ShippingApi.Services
+    name: Services
+  - uid: PitneyBowes.Developer.ShippingApi.Session
+    name: Session
+  - uid: PitneyBowes.Developer.ShippingApi.ShipmentOption
+    name: ShipmentOption
+  - uid: PitneyBowes.Developer.ShippingApi.ShipmentType
+    name: ShipmentType
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiAttribute
+    name: ShippingApiAttribute
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingAPIException
+    name: ShippingAPIException
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiHeaderAttribute
+    name: ShippingApiHeaderAttribute
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiHttpRequest
+    name: ShippingApiHttpRequest
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingAPIMock
+    name: ShippingAPIMock
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiQueryAttribute
+    name: ShippingApiQueryAttribute
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiRequest
+    name: ShippingApiRequest
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse
+    name: ShippingApiResponse
+  - uid: PitneyBowes.Developer.ShippingApi.ShippingApiResponse`1
+    name: ShippingApiResponse<Response>
+    name.vb: ShippingApiResponse(Of Response)
+  - uid: PitneyBowes.Developer.ShippingApi.Size
+    name: Size
+  - uid: PitneyBowes.Developer.ShippingApi.SpecialServiceCodes
+    name: SpecialServiceCodes
+  - uid: PitneyBowes.Developer.ShippingApi.Token
+    name: Token
+  - uid: PitneyBowes.Developer.ShippingApi.TokenMethods
+    name: TokenMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Trackable
+    name: Trackable
+  - uid: PitneyBowes.Developer.ShippingApi.TrackingStatusCode
+    name: TrackingStatusCode
+  - uid: PitneyBowes.Developer.ShippingApi.TransactionType
+    name: TransactionType
+  - uid: PitneyBowes.Developer.ShippingApi.UnitOfDimension
+    name: UnitOfDimension
+  - uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+    name: UnitOfWeight
+- uid: PitneyBowes.Developer.ShippingApi.Fluent
+  name: PitneyBowes.Developer.ShippingApi.Fluent
+  items:
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.AddressFluent`1
+    name: AddressFluent<T>
+    name.vb: AddressFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.DocumentsArrayFluent`1
+    name: DocumentsArrayFluent<T>
+    name.vb: DocumentsArrayFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    name: ManifestFluent<T>
+    name.vb: ManifestFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ParcelFluent`1
+    name: ParcelFluent<T>
+    name.vb: ParcelFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.PickupFluent`1
+    name: PickupFluent<T>
+    name.vb: PickupFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.PMODPaymentMethod
+    name: PMODPaymentMethod
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.RatesArrayFluent`1
+    name: RatesArrayFluent<T>
+    name.vb: RatesArrayFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentFluent`1
+    name: ShipmentFluent<T>
+    name.vb: ShipmentFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ShipmentOptionsArrayFluent`1
+    name: ShipmentOptionsArrayFluent<T>
+    name.vb: ShipmentOptionsArrayFluent(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.USPSExtensions
+    name: USPSExtensions
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.USPSFacility
+    name: USPSFacility
+- uid: PitneyBowes.Developer.ShippingApi.Method
+  name: PitneyBowes.Developer.ShippingApi.Method
+  items:
+  - uid: PitneyBowes.Developer.ShippingApi.Method.AccountBalanceRequest
+    name: AccountBalanceRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.AccountBalanceResponse
+    name: AccountBalanceResponse
+  - uid: PitneyBowes.Developer.ShippingApi.Method.AddressessMethods
+    name: AddressessMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.AddressSuggestions
+    name: AddressSuggestions
+  - uid: PitneyBowes.Developer.ShippingApi.Method.CancelShipmentRequest
+    name: CancelShipmentRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.CancelShipmentResponse
+    name: CancelShipmentResponse
+  - uid: PitneyBowes.Developer.ShippingApi.Method.DocumentsMethods
+    name: DocumentsMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.Frame
+    name: Frame
+  - uid: PitneyBowes.Developer.ShippingApi.Method.IReportRequest
+    name: IReportRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.ManifestMethods
+    name: ManifestMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantAutoRefillRuleRequest
+    name: MerchantAutoRefillRuleRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantCredentialsRequest
+    name: MerchantCredentialsRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantDeactivateRequest
+    name: MerchantDeactivateRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantMethods
+    name: MerchantMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantRegisterRequest
+    name: MerchantRegisterRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantSignupRequest
+    name: MerchantSignupRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsPageResponse
+    name: MerchantsPageResponse
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsReport`1
+    name: MerchantsReport<T>
+    name.vb: MerchantsReport(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsReportProvider
+    name: MerchantsReportProvider
+  - uid: PitneyBowes.Developer.ShippingApi.Method.MerchantsReportRequest
+    name: MerchantsReportRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.PickupCancelRequest
+    name: PickupCancelRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.PickupMethods
+    name: PickupMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.RatesMethods
+    name: RatesMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.RenderRequest
+    name: RenderRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.RenderResponse
+    name: RenderResponse
+  - uid: PitneyBowes.Developer.ShippingApi.Method.ReportBase`1
+    name: ReportBase<T>
+    name.vb: ReportBase(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Method.ReportProviderBase
+    name: ReportProviderBase
+  - uid: PitneyBowes.Developer.ShippingApi.Method.ReportRequest
+    name: ReportRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.ReprintManifestRequest
+    name: ReprintManifestRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.ReprintShipmentRequest
+    name: ReprintShipmentRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.RequestFinderVisitor`2
+    name: RequestFinderVisitor<RequestType, ReportType>
+    name.vb: RequestFinderVisitor(Of RequestType, ReportType)
+  - uid: PitneyBowes.Developer.ShippingApi.Method.RetryManifestRequest
+    name: RetryManifestRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.ShipmentsMethods
+    name: ShipmentsMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.TrackingMethods
+    name: TrackingMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Method.TrackingRequest
+    name: TrackingRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Method.TransactionPageResponse
+    name: TransactionPageResponse
+  - uid: PitneyBowes.Developer.ShippingApi.Method.TransactionsReport`1
+    name: TransactionsReport<T>
+    name.vb: TransactionsReport(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Method.TransactionsReportProvider
+    name: TransactionsReportProvider
+  - uid: PitneyBowes.Developer.ShippingApi.Method.VerifySuggestResponse
+    name: VerifySuggestResponse
+- uid: PitneyBowes.Developer.ShippingApi.Model
+  name: PitneyBowes.Developer.ShippingApi.Model
+  items:
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Address
+    name: Address
+  - uid: PitneyBowes.Developer.ShippingApi.Model.AutoRefill
+    name: AutoRefill
+  - uid: PitneyBowes.Developer.ShippingApi.Model.CcPaymentDetails
+    name: CcPaymentDetails
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Customs
+    name: Customs
+  - uid: PitneyBowes.Developer.ShippingApi.Model.CustomsInfo
+    name: CustomsInfo
+  - uid: PitneyBowes.Developer.ShippingApi.Model.CustomsItems
+    name: CustomsItems
+  - uid: PitneyBowes.Developer.ShippingApi.Model.DeliveryCommitment
+    name: DeliveryCommitment
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Document
+    name: Document
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Manifest
+    name: Manifest
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Merchant
+    name: Merchant
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Model
+    name: Model
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Page
+    name: Page
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Parameter
+    name: Parameter
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Parcel
+    name: Parcel
+  - uid: PitneyBowes.Developer.ShippingApi.Model.ParcelDimension
+    name: ParcelDimension
+  - uid: PitneyBowes.Developer.ShippingApi.Model.ParcelWeight
+    name: ParcelWeight
+  - uid: PitneyBowes.Developer.ShippingApi.Model.PaymentInfo
+    name: PaymentInfo
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Pickup
+    name: Pickup
+  - uid: PitneyBowes.Developer.ShippingApi.Model.PickupCount
+    name: PickupCount
+  - uid: PitneyBowes.Developer.ShippingApi.Model.PpPaymentDetails
+    name: PpPaymentDetails
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Rates
+    name: Rates
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Shipment
+    name: Shipment
+  - uid: PitneyBowes.Developer.ShippingApi.Model.ShipmentOptions
+    name: ShipmentOptions
+  - uid: PitneyBowes.Developer.ShippingApi.Model.SpecialServices
+    name: SpecialServices
+  - uid: PitneyBowes.Developer.ShippingApi.Model.TrackingEvent
+    name: TrackingEvent
+  - uid: PitneyBowes.Developer.ShippingApi.Model.TrackingStatus
+    name: TrackingStatus
+  - uid: PitneyBowes.Developer.ShippingApi.Model.Transaction
+    name: Transaction
+  - uid: PitneyBowes.Developer.ShippingApi.Model.TransactionSort
+    name: TransactionSort
+  - uid: PitneyBowes.Developer.ShippingApi.Model.UserInfo
+    name: UserInfo
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  items:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.CarrierRule
+    name: CarrierRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.CarrierRulesMethods
+    name: CarrierRulesMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ConvenienceExtensions
+    name: ConvenienceExtensions
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesMethods
+    name: CountriesMethods
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+    name: CountriesRequest<T>
+    name.vb: CountriesRequest(Of T)
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.Country
+    name: Country
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.CountryRule
+    name: CountryRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+    name: DimensionRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList<K, T>
+    name.vb: IndexedList(Of K, T)
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+    name: IRateRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+    name: IRateRuleVisitor
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+    name: ParcelTypeRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.RatingServicesRequest
+    name: RatingServicesRequest
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.RuleReport
+    name: RuleReport
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+    name: ServiceRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+    name: ServicesParameterRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesPrerequisiteRule
+    name: ServicesPrerequisiteRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator
+    name: ShipmentValidator
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator.ValidationState
+    name: ShipmentValidator.ValidationState
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+    name: SpecialServicesRule
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+    name: WeightRule

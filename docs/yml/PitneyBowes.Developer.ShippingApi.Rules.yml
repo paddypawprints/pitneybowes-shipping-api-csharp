@@ -1,0 +1,253 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  commentId: N:PitneyBowes.Developer.ShippingApi.Rules
+  id: PitneyBowes.Developer.ShippingApi.Rules
+  children:
+  - PitneyBowes.Developer.ShippingApi.Rules.CarrierRule
+  - PitneyBowes.Developer.ShippingApi.Rules.CarrierRulesMethods
+  - PitneyBowes.Developer.ShippingApi.Rules.ConvenienceExtensions
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesMethods
+  - PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  - PitneyBowes.Developer.ShippingApi.Rules.Country
+  - PitneyBowes.Developer.ShippingApi.Rules.CountryRule
+  - PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  - PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  - PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  - PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  - PitneyBowes.Developer.ShippingApi.Rules.RatingServicesRequest
+  - PitneyBowes.Developer.ShippingApi.Rules.RuleReport
+  - PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  - PitneyBowes.Developer.ShippingApi.Rules.ServicesPrerequisiteRule
+  - PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator
+  - PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator.ValidationState
+  - PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+  - PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+  langs:
+  - csharp
+  - vb
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  nameWithType: PitneyBowes.Developer.ShippingApi.Rules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CarrierRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.CarrierRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: CarrierRule
+  nameWithType: CarrierRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CarrierRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ConvenienceExtensions
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ConvenienceExtensions
+  isExternal: false
+  name: ConvenienceExtensions
+  nameWithType: ConvenienceExtensions
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ConvenienceExtensions
+- uid: PitneyBowes.Developer.ShippingApi.Rules.Country
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.Country
+  isExternal: false
+  name: Country
+  nameWithType: Country
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.Country
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountryRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.CountryRule
+  isExternal: false
+  name: CountryRule
+  nameWithType: CountryRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountryRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: DimensionRule
+  nameWithType: DimensionRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.DimensionRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: IRateRule
+  nameWithType: IRateRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: IRateRuleVisitor
+  nameWithType: IRateRuleVisitor
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IRateRuleVisitor
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  isExternal: false
+  name: IndexedList<K, T>
+  nameWithType: IndexedList<K, T>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>
+  nameWithType.vb: IndexedList(Of K, T)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T)
+  name.vb: IndexedList(Of K, T)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+    name: IndexedList
+    nameWithType: IndexedList
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: ParcelTypeRule
+  nameWithType: ParcelTypeRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ParcelTypeRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.RuleReport
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.RuleReport
+  isExternal: false
+  name: RuleReport
+  nameWithType: RuleReport
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.RuleReport
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: ServiceRule
+  nameWithType: ServiceRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServiceRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+  isExternal: false
+  name: ServicesParameterRule
+  nameWithType: ServicesParameterRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesParameterRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ServicesPrerequisiteRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ServicesPrerequisiteRule
+  isExternal: false
+  name: ServicesPrerequisiteRule
+  nameWithType: ServicesPrerequisiteRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ServicesPrerequisiteRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: SpecialServicesRule
+  nameWithType: SpecialServicesRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.SpecialServicesRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: WeightRule
+  nameWithType: WeightRule
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.WeightRule
+- uid: PitneyBowes.Developer.ShippingApi.Rules.RatingServicesRequest
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.RatingServicesRequest
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: RatingServicesRequest
+  nameWithType: RatingServicesRequest
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.RatingServicesRequest
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CarrierRulesMethods
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.CarrierRulesMethods
+  isExternal: false
+  name: CarrierRulesMethods
+  nameWithType: CarrierRulesMethods
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CarrierRulesMethods
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+  isExternal: false
+  name: CountriesRequest<T>
+  nameWithType: CountriesRequest<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest<T>
+  nameWithType.vb: CountriesRequest(Of T)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest(Of T)
+  name.vb: CountriesRequest(Of T)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+    name: CountriesRequest
+    nameWithType: CountriesRequest
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest`1
+    name: CountriesRequest
+    nameWithType: CountriesRequest
+    fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesRequest
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.CountriesMethods
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.CountriesMethods
+  isExternal: false
+  name: CountriesMethods
+  nameWithType: CountriesMethods
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.CountriesMethods
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator
+  isExternal: false
+  name: ShipmentValidator
+  nameWithType: ShipmentValidator
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator
+- uid: PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator.ValidationState
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator.ValidationState
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: ShipmentValidator.ValidationState
+  nameWithType: ShipmentValidator.ValidationState
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.ShipmentValidator.ValidationState
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  commentId: N:PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  nameWithType: PitneyBowes.Developer.ShippingApi.Rules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules

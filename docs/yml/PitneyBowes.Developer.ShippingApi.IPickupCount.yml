@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount
+  commentId: T:PitneyBowes.Developer.ShippingApi.IPickupCount
+  id: IPickupCount
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  - PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  - PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  langs:
+  - csharp
+  - vb
+  name: IPickupCount
+  nameWithType: IPickupCount
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount
+  type: Interface
+  source:
+    id: IPickupCount
+    path: ''
+    startLine: 1761
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public interface IPickupCount
+    content.vb: Public Interface IPickupCount
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  id: ServiceId
+  parent: PitneyBowes.Developer.ShippingApi.IPickupCount
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: IPickupCount.ServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  type: Property
+  source:
+    id: ServiceId
+    path: ''
+    startLine: 1767
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the service identifier. Not that this is a subset of the full set of services.\n"
+  example: []
+  syntax:
+    content: PickupService ServiceId { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+      description: The service identifier.
+    content.vb: Property ServiceId As PickupService
+  overload: PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  id: Count
+  parent: PitneyBowes.Developer.ShippingApi.IPickupCount
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IPickupCount.Count
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  type: Property
+  source:
+    id: Count
+    path: ''
+    startLine: 1773
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the count. The number of parcels for each service type requested. This field\nis used only in the request.It is not returned in the response.\n"
+  example: []
+  syntax:
+    content: int Count { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The count.
+    content.vb: Property Count As Integer
+  overload: PitneyBowes.Developer.ShippingApi.IPickupCount.Count*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  commentId: P:PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  id: TotalWeight
+  parent: PitneyBowes.Developer.ShippingApi.IPickupCount
+  langs:
+  - csharp
+  - vb
+  name: TotalWeight
+  nameWithType: IPickupCount.TotalWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  type: Property
+  source:
+    id: TotalWeight
+    path: ''
+    startLine: 1778
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the total weight.\n"
+  example: []
+  syntax:
+    content: IParcelWeight TotalWeight { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IParcelWeight
+      description: The total weight.
+    content.vb: Property TotalWeight As IParcelWeight
+  overload: PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+  isExternal: false
+  name: ServiceId
+  nameWithType: IPickupCount.ServiceId
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.ServiceId
+- uid: PitneyBowes.Developer.ShippingApi.PickupService
+  commentId: T:PitneyBowes.Developer.ShippingApi.PickupService
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PickupService
+  nameWithType: PickupService
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.Count*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+  isExternal: false
+  name: Count
+  nameWithType: IPickupCount.Count
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+  isExternal: false
+  name: TotalWeight
+  nameWithType: IPickupCount.TotalWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IPickupCount.TotalWeight
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcelWeight
+  nameWithType: IParcelWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight

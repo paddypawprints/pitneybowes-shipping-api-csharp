@@ -1,0 +1,1004 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  commentId: T:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  id: IndexedList`2
+  parent: PitneyBowes.Developer.ShippingApi.Rules
+  children:
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add(`0,`1)
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add(`0,List{`1})
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Clear
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Contains(KeyValuePair{`0,List{`1}})
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.ContainsKey(`0)
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Count
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.IsReadOnly
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Item(`0)
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Keys
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Remove(`0)
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.TryGetValue(`0,List{`1}@)
+  - PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Values
+  langs:
+  - csharp
+  - vb
+  name: IndexedList<K, T>
+  nameWithType: IndexedList<K, T>
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>
+  type: Class
+  source:
+    id: IndexedList
+    path: ''
+    startLine: 10203
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: 'public class IndexedList<K, T> : IEnumerable<T>'
+    typeParameters:
+    - id: K
+    - id: T
+    content.vb: >-
+      Public Class IndexedList(Of K, T)
+          Inherits IEnumerable(Of T)
+  inheritance:
+  - IEnumerable{{T}}
+  nameWithType.vb: IndexedList(Of K, T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T)
+  name.vb: IndexedList(Of K, T)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Item(`0)
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Item(`0)
+  id: Item(`0)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Item[K]
+  nameWithType: IndexedList<K, T>.Item[K]
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Item[K]
+  type: Property
+  source:
+    id: this[]
+    path: ''
+    startLine: 10207
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public List<T> this[K key] { get; set; }
+    parameters:
+    - id: key
+      type: '{K}'
+    return:
+      type: List{{T}}
+    content.vb: Public Property Item(key As K) As List(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Item*
+  nameWithType.vb: IndexedList(Of K, T).Item(K)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Item(K)
+  name.vb: Item(K)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Keys
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Keys
+  id: Keys
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: IndexedList<K, T>.Keys
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Keys
+  type: Property
+  source:
+    id: Keys
+    path: ''
+    startLine: 10209
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public ICollection<K> Keys { get; }
+    parameters: []
+    return:
+      type: ICollection{{K}}
+    content.vb: Public ReadOnly Property Keys As ICollection(Of K)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Keys*
+  nameWithType.vb: IndexedList(Of K, T).Keys
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Keys
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Values
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Values
+  id: Values
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: IndexedList<K, T>.Values
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Values
+  type: Property
+  source:
+    id: Values
+    path: ''
+    startLine: 10211
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public ICollection<List<T>> Values { get; }
+    parameters: []
+    return:
+      type: ICollection{List{{T}}}
+    content.vb: Public ReadOnly Property Values As ICollection(Of List(Of T))
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Values*
+  nameWithType.vb: IndexedList(Of K, T).Values
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Values
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Count
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Count
+  id: Count
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IndexedList<K, T>.Count
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Count
+  type: Property
+  source:
+    id: Count
+    path: ''
+    startLine: 10213
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Count*
+  nameWithType.vb: IndexedList(Of K, T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Count
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.IsReadOnly
+  commentId: P:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.IsReadOnly
+  id: IsReadOnly
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: IndexedList<K, T>.IsReadOnly
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.IsReadOnly
+  type: Property
+  source:
+    id: IsReadOnly
+    path: ''
+    startLine: 10215
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.IsReadOnly*
+  nameWithType.vb: IndexedList(Of K, T).IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).IsReadOnly
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add(`0,List{`1})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add(`0,List{`1})
+  id: Add(`0,List{`1})
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Add(K, List<T>)
+  nameWithType: IndexedList<K, T>.Add(K, List<T>)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Add(K, List<T>)
+  type: Method
+  source:
+    id: Add
+    path: ''
+    startLine: 10217
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public void Add(K key, List<T> value)
+    parameters:
+    - id: key
+      type: '{K}'
+    - id: value
+      type: List{{T}}
+    content.vb: Public Sub Add(key As K, value As List(Of T))
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add*
+  nameWithType.vb: IndexedList(Of K, T).Add(K, List(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Add(K, List(Of T))
+  name.vb: Add(K, List(Of T))
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add(`0,`1)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add(`0,`1)
+  id: Add(`0,`1)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Add(K, T)
+  nameWithType: IndexedList<K, T>.Add(K, T)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Add(K, T)
+  type: Method
+  source:
+    id: Add
+    path: ''
+    startLine: 10219
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public void Add(K key, T value)
+    parameters:
+    - id: key
+      type: '{K}'
+    - id: value
+      type: '{T}'
+    content.vb: Public Sub Add(key As K, value As T)
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add*
+  nameWithType.vb: IndexedList(Of K, T).Add(K, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Add(K, T)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Clear
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Clear
+  id: Clear
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IndexedList<K, T>.Clear()
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 10228
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Clear*
+  nameWithType.vb: IndexedList(Of K, T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Clear()
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Contains(KeyValuePair{`0,List{`1}})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Contains(KeyValuePair{`0,List{`1}})
+  id: Contains(KeyValuePair{`0,List{`1}})
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Contains(KeyValuePair<K, List<T>>)
+  nameWithType: IndexedList<K, T>.Contains(KeyValuePair<K, List<T>>)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Contains(KeyValuePair<K, List<T>>)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 10230
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public bool Contains(KeyValuePair<K, List<T>> item)
+    parameters:
+    - id: item
+      type: KeyValuePair{{K},List{{T}}}
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(item As KeyValuePair(Of K, List(Of T))) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Contains*
+  nameWithType.vb: IndexedList(Of K, T).Contains(KeyValuePair(Of K, List(Of T)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Contains(KeyValuePair(Of K, List(Of T)))
+  name.vb: Contains(KeyValuePair(Of K, List(Of T)))
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.ContainsKey(`0)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.ContainsKey(`0)
+  id: ContainsKey(`0)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: ContainsKey(K)
+  nameWithType: IndexedList<K, T>.ContainsKey(K)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.ContainsKey(K)
+  type: Method
+  source:
+    id: ContainsKey
+    path: ''
+    startLine: 10232
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public bool ContainsKey(K key)
+    parameters:
+    - id: key
+      type: '{K}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function ContainsKey(key As K) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.ContainsKey*
+  nameWithType.vb: IndexedList(Of K, T).ContainsKey(K)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).ContainsKey(K)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Remove(`0)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Remove(`0)
+  id: Remove(`0)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: Remove(K)
+  nameWithType: IndexedList<K, T>.Remove(K)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Remove(K)
+  type: Method
+  source:
+    id: Remove
+    path: ''
+    startLine: 10234
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public bool Remove(K key)
+    parameters:
+    - id: key
+      type: '{K}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(key As K) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Remove*
+  nameWithType.vb: IndexedList(Of K, T).Remove(K)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Remove(K)
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.TryGetValue(`0,List{`1}@)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.TryGetValue(`0,List{`1}@)
+  id: TryGetValue(`0,List{`1}@)
+  parent: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(K, out List<T>)
+  nameWithType: IndexedList<K, T>.TryGetValue(K, out List<T>)
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.TryGetValue(K, out List<T>)
+  type: Method
+  source:
+    id: TryGetValue
+    path: ''
+    startLine: 10236
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Rules
+  syntax:
+    content: public bool TryGetValue(K key, out List<T> value)
+    parameters:
+    - id: key
+      type: '{K}'
+    - id: value
+      type: List{{T}}
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetValue(key As K, ByRef value As List(Of T)) As Boolean
+  overload: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.TryGetValue*
+  nameWithType.vb: IndexedList(Of K, T).TryGetValue(K, ByRef List(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).TryGetValue(K, ByRef List(Of T))
+  name.vb: TryGetValue(K, ByRef List(Of T))
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Rules
+  commentId: N:PitneyBowes.Developer.ShippingApi.Rules
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Rules
+  nameWithType: PitneyBowes.Developer.ShippingApi.Rules
+  fullName: PitneyBowes.Developer.ShippingApi.Rules
+- uid: IEnumerable{{T}}
+  commentId: '!:IEnumerable{``0}'
+  definition: IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Item*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Item
+  isExternal: false
+  name: Item
+  nameWithType: IndexedList<K, T>.Item
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Item
+  nameWithType.vb: IndexedList(Of K, T).Item
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Item
+- uid: '{K}'
+  commentId: '!:K'
+  definition: K
+  name: K
+  nameWithType: K
+  fullName: K
+- uid: List{{T}}
+  commentId: '!:List{`0}'
+  definition: List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: K
+  isExternal: false
+  name: K
+  nameWithType: K
+  fullName: K
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Keys*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Keys
+  isExternal: false
+  name: Keys
+  nameWithType: IndexedList<K, T>.Keys
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Keys
+  nameWithType.vb: IndexedList(Of K, T).Keys
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Keys
+- uid: ICollection{{K}}
+  commentId: '!:ICollection{`0}'
+  definition: ICollection`1
+  name: ICollection<K>
+  nameWithType: ICollection<K>
+  fullName: ICollection<K>
+  nameWithType.vb: ICollection(Of K)
+  fullName.vb: ICollection(Of K)
+  name.vb: ICollection(Of K)
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ICollection`1
+  isExternal: true
+  name: ICollection<>
+  nameWithType: ICollection<>
+  fullName: ICollection<>
+  nameWithType.vb: ICollection(Of )
+  fullName.vb: ICollection(Of )
+  name.vb: ICollection(Of )
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Values*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Values
+  isExternal: false
+  name: Values
+  nameWithType: IndexedList<K, T>.Values
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Values
+  nameWithType.vb: IndexedList(Of K, T).Values
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Values
+- uid: ICollection{List{{T}}}
+  commentId: '!:ICollection{List{`1}}'
+  definition: ICollection`1
+  name: ICollection<List<T>>
+  nameWithType: ICollection<List<T>>
+  fullName: ICollection<List<T>>
+  nameWithType.vb: ICollection(Of List(Of T))
+  fullName.vb: ICollection(Of List(Of T))
+  name.vb: ICollection(Of List(Of T))
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Count*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Count
+  isExternal: false
+  name: Count
+  nameWithType: IndexedList<K, T>.Count
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Count
+  nameWithType.vb: IndexedList(Of K, T).Count
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.IsReadOnly*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.IsReadOnly
+  isExternal: false
+  name: IsReadOnly
+  nameWithType: IndexedList<K, T>.IsReadOnly
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.IsReadOnly
+  nameWithType.vb: IndexedList(Of K, T).IsReadOnly
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Add
+  isExternal: false
+  name: Add
+  nameWithType: IndexedList<K, T>.Add
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Add
+  nameWithType.vb: IndexedList(Of K, T).Add
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Add
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Clear*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Clear
+  isExternal: false
+  name: Clear
+  nameWithType: IndexedList<K, T>.Clear
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Clear
+  nameWithType.vb: IndexedList(Of K, T).Clear
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Clear
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Contains*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Contains
+  isExternal: false
+  name: Contains
+  nameWithType: IndexedList<K, T>.Contains
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Contains
+  nameWithType.vb: IndexedList(Of K, T).Contains
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Contains
+- uid: KeyValuePair{{K},List{{T}}}
+  commentId: '!:KeyValuePair{`0,List{`1}}'
+  definition: KeyValuePair`2
+  name: KeyValuePair<K, List<T>>
+  nameWithType: KeyValuePair<K, List<T>>
+  fullName: KeyValuePair<K, List<T>>
+  nameWithType.vb: KeyValuePair(Of K, List(Of T))
+  fullName.vb: KeyValuePair(Of K, List(Of T))
+  name.vb: KeyValuePair(Of K, List(Of T))
+  spec.csharp:
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: KeyValuePair`2
+  commentId: '!:KeyValuePair`2'
+  isExternal: true
+  name: KeyValuePair<, >
+  nameWithType: KeyValuePair<, >
+  fullName: KeyValuePair<, >
+  nameWithType.vb: KeyValuePair(Of , )
+  fullName.vb: KeyValuePair(Of , )
+  name.vb: KeyValuePair(Of , )
+  spec.csharp:
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.ContainsKey*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.ContainsKey
+  isExternal: false
+  name: ContainsKey
+  nameWithType: IndexedList<K, T>.ContainsKey
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.ContainsKey
+  nameWithType.vb: IndexedList(Of K, T).ContainsKey
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).ContainsKey
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Remove*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.Remove
+  isExternal: false
+  name: Remove
+  nameWithType: IndexedList<K, T>.Remove
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.Remove
+  nameWithType.vb: IndexedList(Of K, T).Remove
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).Remove
+- uid: PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.TryGetValue*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Rules.IndexedList`2.TryGetValue
+  isExternal: false
+  name: TryGetValue
+  nameWithType: IndexedList<K, T>.TryGetValue
+  fullName: PitneyBowes.Developer.ShippingApi.Rules.IndexedList<K, T>.TryGetValue
+  nameWithType.vb: IndexedList(Of K, T).TryGetValue
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Rules.IndexedList(Of K, T).TryGetValue

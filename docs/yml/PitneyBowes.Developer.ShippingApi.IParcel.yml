@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.IParcel
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcel
+  id: IParcel
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode
+  - PitneyBowes.Developer.ShippingApi.IParcel.Dimension
+  - PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods
+  - PitneyBowes.Developer.ShippingApi.IParcel.Weight
+  langs:
+  - csharp
+  - vb
+  name: IParcel
+  nameWithType: IParcel
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel
+  type: Interface
+  source:
+    id: IParcel
+    path: ''
+    startLine: 1507
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nModels parcel physical properties.\n"
+  example: []
+  syntax:
+    content: public interface IParcel
+    content.vb: Public Interface IParcel
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.Dimension
+  commentId: P:PitneyBowes.Developer.ShippingApi.IParcel.Dimension
+  id: Dimension
+  parent: PitneyBowes.Developer.ShippingApi.IParcel
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: IParcel.Dimension
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.Dimension
+  type: Property
+  source:
+    id: Dimension
+    path: ''
+    startLine: 1513
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the dimension.\n"
+  example: []
+  syntax:
+    content: IParcelDimension Dimension { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IParcelDimension
+      description: The dimension.
+    content.vb: Property Dimension As IParcelDimension
+  overload: PitneyBowes.Developer.ShippingApi.IParcel.Dimension*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.Weight
+  commentId: P:PitneyBowes.Developer.ShippingApi.IParcel.Weight
+  id: Weight
+  parent: PitneyBowes.Developer.ShippingApi.IParcel
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: IParcel.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.Weight
+  type: Property
+  source:
+    id: Weight
+    path: ''
+    startLine: 1518
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the weight.\n"
+  example: []
+  syntax:
+    content: IParcelWeight Weight { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IParcelWeight
+      description: The weight.
+    content.vb: Property Weight As IParcelWeight
+  overload: PitneyBowes.Developer.ShippingApi.IParcel.Weight*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods
+  commentId: P:PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods
+  id: ValueOfGoods
+  parent: PitneyBowes.Developer.ShippingApi.IParcel
+  langs:
+  - csharp
+  - vb
+  name: ValueOfGoods
+  nameWithType: IParcel.ValueOfGoods
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods
+  type: Property
+  source:
+    id: ValueOfGoods
+    path: ''
+    startLine: 1523
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the value of goods.\n"
+  example: []
+  syntax:
+    content: decimal ValueOfGoods { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+      description: The value of goods.
+    content.vb: Property ValueOfGoods As Decimal
+  overload: PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods*
+  modifiers.csharp:
+  - get
+  - set
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode
+  commentId: P:PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode
+  id: CurrencyCode
+  parent: PitneyBowes.Developer.ShippingApi.IParcel
+  langs:
+  - csharp
+  - vb
+  name: CurrencyCode
+  nameWithType: IParcel.CurrencyCode
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode
+  type: Property
+  source:
+    id: CurrencyCode
+    path: ''
+    startLine: 1528
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nGets or sets the currency code.\n"
+  example: []
+  syntax:
+    content: string CurrencyCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The currency code.
+    content.vb: Property CurrencyCode As String
+  overload: PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.Dimension*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IParcel.Dimension
+  isExternal: false
+  name: Dimension
+  nameWithType: IParcel.Dimension
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.Dimension
+- uid: PitneyBowes.Developer.ShippingApi.IParcelDimension
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelDimension
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcelDimension
+  nameWithType: IParcelDimension
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelDimension
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.Weight*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IParcel.Weight
+  isExternal: false
+  name: Weight
+  nameWithType: IParcel.Weight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.Weight
+- uid: PitneyBowes.Developer.ShippingApi.IParcelWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParcelWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParcelWeight
+  nameWithType: IParcelWeight
+  fullName: PitneyBowes.Developer.ShippingApi.IParcelWeight
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods
+  isExternal: false
+  name: ValueOfGoods
+  nameWithType: IParcel.ValueOfGoods
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.ValueOfGoods
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode
+  isExternal: false
+  name: CurrencyCode
+  nameWithType: IParcel.CurrencyCode
+  fullName: PitneyBowes.Developer.ShippingApi.IParcel.CurrencyCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

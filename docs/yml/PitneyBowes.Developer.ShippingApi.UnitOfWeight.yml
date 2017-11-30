@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  id: UnitOfWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.UnitOfWeight.GM
+  - PitneyBowes.Developer.ShippingApi.UnitOfWeight.OZ
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWeight
+  nameWithType: UnitOfWeight
+  fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  type: Enum
+  source:
+    id: UnitOfWeight
+    path: ''
+    startLine: 644
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nUnit of weight.\n"
+  example: []
+  syntax:
+    content: public enum UnitOfWeight
+    content.vb: Public Enum UnitOfWeight
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight.GM
+  commentId: F:PitneyBowes.Developer.ShippingApi.UnitOfWeight.GM
+  id: GM
+  parent: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  langs:
+  - csharp
+  - vb
+  name: GM
+  nameWithType: UnitOfWeight.GM
+  fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight.GM
+  type: Field
+  source:
+    id: GM
+    path: ''
+    startLine: 646
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: GM = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight.OZ
+  commentId: F:PitneyBowes.Developer.ShippingApi.UnitOfWeight.OZ
+  id: OZ
+  parent: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  langs:
+  - csharp
+  - vb
+  name: OZ
+  nameWithType: UnitOfWeight.OZ
+  fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight.OZ
+  type: Field
+  source:
+    id: OZ
+    path: ''
+    startLine: 647
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: OZ = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  commentId: T:PitneyBowes.Developer.ShippingApi.UnitOfWeight
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: UnitOfWeight
+  nameWithType: UnitOfWeight
+  fullName: PitneyBowes.Developer.ShippingApi.UnitOfWeight

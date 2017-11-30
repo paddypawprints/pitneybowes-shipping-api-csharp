@@ -1,0 +1,619 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Globals
+  commentId: T:PitneyBowes.Developer.ShippingApi.Globals
+  id: Globals
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.Globals.Client(System.String)
+  - PitneyBowes.Developer.ShippingApi.Globals.DefaultSession
+  - PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix
+  - PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath
+  - PitneyBowes.Developer.ShippingApi.Globals.GetPath(System.String[])
+  - PitneyBowes.Developer.ShippingApi.Globals.TimeOutMilliseconds
+  langs:
+  - csharp
+  - vb
+  name: Globals
+  nameWithType: Globals
+  fullName: PitneyBowes.Developer.ShippingApi.Globals
+  type: Class
+  source:
+    id: Globals
+    path: ''
+    startLine: 11154
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static class Globals
+    content.vb: Public Module Globals
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: PitneyBowes.Developer.ShippingApi.Globals.DefaultSession
+  commentId: P:PitneyBowes.Developer.ShippingApi.Globals.DefaultSession
+  id: DefaultSession
+  parent: PitneyBowes.Developer.ShippingApi.Globals
+  langs:
+  - csharp
+  - vb
+  name: DefaultSession
+  nameWithType: Globals.DefaultSession
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.DefaultSession
+  type: Property
+  source:
+    id: DefaultSession
+    path: ''
+    startLine: 11157
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static ISession DefaultSession { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    content.vb: Public Shared Property DefaultSession As ISession
+  overload: PitneyBowes.Developer.ShippingApi.Globals.DefaultSession*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.Globals.TimeOutMilliseconds
+  commentId: F:PitneyBowes.Developer.ShippingApi.Globals.TimeOutMilliseconds
+  id: TimeOutMilliseconds
+  parent: PitneyBowes.Developer.ShippingApi.Globals
+  langs:
+  - csharp
+  - vb
+  name: TimeOutMilliseconds
+  nameWithType: Globals.TimeOutMilliseconds
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.TimeOutMilliseconds
+  type: Field
+  source:
+    id: TimeOutMilliseconds
+    path: ''
+    startLine: 11158
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static int TimeOutMilliseconds
+    return:
+      type: System.Int32
+    content.vb: Public Shared TimeOutMilliseconds As Integer
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.Globals.Client(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Globals.Client(System.String)
+  id: Client(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Globals
+  langs:
+  - csharp
+  - vb
+  name: Client(String)
+  nameWithType: Globals.Client(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.Client(System.String)
+  type: Method
+  source:
+    id: Client
+    path: ''
+    startLine: 11160
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static HttpClient Client(string baseUrl)
+    parameters:
+    - id: baseUrl
+      type: System.String
+    return:
+      type: HttpClient
+    content.vb: Public Shared Function Client(baseUrl As String) As HttpClient
+  overload: PitneyBowes.Developer.ShippingApi.Globals.Client*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.Globals.GetPath(System.String[])
+  commentId: M:PitneyBowes.Developer.ShippingApi.Globals.GetPath(System.String[])
+  id: GetPath(System.String[])
+  parent: PitneyBowes.Developer.ShippingApi.Globals
+  langs:
+  - csharp
+  - vb
+  name: GetPath(String[])
+  nameWithType: Globals.GetPath(String[])
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.GetPath(System.String[])
+  type: Method
+  source:
+    id: GetPath
+    path: ''
+    startLine: 11181
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static string GetPath(params string[] folders)
+    parameters:
+    - id: folders
+      type: System.String[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetPath(ParamArray folders As String()) As String
+  overload: PitneyBowes.Developer.ShippingApi.Globals.GetPath*
+  nameWithType.vb: Globals.GetPath(String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Globals.GetPath(System.String())
+  name.vb: GetPath(String())
+- uid: PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath
+  commentId: M:PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath
+  id: GetConfigPath
+  parent: PitneyBowes.Developer.ShippingApi.Globals
+  langs:
+  - csharp
+  - vb
+  name: GetConfigPath()
+  nameWithType: Globals.GetConfigPath()
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath()
+  type: Method
+  source:
+    id: GetConfigPath
+    path: ''
+    startLine: 11191
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static string GetConfigPath()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetConfigPath As String
+  overload: PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix
+  commentId: M:PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix
+  id: GetConfigFilePrefix
+  parent: PitneyBowes.Developer.ShippingApi.Globals
+  langs:
+  - csharp
+  - vb
+  name: GetConfigFilePrefix()
+  nameWithType: Globals.GetConfigFilePrefix()
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix()
+  type: Method
+  source:
+    id: GetConfigFilePrefix
+    path: ''
+    startLine: 11202
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: public static string GetConfigFilePrefix()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetConfigFilePrefix As String
+  overload: PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Globals.DefaultSession*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Globals.DefaultSession
+  isExternal: false
+  name: DefaultSession
+  nameWithType: Globals.DefaultSession
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.DefaultSession
+- uid: PitneyBowes.Developer.ShippingApi.ISession
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISession
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ISession
+  nameWithType: ISession
+  fullName: PitneyBowes.Developer.ShippingApi.ISession
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: PitneyBowes.Developer.ShippingApi.Globals.Client*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Globals.Client
+  isExternal: false
+  name: Client
+  nameWithType: Globals.Client
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.Client
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HttpClient
+  commentId: '!:HttpClient'
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient
+- uid: PitneyBowes.Developer.ShippingApi.Globals.GetPath*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Globals.GetPath
+  isExternal: false
+  name: GetPath
+  nameWithType: Globals.GetPath
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.GetPath
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath
+  isExternal: false
+  name: GetConfigPath
+  nameWithType: Globals.GetConfigPath
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.GetConfigPath
+- uid: PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix
+  isExternal: false
+  name: GetConfigFilePrefix
+  nameWithType: Globals.GetConfigFilePrefix
+  fullName: PitneyBowes.Developer.ShippingApi.Globals.GetConfigFilePrefix

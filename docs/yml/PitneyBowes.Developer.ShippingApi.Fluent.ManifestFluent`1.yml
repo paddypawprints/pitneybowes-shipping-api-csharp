@@ -1,0 +1,1294 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  id: ManifestFluent`1
+  parent: PitneyBowes.Developer.ShippingApi.Fluent
+  children:
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter``1(PitneyBowes.Developer.ShippingApi.ManifestParameter,System.String)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter``1(System.String,System.String)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParcelTrackingNumber(System.String)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Carrier(PitneyBowes.Developer.ShippingApi.Carrier)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Create
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.InductionPostalCode(System.String)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Manifest
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent{`0})~`0
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Parameters(IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter})
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.ParcelTrackingNumbers(IEnumerable{System.String})
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Reprint(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Retry(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.SubmissionDate(DateTime)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Submit(PitneyBowes.Developer.ShippingApi.ISession)
+  - PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.TransactionId(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ManifestFluent<T>
+  nameWithType: ManifestFluent<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>
+  type: Class
+  source:
+    id: ManifestFluent
+    path: ''
+    startLine: 2671
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: >-
+      public class ManifestFluent<T>
+          where T : IManifest, new ()
+    typeParameters:
+    - id: T
+    content.vb: Public Class ManifestFluent(Of T As {IManifest, New})
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: ManifestFluent(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T)
+  name.vb: ManifestFluent(Of T)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Create
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Create
+  id: Create
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: ManifestFluent<T>.Create()
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Create()
+  type: Method
+  source:
+    id: Create
+    path: ''
+    startLine: 2675
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public static ManifestFluent<T> Create()
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Shared Function Create As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Create*
+  nameWithType.vb: ManifestFluent(Of T).Create()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Create()
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent{`0})~`0
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent{`0})~`0
+  id: op_Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent{`0})~`0
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Implicit(ManifestFluent<T> to T)
+  nameWithType: ManifestFluent<T>.Implicit(ManifestFluent<T> to T)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Implicit(PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T> to T)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: ''
+    startLine: 2685
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public static implicit operator T(ManifestFluent<T> m)
+    parameters:
+    - id: m
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    return:
+      type: '{T}'
+    content.vb: Public Shared Widening Operator CType(m As ManifestFluent(Of T)) As T
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.op_Implicit*
+  nameWithType.vb: ManifestFluent(Of T).Widening(ManifestFluent(Of T) to T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Widening(PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T) to T)
+  name.vb: Widening(ManifestFluent(Of T) to T)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Manifest
+  commentId: P:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Manifest
+  id: Manifest
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Manifest
+  nameWithType: ManifestFluent<T>.Manifest
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Manifest
+  type: Property
+  source:
+    id: Manifest
+    path: ''
+    startLine: 2690
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public IManifest Manifest { get; set; }
+    parameters: []
+    return:
+      type: PitneyBowes.Developer.ShippingApi.IManifest
+    content.vb: Public Property Manifest As IManifest
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Manifest*
+  nameWithType.vb: ManifestFluent(Of T).Manifest
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Manifest
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Submit(PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Submit(PitneyBowes.Developer.ShippingApi.ISession)
+  id: Submit(PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Submit(ISession)
+  nameWithType: ManifestFluent<T>.Submit(ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Submit(PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: Submit
+    path: ''
+    startLine: 2696
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> Submit(ISession session = null)
+    parameters:
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function Submit(session As ISession = Nothing) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Submit*
+  nameWithType.vb: ManifestFluent(Of T).Submit(ISession)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Submit(PitneyBowes.Developer.ShippingApi.ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Reprint(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Reprint(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  id: Reprint(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Reprint(String, ISession)
+  nameWithType: ManifestFluent<T>.Reprint(String, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Reprint(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: Reprint
+    path: ''
+    startLine: 2716
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> Reprint(string manifestId, ISession session = null)
+    parameters:
+    - id: manifestId
+      type: System.String
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function Reprint(manifestId As String, session As ISession = Nothing) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Reprint*
+  nameWithType.vb: ManifestFluent(Of T).Reprint(String, ISession)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Reprint(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Retry(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Retry(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  id: Retry(System.String,PitneyBowes.Developer.ShippingApi.ISession)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Retry(String, ISession)
+  nameWithType: ManifestFluent<T>.Retry(String, ISession)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Retry(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+  type: Method
+  source:
+    id: Retry
+    path: ''
+    startLine: 2737
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> Retry(string originalId, ISession session = null)
+    parameters:
+    - id: originalId
+      type: System.String
+    - id: session
+      type: PitneyBowes.Developer.ShippingApi.ISession
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function Retry(originalId As String, session As ISession = Nothing) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Retry*
+  nameWithType.vb: ManifestFluent(Of T).Retry(String, ISession)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Retry(System.String, PitneyBowes.Developer.ShippingApi.ISession)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Carrier(PitneyBowes.Developer.ShippingApi.Carrier)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Carrier(PitneyBowes.Developer.ShippingApi.Carrier)
+  id: Carrier(PitneyBowes.Developer.ShippingApi.Carrier)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Carrier(Carrier)
+  nameWithType: ManifestFluent<T>.Carrier(Carrier)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Carrier(PitneyBowes.Developer.ShippingApi.Carrier)
+  type: Method
+  source:
+    id: Carrier
+    path: ''
+    startLine: 2758
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> Carrier(Carrier c)
+    parameters:
+    - id: c
+      type: PitneyBowes.Developer.ShippingApi.Carrier
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function Carrier(c As Carrier) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Carrier*
+  nameWithType.vb: ManifestFluent(Of T).Carrier(Carrier)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Carrier(PitneyBowes.Developer.ShippingApi.Carrier)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.SubmissionDate(DateTime)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.SubmissionDate(DateTime)
+  id: SubmissionDate(DateTime)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: SubmissionDate(DateTime)
+  nameWithType: ManifestFluent<T>.SubmissionDate(DateTime)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.SubmissionDate(DateTime)
+  type: Method
+  source:
+    id: SubmissionDate
+    path: ''
+    startLine: 2763
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> SubmissionDate(DateTime s)
+    parameters:
+    - id: s
+      type: DateTime
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function SubmissionDate(s As DateTime) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.SubmissionDate*
+  nameWithType.vb: ManifestFluent(Of T).SubmissionDate(DateTime)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).SubmissionDate(DateTime)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  id: FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: FromAddress(IAddress)
+  nameWithType: ManifestFluent<T>.FromAddress(IAddress)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+  type: Method
+  source:
+    id: FromAddress
+    path: ''
+    startLine: 2768
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> FromAddress(IAddress a)
+    parameters:
+    - id: a
+      type: PitneyBowes.Developer.ShippingApi.IAddress
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function FromAddress(a As IAddress) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.FromAddress*
+  nameWithType.vb: ManifestFluent(Of T).FromAddress(IAddress)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).FromAddress(PitneyBowes.Developer.ShippingApi.IAddress)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.InductionPostalCode(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.InductionPostalCode(System.String)
+  id: InductionPostalCode(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: InductionPostalCode(String)
+  nameWithType: ManifestFluent<T>.InductionPostalCode(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.InductionPostalCode(System.String)
+  type: Method
+  source:
+    id: InductionPostalCode
+    path: ''
+    startLine: 2773
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> InductionPostalCode(string p)
+    parameters:
+    - id: p
+      type: System.String
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function InductionPostalCode(p As String) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.InductionPostalCode*
+  nameWithType.vb: ManifestFluent(Of T).InductionPostalCode(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).InductionPostalCode(System.String)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.ParcelTrackingNumbers(IEnumerable{System.String})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.ParcelTrackingNumbers(IEnumerable{System.String})
+  id: ParcelTrackingNumbers(IEnumerable{System.String})
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: ParcelTrackingNumbers(IEnumerable<String>)
+  nameWithType: ManifestFluent<T>.ParcelTrackingNumbers(IEnumerable<String>)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.ParcelTrackingNumbers(IEnumerable<System.String>)
+  type: Method
+  source:
+    id: ParcelTrackingNumbers
+    path: ''
+    startLine: 2778
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> ParcelTrackingNumbers(IEnumerable<string> tl)
+    parameters:
+    - id: tl
+      type: IEnumerable{System.String}
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function ParcelTrackingNumbers(tl As IEnumerable(Of String)) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.ParcelTrackingNumbers*
+  nameWithType.vb: ManifestFluent(Of T).ParcelTrackingNumbers(IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).ParcelTrackingNumbers(IEnumerable(Of System.String))
+  name.vb: ParcelTrackingNumbers(IEnumerable(Of String))
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParcelTrackingNumber(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParcelTrackingNumber(System.String)
+  id: AddParcelTrackingNumber(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AddParcelTrackingNumber(String)
+  nameWithType: ManifestFluent<T>.AddParcelTrackingNumber(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.AddParcelTrackingNumber(System.String)
+  type: Method
+  source:
+    id: AddParcelTrackingNumber
+    path: ''
+    startLine: 2784
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> AddParcelTrackingNumber(string t)
+    parameters:
+    - id: t
+      type: System.String
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function AddParcelTrackingNumber(t As String) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParcelTrackingNumber*
+  nameWithType.vb: ManifestFluent(Of T).AddParcelTrackingNumber(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).AddParcelTrackingNumber(System.String)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Parameters(IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter})
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Parameters(IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter})
+  id: Parameters(IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter})
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: Parameters(IEnumerable<IParameter>)
+  nameWithType: ManifestFluent<T>.Parameters(IEnumerable<IParameter>)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Parameters(IEnumerable<PitneyBowes.Developer.ShippingApi.IParameter>)
+  type: Method
+  source:
+    id: Parameters
+    path: ''
+    startLine: 2789
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> Parameters(IEnumerable<IParameter> pl)
+    parameters:
+    - id: pl
+      type: IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter}
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function Parameters(pl As IEnumerable(Of IParameter)) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Parameters*
+  nameWithType.vb: ManifestFluent(Of T).Parameters(IEnumerable(Of IParameter))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Parameters(IEnumerable(Of PitneyBowes.Developer.ShippingApi.IParameter))
+  name.vb: Parameters(IEnumerable(Of IParameter))
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  id: AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AddParameter(IParameter)
+  nameWithType: ManifestFluent<T>.AddParameter(IParameter)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+  type: Method
+  source:
+    id: AddParameter
+    path: ''
+    startLine: 2795
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> AddParameter(IParameter p)
+    parameters:
+    - id: p
+      type: PitneyBowes.Developer.ShippingApi.IParameter
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function AddParameter(p As IParameter) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter*
+  nameWithType.vb: ManifestFluent(Of T).AddParameter(IParameter)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).AddParameter(PitneyBowes.Developer.ShippingApi.IParameter)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter``1(System.String,System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter``1(System.String,System.String)
+  id: AddParameter``1(System.String,System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AddParameter<P>(String, String)
+  nameWithType: ManifestFluent<T>.AddParameter<P>(String, String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.AddParameter<P>(System.String, System.String)
+  type: Method
+  source:
+    id: AddParameter
+    path: ''
+    startLine: 2800
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: 'public ManifestFluent<T> AddParameter<P>(string name, string value)where P : IParameter, new ()'
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    typeParameters:
+    - id: P
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function AddParameter(Of P As {IParameter, New})(name As String, value As String) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter*
+  nameWithType.vb: ManifestFluent(Of T).AddParameter(Of P)(String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).AddParameter(Of P)(System.String, System.String)
+  name.vb: AddParameter(Of P)(String, String)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter``1(PitneyBowes.Developer.ShippingApi.ManifestParameter,System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter``1(PitneyBowes.Developer.ShippingApi.ManifestParameter,System.String)
+  id: AddParameter``1(PitneyBowes.Developer.ShippingApi.ManifestParameter,System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: AddParameter<P>(ManifestParameter, String)
+  nameWithType: ManifestFluent<T>.AddParameter<P>(ManifestParameter, String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.AddParameter<P>(PitneyBowes.Developer.ShippingApi.ManifestParameter, System.String)
+  type: Method
+  source:
+    id: AddParameter
+    path: ''
+    startLine: 2810
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: 'public ManifestFluent<T> AddParameter<P>(ManifestParameter param, string value)where P : IParameter, new ()'
+    parameters:
+    - id: param
+      type: PitneyBowes.Developer.ShippingApi.ManifestParameter
+    - id: value
+      type: System.String
+    typeParameters:
+    - id: P
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function AddParameter(Of P As {IParameter, New})(param As ManifestParameter, value As String) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter*
+  nameWithType.vb: ManifestFluent(Of T).AddParameter(Of P)(ManifestParameter, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).AddParameter(Of P)(PitneyBowes.Developer.ShippingApi.ManifestParameter, System.String)
+  name.vb: AddParameter(Of P)(ManifestParameter, String)
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.TransactionId(System.String)
+  commentId: M:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.TransactionId(System.String)
+  id: TransactionId(System.String)
+  parent: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  langs:
+  - csharp
+  - vb
+  name: TransactionId(String)
+  nameWithType: ManifestFluent<T>.TransactionId(String)
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.TransactionId(System.String)
+  type: Method
+  source:
+    id: TransactionId
+    path: ''
+    startLine: 2815
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi.Fluent
+  syntax:
+    content: public ManifestFluent<T> TransactionId(string t)
+    parameters:
+    - id: t
+      type: System.String
+    return:
+      type: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    content.vb: Public Function TransactionId(t As String) As ManifestFluent(Of T)
+  overload: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.TransactionId*
+  nameWithType.vb: ManifestFluent(Of T).TransactionId(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).TransactionId(System.String)
+references:
+- uid: PitneyBowes.Developer.ShippingApi.Fluent
+  commentId: N:PitneyBowes.Developer.ShippingApi.Fluent
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi.Fluent
+  nameWithType: PitneyBowes.Developer.ShippingApi.Fluent
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Create*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Create
+  isExternal: false
+  name: Create
+  nameWithType: ManifestFluent<T>.Create
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Create
+  nameWithType.vb: ManifestFluent(Of T).Create
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Create
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  commentId: T:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+  parent: PitneyBowes.Developer.ShippingApi.Fluent
+  isExternal: false
+  name: ManifestFluent<T>
+  nameWithType: ManifestFluent<T>
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>
+  nameWithType.vb: ManifestFluent(Of T)
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T)
+  name.vb: ManifestFluent(Of T)
+  spec.csharp:
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    name: ManifestFluent
+    nameWithType: ManifestFluent
+    fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1
+    name: ManifestFluent
+    nameWithType: ManifestFluent
+    fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.op_Implicit*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.op_Implicit
+  isExternal: false
+  name: Implicit
+  nameWithType: ManifestFluent<T>.Implicit
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Implicit
+  nameWithType.vb: ManifestFluent(Of T).Widening
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Widening
+  name.vb: Widening
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Manifest*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Manifest
+  isExternal: false
+  name: Manifest
+  nameWithType: ManifestFluent<T>.Manifest
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Manifest
+  nameWithType.vb: ManifestFluent(Of T).Manifest
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Manifest
+- uid: PitneyBowes.Developer.ShippingApi.IManifest
+  commentId: T:PitneyBowes.Developer.ShippingApi.IManifest
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IManifest
+  nameWithType: IManifest
+  fullName: PitneyBowes.Developer.ShippingApi.IManifest
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Submit*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Submit
+  isExternal: false
+  name: Submit
+  nameWithType: ManifestFluent<T>.Submit
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Submit
+  nameWithType.vb: ManifestFluent(Of T).Submit
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Submit
+- uid: PitneyBowes.Developer.ShippingApi.ISession
+  commentId: T:PitneyBowes.Developer.ShippingApi.ISession
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ISession
+  nameWithType: ISession
+  fullName: PitneyBowes.Developer.ShippingApi.ISession
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Reprint*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Reprint
+  isExternal: false
+  name: Reprint
+  nameWithType: ManifestFluent<T>.Reprint
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Reprint
+  nameWithType.vb: ManifestFluent(Of T).Reprint
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Reprint
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Retry*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Retry
+  isExternal: false
+  name: Retry
+  nameWithType: ManifestFluent<T>.Retry
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Retry
+  nameWithType.vb: ManifestFluent(Of T).Retry
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Retry
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Carrier*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Carrier
+  isExternal: false
+  name: Carrier
+  nameWithType: ManifestFluent<T>.Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Carrier
+  nameWithType.vb: ManifestFluent(Of T).Carrier
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Carrier
+- uid: PitneyBowes.Developer.ShippingApi.Carrier
+  commentId: T:PitneyBowes.Developer.ShippingApi.Carrier
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: Carrier
+  nameWithType: Carrier
+  fullName: PitneyBowes.Developer.ShippingApi.Carrier
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.SubmissionDate*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.SubmissionDate
+  isExternal: false
+  name: SubmissionDate
+  nameWithType: ManifestFluent<T>.SubmissionDate
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.SubmissionDate
+  nameWithType.vb: ManifestFluent(Of T).SubmissionDate
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).SubmissionDate
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.FromAddress*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.FromAddress
+  isExternal: false
+  name: FromAddress
+  nameWithType: ManifestFluent<T>.FromAddress
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.FromAddress
+  nameWithType.vb: ManifestFluent(Of T).FromAddress
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).FromAddress
+- uid: PitneyBowes.Developer.ShippingApi.IAddress
+  commentId: T:PitneyBowes.Developer.ShippingApi.IAddress
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: PitneyBowes.Developer.ShippingApi.IAddress
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.InductionPostalCode*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.InductionPostalCode
+  isExternal: false
+  name: InductionPostalCode
+  nameWithType: ManifestFluent<T>.InductionPostalCode
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.InductionPostalCode
+  nameWithType.vb: ManifestFluent(Of T).InductionPostalCode
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).InductionPostalCode
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.ParcelTrackingNumbers*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.ParcelTrackingNumbers
+  isExternal: false
+  name: ParcelTrackingNumbers
+  nameWithType: ManifestFluent<T>.ParcelTrackingNumbers
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.ParcelTrackingNumbers
+  nameWithType.vb: ManifestFluent(Of T).ParcelTrackingNumbers
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).ParcelTrackingNumbers
+- uid: IEnumerable{System.String}
+  commentId: '!:IEnumerable{System.String}'
+  definition: IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParcelTrackingNumber*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParcelTrackingNumber
+  isExternal: false
+  name: AddParcelTrackingNumber
+  nameWithType: ManifestFluent<T>.AddParcelTrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.AddParcelTrackingNumber
+  nameWithType.vb: ManifestFluent(Of T).AddParcelTrackingNumber
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).AddParcelTrackingNumber
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Parameters*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.Parameters
+  isExternal: false
+  name: Parameters
+  nameWithType: ManifestFluent<T>.Parameters
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.Parameters
+  nameWithType.vb: ManifestFluent(Of T).Parameters
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).Parameters
+- uid: IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter}
+  commentId: '!:IEnumerable{PitneyBowes.Developer.ShippingApi.IParameter}'
+  definition: IEnumerable`1
+  name: IEnumerable<IParameter>
+  nameWithType: IEnumerable<IParameter>
+  fullName: IEnumerable<PitneyBowes.Developer.ShippingApi.IParameter>
+  nameWithType.vb: IEnumerable(Of IParameter)
+  fullName.vb: IEnumerable(Of PitneyBowes.Developer.ShippingApi.IParameter)
+  name.vb: IEnumerable(Of IParameter)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PitneyBowes.Developer.ShippingApi.IParameter
+    name: IParameter
+    nameWithType: IParameter
+    fullName: PitneyBowes.Developer.ShippingApi.IParameter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PitneyBowes.Developer.ShippingApi.IParameter
+    name: IParameter
+    nameWithType: IParameter
+    fullName: PitneyBowes.Developer.ShippingApi.IParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.AddParameter
+  isExternal: false
+  name: AddParameter
+  nameWithType: ManifestFluent<T>.AddParameter
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.AddParameter
+  nameWithType.vb: ManifestFluent(Of T).AddParameter
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).AddParameter
+- uid: PitneyBowes.Developer.ShippingApi.IParameter
+  commentId: T:PitneyBowes.Developer.ShippingApi.IParameter
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: IParameter
+  nameWithType: IParameter
+  fullName: PitneyBowes.Developer.ShippingApi.IParameter
+- uid: PitneyBowes.Developer.ShippingApi.ManifestParameter
+  commentId: T:PitneyBowes.Developer.ShippingApi.ManifestParameter
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: ManifestParameter
+  nameWithType: ManifestParameter
+  fullName: PitneyBowes.Developer.ShippingApi.ManifestParameter
+- uid: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.TransactionId*
+  commentId: Overload:PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent`1.TransactionId
+  isExternal: false
+  name: TransactionId
+  nameWithType: ManifestFluent<T>.TransactionId
+  fullName: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent<T>.TransactionId
+  nameWithType.vb: ManifestFluent(Of T).TransactionId
+  fullName.vb: PitneyBowes.Developer.ShippingApi.Fluent.ManifestFluent(Of T).TransactionId

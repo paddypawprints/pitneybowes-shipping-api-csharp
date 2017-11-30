@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.PickupService
+  commentId: T:PitneyBowes.Developer.ShippingApi.PickupService
+  id: PickupService
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.PickupService.EM
+  - PitneyBowes.Developer.ShippingApi.PickupService.FCM
+  - PitneyBowes.Developer.ShippingApi.PickupService.INT
+  - PitneyBowes.Developer.ShippingApi.PickupService.OTH
+  - PitneyBowes.Developer.ShippingApi.PickupService.PM
+  - PitneyBowes.Developer.ShippingApi.PickupService.PRCLSEL
+  langs:
+  - csharp
+  - vb
+  name: PickupService
+  nameWithType: PickupService
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService
+  type: Enum
+  source:
+    id: PickupService
+    path: ''
+    startLine: 265
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nServices for parcels for pickup\n"
+  example: []
+  syntax:
+    content: public enum PickupService
+    content.vb: Public Enum PickupService
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.PickupService.FCM
+  commentId: F:PitneyBowes.Developer.ShippingApi.PickupService.FCM
+  id: FCM
+  parent: PitneyBowes.Developer.ShippingApi.PickupService
+  langs:
+  - csharp
+  - vb
+  name: FCM
+  nameWithType: PickupService.FCM
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService.FCM
+  type: Field
+  source:
+    id: FCM
+    path: ''
+    startLine: 270
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nFirst-Class Mail\n"
+  example: []
+  syntax:
+    content: FCM = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PickupService.PM
+  commentId: F:PitneyBowes.Developer.ShippingApi.PickupService.PM
+  id: PM
+  parent: PitneyBowes.Developer.ShippingApi.PickupService
+  langs:
+  - csharp
+  - vb
+  name: PM
+  nameWithType: PickupService.PM
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService.PM
+  type: Field
+  source:
+    id: PM
+    path: ''
+    startLine: 274
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPriority Mail\n"
+  example: []
+  syntax:
+    content: PM = 1
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PickupService.EM
+  commentId: F:PitneyBowes.Developer.ShippingApi.PickupService.EM
+  id: EM
+  parent: PitneyBowes.Developer.ShippingApi.PickupService
+  langs:
+  - csharp
+  - vb
+  name: EM
+  nameWithType: PickupService.EM
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService.EM
+  type: Field
+  source:
+    id: EM
+    path: ''
+    startLine: 278
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPriority Mail Express\n"
+  example: []
+  syntax:
+    content: EM = 2
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PickupService.PRCLSEL
+  commentId: F:PitneyBowes.Developer.ShippingApi.PickupService.PRCLSEL
+  id: PRCLSEL
+  parent: PitneyBowes.Developer.ShippingApi.PickupService
+  langs:
+  - csharp
+  - vb
+  name: PRCLSEL
+  nameWithType: PickupService.PRCLSEL
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService.PRCLSEL
+  type: Field
+  source:
+    id: PRCLSEL
+    path: ''
+    startLine: 282
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nParcel Select\n"
+  example: []
+  syntax:
+    content: PRCLSEL = 3
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PickupService.INT
+  commentId: F:PitneyBowes.Developer.ShippingApi.PickupService.INT
+  id: INT
+  parent: PitneyBowes.Developer.ShippingApi.PickupService
+  langs:
+  - csharp
+  - vb
+  name: INT
+  nameWithType: PickupService.INT
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService.INT
+  type: Field
+  source:
+    id: INT
+    path: ''
+    startLine: 290
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nUse INT for all international services:\nFirst-Class Mail International,\nFirst-Class Package International Service,\nPriority Mail Express International, and\nPriority Mail International\n"
+  example: []
+  syntax:
+    content: INT = 4
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PitneyBowes.Developer.ShippingApi.PickupService.OTH
+  commentId: F:PitneyBowes.Developer.ShippingApi.PickupService.OTH
+  id: OTH
+  parent: PitneyBowes.Developer.ShippingApi.PickupService
+  langs:
+  - csharp
+  - vb
+  name: OTH
+  nameWithType: PickupService.OTH
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService.OTH
+  type: Field
+  source:
+    id: OTH
+    path: ''
+    startLine: 294
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nOther Packages\n"
+  example: []
+  syntax:
+    content: OTH = 5
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PickupService
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.PickupService
+  commentId: T:PitneyBowes.Developer.ShippingApi.PickupService
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PickupService
+  nameWithType: PickupService
+  fullName: PitneyBowes.Developer.ShippingApi.PickupService

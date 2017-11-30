@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+  commentId: T:PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+  id: PackageIdentifierType
+  parent: PitneyBowes.Developer.ShippingApi
+  children:
+  - PitneyBowes.Developer.ShippingApi.PackageIdentifierType.TrackingNumber
+  langs:
+  - csharp
+  - vb
+  name: PackageIdentifierType
+  nameWithType: PackageIdentifierType
+  fullName: PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+  type: Enum
+  source:
+    id: PackageIdentifierType
+    path: ''
+    startLine: 140
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  summary: "\nPackage identifier type.\n"
+  example: []
+  syntax:
+    content: public enum PackageIdentifierType
+    content.vb: Public Enum PackageIdentifierType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PitneyBowes.Developer.ShippingApi.PackageIdentifierType.TrackingNumber
+  commentId: F:PitneyBowes.Developer.ShippingApi.PackageIdentifierType.TrackingNumber
+  id: TrackingNumber
+  parent: PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+  langs:
+  - csharp
+  - vb
+  name: TrackingNumber
+  nameWithType: PackageIdentifierType.TrackingNumber
+  fullName: PitneyBowes.Developer.ShippingApi.PackageIdentifierType.TrackingNumber
+  type: Field
+  source:
+    id: TrackingNumber
+    path: ''
+    startLine: 142
+  assemblies:
+  - cs.temp.dll
+  namespace: PitneyBowes.Developer.ShippingApi
+  syntax:
+    content: TrackingNumber = 0
+    return:
+      type: PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PitneyBowes.Developer.ShippingApi
+  commentId: N:PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PitneyBowes.Developer.ShippingApi
+  nameWithType: PitneyBowes.Developer.ShippingApi
+  fullName: PitneyBowes.Developer.ShippingApi
+- uid: PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+  commentId: T:PitneyBowes.Developer.ShippingApi.PackageIdentifierType
+  parent: PitneyBowes.Developer.ShippingApi
+  isExternal: false
+  name: PackageIdentifierType
+  nameWithType: PackageIdentifierType
+  fullName: PitneyBowes.Developer.ShippingApi.PackageIdentifierType
