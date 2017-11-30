@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties StartupConfiguration="{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}|Default" GitUserInfo="UsingGIT" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="pitneybowes-shipping-api-csharp Status">
     <Files>
       <File FileName="src/fluent/USPSExtensionMethods.cs" Line="63" Column="1" />
