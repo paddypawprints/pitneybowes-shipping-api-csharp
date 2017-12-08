@@ -149,24 +149,24 @@ At the Visual Studio developer command prompt:
  
 	C:\Development>cd apitest
  
-	C:\Development\apitest>git clone https://github.com/paddypawprints/shippingAPI.git
-	Cloning into 'shippingAPI'...
-	remote: Counting objects: 1558, done.
-	remote: Compressing objects: 100% (264/264), done.
-	Receiving objects: 100% (1558/1558), 651.92 KiB | 9.88 MiB/s, done.d 888
-	Resolving deltas: 100% (1028/1028), done.
+	C:\Development\apitest>git clone https://github.com/PitneyBowes/pitneybowes-shipping-api-csharp.git
+	Cloning into 'pitneybowes-shipping-api-csharp'...
+	remote: Counting objects: 665, done.
+	remote: Total 665 (delta 0), reused 0 (delta 0), pack-reused 665
+	Receiving objects: 100% (665/665), 1.49 MiB | 352.00 KiB/s, done.
+	Resolving deltas: 100% (505/505), done.
  
-	C:\Development\apitest\shippingAPI> cd shippingAPI
+	C:\Development\apitest\shippingAPI> cd pitneybowes-shipping-api-csharp
  
-	C:\Development\apitest\shippingAPI > dotnet restore
+	C:\Development\apitest\shippingAPI> dotnet restore
  
 	C:\Development\apitest\shippingAPI> dotnet build
  
-	C:\Development\apitest\shippingAPI>  dotnet publish
+	C:\Development\apitest\shippingAPI> dotnet publish
  
 	C:\Development\apitest\shippingAPI> cd examples\example.core\bin\Debug\netcoreapp2.0\publish
  
-	C:\Development\apitest\examples\example.core\bin\Debug\netcoreapp2.0\publish > dotnet example.dll
+	C:\Development\apitest\examples\example.core\bin\Debug\netcoreapp2.0\publish> dotnet example.dll
 	9405509898642004103722
 	Document written to C:\Users\patrick\AppData\Local\Temp\2\USPS2200080642743578.PDF
 	Document written to C:\Users\patrick\AppData\Local\Temp\2\9475709899581000234042.PDF
