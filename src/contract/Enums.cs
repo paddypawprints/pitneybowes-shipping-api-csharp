@@ -91,7 +91,8 @@ namespace PitneyBowes.Developer.ShippingApi
     public enum DocumentType
     {
         SHIPPING_LABEL,
-        MANIFEST
+        MANIFEST,
+        STAMP
     }
     /// <summary>
     /// Document file format - PDF, bitmap, Zebra etc.
@@ -103,7 +104,8 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Zebra thermal printer language.
         /// </summary>
-        ZPL2
+        ZPL2,
+        GIF
     }
 
     /// <summary>
@@ -247,7 +249,8 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// PMOD Enclosed Package Type
         /// </summary>
-        MIX
+        MIX,
+        LTR
     }
 
     /// <summary>
@@ -471,7 +474,8 @@ namespace PitneyBowes.Developer.ShippingApi
         DESTINATION_ENTRY_FACILITY,
         ENCLOSED_MAIL_CLASS,
         ENCLOSED_PARCEL_TYPE,
-        ENCLOSED_PAYMENT_METHOD
+        ENCLOSED_PAYMENT_METHOD,
+        POSTAGE_CORRECTION
     }
 
     /// <summary>

@@ -26,7 +26,7 @@ using Newtonsoft.Json;
 namespace PitneyBowes.Developer.ShippingApi
 {
 
-    internal class WebMethod
+    public class WebMethod
     {
         private static bool Retry(HttpStatusCode status, List<ErrorDetail> errors)
         {
@@ -100,23 +100,23 @@ namespace PitneyBowes.Developer.ShippingApi
             }
             return response;
         }
-        internal async static Task<ShippingApiResponse<Response>> Post<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        public async static Task<ShippingApiResponse<Response>> Post<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.POST, request, false, session);
         }
-        internal async static Task<ShippingApiResponse<Response>> Put<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        public async static Task<ShippingApiResponse<Response>> Put<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.PUT, request, false, session);
         }
-        internal async static Task<ShippingApiResponse<Response>> Get<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        public async static Task<ShippingApiResponse<Response>> Get<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>( uri, HttpVerb.GET, request, false, session); 
         }
-        internal async static Task<ShippingApiResponse<Response>> Delete<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        public async static Task<ShippingApiResponse<Response>> Delete<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>( uri, HttpVerb.DELETE, request, false, session);
         }
-        internal async static Task<ShippingApiResponse<Response>> DeleteWithBody<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        public async static Task<ShippingApiResponse<Response>> DeleteWithBody<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.DELETE, request, true, session);
         }

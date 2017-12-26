@@ -38,6 +38,7 @@ namespace PitneyBowes.Developer.ShippingApi.Method
         /// <param name="session">Session.</param>
         public static async Task WriteToStream(IDocument document, Stream stream, Func<Stream,int, Stream> nextPageAction = null, bool disposeStream = false, ISession session = null )
         {
+            if (session == null) session = Globals.DefaultSession;
             if (document.ContentType == ContentType.BASE64)
             { 
                 int pageCount = 0;

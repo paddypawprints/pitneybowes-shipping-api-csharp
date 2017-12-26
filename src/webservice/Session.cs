@@ -45,7 +45,7 @@ namespace PitneyBowes.Developer.ShippingApi
             LogError = (s) => { };
             LogConfigError = (s) => { };
             LogDebug = (s) => { };
-            GetAPISecret = () => { return new StringBuilder(); };
+            GetAPISecret = () => { return new StringBuilder(GetConfigItem("APISecret")); };
             SerializationRegistry = new SerializationRegistry();
             Counters = new Dictionary<string, Counters>();
 

@@ -125,6 +125,7 @@ namespace example
                     .TransactionId(Guid.NewGuid().ToString().Substring(15));
 
                 var label = ShipmentsMethods.CreateShipment((Shipment)shipment).GetAwaiter().GetResult();
+
                 #endregion
                 #region UseShipment
                 if (label.Success)
