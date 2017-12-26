@@ -71,7 +71,7 @@ namespace example
             sandbox.LogDebug = (s) => Logger.LogInformation(s);
 
             // Hook in your secure API key decryption
-            sandbox.GetAPISecret = () => GetApiKey();
+            sandbox.GetAPISecret = GetApiKey;
 
             //sandbox.Requester = new ShippingAPIMock();
             //sandbox.Record = true;
@@ -85,15 +85,10 @@ namespace example
                 // Create shipment
                 var shipment = ShipmentFluent<Shipment>.Create()
                     .ToAddress((Address)AddressFluent<Address>.Create()
-                        .Company("ABC Company")
-                        .Person("Rufous Sirius Canid", "323 555-1212", "rs.canid@gmail.com")
-                        .Residential(false)
                         .AddressLines("643 Greenway RD")
-                        .CityTown("Boone")
-                        .StateProvince("NC")
                         .PostalCode("28607")
                         .CountryCode("US")
-                        .Verify() // calls the service for address validation
+                        .Verify() // calls the service for address validation - will populate city and state from the zip
                         )
                     .MinimalAddressValidation("true")
                     .ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan"))
@@ -162,10 +157,8 @@ namespace example
                                     string fileName = string.Format("{0}{1}p{2}.{3}", Path.GetTempPath(), reprintResponse.APIResponse.ShipmentId, page.ToString(), d.FileFormat.ToString());
                                     Console.WriteLine("Document written to " + fileName);
                                     return new FileStream(fileName, FileMode.OpenOrCreate);
-
                                 },
-                                disposeStream: true,
-                                session: sandbox
+                                disposeStream: true
                                 ).GetAwaiter().GetResult();
                         }
                         else
@@ -173,7 +166,7 @@ namespace example
                             string fileName = string.Format("{0}{1}.{2}", Path.GetTempPath(), reprintResponse.APIResponse.ShipmentId, d.FileFormat.ToString());
                             using (StreamWriter sw = new StreamWriter(fileName))
                             {
-                                DocumentsMethods.WriteToStream(d, sw.BaseStream, session: sandbox).GetAwaiter().GetResult();
+                                DocumentsMethods.WriteToStream(d, sw.BaseStream ).GetAwaiter().GetResult();
                                 Console.WriteLine("Document written to " + fileName);
                             }
                         }
@@ -203,7 +196,7 @@ namespace example
                         {
                             using (StreamWriter sw = new StreamWriter(fileName))
                             {
-                                DocumentsMethods.WriteToStream(d, sw.BaseStream, session: sandbox).GetAwaiter().GetResult();
+                                DocumentsMethods.WriteToStream(d, sw.BaseStream ).GetAwaiter().GetResult();
                                 Console.WriteLine("Document written to " + fileName);
                             }
                         }

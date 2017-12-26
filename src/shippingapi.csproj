@@ -14,17 +14,27 @@
     <RootNamespace>PitneyBowes.Developer.ShippingApi</RootNamespace>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <ReleaseVersion>1.0.5-beta</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <PackOnBuild>true</PackOnBuild>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/PitneyBowes/pitneybowes-shipping-api-csharp</PackageProjectUrl>
+    <PackageTags>Pitney Bowes, shipping</PackageTags>
+    <Title>ShippingAPI</Title>
+    <PackageVersion>1.0.5-beta</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug OSX|AnyCPU' ">
     <IntermediateOutputPath>obj\Debug\netstandard1.3</IntermediateOutputPath>
     <DebugSymbols>true</DebugSymbols>
     <Optimize>false</Optimize>
-    <DefineConstants>TRACE;DEBUG;NETSTANDARD1_3</DefineConstants>
+    <DefineConstants>TRACE;DEBUG OSX;NETSTANDARD1_3</DefineConstants>
+    <DocumentationFile>bin\Debug OSX\netstandard1.3\shippingapi.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
   </ItemGroup>
 
   <ItemGroup>

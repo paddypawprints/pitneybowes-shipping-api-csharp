@@ -1,30 +1,14 @@
 ﻿<Properties StartupConfiguration="{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}|Default" GitUserInfo="UsingGIT" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="stampstest/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="pitneybowes-shipping-api-csharp Status">
     <Files>
-      <File FileName="src/contract/IRates.cs" Line="24" Column="1" />
-      <File FileName="src/method/json/JsonShipment.cs" Line="55" Column="1" />
-      <File FileName="src/contract/Enums.cs" Line="418" Column="5" />
-      <File FileName="src/method/Addresses.cs" Line="97" Column="1" />
-      <File FileName="src/webservice/ShippingApiHttpRequest.cs" Line="28" Column="18" />
-      <File FileName="src/webservice/Session.cs" Line="51" Column="13" />
-      <File FileName="src/webservice/response/ShippingApiResponse.cs" Line="1" Column="1" />
-      <File FileName="src/webservice/serialization/ShippingApiContractResolver.cs" Line="29" Column="29" />
-      <File FileName="src/webservice/serialization/SerializationRegistry.cs" Line="49" Column="21" />
-      <File FileName="src/model/Register.cs" Line="24" Column="31" />
-      <File FileName="src/webservice/serialization/ShippingApiConverter.cs" Line="1" Column="1" />
-      <File FileName="examples/example.core/Program.cs" Line="71" Column="64" />
-      <File FileName="src/webservice/Globals.cs" Line="33" Column="108" />
-      <File FileName="src/webservice/ISession.cs" Line="1" Column="1" />
-      <File FileName="src/method/Documents.cs" Line="45" Column="20" />
       <File FileName="pitneybowes-shipping-api-csharp Status" />
-      <File FileName="stampstest/Program.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.example PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug OSX" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/patrickfarry/api2/test/pitneybowes-shipping-api-csharp/examples/example.core/Program.cs" relfile="examples/example.core/Program.cs" line="392" column="1" />
+      <Breakpoint file="/Users/patrickfarry/api2/test/pitneybowes-shipping-api-csharp/examples/example.core/Program.cs" relfile="examples/example.core/Program.cs" line="385" column="1" />
       <Breakpoint file="/Users/patrickfarry/api2/test/pitneybowes-shipping-api-csharp/stampstest/Program.cs" relfile="stampstest/Program.cs" line="147" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
