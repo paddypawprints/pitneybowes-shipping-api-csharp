@@ -3,25 +3,26 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <AssemblyName>shippingapi</AssemblyName>
-    <Version>1.0.4-beta</Version>
+    <Version>1.0.5.0</Version>
+    <PackageId>shippingapi</PackageId>
+    <PackageVersion>1.0.5-beta</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <FileVersion>1.0.5.0</FileVersion>
     <Authors>Patrick Farry</Authors>
     <Company />
     <Description>Package that provides a local interface to the Pitney Bowes Shipping API. Features and fluent API, strong type support, mocking, linq interface to transaction reports.</Description>
-    <Copyright>Copyright 2016 Pitney Bowes</Copyright>
+    <Copyright>Copyright 2017 Pitney Bowes</Copyright>
     <RootNamespace>PitneyBowes.Developer.ShippingApi</RootNamespace>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <ReleaseVersion>1.0.5-beta</ReleaseVersion>
+    <ReleaseVersion>1.0.5,0</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageProjectUrl>https://github.com/PitneyBowes/pitneybowes-shipping-api-csharp</PackageProjectUrl>
     <PackageTags>Pitney Bowes, shipping</PackageTags>
     <Title>ShippingAPI</Title>
-    <PackageVersion>1.0.5-beta</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug OSX|AnyCPU' ">
@@ -31,13 +32,13 @@
     <DefineConstants>TRACE;DEBUG OSX;NETSTANDARD1_3</DefineConstants>
     <DocumentationFile>bin\Debug OSX\netstandard1.3\shippingapi.xml</DocumentationFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.3\shippingapi.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
     <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="model\CarrierPickup.cs" />
   </ItemGroup>
 </Project>
