@@ -35,7 +35,7 @@ namespace PitneyBowes.Developer.ShippingApi
         ICustomsItems AddCustomsItems(ICustomsItems c);
     }
 
-    public static partial class InterfaceExtensions
+    public static partial class InterfaceValidators
     {
         public static bool IsValid(this ICustoms customs)
         {

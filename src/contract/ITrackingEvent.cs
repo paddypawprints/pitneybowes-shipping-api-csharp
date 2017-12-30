@@ -19,15 +19,42 @@ using System;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Scan information from the barcode on the shipment label.
+    /// </summary>
     public interface ITrackingEvent
     {
+        /// <summary>
+        /// Event date received from the Carrier.
+        /// </summary>
         DateTimeOffset EventDateTime { get; set; }
+        /// <summary>
+        /// Event location - city
+        /// </summary>
         string EventCity { get; set; }
+        /// <summary>
+        /// Event location - State or Province
+        /// </summary>
         string EventState { get; set; }
+        /// <summary>
+        /// Event location - postal code
+        /// </summary>
         string PostalCode { get; set; }
+        /// <summary>
+        /// Event location - country
+        /// </summary>
         string Country { get; set; }
+        /// <summary>
+        /// Scan event Type - carrier specific
+        /// </summary>
         string ScanType { get; set; }
+        /// <summary>
+        /// Scan event description
+        /// </summary>
         string ScanDescription { get; set; }
+        /// <summary>
+        /// Package status
+        /// </summary>
         string PackageStatus { get; set; }
     }
 }

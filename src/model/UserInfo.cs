@@ -17,13 +17,34 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// An object containing the merchant’s name, address, company, phone, and email for the merchant signup render method.
+    /// </summary>
     public class UserInfo : IUserInfo
     {
+        /// <summary>
+        /// Merchant first name. Optional.
+        /// </summary>
         virtual public string FirstName{get; set;}
+        /// <summary>
+        /// Merchant last name. Optional.
+        /// </summary>
         virtual public string LastName{get; set;}
+        /// <summary>
+        /// Merchant company name. Required.
+        /// </summary>
         virtual public string Company{get; set;}
+        /// <summary>
+        /// Merchant address. Required.
+        /// </summary>
         virtual public IAddress Address{get; set;}
+        /// <summary>
+        /// Merchant phone number. Required.
+        /// </summary>
         virtual public string Phone{get; set;}
+        /// <summary>
+        /// Merchant email address. Required.
+        /// </summary>
         virtual public string Email{get; set;}
     }
 }

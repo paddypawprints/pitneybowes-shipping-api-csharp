@@ -28,7 +28,26 @@ namespace PitneyBowes.Developer.ShippingApi
     public class Session : ISession
     {
         private Dictionary<string, string> _configs = new Dictionary<string, string>();
-
+        /// <summary>
+        /// Constructor sets defaults for most items so the system can run with minimal configuration.
+        /// 
+        /// Default parameters
+        ///     Record = false;
+        ///     RecordPath = Globals.GetPath(Path.GetTempPath(), "recordings", "shippingApi");
+        ///     RecordOverwrite = false;
+        ///     Retries = 3;
+        ///     UserAgent = "Pitney Bowes CSharp SDK 1.0";
+        ///     ThrowExceptions = false;
+        ///     
+        /// Configuration is set to use the dictionary in the session object
+        ///     The configuration item "SANDBOX_ENDPOINT" is defined "https://api-sandbox.pitneybowes.com"
+        ///     The configuration item "PRODUCTION_ENDPOINT" is defined "https://api-sandbox.pitneybowes.com"
+        ///
+        ///  Logging is disabled
+        ///
+        ///  API secret is retrieved from the "ApiSecret" config item
+        ///
+        /// </summary>
         public Session()
         {
             Record = false;
@@ -45,32 +64,100 @@ namespace PitneyBowes.Developer.ShippingApi
             LogError = (s) => { };
             LogConfigError = (s) => { };
             LogDebug = (s) => { };
-            GetAPISecret = () => { return new StringBuilder(GetConfigItem("APISecret")); };
+            GetApiSecret = () => { return new StringBuilder(GetConfigItem("ApiSecret")); };
             SerializationRegistry = new SerializationRegistry();
             Counters = new Dictionary<string, Counters>();
 
         }
+        /// <summary>
+        /// Object to hold mappings between the service contract interfaces, wrapper classes that implement the json/web service messages 
+        /// and concrete objects that are created during deserialization.
+        /// </summary>
         public SerializationRegistry SerializationRegistry { get; }
-        public IHttpRequest Requester { get; set; } // to allow mocking
+        /// <summary>
+        /// Requester encapsulates the http request and response. Two subclasses are provided, one that calls the web service and the other 
+        /// that calls a mock interface which provides responses from messages stored in the file system.
+        /// </summary>
+        public IHttpRequest Requester { get; set; } 
+        /// <summary>
+        /// The current token is cached in the session.
+        /// </summary>
         public Token AuthToken { get; set; }
+        /// <summary>
+        /// User agent string provided by each http call. Useful for server side troubleshooting and analytics.
+        /// </summary>
         public string UserAgent { get; set; }
+        /// <summary>
+        /// Time out for the call. The SDK will attempt to return within the timeout, although this is not guaranteed when token 
+        /// authentication is required.
+        /// </summary>
         public int TimeOutMilliseconds { get; set; }
+        /// <summary>
+        /// Number of retries in the event of network errors.
+        /// </summary>
         public int Retries { get; set; }
+        /// <summary>
+        /// Defines whether to throw exceptions due to deserialization and http errors. If exceptions are not thrown, errors can be seen in the 
+        /// Errors member of the response object.
+        /// </summary>
         public bool ThrowExceptions { get; set; }
+        /// <summary>
+        /// Delegate to return a configuration item. Plug in your own config provider.
+        /// </summary>
         public Func<string, string> GetConfigItem { get; set; }
+        /// <summary>
+        /// Adds an item to the default configuration provider - a dictionary stored in the session.
+        /// </summary>
         public Action<string, string> AddConfigItem { get; set; }
+        /// <summary>
+        /// Delegate to log warnings. Plug in your own logger here.
+        /// </summary>
         public Action<string> LogWarning { get; set; }
+        /// <summary>
+        /// Delegate to log errors. Plug in your own logger here.
+        /// </summary>
         public Action<string> LogError { get; set; }
+        /// <summary>
+        /// Delegate to log fatal errors dur to configration missing or otherwise screwed up - e.g. not having deserialization classes defined.
+        /// </summary>
         public Action<string> LogConfigError { get; set; }
+        /// <summary>
+        /// Delegate to log debug messages. Plug in your own logger here.
+        /// </summary>
         public Action<string> LogDebug { get; set; }
-        public Func<StringBuilder> GetAPISecret { get; set; }
+        /// <summary>
+        /// Delegate to get the API secret. Best practice is to store the API secret encrypted and only decrypt at the last minute. The SDK
+        /// does not store the API secret (except if you are using the default config from the sesssion, in which case the API Secret is store in 
+        /// cleartext in memory). Authentication is infrequent - at startup and then every 10 hours, so a reasonable implementation would be to 
+        /// store the API secret encrypted on disk, and then decrypt it in the GetApiSecret call.
+        /// </summary>
+        public Func<StringBuilder> GetApiSecret { get; set; }
+        /// <summary>
+        /// Sets the endpoint for the service.
+        /// </summary>
         public string EndPoint { get; set; }
+        /// <summary>
+        /// Flag to indicate whether messages should be recorded. Recorded messages can be used for debugging or for replay by the mock requester.
+        /// </summary>
         public bool Record { get; set; }
+        /// <summary>
+        /// Path for the recording files.
+        /// </summary>
         public string RecordPath { get; set; }
+        /// <summary>
+        /// Flag to indicate whether to overwrite existing recording files.
+        /// </summary>
         public bool RecordOverwrite { get; set; }
-
-        public Dictionary<string, Counters> Counters { get; set; }
-
+        /// <summary>
+        /// Counters holds statistics for each method call.
+        /// </summary>
+        public Dictionary<string, Counters> Counters { get; internal set; }
+        /// <summary>
+        /// Update the performance counters with the result of the latest service call.
+        /// </summary>
+        /// <param name="uri">URI</param>
+        /// <param name="success">Whether the call was successful</param>
+        /// <param name="time">Call duration in milliseconds</param>
         public void UpdateCounters(string uri, bool success, TimeSpan time)
         {
             if (!Counters.ContainsKey(uri)) Counters.Add(uri, new Counters());

@@ -26,4 +26,17 @@ namespace PitneyBowes.Developer.ShippingApi
         string Phone { get; set; }
         string Email { get; set; }
     }
+
+    public static partial class InterfaceValidators
+    {
+        public static bool IsValid(this IUserInfo u)
+        {
+            if (u.Company == null || u.Company.Equals("")) return false;
+            if (u.Address == null || !u.Address.IsValidDeliveryAddress()) return false;
+            if (u.Phone == null || u.Phone.Equals("")) return false;
+            if (u.Email == null || u.Email.Equals("")) return false;
+            return true;
+        }
+    }
+
 }

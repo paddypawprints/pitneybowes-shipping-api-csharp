@@ -18,7 +18,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 using System;
 using System.Text;
 using System.Collections.Generic;
-using PitneyBowes.Developer.ShippingApi.Method;
+using PitneyBowes.Developer.ShippingApi;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
@@ -58,7 +58,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
                 RefillAmount = refillAmount,
                 ThresholdAmount = thresholdAmount
             };
-            var response = MerchantMethods.Signup<T>(request).GetAwaiter().GetResult();
+            var response = Api.MerchantSignup<T>(request).GetAwaiter().GetResult();
             if (response.Success)
             {
                 return new MerchantFluent<T>(response.APIResponse);
@@ -75,7 +75,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
                 Password = password
             };
 
-            var response = MerchantMethods.Credentials<T>(request).GetAwaiter().GetResult();
+            var response = Api.MerchantAuthorization<T>(request).GetAwaiter().GetResult();
             if (response.Success)
             {
                 return new MerchantFluent<T>(response.APIResponse);
@@ -103,7 +103,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
                 Residential = address.Residential
             };
 
-            var response = MerchantMethods.Register<T>(request).GetAwaiter().GetResult();
+            var response = Api.MerchantRegistration<T>(request).GetAwaiter().GetResult();
             if (response.Success)
             {
                 return new MerchantFluent<T>(response.APIResponse);

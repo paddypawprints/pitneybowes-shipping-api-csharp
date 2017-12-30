@@ -37,7 +37,7 @@ namespace PitneyBowes.Developer.ShippingApi
                 case "POSTAGE PRINT":
                     return TransactionType.POSTAGE_PRINT;
                 case "POSTAGE REFUND":
-                    return TransactionType.POSTAQGE_REFUND;
+                    return TransactionType.POSTAGE_REFUND;
                 default:
                     var converter = new StringEnumConverter();
                     return converter.ReadJson(reader, objectType, existingValue, serializer);
@@ -56,7 +56,7 @@ namespace PitneyBowes.Developer.ShippingApi
                 case TransactionType.POSTAGE_PRINT:
                     writer.WriteValue("POSTAGE PRINT");
                     break;
-                case TransactionType.POSTAQGE_REFUND:
+                case TransactionType.POSTAGE_REFUND:
                     writer.WriteValue("POSTAGE REFUND");
                     break;
                 default:

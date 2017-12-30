@@ -16,7 +16,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 */
 
 using System.Collections.Generic;
-using PitneyBowes.Developer.ShippingApi.Method;
+using PitneyBowes.Developer.ShippingApi;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
@@ -24,41 +24,42 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
     /// An address. If part of a response, this object also specifies address validation status, unless minimum validation is enabled.
     /// <a href="https://shipping.pitneybowes.com/reference/resource-objects.html#object-address"/>
     /// </summary>
-
     public class AddressFluent<T> where T : IAddress, new()
     {
         private T _address;
 
+        /// <summary>
+        /// Cast to the underlying type. Does not seem to work implicitly and needs an explicit cast - not sure why.
+        /// </summary>
+        /// <param name="a"></param>
         public static implicit operator T( AddressFluent<T> a)
         {
             return a._address;
         }
 
-        public static AddressFluent<T> Create()
+        /// <summary>
+        /// Factory method to create an AddressFluent as the start of a method chain. 
+        /// </summary>
+        /// <param name="address"></param>
+        /// <returns></returns>
+        public static AddressFluent<T> Create(IAddress address = null)
         {
-            var a = new AddressFluent<T>()
-            {
-                _address = new T()
-            };
-            return a;
-        }
-        public static AddressFluent<T> Create(IAddress address)
-        {
-            var a = new AddressFluent<T>();
-            a._address = (T)address;
+            var a = new AddressFluent<T>(address);
             return a;
         }
 
-        protected AddressFluent()
+        /// <summary>
+        /// Constructor - creates a new underlying object
+        /// </summary>
+        public AddressFluent(IAddress a)
         {
-            _address = new T();
-        }
-
-        public AddressFluent(IAddress a )
-        {
+            if (a == null) a = new T();
             _address = (T)a;
         }
 
+        /// <summary>
+        /// Underlying Address object
+        /// </summary>
         public T Address { get => _address; set { _address = value; } }
 
         /// <summary>
@@ -229,7 +230,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             {
                 session = Globals.DefaultSession;
             }
-            var addressResponse = AddressessMethods.VerifyAddress(_address, session).GetAwaiter().GetResult();
+            var addressResponse = Api.VerifyAddress(_address, session).GetAwaiter().GetResult();
             if (addressResponse.Success)
             {
                 _address = addressResponse.APIResponse;
@@ -277,7 +278,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
                 session = Globals.DefaultSession;
             }
 
-            var addressResponse = AddressessMethods.VerifySuggestAddress<T>(_address, session).GetAwaiter().GetResult();
+            var addressResponse = Api.VerifySuggestAddress<T>(_address, session).GetAwaiter().GetResult();
             if (addressResponse.Success)
             {
                 _address = (T)addressResponse.APIResponse.Address;

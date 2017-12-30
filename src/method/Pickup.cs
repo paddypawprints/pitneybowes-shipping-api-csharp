@@ -22,7 +22,7 @@ using Newtonsoft.Json;
 using PitneyBowes.Developer.ShippingApi.Json;
 
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi
 {
     /// <summary>
     /// Pickup cancel request.
@@ -53,7 +53,7 @@ namespace PitneyBowes.Developer.ShippingApi.Method
         public string Status { get; set; }
     }
 
-    public static class PickupMethods
+    public static partial class Api
     {
         /// <summary>
         /// This operation schedules a USPS package pickup from a residential or

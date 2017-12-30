@@ -21,7 +21,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi.Report
 {
     public class ReportBase<T> : IOrderedQueryable<T>
     {

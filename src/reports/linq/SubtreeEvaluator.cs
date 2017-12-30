@@ -19,10 +19,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi.Report
 {
     /// <summary> 
-    /// Evaluates & replaces sub-trees when first candidate is reached (top-down) 
+    /// Evaluates and replaces sub-trees when first candidate is reached (top-down) 
     /// </summary> 
     internal class SubtreeEvaluator : ExpressionVisitor
     {

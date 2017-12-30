@@ -25,9 +25,19 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Base class for API request objects. Implements methods to manage conversion from propertie to http headers, uri resource parameters, or 
+    /// query string
+    /// </summary>
     public abstract class ShippingApiRequest : IShippingApiRequest
     {
+        /// <summary>
+        /// Http header content type for the request
+        /// </summary>
         public abstract string ContentType {get;}
+        /// <summary>
+        /// Request authorization token
+        /// </summary>
         public abstract StringBuilder Authorization { get; set; }
 
         /// <summary>
@@ -35,6 +45,13 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         virtual public string RecordingSuffix => "";
 
+        /// <summary>
+        /// Full path to the recording file
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="resource"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public static string RecordingFullPath(IShippingApiRequest request, string resource, ISession session)
         { 
             string dirname = session.RecordPath;
@@ -104,7 +121,7 @@ namespace PitneyBowes.Developer.ShippingApi
                 }
             }
         }
-        public static void AddRequestQuery(object o, StringBuilder uri)
+        internal static void AddRequestQuery(object o, StringBuilder uri)
         {
 
             bool hasQuery = false;
@@ -131,12 +148,17 @@ namespace PitneyBowes.Developer.ShippingApi
            );
         }
 
+        /// <summary>
+        /// Serialize the request into a stream that will contain the http request body
+        /// </summary>
+        /// <param name="writer"></param>
+        /// <param name="session"></param>
         public virtual void SerializeBody( StreamWriter writer, ISession session)
         {
             SerializeBody(this, writer, session);
         }
 
-        public static void SerializeBody(IShippingApiRequest request, StreamWriter writer, ISession session)
+        internal static void SerializeBody(IShippingApiRequest request, StreamWriter writer, ISession session)
         {
             switch (request.ContentType)
             {
@@ -173,6 +195,12 @@ namespace PitneyBowes.Developer.ShippingApi
                     throw new InvalidOperationException("Unrecognized request content type:" + request.ContentType); 
             }
         }
+        /// <summary>
+        /// Returns the URI given the template in the baseUrl. Substitutes object property values into resource partameters and 
+        /// query string parameters.
+        /// </summary>
+        /// <param name="baseUrl">Base Url string. Resource parameters are indicatred by enclosing the property name in curly brackets{}</param>
+        /// <returns></returns>
         public virtual string GetUri(string baseUrl)
         {
             var uri = new StringBuilder(baseUrl);
@@ -181,7 +209,7 @@ namespace PitneyBowes.Developer.ShippingApi
             return uri.ToString();
         }
 
-        public static void SubstitueResourceParameters(object request, StringBuilder uri)
+        internal static void SubstitueResourceParameters(object request, StringBuilder uri)
         {
             var stringUri = uri.ToString();
             uri.Clear();
@@ -227,7 +255,7 @@ namespace PitneyBowes.Developer.ShippingApi
             uri.Append(stringUri.Substring(index, stringUri.Length - index));
         }
 
-        public static IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders( object o)
+        internal static IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders( object o)
         {
             foreach (var propertyInfo in o.GetType().GetProperties())
             {
@@ -265,12 +293,20 @@ namespace PitneyBowes.Developer.ShippingApi
             }
 
         }
-
+        /// <summary>
+        /// Processes the request object and extracts proprty values that have a ShippingAPIHeader attribute
+        /// </summary>
+        /// <returns></returns>
         public virtual IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders()
         {
             return GetHeaders(this);
         }
-
+        /// <summary>
+        /// Full path to the recording file
+        /// </summary>
+        /// <param name="resource"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public string RecordingFullPath(string resource, ISession session)
         {
             return RecordingFullPath( this, resource, session );

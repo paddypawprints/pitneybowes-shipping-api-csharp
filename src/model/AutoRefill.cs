@@ -19,15 +19,19 @@ using System;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// If auto refill is enabled on a merchant account (which is the default), the postage account automatically replenishes by a 
+    /// pre-determined amount when the balance falls below the pre-determined refill threshold.
+    /// </summary>
     public class AutoRefill : IAutoRefill
     {
         /// <summary>
         /// The value of this field depends on whether the object is part of the
         /// request or the response:
         /// - **Request**: This field is set to the ``postalReportingNumber`` for
-        ///      the merchant, as found in the :ref:`merchant object <object-merchant>`.
+        ///      the merchant, as found in the :ref:`merchant object`.
         /// - **Response**: This field is set to the ``paymentAccountNumber`` for
-        /// the merchant, as found in the :ref:`merchant object <object-merchant>`.
+        /// the merchant, as found in the :ref:`merchant object `.
         /// **Note:** The merchant's ``postalReportingNumber`` is separate from the
         /// merchant's ``paymentAccountNumber``.
         /// </summary>

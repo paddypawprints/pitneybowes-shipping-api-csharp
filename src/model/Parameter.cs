@@ -17,16 +17,19 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// Concrete implementation of the IParameter interface. Used when creating shipments and manifests.
+    /// </summary>
     public class Parameter : IParameter
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:PitneyBowes.Developer.ShippingApi.Model.Parameter"/> class.
+        /// Initializes a new instance of the class.
         /// </summary>
         public Parameter()
         {
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:PitneyBowes.Developer.ShippingApi.Model.Parameter"/> class.
+        /// Initializes a new instance of the class.
         /// </summary>
         /// <param name="name">Name.</param>
         /// <param name="value">Value.</param>

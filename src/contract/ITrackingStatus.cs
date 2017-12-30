@@ -20,26 +20,83 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Tracking status of a shipment
+    /// </summary>
     public interface ITrackingStatus
     {
         string PackageCount { get; set; }
+        /// <summary>
+        /// REQUIRED. Valid Value(s): USPS
+        /// </summary>
         string Carrier { get; set; }
+        /// <summary>
+        /// REQUIRED. The tracking number for the shipment.
+        /// </summary>
         string TrackingNumber { get; set; }
+        /// <summary>
+        /// Reference Number for the shipment.
+        /// </summary>
         string ReferenceNumber { get; set; }
+        /// <summary>
+        /// Most recent Package Status.
+        /// </summary>
         TrackingStatusCode Status { get; set; }
+        /// <summary>
+        /// Date indicating when the tracking status was posted
+        /// </summary>
         DateTimeOffset UpdatedDateTime { get; set; }
+        /// <summary>
+        /// Date indicating when the package was shipped.
+        /// </summary>
         DateTimeOffset ShipDateTime { get; set; }
+        /// <summary>
+        /// Date indicating when the package will be delivered.
+        /// </summary>
         DateTimeOffset EstimatedDeliveryDateTime { get; set; }
+        /// <summary>
+        /// Date indicating when the package was delivered.
+        /// </summary>
         DateTimeOffset DeliveryDateTime { get; set; }
+        /// <summary>
+        /// Delivery location.
+        /// </summary>
         string DeliveryLocation { get; set; }
+        /// <summary>
+        /// Description of where the package was delivered.
+        /// </summary>
         string DeliveryLocationDescription { get; set; }
+        /// <summary>
+        /// Name of the person who signed for the package.
+        /// </summary>
         string SignedBy { get; set; }
+        /// <summary>
+        /// Weight of the package delivered.
+        /// </summary>
         Decimal Weight { get; set; }
+        /// <summary>
+        /// Unit of measure for the package’s weight.
+        /// </summary>
         UnitOfWeight? WeightOUM { get; set; }
+        /// <summary>
+        /// If the package was not delivered the first time, this field will indicate the date in YYYY-MM-DD format that the package was re-attempted to be delivered.
+        /// </summary>
         string ReattemptDate { get; set; }
+        /// <summary>
+        /// f the package was not delivered the first time, this field will indicate the time in HH:MM:SS format that the package was re-attempted to be delivered.
+        /// </summary>
         DateTime ReattemptTime { get; set; }
+        /// <summary>
+        /// The destination address.
+        /// </summary>
         IAddress DestinationAddress { get; set; }
+        /// <summary>
+        /// The sender's address
+        /// </summary>
         IAddress SenderAddress { get; set; }
+        /// <summary>
+        /// Scan information from the barcode on the shipment label.
+        /// </summary>
         IEnumerable<ITrackingEvent> ScanDetailsList { get; set; }
     }
 }

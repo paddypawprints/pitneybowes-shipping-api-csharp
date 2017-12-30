@@ -25,7 +25,9 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
-
+    /// <summary>
+    /// Encapsulates HTTP calls for Pitney Bowes API endpoints. Authentication token is cached in the session and if the token is not valid the token method is called first.
+    /// </summary>
     public class WebMethod
     {
         private static bool Retry(HttpStatusCode status, List<ErrorDetail> errors)
@@ -100,22 +102,72 @@ namespace PitneyBowes.Developer.ShippingApi
             }
             return response;
         }
+        /// <summary>
+        /// Call a http POST endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
         public async static Task<ShippingApiResponse<Response>> Post<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.POST, request, false, session);
         }
+        /// <summary>
+        /// Call a http PUT endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public async static Task<ShippingApiResponse<Response>> Put<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.PUT, request, false, session);
         }
+        /// <summary>
+        /// Call a http GET endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
         public async static Task<ShippingApiResponse<Response>> Get<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>( uri, HttpVerb.GET, request, false, session); 
         }
+        /// <summary>
+        /// Call a http DELETE endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
         public async static Task<ShippingApiResponse<Response>> Delete<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>( uri, HttpVerb.DELETE, request, false, session);
         }
+        /// <summary>
+        /// Call a http DELETE endpoint with PB Ecommerce cloud authentication token. Seems to be ambiguous in the standards whetner DELETE can have a 
+        /// request body. A shipping API call does this so it is supported in this method.
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
         public async static Task<ShippingApiResponse<Response>> DeleteWithBody<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.DELETE, request, true, session);

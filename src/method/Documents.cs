@@ -20,9 +20,9 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Net.Http.Headers;
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi
 {
-    public static class DocumentsMethods
+    public static partial class Api
     {
         /// <summary>
         /// Writes a document to a stream. Figures out file format and content type and performs the appropriate action to get the document. 

@@ -18,12 +18,12 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 using System;
 using System.Linq.Expressions;
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi.Report
 {
     internal static class Evaluator
     {
         /// <summary> 
-        /// Performs evaluation & replacement of independent sub-trees 
+        /// Performs evaluation and replacement of independent sub-trees 
         /// </summary> 
         /// <param name="expression">The root of the expression tree.</param>
         /// <param name="fnCanBeEvaluated">A function that decides whether a given expression node can be part of the local function.</param>
@@ -34,7 +34,7 @@ namespace PitneyBowes.Developer.ShippingApi.Method
         }
 
         /// <summary> 
-        /// Performs evaluation & replacement of independent sub-trees 
+        /// Performs evaluation and replacement of independent sub-trees 
         /// </summary> 
         /// <param name="expression">The root of the expression tree.</param>
         /// <returns>A new tree with sub-trees evaluated and replaced.</returns> 

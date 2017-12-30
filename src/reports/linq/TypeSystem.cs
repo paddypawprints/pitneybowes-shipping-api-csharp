@@ -19,7 +19,7 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi.Report
 {
     internal static class TypeSystem
     {

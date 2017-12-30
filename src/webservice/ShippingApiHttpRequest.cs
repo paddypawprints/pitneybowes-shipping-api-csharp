@@ -25,6 +25,9 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Implements the web service call for Pitney Bowes we services
+    /// </summary>
     public class ShippingApiHttpRequest : IHttpRequest
     {
         internal static void AddRequestHeaders(HttpClient client, ShippingApiHeaderAttribute attribute, string propValue, string propName)
@@ -42,7 +45,17 @@ namespace PitneyBowes.Developer.ShippingApi
                     break;
             }
         }
-
+        /// <summary>
+        /// Call the web service and return the response
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="resource"></param>
+        /// <param name="verb"></param>
+        /// <param name="request"></param>
+        /// <param name="deleteBody"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public async Task<ShippingApiResponse<Response>> HttpRequest<Response, Request>(string resource, HttpVerb verb, Request request, bool deleteBody = false, ISession session = null) where Request : IShippingApiRequest
         {
             return await HttpRequestStatic<Response, Request>(resource, verb, request, deleteBody, session);

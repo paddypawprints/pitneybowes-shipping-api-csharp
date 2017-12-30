@@ -21,8 +21,14 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>	
+    /// Special services for a shipment. In a return object, this includes the service fees and optional tax information.
+    /// </summary>
     public class SpecialServices : ISpecialServices
     {
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public SpecialServices()
         {
         }
@@ -36,6 +42,11 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// </summary>
         /// <value>The input parameters.</value>
         virtual public IEnumerable<IParameter> InputParameters { get; set; }
+        /// <summary>
+        /// Method to allow clients of SpecialServices to add a parameter without knowing the implementation of the InputParameter 
+        /// collection.
+        /// </summary>
+        /// <param name="p"></param>
         virtual public void AddParameter(IParameter p)
         {
             ModelHelper.AddToEnumerable<IParameter, Parameter>(p, () => InputParameters, (x) => InputParameters = x);

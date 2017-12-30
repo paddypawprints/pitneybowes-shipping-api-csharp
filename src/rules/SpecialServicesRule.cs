@@ -20,21 +20,51 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// The special services applicable for this combination of service type, rate type, and parcel type.
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class SpecialServicesRule : IRateRule
     {
+        /// <summary>
+        /// The abbreviated name of the special service. 
+        /// </summary>
         [JsonProperty("specialServiceId")]
         public SpecialServiceCodes SpecialServiceId { get; set; }
+        /// <summary>
+        /// The full name of the special service.
+        /// </summary>
         [JsonProperty("brandedName")]
         public string BrandedName { get; set; }
+        /// <summary>
+        /// The ID of the special service rate category.
+        /// </summary>
         [JsonProperty("categoryId")]
         public string CategoryId { get; set; }
+        /// <summary>
+        /// The full name of the special service rate category.
+        /// </summary>
         [JsonProperty("categoryName")]
         public string CategoryName { get; set; }
+        /// <summary>
+        /// If true, then applying the special service to the shipment allows the shipper to track the shipment.
+        /// </summary>
         [JsonProperty("trackable")]
         public bool Trackable { get; set; }
+        /// <summary>
+        /// Constraints you must following if you select this special service. If the carrier requires input for the special service, 
+        /// these are the parameters governing input.
+        /// </summary>
         public Dictionary<string, ServicesParameterRule> InputParameterRules { get; set; }
+        /// <summary>
+        /// Prerequisites for applying the special service. If you select this special service, you must also select the other special
+        /// services in this array.
+        /// </summary>
         public IndexedList<SpecialServiceCodes, ServicesPrerequisiteRule> PrerequisiteRules { get; set; }
+        /// <summary>
+        /// 	Special services that you cannot use with this special service. If you select this special service, you cannot select any of the 
+        /// 	special services in this array.
+        /// </summary>
         [JsonProperty("incompatibleSpecialServices")]
         public IEnumerable<SpecialServiceCodes> IncompatibleSpecialServices { get; set; }
         [JsonProperty("inputParameterRules")]
@@ -68,11 +98,20 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
         }
 
+        /// <summary>
+        /// Visitor pattern Accept method
+        /// </summary>
+        /// <param name="visitor"></param>
         public void Accept(IRateRuleVisitor visitor)
         {
             visitor.Visit(this);
         }
 
+        /// <summary>
+        /// Check parameter value against the rules to see if the value is within min and max values 
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public bool IsValidParameterValues(ISpecialServices services)
         {
             foreach (var ip in services.InputParameters)
@@ -87,6 +126,11 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
              return true;
         }
 
+        /// <summary>
+        /// Checks a special service against the rules to see whter it has the required input parameters
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public bool HasRequiredParameters(ISpecialServices services)
         {
             Dictionary<string, bool> foundRequired = new Dictionary<string, bool>();
@@ -105,7 +149,11 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
             return true;
         }
-
+        /// <summary>
+        /// Checks a number of special services against the rules to see whether prerequisite services are present
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public bool IsValidPrerequisites(IEnumerable<ISpecialServices> services)
         {
             if (PrerequisiteRules == null) return true;

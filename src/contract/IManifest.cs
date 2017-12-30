@@ -94,7 +94,7 @@ namespace PitneyBowes.Developer.ShippingApi
         IDocument AddDocument(IDocument d);
     }
 
-    public static partial class InterfaceExtensions
+    public static partial class InterfaceValidators
     {
         public static bool IsValid(this IManifest manifest)
         {

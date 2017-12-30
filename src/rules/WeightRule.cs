@@ -21,16 +21,31 @@ using Newtonsoft.Json.Converters;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Rules for the weight of a parcel
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class WeightRule
     {
+        /// <summary>
+        /// Whether the element is required
+        /// </summary>
         [JsonProperty("required")]
         public Boolean Required{get; set;}
+        /// <summary>
+        /// Unit of weight
+        /// </summary>
         [JsonProperty("unitOfWeight")]
         [JsonConverter(typeof(StringEnumConverter))]
         public UnitOfWeight UnitOfWeight{get; set;}
+        /// <summary>
+        /// Minimum weight for the mailpiece
+        /// </summary>
         [JsonProperty("minWeight")]
         public Decimal MinWeight{get; set;}
+        /// <summary>
+        /// Maximum weight for the mailpiece
+        /// </summary>
         [JsonProperty("maxWeight")]
         public Decimal MaxWeight{get; set;}
     }

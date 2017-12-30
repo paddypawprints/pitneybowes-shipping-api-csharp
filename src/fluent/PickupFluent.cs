@@ -17,7 +17,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 using System;
 using System.Collections.Generic;
-using PitneyBowes.Developer.ShippingApi.Method;
+using PitneyBowes.Developer.ShippingApi;
 
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
@@ -42,8 +42,10 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
 
         public static PickupFluent<T> Create(IPickup pickup)
         {
-            var a = new PickupFluent<T>();
-            a._pickup = (T)pickup;
+            var a = new PickupFluent<T>
+            {
+                _pickup = (T)pickup
+            };
             return a;
         }
 
@@ -66,7 +68,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
         public PickupFluent<T> Schedule(ISession session = null)
         {
             if (session == null) session = Globals.DefaultSession;
-            var response = PickupMethods.Schedule<T>(_pickup, session).GetAwaiter().GetResult();
+            var response = Api.Schedule<T>(_pickup, session).GetAwaiter().GetResult();
             if (response.Success)
             {
                 _pickup = response.APIResponse;
@@ -87,7 +89,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
                 PickupId = _pickup.PickupId
             };
 
-            var response = PickupMethods.CancelPickup(cancel, session).GetAwaiter().GetResult();
+            var response = Api.CancelPickup(cancel, session).GetAwaiter().GetResult();
             if (response.Success)
             {
                 cancel = response.APIResponse;

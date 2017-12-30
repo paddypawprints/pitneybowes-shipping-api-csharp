@@ -24,8 +24,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Globalization;
 using PitneyBowes.Developer.ShippingApi.Model;
+using PitneyBowes.Developer.ShippingApi.Report;
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi
 {
 
     public class MerchantsReportRequest : ShippingApiRequest, IReportRequest

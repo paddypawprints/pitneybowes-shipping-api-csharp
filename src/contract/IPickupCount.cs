@@ -37,7 +37,7 @@ namespace PitneyBowes.Developer.ShippingApi
         IParcelWeight TotalWeight { get; set; }
     }
 
-    public static partial class InterfaceExtensions
+    public static partial class InterfaceValidators
     {
         public static bool IsValid(this IPickupCount c)
         {

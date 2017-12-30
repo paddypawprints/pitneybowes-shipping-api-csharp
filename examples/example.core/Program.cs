@@ -21,16 +21,14 @@ using System.Linq;
 using System.Security;
 using System.Runtime.InteropServices;
 using System.IO;
-using System.Threading.Tasks;
 using System.Collections.Generic;
 using PitneyBowes.Developer.ShippingApi;
 using PitneyBowes.Developer.ShippingApi.Fluent;
 using PitneyBowes.Developer.ShippingApi.Model;
-using PitneyBowes.Developer.ShippingApi.Method;
 using PitneyBowes.Developer.ShippingApi.Rules;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration; // Required for windows
-using Newtonsoft.Json;
+
 #endregion
 
 namespace example
@@ -71,10 +69,10 @@ namespace example
             sandbox.LogDebug = (s) => Logger.LogInformation(s);
 
             // Hook in your secure API key decryption
-            sandbox.GetAPISecret = GetApiKey;
+            sandbox.GetApiSecret = GetApiKey;
 
-            //sandbox.Requester = new ShippingAPIMock();
-            //sandbox.Record = true;
+            //sandbox.Requester = new ShippingAPIMock(); // use this if you want to get events replayed from a file instead of calling the web service
+            //sandbox.Record = true; // write responses to recording files
 
             Globals.DefaultSession = sandbox;
             #endregion
@@ -91,7 +89,7 @@ namespace example
                         .Verify() // calls the service for address validation - will populate city and state from the zip
                         )
                     .MinimalAddressValidation("true")
-                    .ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan"))
+                    //.ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan")) // use if you have a custom rate plan
                     .FromAddress((Address)AddressFluent<Address>.Create()
                         .Company("Pitney Bowes Inc.")
                         .AddressLines("27 Waterview Drive")
@@ -119,8 +117,8 @@ namespace example
                         )
                     .TransactionId(Guid.NewGuid().ToString().Substring(15));
 
-                var label = ShipmentsMethods.CreateShipment((Shipment)shipment).GetAwaiter().GetResult();
-
+                var label = Api.CreateShipment((Shipment)shipment).GetAwaiter().GetResult();
+                
                 #endregion
                 #region UseShipment
                 if (label.Success)
@@ -134,12 +132,12 @@ namespace example
                         Carrier = Carrier.USPS,
                         TrackingNumber = label.APIResponse.ParcelTrackingNumber
                     };
-                    var trackingResponse = TrackingMethods.Tracking<TrackingStatus>(trackingRequest).GetAwaiter().GetResult();
+                    var trackingResponse = Api.Tracking<TrackingStatus>(trackingRequest).GetAwaiter().GetResult();
 
                     // Parcel Reprint
                     var reprintRequest = new ReprintShipmentRequest() { Shipment = label.APIResponse.ShipmentId };
 
-                    var reprintResponse = ShipmentsMethods.ReprintShipment<Shipment>(reprintRequest).GetAwaiter().GetResult();
+                    var reprintResponse = Api.ReprintShipment<Shipment>(reprintRequest).GetAwaiter().GetResult();
 
                     // Write the label to disk
                     foreach (var d in reprintResponse.APIResponse.Documents)
@@ -147,7 +145,7 @@ namespace example
                         if (d.ContentType == ContentType.BASE64 && d.FileFormat == FileFormat.PNG)
                         {
                             // Multiple page png document
-                            DocumentsMethods.WriteToStream(d, null,
+                            Api.WriteToStream(d, null,
 
                                 (stream, page) => // callback for each page
                                 {
@@ -166,7 +164,7 @@ namespace example
                             string fileName = string.Format("{0}{1}.{2}", Path.GetTempPath(), reprintResponse.APIResponse.ShipmentId, d.FileFormat.ToString());
                             using (StreamWriter sw = new StreamWriter(fileName))
                             {
-                                DocumentsMethods.WriteToStream(d, sw.BaseStream ).GetAwaiter().GetResult();
+                                Api.WriteToStream(d, sw.BaseStream ).GetAwaiter().GetResult();
                                 Console.WriteLine("Document written to " + fileName);
                             }
                         }
@@ -184,7 +182,7 @@ namespace example
                     .SubmissionDate(DateTime.Now)
                     .AddParameter<Parameter>(ManifestParameter.SHIPPER_ID, sandbox.GetConfigItem("ShipperID"))
                     .TransactionId(Guid.NewGuid().ToString().Substring(15));
-                var manifestResponse = ManifestMethods.Create<Manifest>(manifest).GetAwaiter().GetResult();
+                var manifestResponse = Api.CreateManifest<Manifest>(manifest).GetAwaiter().GetResult();
                 #endregion
                 #region UseManifest
                 if (manifestResponse.Success)
@@ -196,7 +194,7 @@ namespace example
                         {
                             using (StreamWriter sw = new StreamWriter(fileName))
                             {
-                                DocumentsMethods.WriteToStream(d, sw.BaseStream ).GetAwaiter().GetResult();
+                                Api.WriteToStream(d, sw.BaseStream ).GetAwaiter().GetResult();
                                 Console.WriteLine("Document written to " + fileName);
                             }
                         }
@@ -217,7 +215,7 @@ namespace example
                     .PickupDate(DateTime.Now.AddDays(1))
                     .AddPickupSummary<PickupCount, ParcelWeight>(PickupService.PM, 1, 16M, UnitOfWeight.OZ)
                     .TransactionId(Guid.NewGuid().ToString().Substring(15));
-                var pickupResponse = PickupMethods.Schedule<Pickup>(pickup).GetAwaiter().GetResult();
+                var pickupResponse = Api.Schedule<Pickup>(pickup).GetAwaiter().GetResult();
                 #endregion
                 #region UsePickup
                 // Cancel pickup
@@ -238,7 +236,7 @@ namespace example
                         TransactionId = Guid.NewGuid().ToString().Substring(15),
                         ShipmentToCancel = label.APIResponse.ShipmentId
                     };
-                    var cancelResponse = ShipmentsMethods.CancelShipment(cancelRequest).GetAwaiter().GetResult();
+                    var cancelResponse = Api.CancelShipment(cancelRequest).GetAwaiter().GetResult();
                 }
                 #endregion
                 #region TransactionReports
@@ -313,7 +311,7 @@ namespace example
                             .ToAddress(to)
                             .FromAddress(from)
                             .MinimalAddressValidation("true")
-                            .ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan"))
+                            //.ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan"))
                             .Parcel(parcel)
                             .Rates(RatesArrayFluent<Rates>.Create()
                                 .Add()
@@ -332,7 +330,7 @@ namespace example
                             .TransactionId(Guid.NewGuid().ToString().Substring(15));
 
                         // rate the parcel
-                        var ratesResponse = RatesMethods.Rates<Shipment>((Shipment)newShipment).GetAwaiter().GetResult();
+                        var ratesResponse = Api.Rates<Shipment>((Shipment)newShipment).GetAwaiter().GetResult();
                         if (ratesResponse.Success)
                         {
                             if (cheapestOption == null || ratesResponse.APIResponse.Rates.First().TotalCarrierCharge < cheapestOption.Rates.First().TotalCarrierCharge)
@@ -352,13 +350,13 @@ namespace example
                     }
                     //get the label
                     cheapestOption.TransactionId = Guid.NewGuid().ToString().Substring(15);
-                    var newLabel = ShipmentsMethods.CreateShipment(cheapestOption).GetAwaiter().GetResult();
+                    var newLabel = Api.CreateShipment(cheapestOption).GetAwaiter().GetResult();
                     if (newLabel.Success)
                     {
                         string fileName = string.Format("{0}{1}.{2}", Path.GetTempPath(), newLabel.APIResponse.ShipmentId, "PDF");
                         using (StreamWriter sw = new StreamWriter(fileName))
                         {
-                            DocumentsMethods.WriteToStream(newLabel.APIResponse.Documents.First(), sw.BaseStream).GetAwaiter().GetResult();
+                            Api.WriteToStream(newLabel.APIResponse.Documents.First(), sw.BaseStream).GetAwaiter().GetResult();
                             Console.WriteLine("Document written to " + fileName);
                         }
                     }

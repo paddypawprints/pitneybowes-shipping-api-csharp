@@ -102,7 +102,7 @@ namespace PitneyBowes.Developer.ShippingApi
         string CertificateNumber { get; set; }
     }
 
-    public static partial class InterfaceExtensions
+    public static partial class InterfaceValidators
     {
         public static bool IsValid( this ICustomsInfo customsInfo )
         {

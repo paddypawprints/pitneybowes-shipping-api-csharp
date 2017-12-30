@@ -17,8 +17,15 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// Implementation of concrete classes for shipping API objects. Use these objects when you dont have a pre-built object for these entities.
+    /// </summary>
     public static class Model
     {
+        /// <summary>
+        /// Register model classes with the deserialization factory.
+        /// </summary>
+        /// <param name="registry"></param>
         public static void RegisterSerializationTypes( SerializationRegistry registry)
         {
             registry.RegisterSerializationTypes<IAddress, Address>();

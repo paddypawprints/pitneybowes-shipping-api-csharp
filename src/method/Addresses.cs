@@ -17,13 +17,12 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 */
 
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using PitneyBowes.Developer.ShippingApi.Json;
 
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi
 {
 
     /// <summary>
@@ -45,16 +44,28 @@ namespace PitneyBowes.Developer.ShippingApi.Method
         public IEnumerable<IAddress> Addresses { get; set; }
     }
 
+    /// <summary>
+    /// Response object for VerifySuggestAddress web method
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class VerifySuggestResponse
     {
+        /// <summary>
+        /// Validated address
+        /// </summary>
         [JsonProperty("address")]
         public IAddress Address { get; set; }
+        /// <summary>
+        /// List of address suggestions.
+        /// </summary>
         [JsonProperty("suggestions")]
         public AddressSuggestions Suggestions { get; set; }
     }
 
-    public static class AddressessMethods
+    /// <summary>
+    /// Pitney Bowes Shipping API methods
+    /// </summary>
+    public static partial class Api
     {
         /// <summary>
         /// Address validation verifies and cleanses postal addresses within the United

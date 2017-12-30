@@ -30,9 +30,9 @@ namespace PitneyBowes.Developer.ShippingApi
         /// The value of this field depends on whether the object is part of the
         /// request or the response:
         /// - **Request**: This field is set to the ``postalReportingNumber`` for
-        ///      the merchant, as found in the :ref:`merchant object <object-merchant>`.
+        ///      the merchant, as found in the :ref:`merchant object `.
         /// - **Response**: This field is set to the ``paymentAccountNumber`` for
-        /// the merchant, as found in the :ref:`merchant object <object-merchant>`.
+        /// the merchant, as found in the :ref:`merchant object`.
         /// **Note:** The merchant's ``postalReportingNumber`` is separate from the
         /// merchant's ``paymentAccountNumber``.
         /// </summary>
@@ -71,7 +71,7 @@ namespace PitneyBowes.Developer.ShippingApi
         bool Enabled { get; set; }
     }
 
-    public static partial class InterfaceExtensions
+    public static partial class InterfaceValidators
     {
         public static bool IsValid(this IAutoRefill a) => true;
     }

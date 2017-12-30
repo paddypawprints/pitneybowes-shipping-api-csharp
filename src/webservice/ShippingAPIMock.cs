@@ -22,15 +22,36 @@ using System.Threading.Tasks;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Mock class for testing. Instead of calling the API the Mock looks for a file in the file system and returns its contents.
+    /// </summary>
     public class ShippingAPIMock : IHttpRequest
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="dirname">Root directory for the mock files</param>
         public ShippingAPIMock( string dirname = null )
         {
             Dirname = dirname;
         }
 
+        /// <summary>
+        /// Root directory for the mock files
+        /// </summary>
         public string Dirname { get; set; }
 
+        /// <summary>
+        /// Implements the same method as the real service interface allowing the mock to be plugged in
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="resource"></param>
+        /// <param name="verb"></param>
+        /// <param name="request"></param>
+        /// <param name="deleteBody"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public async Task<ShippingApiResponse<Response>> HttpRequest<Response, Request>(string resource, HttpVerb verb, Request request, bool deleteBody, ISession session = null) where Request : IShippingApiRequest
         {
             string fullPath = request.RecordingFullPath(resource, session);

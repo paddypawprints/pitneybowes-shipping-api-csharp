@@ -19,45 +19,58 @@ using System;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Base class for Shipping Api request attributes. All attribute classes have a Name and Format
+    /// </summary>
     public class ShippingApiAttribute : Attribute
     {
+        /// <summary>
+        /// Name of the property when used in a request. Either header or query parameter. 
+        /// </summary>
         public string Name { get;set; }
+        /// <summary>
+        /// Format string for the property value to convert to a value for the header or url query
+        /// </summary>
         public string Format { get; set; }
-        public ShippingApiAttribute(string name)
+        /// <summary>
+        /// If the property value is null do not add the header or query
+        /// </summary>
+        public bool OmitIfEmpty { get; set; }
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="omitIfEmpty"></param>
+        public ShippingApiAttribute(string name, bool omitIfEmpty = true)
         {
             Name = name;
+            OmitIfEmpty = omitIfEmpty;
         }
 
     }
-
+    /// <summary>
+    /// Attribute to indicate that a property value should go in the http header rather than the body json message.
+    /// </summary>
     public class ShippingApiHeaderAttribute : ShippingApiAttribute
     {
-        public bool OmitIfEmpty { get; set; }
-        public ShippingApiHeaderAttribute(string name, bool omitIfEmpty = true) : base(name)
-        {
-            OmitIfEmpty = omitIfEmpty;
-        }
-
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="omitIfEmpty"></param>
+        public ShippingApiHeaderAttribute(string name, bool omitIfEmpty = true) : base(name, omitIfEmpty) { }
     }
+    /// <summary>
+    /// Attribute class to indicate a property value is part of the query parameters rather than be included in the json message body.
+    /// </summary>
     public class ShippingApiQueryAttribute : ShippingApiAttribute
     {
-        public bool OmitIfEmpty { get; set; }
-        public ShippingApiQueryAttribute(string name, bool omitIfEmpty = true) : base(name)
-        {
-            OmitIfEmpty = omitIfEmpty;
-        }
-
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="omitIfEmpty"></param>
+        public ShippingApiQueryAttribute(string name, bool omitIfEmpty = true) : base(name, omitIfEmpty) { }
     }
 
-/*    public class ShippingApiResourceAttribute : ShippingApiAttribute
-    {
-        public bool AddId { get; set; }
-        public string PathSuffix { get; set; }
-        public ShippingApiResourceAttribute(string name, bool addId = true, string pathSuffix = null) : base(name)
-        {
-            AddId = addId;
-            PathSuffix = PathSuffix;
-        }
-    }
-    */
 }

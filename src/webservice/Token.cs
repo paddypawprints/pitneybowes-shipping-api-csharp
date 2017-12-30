@@ -21,21 +21,47 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Token object returned by the call POST /oauth/token
+    /// </summary>
     public class Token
     {
+        /// <summary>
+        /// The OAuth token.
+        /// </summary>
         [JsonProperty(PropertyName = "access_token")]
         public string AccessToken { get; set; }
+        /// <summary>
+        /// Token type - BearerToken
+        /// </summary>
         [JsonProperty(PropertyName = "tokenType")]
         public string TokenType { get; set; }
+        /// <summary>
+        /// Datetime the token was issued
+        /// </summary>
         [JsonProperty(PropertyName = "issuedAt")]
         [JsonConverter(typeof(UnixMillisecondsTimeConverter))]
         public DateTimeOffset IssuedAt { get; set; }
+        /// <summary>
+        /// The OAuth expiry period in seconds. It is recommended that the token be re-used while it has not expired.
+        /// </summary>
         [JsonProperty(PropertyName = "expiresIn")]
         public long ExpiresIn { get; set; }
+        /// <summary>
+        /// Not documented
+        /// </summary>
         [JsonProperty(PropertyName = "clientID")]
         public string ClientID { get; set; }
+        /// <summary>
+        /// Issuer of the token - pitneybowes
+        /// </summary>
         [JsonProperty(PropertyName = "org")]
         public string Org { get; set; }
+        /// <summary>
+        /// Determine whether the token has expired
+        /// </summary>
+        /// <param name="time"></param>
+        /// <returns></returns>
         public bool IsExpired(DateTimeOffset time)
         {
             return IssuedAt.AddSeconds(ExpiresIn) < time;

@@ -16,7 +16,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 */
 
 using System.Collections.Generic;
-using PitneyBowes.Developer.ShippingApi.Method;
+using PitneyBowes.Developer.ShippingApi;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
@@ -48,6 +48,11 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.ShipmentType = t;
             return this;
         }
+        /// <summary>
+        /// REQUIRED. A unique identifier for each transaction that cannot exceed 25 characters.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> TransactionId(string id)
         {
             _shipment.TransactionId = id;
@@ -58,31 +63,64 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.MinimalAddressValidation = m;
             return this;
         }
+        /// <summary>
+        /// Shipper rate plan, if available.
+        /// Important: Do not include this header if creating a scan-based return (SBR) label.
+        /// </summary>
+        /// <param name="r">Rate plan</param>
+        /// <returns></returns>
         public ShipmentFluent<T> ShipperRatePlan(string r)
         {
             _shipment.ShipperRatePlan = r;
             return this;
         }
+        /// <summary>
+        /// REQUIRED. Origin address. See Create a Shipment for considerations when specifying multiple address lines when using 
+        /// MINIMAL_ADDRESS_VALIDATION.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> FromAddress( IAddress a)
         {
             _shipment.FromAddress = a;
             return this;
         }
+        /// <summary>
+        /// REQUIRED.Destination address.
+        /// Note: You can specify multiple address lines in the shipment’s destination address.See address object for information on how 
+        /// the API processes multiple address lines.
+        /// </summary>
+        /// <param name="a">Address</param>
+        /// <returns></returns>
         public ShipmentFluent<T> ToAddress(IAddress a)
         {
             _shipment.ToAddress = a;
             return this;
         }
+        /// <summary>
+        /// INTERNATIONAL SHIPMENTS ONLY. Required if the return shipment is not going to the fromAddress but is instead to an alternate 
+        /// return address.
+        /// </summary>
         public ShipmentFluent<T> AltReturnAddress(IAddress a)
         {
             _shipment.AltReturnAddress = a;
             return this;
         }
+        /// <summary>
+        /// REQUIRED. Contains physical characteristics of the parcel.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> Parcel(IParcel p)
         {
             _shipment.Parcel = p;
             return this;
         }
+        /// <summary>
+        /// REQUIRED. Information related to the shipment rates.
+        /// </summary>
+        /// <param name="r"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> Rates(IEnumerable<IRates> r)
         {
             _shipment.Rates = r;
@@ -93,6 +131,11 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.AddRates(r);
             return this;
         }
+        /// <summary>
+        /// A list of shipment documents pertaining to a shipment, including the label.
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> Documents(IEnumerable<IDocument> d)
         {
             _shipment.Documents = d;
@@ -103,6 +146,10 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.AddDocument(d);
             return this;
         }
+        /// <summary>
+        /// Each object in this array defines a shipment option. The available options depend on the carrier, origin country, and destination country.
+        /// If you are creating a shipment, this array is required and must contain the SHIPPER_ID option.
+        /// </summary>
         public ShipmentFluent<T> ShipmentOptions(IEnumerable<IShipmentOptions> o)
         {
             _shipment.ShipmentOptions = o;
@@ -113,6 +160,11 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.AddShipmentOptions(o);
             return this;
         }
+        /// <summary>
+        /// ONLY FOR: international, APO/FPO/DPO, territories/possessions, and FAS shipments. Customs related information.
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> Customs(ICustoms c)
         {
             _shipment.Customs = c;

@@ -66,9 +66,36 @@ namespace PitneyBowes.Developer.ShippingApi
 
     }
 
+    /// <summary>
+    /// Each request to the PB Shipping APIs requires authentication via an OAuth token. This API generates the OAuth token based on the 
+    /// base64-encoded value of the API key and secret associated with your PB Shipping APIs developer account. The token expires after 10 
+    /// hours, after which you must create a new one.
+    ///
+    /// Note: If you do not have your API key and secret, retrieve them from Developer Hub.
+    ///
+    /// Things to Consider:
+    ///    * Each authorization token in valid for 10 hours.
+    ///    * It is recommended that each valid token be reused until it expires.
+    ///  * Multiple concurrent valid tokens are allowed.
+    /// </summary>
     public static class TokenMethods
     {
+
 #pragma warning disable IDE1006 // Naming Styles
+        /// <summary>
+        /// Each request to the PB Shipping APIs requires authentication via an OAuth token. This API generates the OAuth token based on the 
+        /// base64-encoded value of the API key and secret associated with your PB Shipping APIs developer account. The token expires after 10 
+        /// hours, after which you must create a new one.
+        ///
+        /// Note: If you do not have your API key and secret, retrieve them from Developer Hub.
+        ///
+        /// Things to Consider:
+        ///    * Each authorization token in valid for 10 hours.
+        ///    * It is recommended that each valid token be reused until it expires.
+        ///   * Multiple concurrent valid tokens are allowed.
+        /// </summary>
+        /// <param name="session"></param>
+        /// <returns></returns>
         internal static async Task<ShippingApiResponse<Token>> token(ISession session = null) 
 
 #pragma warning restore IDE1006 // Naming Styles
@@ -76,7 +103,7 @@ namespace PitneyBowes.Developer.ShippingApi
             using (var request = new TokenRequest())
             {
                 if (session == null) session = Globals.DefaultSession;
-                request.BasicAuth(session.GetConfigItem("ApiKey"), session.GetAPISecret());
+                request.BasicAuth(session.GetConfigItem("ApiKey"), session.GetApiSecret());
                 return await session.Requester.HttpRequest<Token, TokenRequest>("/oauth/token", HttpVerb.POST, request, false, session);
             }
         }

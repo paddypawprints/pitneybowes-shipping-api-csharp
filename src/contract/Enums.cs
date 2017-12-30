@@ -56,6 +56,9 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum CancelInitiator
     {
+        /// <summary>
+        /// Cancellation was initiated by the shipper.
+        /// </summary>
         SHIPPER
     }
 
@@ -64,9 +67,21 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum CreditCardType
     {
+        /// <summary>
+        /// American Express
+        /// </summary>
         Amex,
+        /// <summary>
+        /// Master Card
+        /// </summary>
         MC,
+        /// <summary>
+        /// Visa Card
+        /// </summary>
         Visa,
+        /// <summary>
+        /// Discover Card
+        /// </summary>
         Disc
     }
 
@@ -90,8 +105,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum DocumentType
     {
+        /// <summary>
+        /// A shipping label
+        /// </summary>
         SHIPPING_LABEL,
+        /// <summary>
+        /// An end of day manifest or pickup slip
+        /// </summary>
         MANIFEST,
+        /// <summary>
+        /// A stamp. Not available in standard shipping API.
+        /// </summary>
         STAMP
     }
     /// <summary>
@@ -99,12 +123,21 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum FileFormat
     {
+        /// <summary>
+        /// PDF - label is stored in the cloud and a URL is returned to retireve it
+        /// </summary>
         PDF,
+        /// <summary>
+        /// PNG bitmap. Label is included in the reposnse and base64 encoded.
+        /// </summary>
         PNG,
         /// <summary>
         /// Zebra thermal printer language.
         /// </summary>
         ZPL2,
+        /// <summary>
+        /// GIF bitmap format for stamps. Not available in the standard shipping API.
+        /// </summary>
         GIF
     }
 
@@ -113,7 +146,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum ManifestParameter
     {
+        /// <summary>
+        /// Adds shipments to a manifest by specifying the Shipper ID that was used to create the shipments. For the parameter value, specify the Shipper ID.
+        /// </summary>
         SHIPPER_ID,
+        /// <summary>
+        /// Specifies the type of manifest. Required if the manifest type is other than a USPS SCAN form, which is the default. Valid Values are:
+        /// </summary>
         MANIFEST_TYPE
     }
 
@@ -122,8 +161,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum MerchantStatus
     {
+        /// <summary>
+        /// Active
+        /// </summary>
         ACTIVE,
+        /// <summary>
+        /// Inactive
+        /// </summary>
         INACTIVE,
+        /// <summary>
+        /// Deletged
+        /// </summary>
         DELETED
     }
 
@@ -132,8 +180,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum NonDeliveryOption
     {
+        /// <summary>
+        /// Return to sender
+        /// </summary>
         @return,
+        /// <summary>
+        /// Abandon and destroy the shipment
+        /// </summary>
         abandon,
+        /// <summary>
+        /// Redirect to alternative address
+        /// </summary>
         redirect
     }
 
@@ -142,6 +199,9 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum PackageIdentifierType
     {
+        /// <summary>
+        /// Pacakage identified by tracking number
+        /// </summary>
         TrackingNumber
     }
 
@@ -150,14 +210,41 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum PackageLocation
     {
+        /// <summary>
+        /// Packages are at the front door
+        /// </summary>
         FrontDoor,
+        /// <summary>
+        /// Packages are at the back door
+        /// </summary>
         BackDoor,
+        /// <summary>
+        /// Packages are at the side door
+        /// </summary>
         SideDoor,
+        /// <summary>
+        /// Driver will ring doorbell on arrival
+        /// </summary>
         KnockonDoorRingBell,
+        /// <summary>
+        /// Packages are in a dedicated mail room
+        /// </summary>
         MailRoom,
+        /// <summary>
+        /// Packages are at a business address
+        /// </summary>
         Office,
+        /// <summary>
+        /// Packages are at the office reception desk
+        /// </summary>
         Reception,
+        /// <summary>
+        /// Packages are in the mail box
+        /// </summary>
         InAtMailbox,
+        /// <summary>
+        /// Other - special instructions should be added to the pickup request.
+        /// </summary>
         Other
     }
 
@@ -166,7 +253,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum PackageTypeIndicator
     {
+        /// <summary>
+        /// Rate uses cubic pricing
+        /// </summary>
         Cubic,
+        /// <summary>
+        /// Rate does not use cubic pricing
+        /// </summary>
         NonCubic
     }
 
@@ -258,8 +351,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum PaymentMethod
     {
+        /// <summary>
+        /// Credit card
+        /// </summary>
         CC,
+        /// <summary>
+        /// PayPal
+        /// </summary>
         PAYPAL,
+        /// <summary>
+        /// Pitney Bowes Purchase Power
+        /// </summary>
         PurchasePower
     }
 
@@ -303,8 +405,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum PrintDialogOption 
     {
-
+        /// <summary>
+        /// For PDF documents, do not request print dialog when the document is opened.
+        /// </summary>
         NO_PRINT_DIALOG,
+        /// <summary>
+        /// For PDF documents, request print dialog when the document is opened.
+        /// </summary>
         EMBED_PRINT_DIALOG
     }
 
@@ -313,6 +420,9 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum RefundStatus
     {
+        /// <summary>
+        /// The refund process has been initiated.
+        /// </summary>
         INITIATED
     }
 
@@ -321,11 +431,29 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum ReasonForExport
     {
+        /// <summary>
+        /// Shipment is a gift
+        /// </summary>
         GIFT,
+        /// <summary>
+        /// Shipment is a commercial sample
+        /// </summary>
         COMMERCIAL_SAMPLE,
+        /// <summary>
+        /// Shipment is commercoial merchandise
+        /// </summary>
         MERCHANDISE,
+        /// <summary>
+        /// Shipment contains only documents
+        /// </summary>
         DOCUMENTS,
+        /// <summary>
+        /// Shipment is returned goods
+        /// </summary>
         RETURNED_GOODS,
+        /// <summary>
+        /// Other - ReasonForExportExplanation is required
+        /// </summary>
         OTHER
     }
 
@@ -334,8 +462,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum SBRPrintStatus
     {
+        /// <summary>
+        /// Scan based returns label is printed
+        /// </summary>
         SBRPrinted,
+        /// <summary>
+        /// Scan based returns label has been charged
+        /// </summary>
         SBRCharged,
+        /// <summary>
+        /// Scan based returns - no status
+        /// </summary>
         NULL
     }
 
@@ -344,7 +481,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum Size
     {
+        /// <summary>
+        /// 4 by 6 inch thermal label
+        /// </summary>
         DOC_4X6,
+        /// <summary>
+        /// 8 by 11 inch letter sheet
+        /// </summary>
         DOC_8X11
     }
 
@@ -467,14 +610,41 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Enter the signature as a string. The sender’s signature date is automatically populated.
         /// </summary>
         SHIPPING_LABEL_SENDER_SIGNATURE,
+        /// <summary>
+        /// Label receipt
+        /// </summary>
         SHIPPING_LABEL_RECEIPT,
+        /// <summary>
+        /// Shipper base chage
+        /// </summary>
         SHIPPER_BASE_CHARGE,
+        /// <summary>
+        /// Shipper total charge
+        /// </summary>
         SHIPPER_TOTAL_CHARGE,
+        /// <summary>
+        /// PMOD origin entry facility
+        /// </summary>
         ORIGIN_ENTRY_FACILITY,
+        /// <summary>
+        /// PMOD destination entry facility
+        /// </summary>
         DESTINATION_ENTRY_FACILITY,
+        /// <summary>
+        /// PMOD enclosed mail class
+        /// </summary>
         ENCLOSED_MAIL_CLASS,
+        /// <summary>
+        /// PMOD enclosed parcewl type
+        /// </summary>
         ENCLOSED_PARCEL_TYPE,
+        /// <summary>
+        /// PMOD enclosed payment method
+        /// </summary>
         ENCLOSED_PAYMENT_METHOD,
+        /// <summary>
+        /// Postage correction type indicium
+        /// </summary>
         POSTAGE_CORRECTION
     }
 
@@ -483,7 +653,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum ShipmentType
     {
+        /// <summary>
+        /// Outgoing/forward logistics shipment
+        /// </summary>
         OUTBOUND,
+        /// <summary>
+        /// Returned shipment
+        /// </summary>
         RETURN
     }
 
@@ -492,8 +668,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum Trackable
     {
+        /// <summary>
+        /// Item is trackable by default
+        /// </summary>
         TRACKABLE,
+        /// <summary>
+        /// Item is not trackable
+        /// </summary>
         NON_TRACKABLE,
+        /// <summary>
+        /// Item is trackable if special service is requested
+        /// </summary>
         REQUIRES_TRACKABLE_SPECIAL_SERVICE
     }
 
@@ -614,15 +799,21 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Sunday and holidaqy delivery.
         /// </summary>
         sunday_holiday,
+        /// <summary>
+        /// PO to addressee
+        /// </summary>
         PO_to_Addressee,
-        
+        /// <summary>
+        /// Do not deliver on weekend
+        /// </summary>
         noWeekend,
-
         /// <summary>
         /// Delivery by 10:30 AM
         /// </summary>
         TenThirty,
-
+        /// <summary>
+        /// PMOD options
+        /// </summary>
         PMOD_OPTIONS
     }
     /// <summary>
@@ -630,9 +821,18 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum TransactionType
     {
+        /// <summary>
+        /// Create PC Postage label
+        /// </summary>
         POSTAGE_PRINT,
+        /// <summary>
+        /// Add funds to PC Postage account
+        /// </summary>
         POSTAGE_FUND,
-        POSTAQGE_REFUND
+        /// <summary>
+        /// Electronic label refund
+        /// </summary>
+        POSTAGE_REFUND
     }
 
     /// <summary>
@@ -640,7 +840,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum UnitOfDimension
     {
+        /// <summary>
+        /// Centimeters
+        /// </summary>
         CM,
+        /// <summary>
+        /// Inches
+        /// </summary>
         IN
     }
     /// <summary>
@@ -648,7 +854,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum UnitOfWeight
     {
+        /// <summary>
+        /// Grams
+        /// </summary>
         GM,
+        /// <summary>
+        /// Ounces
+        /// </summary>
         OZ
     }
 
@@ -657,8 +869,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum TrackingStatusCode
     {
+        /// <summary>
+        /// Currently in transit
+        /// </summary>
         InTransit,
+        /// <summary>
+        /// Shipment has been delivered
+        /// </summary>
         Delivered,
+        /// <summary>
+        /// Shipment has been manifested
+        /// </summary>
         Manifest
     }
 }

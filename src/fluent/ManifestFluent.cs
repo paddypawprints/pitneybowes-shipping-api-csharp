@@ -17,7 +17,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 using System;
 using System.Collections.Generic;
-using PitneyBowes.Developer.ShippingApi.Method;
+using PitneyBowes.Developer.ShippingApi;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
@@ -53,7 +53,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
                 session = Globals.DefaultSession;
             }
 
-            var response = ManifestMethods.Create(_manifest, session).GetAwaiter().GetResult();
+            var response = Api.CreateManifest(_manifest, session).GetAwaiter().GetResult();
             if (response.Success)
             {
                 _manifest = response.APIResponse;
@@ -74,7 +74,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             }
 
             var request = new ReprintManifestRequest() { ManifestId = manifestId };
-            var response = ManifestMethods.Reprint<T>(request, session).GetAwaiter().GetResult();
+            var response = Api.ReprintManifest<T>(request, session).GetAwaiter().GetResult();
             if (response.Success)
             {
                 _manifest = response.APIResponse;
@@ -95,7 +95,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             }
 
             var request = new RetryManifestRequest() { OriginalTransactionId = originalId };
-            var response = ManifestMethods.Retry<T>(request).GetAwaiter().GetResult();
+            var response = Api.RetryManifest<T>(request).GetAwaiter().GetResult();
             if (response.Success)
             {
                 _manifest = response.APIResponse;

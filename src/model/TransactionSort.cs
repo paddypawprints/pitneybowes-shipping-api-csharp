@@ -17,12 +17,30 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// Sort information for transaction and manifest reports
+    /// </summary>
     public class TransactionSort : ITransactionSort
     {
+        /// <summary>
+        /// Whether the result set is sorted
+        /// </summary>
         virtual public string Ascending { get; set; }
+        /// <summary>
+        /// ASC, DESC
+        /// </summary>
         virtual public string Direction { get; set; }
+        /// <summary>
+        /// Whether case was ignored when sorting
+        /// </summary>
         virtual public string IgnoreCase { get; set; }
+        /// <summary>
+        /// NATIVE or ???
+        /// </summary>
         virtual public string NullHandling { get; set; }
+        /// <summary>
+        /// Field that the sort was done on
+        /// </summary>
         virtual public string Property { get; set; }
     }
 }

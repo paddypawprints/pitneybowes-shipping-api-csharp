@@ -57,7 +57,7 @@ namespace tests
                 // Replace these with your own values
                 //
                 sandbox.AddConfigItem("ApiKey", "MyAPIKey");
-                sandbox.GetAPISecret = () => ApiKey;
+                sandbox.GetApiSecret = () => ApiKey;
                 sandbox.AddConfigItem("RatePlan", "PP_SRP_NEWBLUE");
                 sandbox.AddConfigItem("ShipperID", "9014888410");
                 sandbox.AddConfigItem("DeveloperID", "46841939");

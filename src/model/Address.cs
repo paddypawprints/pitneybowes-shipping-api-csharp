@@ -25,7 +25,9 @@ namespace PitneyBowes.Developer.ShippingApi.Model
     /// </summary>
     public class  Address : IAddress
     {
-        
+        /// <summary>
+        /// Constructor - set status to NOT_CHANGED
+        /// </summary>
         public Address() => Status = AddressStatus.NOT_CHANGED;
         /// <summary>
         /// Street address and/or apartment and/or P.O. Box. You can specify up to

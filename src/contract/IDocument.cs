@@ -77,7 +77,7 @@ namespace PitneyBowes.Developer.ShippingApi
         void AddPage(IPage p);
     }
 
-    public static partial class InterfaceExtensions
+    public static partial class InterfaceValidators
     {
         /// <summary>
         /// File Format Content type   Size       Label Type

@@ -20,26 +20,86 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// Tracking status of a shipment.
+    /// </summary>
     public class TrackingStatus : ITrackingStatus
     {
+        /// <summary>
+        /// The number of packages tracked by this number.
+        /// </summary>
         virtual public string PackageCount{get; set;}
+        /// <summary>
+        /// REQUIRED. Valid Value(s): USPS
+        /// </summary>
         virtual public string Carrier{get; set;}
+        /// <summary>
+        /// REQUIRED. The tracking number for the shipment.
+        /// </summary>
         virtual public string TrackingNumber{get; set;}
+        /// <summary>
+        /// Reference Number for the shipment.
+        /// </summary>
         virtual public string ReferenceNumber{get; set;}
+        /// <summary>
+        /// Most recent Package Status.
+        /// </summary>
         virtual public TrackingStatusCode Status{get; set;}
+        /// <summary>
+        /// Date indicating when the tracking status was posted
+        /// </summary>
         virtual public DateTimeOffset UpdatedDateTime{get; set;}
+        /// <summary>
+        /// Date indicating when the package was shipped.
+        /// </summary>
         virtual public DateTimeOffset ShipDateTime{get; set;}
+        /// <summary>
+        /// Date indicating when the package will be delivered.
+        /// </summary>
         virtual public DateTimeOffset EstimatedDeliveryDateTime{get; set;}
+        /// <summary>
+        /// Date indicating when the package was delivered.
+        /// </summary>
         virtual public DateTimeOffset DeliveryDateTime{get; set;}
+        /// <summary>
+        /// Delivery location.
+        /// </summary>
         virtual public string DeliveryLocation{get; set;}
+        /// <summary>
+        /// Description of where the package was delivered.
+        /// </summary>
         virtual public string DeliveryLocationDescription{get; set;}
+        /// <summary>
+        /// Name of the person who signed for the package.
+        /// </summary>
         virtual public string SignedBy{get; set;}
+        /// <summary>
+        /// Unit of measure for the package’s weight.
+        /// </summary>
         virtual public Decimal Weight{get; set;}
+        /// <summary>
+        /// Unit of measure for the package’s weight.
+        /// </summary>
         virtual public UnitOfWeight? WeightOUM{get; set;}
+        /// <summary>
+        /// If the package was not delivered the first time, this field will indicate the date in YYYY-MM-DD format that the package was re-attempted to be delivered.
+        /// </summary>
         virtual public string ReattemptDate{get; set;}
+        /// <summary>
+        /// f the package was not delivered the first time, this field will indicate the time in HH:MM:SS format that the package was re-attempted to be delivered.
+        /// </summary>
         virtual public DateTime ReattemptTime{get; set;}
+        /// <summary>
+        /// The destination address.
+        /// </summary>
         virtual public IAddress DestinationAddress{get; set;}
+        /// <summary>
+        /// The senders address
+        /// </summary>
         virtual public IAddress SenderAddress{get; set;}
+        /// <summary>
+        /// Scan information from the barcode on the shipment label.
+        /// </summary>
         virtual public IEnumerable<ITrackingEvent> ScanDetailsList{get; set;}
     }
 }

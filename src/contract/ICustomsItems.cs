@@ -56,7 +56,7 @@ namespace PitneyBowes.Developer.ShippingApi
         string OriginCountryCode { get; set; }
     }
 
-    public static partial class InterfaceExtensions
+    public static partial class InterfaceValidators
     {
         public static bool IsValid(this ICustomsItems i) => true;
     }

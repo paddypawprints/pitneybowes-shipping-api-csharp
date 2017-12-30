@@ -18,11 +18,24 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 using System.Threading.Tasks;
 using PitneyBowes.Developer.ShippingApi.Json;
 
-namespace PitneyBowes.Developer.ShippingApi.Method
+namespace PitneyBowes.Developer.ShippingApi
 {
-
-    public static class RatesMethods
+    public static partial class Api
     {
+        /// <summary>
+        /// This POST operation rates a package for one or more services before a shipment label is purchased and printed.
+        ///
+        /// Things to Consider:
+        ///     * In order to rate a package for a single service, you must specify the rates.parcelType and rates.serviceId fields.
+        ///     * In order to rate a package for multiple services (Rate Shopping) for a single parcel type, you must specify the 
+        ///     rates.parcelType field and omit the rates.serviceId field.
+        ///     * You can also find rates for multiple parcel types and services with one call by omitting both the rates.parcelType 
+        ///     and rates.serviceId fields.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public async static Task<ShippingApiResponse<T>> Rates<T>(T request, ISession session = null) where T : IShipment, new()
         {
             var ratesRequest = new JsonShipment<T>(request);

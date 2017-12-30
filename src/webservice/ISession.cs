@@ -28,7 +28,7 @@ namespace PitneyBowes.Developer.ShippingApi
         string EndPoint { get; set; }
         string UserAgent { get; set; }
         bool ThrowExceptions { get; set; }
-        Func<StringBuilder> GetAPISecret { get; set; }
+        Func<StringBuilder> GetApiSecret { get; set; }
         Func<string, string> GetConfigItem { get; set; }
         Action<string> LogConfigError { get; set; }
         Action<string> LogDebug { get; set; }
@@ -40,7 +40,7 @@ namespace PitneyBowes.Developer.ShippingApi
         IHttpRequest Requester { get; set; }
         int Retries { get; set; }
         SerializationRegistry SerializationRegistry { get; }
-        Dictionary<string, Counters> Counters { get; set; }
+        Dictionary<string, Counters> Counters { get; }
         void UpdateCounters(string uri, bool success, TimeSpan time);
     }
 }

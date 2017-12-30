@@ -25,11 +25,31 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Base class for the api response to allow polymorphic access to aspects of the response without knowing the actual response type.
+    /// </summary>
     public class ShippingApiResponse
     {
+        /// <summary>
+        /// Set default values
+        /// </summary>
+        public ShippingApiResponse()
+        {
+            Success = false;
+            HttpStatus = HttpStatusCode.Unused;
+        }
         private List<ErrorDetail> _errors;
+        /// <summary>
+        /// Http status code of the response
+        /// </summary>
         public HttpStatusCode HttpStatus { get; set; }
+        /// <summary>
+        /// Time taken by the response
+        /// </summary>
         public TimeSpan RequestTime { get; set; }
+        /// <summary>
+        /// Any errors returned as part of the API call
+        /// </summary>
         public List<ErrorDetail> Errors 
         { 
             get { 
@@ -41,11 +61,19 @@ namespace PitneyBowes.Developer.ShippingApi
                 _errors = value;
             }
         }
+        /// <summary>
+        /// Whether the API call succeeded.
+        /// </summary>
+        public bool Success { get; set; }
     }
 
+    /// <summary>
+    /// Shipping API Response class with generic parameter hold the returned object if the call was successful.
+    /// </summary>
+    /// <typeparam name="Response"></typeparam>
     public class ShippingApiResponse<Response> : ShippingApiResponse
     {
-        public void ProcessResponseAttribute(string propName, IEnumerable<string> values)
+        internal void ProcessResponseAttribute(string propName, IEnumerable<string> values)
         {
             var propertyInfo = this.GetType().GetProperty(propName);
             if (propertyInfo == null) return;
@@ -65,11 +93,22 @@ namespace PitneyBowes.Developer.ShippingApi
                 }
             }
         }
+        /// <summary>
+        /// Convenience operator to allow the response object to be retieved by casting.
+        /// </summary>
+        /// <param name="r"></param>
         public static explicit operator Response(ShippingApiResponse<Response> r)
         {
             return r.APIResponse;
         }
-        public bool Success = false;
+
+        /// <summary>
+        /// Set default falues
+        /// </summary>
+        public ShippingApiResponse() : base() { }
+        /// <summary>
+        /// Response object from the request. If the call was not successful this opject will be null
+        /// </summary>
         public Response APIResponse = default(Response);
 
 
@@ -78,7 +117,7 @@ namespace PitneyBowes.Developer.ShippingApi
             throw new JsonSerializationException("Error deserializing", e.ErrorContext.Error);
         }
 
-        public static void Deserialize(ISession session, RecordingStream respStream, ShippingApiResponse<Response> apiResponse, long streamPos = 0)
+        internal static void Deserialize(ISession session, RecordingStream respStream, ShippingApiResponse<Response> apiResponse, long streamPos = 0)
         {
             var deserializer = new JsonSerializer();
             deserializer.Error += DeserializationError;

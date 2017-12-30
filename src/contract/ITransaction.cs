@@ -21,43 +21,154 @@ using System.Text;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Transaction report line items
+    /// </summary>
     [CodeGeneration( GenerateJsonWrapper = true, GenerateModel = false)]
     public interface ITransaction
     {
+        /// <summary>
+        /// Unique identifier used while creating the shipment.
+        ///
+        /// Note: Prefix the transactionId with a % symbol.
+        /// For example:%12343345
+        /// </summary>
         string TransactionId {get;set;}
+        /// <summary>
+        /// Date and time of of the transaction.
+        /// </summary>
         DateTimeOffset TransactionDateTime { get; set; }
+        /// <summary>
+        /// Type of transaction.
+        /// </summary>
         TransactionType TransactionType { get; set; }
+        /// <summary>
+        /// Name of the developer account used to print the shipment label.
+        /// </summary>
         string DeveloperName { get; set; }
+        /// <summary>
+        /// The developer ID used to print the shipment label.
+        /// </summary>
         string DeveloperId { get; set; }
+        /// <summary>
+        /// The developer’s postage payment method. This is populated only for transactions that use the bulk postage account model.
+        /// </summary>
         string DeveloperPostagePaymentMethod { get; set; }
+        /// <summary>
+        /// Rate plan of the developer.
+        /// </summary>
         string DeveloperRatePlan { get; set; }
+        /// <summary>
+        /// Amount charged to the developer.
+        /// </summary>
         decimal? DeveloperRateAmount { get; set; }
+        /// <summary>
+        /// Postage balance in the developer’s postage account.
+        /// </summary>
         decimal? DeveloperPostagePaymentAccountBalance { get; set; }
+        /// <summary>
+        /// Name of the merchant.
+        /// </summary>
         string MerchantName { get; set; }
+        /// <summary>
+        /// The value of the postalReportingNumber field in the merchant object. This value is also the merchant’s Shipper ID.
+        /// </summary>
         string MerchantId { get; set; }
+        /// <summary>
+        /// The merchant’s postage payment method. This is populated only for transactions that use the individual postage account model.
+        /// </summary>
         string MerchantPostageAccountPaymentMethod { get; set; }
+        /// <summary>
+        /// Rate plan of the merchant.
+        /// </summary>
         string MerchantRatePlan { get; set; }
+        /// <summary>
+        /// Amount charged to the merchant.
+        /// </summary>
         decimal? MerchantRate { get; set; }
+        /// <summary>
+        /// Postage balance in the merchant’s postage account.
+        /// </summary>
         decimal? ShipperPostagePaymentAccountBalance { get; set; }
+        /// <summary>
+        /// Currently not used.
+        /// </summary>
         decimal? LabelFee { get; set; }
+        /// <summary>
+        /// Parcel tracking number of the shipment.
+        /// </summary>
         string ParcelTrackingNumber { get; set; }
+        /// <summary>
+        /// Weight in ounces.
+        /// </summary>
         decimal? WeightInOunces { get; set; }
+        /// <summary>
+        /// Zone
+        /// </summary>
         int? Zone { get; set; }
+        /// <summary>
+        /// Package length in inches.
+        /// </summary>
         decimal? PackageLengthInInches { get; set; }
+        /// <summary>
+        /// Package width in inches.
+        /// </summary>
         decimal? PackageWidthInInches { get; set; }
+        /// <summary>
+        /// Package height in inches.
+        /// </summary>
         decimal? PackageHeightInInches { get; set; }
+        /// <summary>
+        ///  Indicates whether cubic pricing was used.
+        /// </summary>
         PackageTypeIndicator? PackageTypeIndicator { get; set; }
+        /// <summary>
+        /// Package type
+        /// </summary>
         ParcelType? PackageType { get; set; }
+        /// <summary>
+        /// Mail class or service.
+        /// </summary>
         string MailClass { get; set; }
+        /// <summary>
+        /// International country group code.
+        /// </summary>
         string InternationalCountryPriceGroup { get; set; }
+        /// <summary>
+        /// Origination address.
+        /// </summary>
         string OriginationAddress { get; set; }
+        /// <summary>
+        /// Origin zip code.
+        /// </summary>
         string OriginZip { get; set; }
+        /// <summary>
+        /// Destination address.
+        /// </summary>
         string DestinationAddress { get; set; }
+        /// <summary>
+        /// Destination zip code.
+        /// </summary>
         string DestinationZip { get; set; }
+        /// <summary>
+        /// Destination country.
+        /// </summary>
         string DestinationCountry { get; set; }
+        /// <summary>
+        /// Postage deposit amount.
+        /// </summary>
         decimal? PostageDepositAmount { get; set; }
+        /// <summary>
+        /// Credit card fee.
+        /// </summary>
         decimal? CreditCardFee { get; set; }
+        /// <summary>
+        /// Refund status.
+        /// </summary>
         string RefundStatus { get; set; }
+        /// <summary>
+        /// Reason for refund denial.
+        /// </summary>
         string RefundDenialReason { get; set; }
     }
 }

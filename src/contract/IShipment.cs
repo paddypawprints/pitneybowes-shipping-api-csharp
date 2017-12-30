@@ -21,19 +21,55 @@ namespace PitneyBowes.Developer.ShippingApi
 {
     public interface IShipment
     {
+        /// <summary>
+        /// REQUIRED. A unique identifier for each transaction that cannot exceed 25 characters.
+        /// </summary>
         string TransactionId { get; set; }
         string MinimalAddressValidation { get; set; }
+        /// <summary>
+        /// Shipper rate plan, if available.
+        /// Important: Do not include this header if creating a scan-based return (SBR) label.
+        /// </summary>
         string ShipperRatePlan { get; set; }
+        /// <summary>
+        /// REQUIRED. Origin address. See Create a Shipment for considerations when specifying multiple address lines when using 
+        /// MINIMAL_ADDRESS_VALIDATION.
+        /// </summary>
         IAddress FromAddress { get; set; }
+        /// <summary>
+        /// REQUIRED.Destination address.
+        /// Note: You can specify multiple address lines in the shipment’s destination address.See address object for information on how 
+        /// the API processes multiple address lines.
+        /// </summary>
         IAddress ToAddress { get; set; }
+        /// <summary>
+        /// INTERNATIONAL SHIPMENTS ONLY. Required if the return shipment is not going to the fromAddress but is instead to an alternate 
+        /// return address.
+        /// </summary>
         IAddress AltReturnAddress { get; set; }
+        /// <summary>
+        /// REQUIRED. Contains physical characteristics of the parcel.
+        /// </summary>
         IParcel Parcel { get; set; }
+        /// <summary>
+        /// REQUIRED. Information related to the shipment rates.
+        /// </summary>
         IEnumerable<IRates> Rates { get; set; }
         IRates AddRates(IRates r);
+        /// <summary>
+        /// A list of shipment documents pertaining to a shipment, including the label.
+        /// </summary>
         IEnumerable<IDocument> Documents { get; set; }
         IDocument AddDocument(IDocument d);
+        /// <summary>
+        /// Each object in this array defines a shipment option. The available options depend on the carrier, origin country, and destination country.
+        /// If you are creating a shipment, this array is required and must contain the SHIPPER_ID option.
+        /// </summary>
         IEnumerable<IShipmentOptions> ShipmentOptions { get; set; }
         IShipmentOptions AddShipmentOptions(IShipmentOptions o);
+        /// <summary>
+        /// ONLY FOR: international, APO/FPO/DPO, territories/possessions, and FAS shipments. Customs related information.
+        /// </summary>
         ICustoms Customs { get; set; }
         ShipmentType ShipmentType { get; set; }
         string ShipmentId { get; set; }
