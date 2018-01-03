@@ -21,22 +21,26 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// List data structure where items can be associated with a key, and can be retrieved en mass with that key. It is like a multivalue dictionary.
+    /// Used to hold the rate rules
+    /// </summary>
+    /// <typeparam name="K">Key type</typeparam>
+    /// <typeparam name="T">List element type</typeparam>
     public class IndexedList<K,T> :  IEnumerable<T>
     {
         private Dictionary<K, List<T>> _dictionary = new Dictionary<K, List<T>>();
-
+        /// <summary>
+        /// Return the list of items associated with a key value
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public List<T> this[K key] { get => _dictionary[key]; set { _dictionary[key] = value; } }
-
-        public ICollection<K> Keys => _dictionary.Keys;
-
-        public ICollection<List<T>> Values => _dictionary.Values;
-
-        public int Count => _dictionary.Count;
-
-        public bool IsReadOnly => false;
-
-        public void Add(K key, List<T> value) => _dictionary.Add(key, value);
-
+        /// <summary>
+        /// Add an item with a key value
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
         public void Add(K key, T value)
         {
             if (!_dictionary.ContainsKey(key))
@@ -45,17 +49,16 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
             _dictionary[key].Add(value);
         }
-
-        public void Clear() => _dictionary.Clear();
-
-        public bool Contains(KeyValuePair<K, List<T>> item) => _dictionary.Contains(item);
-
+        /// <summary>
+        /// If true, the IndexedList contains the key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public bool ContainsKey(K key) => _dictionary.ContainsKey(key);
-
-        public bool Remove(K key) => _dictionary.Remove(key);
-
-        public bool TryGetValue(K key, out List<T> value) => TryGetValue(key, out value);
-
+        /// <summary>
+        /// Emumerator for the entire
+        /// </summary>
+        /// <returns></returns>
         IEnumerator<T> IEnumerable<T>.GetEnumerator()
         {
             foreach (var k in _dictionary.Keys)

@@ -17,9 +17,18 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Options for the shipment. The available options depend on the carrier, origin country, and destination country.
+    /// </summary>
     public interface IShipmentOptions
     {
+        /// <summary>
+        /// Option name
+        /// </summary>
         ShipmentOption ShipmentOption { get; set; }
+        /// <summary>
+        /// Option value
+        /// </summary>
         string Value { get; set; }
     }
 }

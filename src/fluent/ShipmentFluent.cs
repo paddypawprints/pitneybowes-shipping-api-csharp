@@ -20,15 +20,25 @@ using PitneyBowes.Developer.ShippingApi;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
+    /// <summary>
+    /// Object to create a shipment and purchases a shipment label. The API returns the label as either a Base64 string or a link to a PDF.
+    /// </summary>
+    /// <typeparam name="T">Underlying shipment class</typeparam>
     public class ShipmentFluent<T> where T : IShipment, new()
     {
         private T _shipment;
-
+        /// <summary>
+        /// Implicit cast into the underlying type (IShipment object)
+        /// </summary>
+        /// <param name="s"></param>
         public static implicit operator T(ShipmentFluent<T> s)
         {
             return s._shipment;
         }
-
+        /// <summary>
+        /// Factory method to create a ShipmentFluent. Use instead of new(). Use at the start of the fluent method chain.
+        /// </summary>
+        /// <returns></returns>
         public static ShipmentFluent<T> Create()
         {
             var a = new ShipmentFluent<T>()
@@ -37,12 +47,20 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             };
             return a;
         }
-
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public ShipmentFluent()
         {
             _shipment = new T();
         }
-
+        /// <summary>
+        /// SBR LABELS ONLY.
+        ///
+        /// If you are creating a scan-based return (SBR) label, set this to RETURN.
+        /// </summary>
+        /// <param name="t"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> ShipmentType(ShipmentType t)
         {
             _shipment.ShipmentType = t;
@@ -58,6 +76,9 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.TransactionId = id;
             return this;
         }
+        /// <summary>
+        /// MinimalAddressValidation header option
+        /// </summary>
         public ShipmentFluent<T> MinimalAddressValidation(string m)
         {
             _shipment.MinimalAddressValidation = m;
@@ -126,6 +147,11 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.Rates = r;
             return this;
         }
+        /// <summary>
+        /// Add Rates object to the Rates IEnumerable
+        /// </summary>
+        /// <param name="r"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> AddRates(IRates r)
         {
             _shipment.AddRates(r);
@@ -141,6 +167,11 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.Documents = d;
             return this;
         }
+        /// <summary>
+        /// Add a document tot he documents ienumerable.
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> AddDocument(IDocument d)
         {
             _shipment.AddDocument(d);
@@ -155,6 +186,11 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _shipment.ShipmentOptions = o;
             return this;
         }
+        /// <summary>
+        /// Add option to the ShipmentOptions IEnumerable
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public ShipmentFluent<T> AddShipmentOptions(IShipmentOptions o)
         {
             _shipment.AddShipmentOptions(o);

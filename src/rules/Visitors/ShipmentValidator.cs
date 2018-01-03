@@ -17,22 +17,44 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Class to check whether a shipment complies with all of the carrier rules.
+    /// </summary>
     public class ShipmentValidator : IRateRuleVisitor
     {
+        /// <summary>
+        /// State of the validation determination.
+        /// </summary>
         public enum ValidationState
         {
+            /// <summary>
+            /// The shipment is not vaid - it has violated one or more of the rules
+            /// </summary>
             INVALID,
+            /// <summary>
+            /// The shipment is valid - it complies with ALL rules
+            /// </summary>
             VALID,
+            /// <summary>
+            /// The shipment may or may not be vaid. It complies with all rules evaluated so far but there may be unchecked rules 
+            /// that invalidate the shipment.
+            /// </summary>
             PROCESSING
         }
         private ValidationState _state;
         private IShipment _shipment;
         private IRates _rate { get; set; }
 
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
         public ShipmentValidator()
         {
             _state = ValidationState.PROCESSING;
         }
+        /// <summary>
+        /// If true, the shipment is valid.
+        /// </summary>
         public bool IsValid
         {
             get
@@ -40,8 +62,17 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
                 return _state == ValidationState.VALID;
             }
         }
+        /// <summary>
+        /// Reason the validation failed.
+        /// </summary>
         public string Reason { get; set; }
 
+        /// <summary>
+        /// Validate a shipment with a rule set.
+        /// </summary>
+        /// <param name="shipment"></param>
+        /// <param name="rules"></param>
+        /// <returns></returns>
         public bool Validate(IShipment shipment, CarrierRule rules)
         {
             Shipment = shipment;
@@ -49,6 +80,9 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             return IsValid;
         }
 
+        /// <summary>
+        /// Shipment being validated.
+        /// </summary>
         public IShipment Shipment
         {
             get
@@ -64,6 +98,10 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
         }
 
+        /// <summary>
+        /// Check the carrier, and then the service rules for the shipment.
+        /// </summary>
+        /// <param name="carrierRule"></param>
         public void Visit(CarrierRule carrierRule)
         {
             if (_rate.Carrier != carrierRule.Carrier)
@@ -101,7 +139,10 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
                 Reason = "Valid";
             }
         }
-
+        /// <summary>
+        /// Check the service rul, then the parcel type rules.
+        /// </summary>
+        /// <param name="serviceRule"></param>
         public void Visit(ServiceRule serviceRule)
         {
             if (_rate.ServiceId != serviceRule.ServiceId) return;
@@ -119,6 +160,10 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
         }
 
+        /// <summary>
+        /// Check the parcel rule and then the special services rules for the shipment.
+        /// </summary>
+        /// <param name="parcelRule"></param>
         public void Visit(ParcelTypeRule parcelRule)
         {
             if (_rate.ParcelType != parcelRule.ParcelType) return;
@@ -151,7 +196,10 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
  
         }
-
+        /// <summary>
+        /// Visit the special services rule node. Check the parameter rules, prerequisite rules and incompatible service rules for the parcel.
+        /// </summary>
+        /// <param name="specialServicesRule"></param>
         public void Visit(SpecialServicesRule specialServicesRule)
         {
             foreach (var ss in _rate.SpecialServices)

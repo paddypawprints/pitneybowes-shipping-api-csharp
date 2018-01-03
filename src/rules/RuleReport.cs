@@ -21,14 +21,38 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// This class provides a query mechanism for the carrier rules. 
+    /// 
+    /// Invoking its Enumerator will traverse all paths of the carrier rules tree. Iterator returns each path that matches a set of filters (boolean delegates) that are 
+    /// defined for each node in the rule tree. The paths are expresses as tuples (CarrierRule, ServiceRule, ParcelTypeRule, SpecialServicesRule).
+    /// </summary>
     public class RuleReport : IEnumerable<Tuple<CarrierRule, ServiceRule, ParcelTypeRule, SpecialServicesRule>>
     {
+        /// <summary>
+        /// The rule tree/rule set
+        /// </summary>
         public IEnumerable<CarrierRule> CarrierRules { get; set; }
+        /// <summary>
+        /// Carrier filter. If false, this node and all subtrees will be excluded from the results.
+        /// </summary>
         public Func<CarrierRule, bool> CarrierRuleFilter { get; set; }
+        /// <summary>
+        /// Service filter. If false, this node and all subtrees will be excluded from the results.
+        /// </summary>
         public Func<ServiceRule, bool> ServiceRuleFilter { get; set; }
+        /// <summary>
+        /// Parcel type filter. If false, this node and all subtrees will be excluded from the results.
+        /// </summary>
         public Func<ParcelTypeRule, bool> ParcelTypeRuleFilter { get; set; }
+        /// <summary>
+        /// Special service filter. If false, this node and all subtrees will be excluded from the results.
+        /// </summary>
         public Func<SpecialServicesRule, bool> SpecialServicesRuleFilter { get; set; }
-
+        /// <summary>
+        /// Enumerate all paths on the carrier rules tree, where all elements of the patch match the filters.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator<Tuple<CarrierRule, ServiceRule, ParcelTypeRule, SpecialServicesRule>> GetEnumerator()
         {
             if (CarrierRules != null)

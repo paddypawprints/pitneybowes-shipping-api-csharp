@@ -31,7 +31,12 @@ namespace PitneyBowes.Developer.ShippingApi
         private FileStream _recorder = null;
         private FileMode _fileMode;
         private bool _recording;
-
+        /// <summary>
+        /// Constructor - just initializes members.
+        /// </summary>
+        /// <param name="baseStream"></param>
+        /// <param name="path"></param>
+        /// <param name="fileMode"></param>
         public RecordingStream(Stream baseStream, string path, FileMode fileMode )
         {
             _baseStream = baseStream;
@@ -49,7 +54,7 @@ namespace PitneyBowes.Developer.ShippingApi
             set { _recording = value; }
         }
 
-        public void OpenRecord()
+        internal void OpenRecord()
         {
             if (_recorder == null)
             {
@@ -57,7 +62,9 @@ namespace PitneyBowes.Developer.ShippingApi
                 _recorder = new FileStream(_path, _fileMode, FileAccess.Write);
             }
         }
-
+        /// <summary>
+        /// Close the recording stream, if enabled
+        /// </summary>
         public void CloseRecord()
         {
             if ( _recorder != null)
@@ -71,6 +78,10 @@ namespace PitneyBowes.Developer.ShippingApi
                 _recorder = null;
             }
         }
+        /// <summary>
+        /// Write to the recording stream if recording enabled
+        /// </summary>
+        /// <param name="s"></param>
         public void WriteRecord( string s)
         {
             if (_recorder == null) return;
@@ -78,7 +89,10 @@ namespace PitneyBowes.Developer.ShippingApi
             var b = Encoding.UTF8.GetBytes(s);
             _recorder.Write(b, 0, b.Length);
         }
-
+        /// <summary>
+        /// Write \\r, \\n to the recording stream 
+        /// </summary>
+        /// <param name="s"></param>
         public void WriteRecordCRLF(string s)
         {
             if (_recorder == null) return;
@@ -87,33 +101,53 @@ namespace PitneyBowes.Developer.ShippingApi
             WriteRecord("\r\n"); 
         }
 
-
+        /// <summary>
+        /// Flush record if recording enabled
+        /// </summary>
         public void FlushRecord()
         {
             if (_recorder == null) return;
             _recorder.Flush();
 
         }
-
+        /// <summary>
+        /// Call base.CanRead
+        /// </summary>
         public override bool CanRead => _baseStream.CanRead;
-
+        /// <summary>
+        /// Call base.CanSeek
+        /// </summary>
         public override bool CanSeek => _baseStream.CanSeek;
-
+        /// <summary>
+        /// Call base.CanWrite
+        /// </summary>
         public override bool CanWrite => _baseStream.CanWrite;
-
+        /// <summary>
+        /// Call base.Length
+        /// </summary>
         public override long Length => _baseStream.Length;
-
+        /// <summary>
+        /// Delegates to base
+        /// </summary>
         public override long Position
         {
             get => _baseStream.Position;
             set { _baseStream.Position = value; }
         }
-
+        /// <summary>
+        /// Flush base stream
+        /// </summary>
         public override void Flush()
         {
             _baseStream.Flush();
         }
-
+        /// <summary>
+        /// Call read on base and write what was written to the recording stream, if enabled
+        /// </summary>
+        /// <param name="buffer"></param>
+        /// <param name="offset"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public override int Read(byte[] buffer, int offset, int count)
         {
             int r = _baseStream.Read( buffer, offset, count);
@@ -121,23 +155,39 @@ namespace PitneyBowes.Developer.ShippingApi
                 _recorder.Write(buffer, offset, r);
             return r;
         }
-
+        /// <summary>
+        /// Call base.Seek
+        /// </summary>
+        /// <param name="offset"></param>
+        /// <param name="origin"></param>
+        /// <returns></returns>
         public override long Seek(long offset, SeekOrigin origin)
         {
             return _baseStream.Seek(offset, origin);
         }
-
+        /// <summary>
+        /// Call base.SetLength
+        /// </summary>
+        /// <param name="value"></param>
         public override void SetLength(long value)
         {
             _baseStream.SetLength(value);
         }
 
+        /// <summary>
+        /// Write to base stream and write to recording file
+        /// </summary>
+        /// <param name="buffer"></param>
+        /// <param name="offset"></param>
+        /// <param name="count"></param>
         public override void Write(byte[] buffer, int offset, int count)
         {
             _recorder.Write(buffer, offset, count);
             _baseStream.Write(buffer, offset, count );
         }
-
+        /// <summary>
+        /// Close the recording stream, call base.Dispose
+        /// </summary>
         public new void Dispose()
         {
             CloseRecord();

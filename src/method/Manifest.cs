@@ -26,14 +26,23 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public class RetryManifestRequest : ShippingApiRequest
     {
+        /// <summary>
+        /// http content-type header. application/json
+        /// </summary>
         public override string ContentType { get => "application/json"; }
-
+        /// <summary>
+        /// OAUTH token
+        /// </summary>
         [ShippingApiHeaderAttribute("Bearer")]
         public override StringBuilder Authorization { get; set; }
-
+        /// <summary>
+        /// A unique identifier for each transaction that cannot exceed 25 characters.
+        /// </summary>
         [ShippingApiHeaderAttribute("X-PB-TransactionId")]
         public string TransactionId { get; set; }
-
+        /// <summary>
+        /// REQUIRED. The X-PB-TransactionId that was used when the original shipment was submitted.
+        /// </summary>
         [ShippingApiQuery("originalTransactionId")]
         public string OriginalTransactionId { get; set; }
     }

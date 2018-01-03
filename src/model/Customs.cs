@@ -24,10 +24,16 @@ namespace PitneyBowes.Developer.ShippingApi.Model
     /// </summary>
     public class Customs : ICustoms
     {
+        /// <summary>
+        /// Default constructor - initializes the customs items list
+        /// </summary>
         public Customs()
         {
             CustomsItems = new List<CustomsItems>();
         }
+        /// <summary>
+        /// Customs clearance information that is used to fill out a commercial invoice
+        /// </summary>
         virtual public ICustomsInfo CustomsInfo { get; set;}
         /// <summary>
         /// The commodity information about each item in an international shipment
@@ -36,6 +42,11 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// </summary>
         /// <value>The customs items.</value>
         virtual public IEnumerable<ICustomsItems> CustomsItems { get; set; }
+        /// <summary>
+        /// Add an item to the Customs items enumerable.
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         virtual public ICustomsItems AddCustomsItems(ICustomsItems c)
         {
             return ModelHelper.AddToEnumerable<ICustomsItems, CustomsItems>(c, () => CustomsItems, (x) => CustomsItems = x);

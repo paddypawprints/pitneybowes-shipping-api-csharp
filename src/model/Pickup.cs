@@ -20,6 +20,9 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// USPS package pickup from a residential or commercial location
+    /// </summary>
     public class Pickup : IPickup
     {
         /// <summary>
@@ -42,13 +45,34 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// </summary>
         /// <value>The pickup summary.</value>
         virtual public IEnumerable<IPickupCount> PickupSummary{get; set;}
+        /// <summary>
+        /// Reference
+        /// </summary>
         virtual public string Reference{get; set;}
+        /// <summary>
+        /// REQUIRED. The location of the parcel at the pickup location.
+        /// </summary>
         virtual public PackageLocation PackageLocation{get; set;}
+        /// <summary>
+        /// Instructions for picking up the parcel. Required if packageLocation is set to Other.
+        /// </summary>
         virtual public string SpecialInstructions{get; set;}
+        /// <summary>
+        /// Response - Scheduled date of the pickup.
+        /// </summary>
         virtual public DateTime PickupDate { get; set; }
+        /// <summary>
+        /// Response - 	A confirmation number for the pickup.
+        /// </summary>
         virtual public string PickupConfirmationNumber { get; set; }
+        /// <summary>
+        /// Response - The pickup ID. You must specify this ID if canceling the pickup.
+        /// </summary>
         virtual public string PickupId { get; set; }
-
+        /// <summary>
+        /// Add a pickup count object to the PickupSummary IEnumerable
+        /// </summary>
+        /// <param name="p"></param>
         public void AddPickupCount(IPickupCount p)
         {
             ModelHelper.AddToEnumerable<IPickupCount, IPickupCount>(p, () => PickupSummary, (x) => PickupSummary = x);

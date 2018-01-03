@@ -20,10 +20,24 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Class to collect statistics on API performance
+    /// </summary>
     public class Counters
     {
+        /// <summary>
+        /// Count of the number or error responses
+        /// </summary>
         public int ErrorCount;
+        /// <summary>
+        /// Dictionary to store a count of the API response times in 10ms buckets. Bucketing is used to reduce the memory consumption of the 
+        /// statistrics in the case where the SDK has been running a long time. 
+        /// </summary>
         public Dictionary<int, int> CallHistogram = new Dictionary<int, int>();
+        /// <summary>
+        /// Look up the bucket and increment the count
+        /// </summary>
+        /// <param name="t"></param>
         public void AddCall(TimeSpan t)
         {
             int bucket = ((int)t.TotalMilliseconds) / 10; // 10 millisecond buckets

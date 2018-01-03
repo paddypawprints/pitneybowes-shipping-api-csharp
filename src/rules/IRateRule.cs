@@ -17,8 +17,15 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Interface for all raqte rule nodes.
+    /// </summary>
     public interface IRateRule
     {
+        /// <summary>
+        /// Accept method for Visitor pattern.
+        /// </summary>
+        /// <param name="visitor"></param>
         void Accept(IRateRuleVisitor visitor);
     }
 }

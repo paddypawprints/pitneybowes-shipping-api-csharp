@@ -30,6 +30,9 @@ namespace PitneyBowes.Developer.ShippingApi
     [JsonObject(MemberSerialization.OptIn)]
     public class PickupCancelRequest : ShippingApiRequest
     {
+        /// <summary>
+        /// Http header content type. application/jason
+        /// </summary>
         public override string ContentType { get => "application/json"; }
 
         /// <summary>

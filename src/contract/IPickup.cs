@@ -20,6 +20,9 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// USPS package pickup from a residential or commercial location
+    /// </summary>
     public interface IPickup
     {
         /// <summary>
@@ -42,6 +45,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <value>The pickup summary.</value>
         IEnumerable<IPickupCount> PickupSummary { get; set; }
+        /// <summary>
+        /// Add a PickupCount object to the PickupSummary enumerable.
+        /// </summary>
+        /// <param name="p"></param>
         void AddPickupCount(IPickupCount p);
         /// <summary>
         /// Gets or sets the reference.

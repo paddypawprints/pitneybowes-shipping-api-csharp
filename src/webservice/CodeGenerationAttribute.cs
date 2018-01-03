@@ -21,9 +21,18 @@ using System.Text;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Attribute for the GenerateWrapper tool to control the code that is generated.
+    /// </summary>
     public class CodeGenerationAttribute : Attribute
     {
+        /// <summary>
+        /// If true, generate a model class
+        /// </summary>
         public bool GenerateModel { get; set; }
+        /// <summary>
+        /// If true, generate a JsonWrapper class
+        /// </summary>
         public bool GenerateJsonWrapper { get; set; }
     }
 

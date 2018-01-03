@@ -40,6 +40,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <value>The address lines.</value>
         IEnumerable<string> AddressLines { get; set; }
+        /// <summary>
+        /// Method to add an address line without having to know the implementation of the IEnumerable AddressLines
+        /// </summary>
+        /// <param name="s"></param>
         void AddAddressLine( string s);
         /// <summary>
         /// Gets or sets the city town.
@@ -98,6 +102,11 @@ namespace PitneyBowes.Developer.ShippingApi
 
     public static partial class InterfaceValidators
     {
+        /// <summary>
+        /// If false, the object underlying the interface is not a valid address. If true, the object may or may not be valid.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool IsValidDeliveryAddress(this IAddress a)
         {
             bool empty = true;

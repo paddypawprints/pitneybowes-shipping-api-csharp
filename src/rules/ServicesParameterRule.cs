@@ -20,23 +20,52 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Constraints you must following if you select this special service. If the carrier requires input for the special 
+    /// service, these are the parameters governing input.
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class ServicesParameterRule
     {
+        /// <summary>
+        /// The type of constraint. This is usually set to INPUT_VALUE.
+        /// </summary>
         [JsonProperty("name")]
         public string Name{get; set;}
+        /// <summary>
+        /// The full name of the parcel type.
+        /// </summary>
         [JsonProperty("brandedName")]
         public string BrandedName{get; set;}
+        /// <summary>
+        /// If true, this constraint must be followed.
+        /// </summary>
         [JsonProperty("required")]
         public Boolean Required{get; set;}
+        /// <summary>
+        /// The minimum input value for this parcel type rule.
+        /// </summary>
         [JsonProperty("minValue")]
         public Decimal MinValue{get; set;}
+        /// <summary>
+        /// The maximum input value for this parcel type rule.
+        /// </summary>
         [JsonProperty("maxValue")]
         public Decimal MaxValue{get; set;}
+        /// <summary>
+        /// An amount that is automatically provided for this parcel type rule. You do not need to include anything equal 
+        /// to or below this amount in your request, as it is already provided.
+        /// </summary>
         [JsonProperty("freeValue")]
         public Decimal FreeValue{get; set;}
+        /// <summary>
+        /// Format
+        /// </summary>
         [JsonProperty("format")]
         public string Format{get; set;}
+        /// <summary>
+        /// Description
+        /// </summary>
         [JsonProperty("description")]
         public string Description{get; set;}
     }

@@ -24,6 +24,9 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public interface ICustoms
     {
+        /// <summary>
+        /// Customs clearance information that is used to fill out a commercial invoice
+        /// </summary>
         ICustomsInfo CustomsInfo { get; set; }
         /// <summary>
         /// The commodity information about each item in an international shipment
@@ -32,11 +35,21 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <value>The customs items.</value>
         IEnumerable<ICustomsItems> CustomsItems { get; set; }
+        /// <summary>
+        /// Add a new CustomsItem to CustomsItems IEnumberable
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         ICustomsItems AddCustomsItems(ICustomsItems c);
     }
 
     public static partial class InterfaceValidators
     {
+        /// <summary>
+        /// If false, the object underlying the interface is not valid. If true, the object may or may not be valid.
+        /// </summary>
+        /// <param name="customs"></param>
+        /// <returns></returns>
         public static bool IsValid(this ICustoms customs)
         {
             if (!customs.CustomsInfo.IsValid()) return false;

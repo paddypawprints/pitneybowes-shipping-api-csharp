@@ -22,6 +22,9 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// Count of itewms of a particular service type to pick up.
+    /// </summary>
     public class PickupCount : IPickupCount
     {
         /// <summary>

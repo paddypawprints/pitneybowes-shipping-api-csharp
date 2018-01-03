@@ -25,6 +25,9 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public interface ITrackingStatus
     {
+        /// <summary>
+        /// The number of packages tracked by this number.
+        /// </summary>
         string PackageCount { get; set; }
         /// <summary>
         /// REQUIRED. Valid Value(s): USPS

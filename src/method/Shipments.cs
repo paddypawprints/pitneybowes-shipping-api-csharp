@@ -38,12 +38,24 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         [ShippingApiHeader("Bearer")]
         public override StringBuilder Authorization { get; set; }
+        /// <summary>
+        /// REQUIRED. Unique transaction ID.
+        /// </summary>
         [ShippingApiHeader("X-PB-TransactionId")]
         public string TransactionId {get;set;}
+        /// <summary>
+        /// REQUIRED. Shipment ID used when printing the shipment label.
+        /// </summary>
         public string ShipmentToCancel {get;set;}
+        /// <summary>
+        /// REQUIRED. Abbreviated name of the carrier. Valid value(s): USPS
+        /// </summary>
         [JsonProperty("carrier")]
         [JsonConverter(typeof(StringEnumConverter))]
         public Carrier Carrier {get;set;}
+        /// <summary>
+        /// Indicates the initiator of refund will be the Shipper. Valid value(s): SHIPPER
+        /// </summary>
         [JsonProperty("cancelInitiator")]
         [JsonConverter(typeof(StringEnumConverter))]
         public CancelInitiator CancelInitiator {get;set;}
@@ -54,14 +66,29 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public class CancelShipmentResponse 
     {
+        /// <summary>
+        /// Abbreviated name of the carrier. Valid value(s): USPS
+        /// </summary>
         [JsonProperty("carrier")]
         public Carrier Carrier {get;set;}
+        /// <summary>
+        /// Indicates the initiator of refund will be the Shipper. Valid value(s): SHIPPER
+        /// </summary>
         [JsonProperty("cancelInitiator")]
         public CancelInitiator CancelInitiator {get;set;}
+        /// <summary>
+        /// The total amount payable to the carrier.
+        /// </summary>
         [JsonProperty("totalCarrierCharge")]
         public decimal TotalCarrierCharge {get;set;}
+        /// <summary>
+        /// Tracking number associated with a shipment parcel.
+        /// </summary>
         [JsonProperty("parcelTrackingNumber")]
         public string ParcelTrackingNumber {get;set;}
+        /// <summary>
+        /// Current status of the shipment refund. Automatically set to: INITIATED
+        /// </summary>
         [JsonProperty("status")]
         public RefundStatus RefundStatus {get;set;}
     }

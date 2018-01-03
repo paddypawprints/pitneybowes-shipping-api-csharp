@@ -17,10 +17,22 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Common representation of all error types returned by the shipping API.
+    /// </summary>
     public class ErrorDetail
     {
+        /// <summary>
+        /// Code for the error.
+        /// </summary>
         public string ErrorCode { get; set; }
+        /// <summary>
+        /// Error message
+        /// </summary>
         public string Message { get; set; }
+        /// <summary>
+        /// Additional information about the error
+        /// </summary>
         public string AdditionalInfo { get; set; }
 
     }

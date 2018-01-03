@@ -268,8 +268,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum PaymentType
     {
+        /// <summary>
+        /// Single payment account to pay for postage and subscription fees
+        /// </summary>
         POSTAGE_AND_SUBSCRIPTION,
+        /// <summary>
+        /// Payment account to pay for subscription fees
+        /// </summary>
         SUBSCRIPTION,
+        /// <summary>
+        /// Payment account to pay for postage
+        /// </summary>
         POSTAGE
     }
 
@@ -278,6 +287,9 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public enum ParcelType
     {
+        /// <summary>
+        ///  Letter. Generates a First-Class label with IMB barcode.
+        /// </summary>
         LETTER,
         /// <summary>
         /// Flat rate envelope.
@@ -331,18 +343,45 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Package (not eligible for special package rate).
         /// </summary>
         PKG,
+        /// <summary>
+        /// Large package.
+        /// </summary>
         LP,
+        /// <summary>
+        /// USPS Flat or Large Envelope
+        /// </summary>
         FLAT,
+        /// <summary>
+        /// Extended Managed Mail Tray Box
+        /// </summary>
         EMMTB,
+        /// <summary>
+        /// Full tray box
+        /// </summary>
         FTB,
+        /// <summary>
+        /// Half tray box
+        /// </summary>
         HTB,
+        /// <summary>
+        /// Sack
+        /// </summary>
         SACK,
+        /// <summary>
+        /// Flat tub tray
+        /// </summary>
         FTTB,
+        /// <summary>
+        /// Soft Pack Envelope
+        /// </summary>
         SOFTPACK,
         /// <summary>
         /// PMOD Enclosed Package Type
         /// </summary>
         MIX,
+        /// <summary>
+        /// Letter for stamp API call
+        /// </summary>
         LTR
     }
 

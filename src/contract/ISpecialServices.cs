@@ -19,6 +19,10 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// This interface allows request for carrier specific special services. Reference these codes 
+    /// when submitting shipment-related requests.
+    /// </summary>
     public interface ISpecialServices
     {
         /// <summary>

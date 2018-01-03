@@ -21,10 +21,18 @@ using PitneyBowes.Developer.ShippingApi;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
+    /// <summary>
+    /// Fluent class for creating manifest requests
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ManifestFluent<T> where T : IManifest, new()
     {
         private T _manifest;
 
+        /// <summary>
+        /// Static factory method to start the fluent method chain - use instead of new.
+        /// </summary>
+        /// <returns></returns>
         public static ManifestFluent<T> Create()
         {
             var p = new ManifestFluent<T>() { _manifest = new T() };
@@ -35,17 +43,28 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
         {
 
         }
+        /// <summary>
+        /// Extract the underlying manifest object with a cast - implicit casting doesnt work - not sure how to fix it.
+        /// </summary>
+        /// <param name="m"></param>
         public static implicit operator T(ManifestFluent<T> m)
         {
             return (T)m._manifest;
         }
-
+        /// <summary>
+        /// Underlying manifest object that is being populated.
+        /// </summary>
         public IManifest Manifest 
         {
             get => _manifest;
             set => _manifest = (T)value;
         }
-
+        /// <summary>
+        /// Call the shipping API to submit the manifest request. Replaces the underlying manifest object with the one 
+        /// returned from the call
+        /// </summary>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public ManifestFluent<T> Submit(ISession session = null)
         {
             if (session == null)
@@ -65,6 +84,13 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
 
             return this;
         }
+        /// <summary>
+        /// Call the shipping API to reprint the manifest request. Replaces the underlying manifest object with the one 
+        /// returned from the call
+        /// </summary>
+        /// <param name="manifestId"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
 
         public ManifestFluent<T> Reprint(string manifestId, ISession session = null)
         {
@@ -86,6 +112,13 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
 
             return this;
         }
+        /// <summary>
+        /// Call the shipping API to retry the manifest request. Replaces the underlying manifest object with the one 
+        /// returned from the call
+        /// </summary>
+        /// <param name="originalId"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
 
         public ManifestFluent<T> Retry(string originalId, ISession session = null)
         {
@@ -107,49 +140,95 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
 
             return this;
         }
-
+        /// <summary>
+        /// Gets or sets the carrier. Valid value(s): USPS
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public ManifestFluent<T> Carrier(Carrier c)
         {
             _manifest.Carrier = c;
             return this;
         }
+        /// <summary>
+        /// Gets or sets the submission date, the date the shipments are tendered to the carrier.Default value is the current date in GMT/UTC.
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public ManifestFluent<T> SubmissionDate(DateTime s)
         {
             _manifest.SubmissionDate = s;
             return this;
         }
+        /// <summary>
+        /// Gets or sets the induction postal code. Postal code where the shipments are tendered to the carrier.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public ManifestFluent<T> FromAddress(IAddress a)
         {
             _manifest.FromAddress = a;
             return this;
         }
+        /// <summary>
+        /// Gets or sets the induction postal code. Postal code where the shipments are tendered to the carrier.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public ManifestFluent<T> InductionPostalCode(string p)
         {
             _manifest.InductionPostalCode = p;
             return this;
         }
+        /// <summary>
+        /// Gets or sets the parcel tracking numbers. Required if you choose to list shipment tracking numbers in the request object. 
+        /// </summary>
+        /// <param name="tl"></param>
+        /// <returns></returns>
         public ManifestFluent<T> ParcelTrackingNumbers(IEnumerable<string> tl)
         {
             foreach (var t in tl)
                 _manifest.AddParcelTrackingNumber(t);
             return this;
         }
+        /// <summary>
+        /// Adds the parcel tracking number to the end of the ParcelTrackingNumbersList
+        /// </summary>
+        /// <param name="t"></param>
+        /// <returns></returns>
         public ManifestFluent<T> AddParcelTrackingNumber(string t)
         {
             _manifest.AddParcelTrackingNumber(t);
             return this;
         }
+        /// <summary>
+        /// Gets or sets the parameters. Use the Enum ManifestParameter to see options. 
+        /// </summary>
+        /// <param name="pl"></param>
+        /// <returns></returns>
         public ManifestFluent<T> Parameters(IEnumerable<IParameter> pl)
         {
             foreach (var p in pl)
                 _manifest.AddParameter(p);
             return this;
         }
+        /// <summary>
+        /// Adds the parameter to the end of the Parameters list.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public ManifestFluent<T> AddParameter(IParameter p)
         {
             _manifest.AddParameter(p);
             return this;
         }
+        /// <summary>
+        /// Adds the parameter to the end of the Parameters list.
+        /// </summary>
+        /// <typeparam name="P"></typeparam>
+        /// <param name="name"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public ManifestFluent<T> AddParameter<P>(string name, string value) where P : IParameter, new()
         {
             var p = new P
@@ -160,11 +239,23 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _manifest.AddParameter(p);
             return this;
         }
+        /// <summary>
+        /// Adds the parameter to the end of the Parameters list.
+        /// </summary>
+        /// <typeparam name="P"></typeparam>
+        /// <param name="param"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public ManifestFluent<T> AddParameter<P>(ManifestParameter param, string value) where P : IParameter, new()
         {
             AddParameter<P>(param.ToString(), value);
             return this;
         }
+        /// <summary>
+        /// Unique transaction ID, generated by client, up to 25 characters.
+        /// </summary>
+        /// <param name="t"></param>
+        /// <returns></returns>
         public ManifestFluent<T> TransactionId(string t)
         {
             _manifest.TransactionId = t;

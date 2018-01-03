@@ -22,8 +22,16 @@ using System.Linq.Expressions;
 
 namespace PitneyBowes.Developer.ShippingApi.Report
 {
+    /// <summary>
+    /// Common functionality for implementing a linq queryable report
+    /// </summary>
     public abstract class ReportProviderBase
     {
+        /// <summary>
+        /// Called by the report to set the linq expression
+        /// </summary>
+        /// <param name="expression"></param>
+        /// <returns></returns>
         public virtual IQueryable CreateQuery(Expression expression)
         {
             Type elementType = TypeSystem.GetElementType(expression.Type);
@@ -36,12 +44,22 @@ namespace PitneyBowes.Developer.ShippingApi.Report
                 throw tie.InnerException;
             }
         }
-
+        /// <summary>
+        /// Execute the query
+        /// </summary>
+        /// <typeparam name="TResult">Required result type</typeparam>
+        /// <typeparam name="ReportItem">Report item type</typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <typeparam name="RequestFinder">Linq expression visitor - to find the where clause</typeparam>
+        /// <param name="expression">Linq expression</param>
+        /// <param name="isEnumerable"></param>
+        /// <param name="reportService">Method to get an IEmumerable that will iterate the result set from the web service</param>
+        /// <param name="initializeRequest">Method to initialize the request.</param>
+        /// <returns></returns>
         public object Execute<TResult, ReportItem, Request, RequestFinder>(Expression expression, bool isEnumerable, Func<Request, IEnumerable<ReportItem>> reportService, Action<Request> initializeRequest)
             where Request : IReportRequest, new()
             where RequestFinder : RequestFinderVisitor<Request, ReportItem>, new()
-        {
-            // The expression must represent a query over the data source. 
+        { 
             if (!(expression is MethodCallExpression))
                 throw new InvalidProgramException("No query over the data source was specified.");
 
@@ -65,7 +83,15 @@ namespace PitneyBowes.Developer.ShippingApi.Report
                 return queryableTransaction.Provider.Execute(newExpressionTree);
 
         }
-
+        /// <summary>
+        /// Copy the expression tree that was passed in, changing only the first 
+        /// argument of the innermost MethodCallExpression.
+        /// </summary>
+        /// <typeparam name="TResult"></typeparam>
+        /// <typeparam name="ReportItem"></typeparam>
+        /// <param name="expression"></param>
+        /// <param name="items"></param>
+        /// <returns></returns>
         public Expression ReplaceWhereByTransaction<TResult, ReportItem>(Expression expression, ReportItem items ) 
         {
             // Copy the expression tree that was passed in, changing only the first 
@@ -75,7 +101,11 @@ namespace PitneyBowes.Developer.ShippingApi.Report
             return treeCopier.Visit(expression);
          }
 
-
+        /// <summary>
+        /// Find the where clause so parameters can be extracted for the web service call
+        /// </summary>
+        /// <param name="expression"></param>
+        /// <returns></returns>
         public LambdaExpression GetWhereExpression(Expression expression)
         {
             // Find the call to Where() and get the lambda expression predicate.
@@ -89,8 +119,13 @@ namespace PitneyBowes.Developer.ShippingApi.Report
         }
 
 
-        // Queryable's "single value" standard query operators call this method.
-        // It is also called from QueryableTerraServerData.GetEnumerator(). 
+        /// <summary>
+        /// Queryable's "single value" standard query operators call this method.
+        /// It is also called from QueryableTerraServerData.GetEnumerator(). 
+        /// </summary>
+        /// <typeparam name="TResult"></typeparam>
+        /// <param name="expression"></param>
+        /// <returns></returns>
         public virtual TResult Execute<TResult>(Expression expression)
         {
             bool IsEnumerable = (typeof(TResult).Name == "IEnumerable`1");
@@ -98,6 +133,11 @@ namespace PitneyBowes.Developer.ShippingApi.Report
             return (TResult)Execute<TResult>(expression, IsEnumerable);
         }
 
+        /// <summary>
+        /// Untyped expression. Not implemented. TODO: Figure out how to know the return type
+        /// </summary>
+        /// <param name="expression"></param>
+        /// <returns></returns>
         public virtual object Execute(Expression expression)
         {
             Type elementType = TypeSystem.GetElementType(expression.Type);
@@ -111,8 +151,21 @@ namespace PitneyBowes.Developer.ShippingApi.Report
                 throw tie.InnerException;
             }
         }
-        // Queryable's collection-returning standard query operators call this method. 
+
+        /// <summary>
+        /// Abstract Queryable's collection-returning standard query operators call this method. 
+        /// </summary>
+        /// <typeparam name="TResult"></typeparam>
+        /// <param name="expression"></param>
+        /// <returns></returns>
         public abstract IQueryable<TResult> CreateQuery<TResult>(Expression expression);
+        /// <summary>
+        /// Abstract - call the web service.
+        /// </summary>
+        /// <typeparam name="TResult"></typeparam>
+        /// <param name="expression"></param>
+        /// <param name="IsEnumerable"></param>
+        /// <returns></returns>
         public abstract object Execute<TResult>(Expression expression, bool IsEnumerable);
     }
 

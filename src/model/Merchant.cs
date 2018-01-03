@@ -19,17 +19,53 @@ using System;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// Respresents merchants/shippers in the shipping API
+    /// </summary>
     public class Merchant : IMerchant
     {
+        /// <summary>
+        /// The merchant’s full name.
+        /// </summary>
         virtual public string FullName {get;set;}
+        /// <summary>
+        /// The merchant’s email address.
+        /// </summary>
         virtual public string Email {get;set;}
+        /// <summary>
+        /// The date that the merchant’s PB Postage Account was registered
+        /// </summary>
         virtual public DateTimeOffset RegisteredDate { get;set;}
+        /// <summary>
+        /// The Pitney Bowes customer account number assigned to the merchant.
+        /// </summary>
         virtual public string PaymentAccountNumber {get;set;}
+        /// <summary>
+        /// An enterprise account number that is associated with the merchant.
+        /// </summary>
         virtual public string EnterpriseAccount {get;set;}
+        /// <summary>
+        /// Any subscription account that the merchant might have.
+        /// </summary>
         virtual public string SubscriptionAccount {get;set;}
+        /// <summary>
+        /// The unique ID used to identify the merchant.  Note: This value is also the merchant’s Shipper ID.You must specify 
+        /// Shipper ID when creating a shipment.
+        /// </summary>
         virtual public string PostalReportingNumber {get;set;}
+        /// <summary>
+        /// The merchant’s status.
+        /// </summary>
         virtual public string MerchantStatus {get;set;}
+        /// <summary>
+        /// If you change a merchant’s status from ACTIVE to INACTIVE, you must give a reason for the change. The reason is recorded here. 
+        /// For an active merchant, the field is set to null.
+        /// </summary>
         virtual public string MerchantStatusReason {get;set;}
+        /// <summary>
+        /// The date the merchant’s PB Postage Account was deactivated, if applicable. For an active merchant, the field is set to null.
+        /// A deactivated merchant can no longer print labels.
+        /// </summary>
         virtual public DateTimeOffset DeactivatedDate {get;set;}       
     }
 

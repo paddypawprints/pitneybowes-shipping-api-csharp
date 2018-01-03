@@ -21,29 +21,60 @@ using Newtonsoft.Json.Converters;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Carrier rule for parcel types. 
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class ParcelTypeRule : IRateRule
     {
+        /// <summary>
+        /// The abbreviated name of the parcel type.
+        /// </summary>
         [JsonProperty("parcelType")]
         [JsonConverter(typeof(StringEnumConverter))]
         public ParcelType ParcelType { get; set; }
+        /// <summary>
+        /// 	The full name of the parvel type.
+        /// </summary>
         [JsonProperty("brandedName")]
         public string BrandedName { get; set; }
+        /// <summary>
+        /// The type of rate requested. If a type was not specified in the request, the API returns all the eligible rate types.
+        /// </summary>
         [JsonProperty("rateTypeId")]
         public string RateTypeId { get; set; }
+        /// <summary>
+        /// The full name of the rate type.
+        /// </summary>
         [JsonProperty("rateTypeBrandedName")]
         public string RateTypeBrandedName { get; set; }
+        /// <summary>
+        /// Whether this parcel type is trackable.
+        /// </summary>
         [JsonProperty("trackable")]
         [JsonConverter(typeof(StringEnumConverter))]
         public Trackable Trackable { get; set; }
+        /// <summary>
+        /// 	The special services applicable for this combination of service type, rate type, and parcel type.
+        /// </summary>
         public IndexedList<SpecialServiceCodes, SpecialServicesRule> SpecialServiceRules { get; set; }
+        /// <summary>
+        /// Weight rules for this combination of service type, rate type, and parcel type.
+        /// </summary>
         [JsonProperty("weightRules")]
         public IEnumerable<WeightRule> WeightRules { get; set; }
+        /// <summary>
+        /// 	Dimension rules for this combination of service type, rate type, and parcel type.
+        /// </summary>
         [JsonProperty("dimensionRules")]
         public IEnumerable<DimensionRule> DimensionRules { get; set; }
+        /// <summary>
+        /// Most common choice for tracking this parcel type.
+        /// </summary>
         [JsonProperty("suggestedTrackableSpecialServiceId")]
         [JsonConverter(typeof(StringEnumConverter))]
         public SpecialServiceCodes SuggestedTrackableSpecialServiceId { get; set; }
+
         [JsonProperty("specialServiceRules")]
         internal IEnumerable<SpecialServicesRule> SerializerSpecialServiceRules
         {
@@ -57,11 +88,19 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
                 }
             }
         }
+        /// <summary>
+        /// Accept method for Visitor pattern
+        /// </summary>
+        /// <param name="visitor"></param>
         public void Accept(IRateRuleVisitor visitor)
         {
             visitor.Visit(this);
         }
-
+        /// <summary>
+        /// If true, the dimensions object fits within the boundaries specified by the dimension rules rule.
+        /// </summary>
+        /// <param name="dimensions"></param>
+        /// <returns></returns>
         public bool FitsDimensions(IParcelDimension dimensions)
         {
             foreach (var d in DimensionRules)
@@ -73,7 +112,11 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
             return true;
         }
-
+        /// <summary>
+        /// If true, the weight object is within the boundaries specified by the weight rules
+        /// </summary>
+        /// <param name="weight"></param>
+        /// <returns></returns>
         public bool HoldsWeight(IParcelWeight weight)
         {
             foreach (var w in WeightRules)

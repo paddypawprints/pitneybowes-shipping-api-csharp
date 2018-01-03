@@ -20,15 +20,31 @@ using System.Linq.Expressions;
 
 namespace PitneyBowes.Developer.ShippingApi.Report
 {
+    /// <summary>
+    /// Visitor to traverse the linq expression and process items used as inputs to the report API calls.
+    /// </summary>
+    /// <typeparam name="RequestType"></typeparam>
+    /// <typeparam name="ReportType"></typeparam>
     public class RequestFinderVisitor<RequestType, ReportType> : ExpressionVisitor where RequestType : new()
     {
+        /// <summary>
+        /// The expression
+        /// </summary>
         public Expression Expression { get; set; }
+        /// <summary>
+        /// Request type
+        /// </summary>
         protected RequestType request;
 
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
         public RequestFinderVisitor()
         {
         }
-
+        /// <summary>
+        /// Request type
+        /// </summary>
         public RequestType Request
         {
             get
@@ -41,7 +57,15 @@ namespace PitneyBowes.Developer.ShippingApi.Report
                 return this.request;
             }
         }
-
+        /// <summary>
+        /// Figures out if the left hand side of the expression involves a property of interest and if so, returns the binary expression node.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="be"></param>
+        /// <param name="expressionType"></param>
+        /// <param name="propertyName"></param>
+        /// <param name="assign"></param>
+        /// <returns></returns>
         protected Expression AssignExpressionValue<T>(BinaryExpression be, ExpressionType expressionType, string propertyName, Action<RequestType, T> assign)
         {
             if (be.NodeType == expressionType && IsMemberValueExpression(be, expressionType, propertyName))
@@ -51,12 +75,23 @@ namespace PitneyBowes.Developer.ShippingApi.Report
             }
             return null;
         }
-
+        /// <summary>
+        /// Visit binary expression
+        /// </summary>
+        /// <param name="be"></param>
+        /// <returns></returns>
         protected override Expression VisitBinary(BinaryExpression be)
         {
             return base.VisitBinary(be);
         }
-
+        /// <summary>
+        /// Get value from right hand side value of a binary expression node.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="be"></param>
+        /// <param name="expressionType"></param>
+        /// <param name="memberName"></param>
+        /// <returns></returns>
         internal T GetValueFromBinaryExpression<T>(BinaryExpression be, ExpressionType expressionType,  string memberName)
         {
             if (be.NodeType != expressionType)

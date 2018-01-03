@@ -21,12 +21,31 @@ using System.Text;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// CREDIT CARD ONLY. The credit card information. This field is required if the paymentMethod field is set to CC.
+    /// </summary>
     public interface ICcPaymentDetails
     {
-        CreditCardType CcType { get; set; } 
+        /// <summary>
+        /// The type of credit card - Visa, Mastercard etc,
+        /// </summary>
+        CreditCardType CcType { get; set; }
+        /// <summary>
+        /// The tokenized credit card number.
+        /// </summary>
         string CcTokenNumber { get; set; }
+        /// <summary>
+        /// The month and year the card expires, entered as the two-digit month and four-digit year separated by a backslash. 
+        /// For example: 06/2021
+        /// </summary>
         string CcExpirationDate { get; set; }
+        /// <summary>
+        /// The three- or four-digit Card Verification Value.
+        /// </summary>
         string CccvvNumber { get; set; }
+        /// <summary>
+        /// The address associated with the credit card account.
+        /// </summary>
         IAddress CcAddress { get; set; }
     }
 }

@@ -22,14 +22,49 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Interface for all API requests. Implement this interface if you want to add new methods. In most instances you will want to inherit from
+    /// ShippingApiRequest as well.
+    /// </summary>
     public interface IShippingApiRequest
     {
+        /// <summary>
+        /// Http Content-Type header. For almost all purposes implement as a constant value returning "application/json"
+        /// </summary>
         string ContentType {get;}
+        /// <summary>
+        /// OAUTH token. This is set automatically, implement as {get;set;}
+        /// </summary>
         StringBuilder Authorization {get;set;}
+        /// <summary>
+        /// Return the actual URI by substuting for the {} elements. To use properties from the object inherit from ShippingAPiRequest
+        /// ShippingApiRequest.GetUri()
+        /// </summary>
+        /// <param name="baseUrl"></param>
+        /// <returns></returns>
         string GetUri(string baseUrl);
+        /// <summary>
+        /// Get headers. To use properties from the object inherit from ShippingAPiRequest
+        /// ShippingApiRequest.GetHeaders()
+        /// </summary>
+        /// <returns></returns>
         IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders();
+        /// <summary>
+        /// Return the body of the http message. To use properties from the object inherit from ShippingAPiRequest
+        /// ShippingApiRequest.SerializeBody()
+        /// </summary>
         void SerializeBody(StreamWriter writer, ISession session);
+        /// <summary>
+        /// When using the recorder, add this string to the end of the file name. USed if there are multiple items which would be otherwise
+        /// named the same.
+        /// </summary>
         string RecordingSuffix { get; }
+        /// <summary>
+        /// Full path to the recording file.
+        /// </summary>
+        /// <param name="resource"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         string RecordingFullPath(string resource, ISession session);
     }
 }

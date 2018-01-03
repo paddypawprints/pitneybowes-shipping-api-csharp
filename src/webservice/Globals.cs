@@ -25,12 +25,27 @@ using System.Runtime.InteropServices;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Singleton type class for system wide parameters. Hold HttpClient object for each url.
+    /// </summary>
     public static class Globals
     {
         private static object _clientLock = new object();
+        /// <summary>
+        /// Default session - so you dont need to pass it to all of the methods
+        /// </summary>
         public static ISession DefaultSession { get; set; } 
+        /// <summary>
+        /// Web service call timeout. Has to be set when the HttpClient is initialized and cannot be changed.
+        /// </summary>
         public static int TimeOutMilliseconds = 100000; //default .net value
         private static Dictionary<string, HttpClient> _clientLookup = new Dictionary<string, HttpClient>();
+        /// <summary>
+        /// Per microsoft documentation, you should only have one http client object per url. The client objects are fully thread safe and 
+        /// performance is affected if you create them on the fly.
+        /// </summary>
+        /// <param name="baseUrl"></param>
+        /// <returns></returns>
         public static HttpClient Client(string baseUrl)
         {
             if (!_clientLookup.TryGetValue(baseUrl, out HttpClient client))
@@ -51,7 +66,13 @@ namespace PitneyBowes.Developer.ShippingApi
                 return client;
             }
         }
-        // there is undoutedly a better place to put this, just cant think of it
+        /// <summary>
+        /// Turns an array of folder names into a path with the platform appropriate path separator. 
+        /// There is undoutedly a better place to put this, just cant think of it - not in love with "util" classes.
+        /// </summary>
+        /// <param name="folders"></param>
+        /// <returns></returns>
+        // 
         public static string GetPath(params string[] folders)
         {
             var sb = new StringBuilder();
@@ -62,27 +83,20 @@ namespace PitneyBowes.Developer.ShippingApi
             }
             return sb.ToString();
         }
-        public static string GetConfigPath()
+        /// <summary>
+        /// Get platform appropriate config file path. %APPDATA% on windows and $HOME on unix type platforms.
+        /// </summary>
+        /// <returns></returns>
+        public static string GetConfigPath(string fileName)
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                return Environment.GetEnvironmentVariable("APPDATA");
+                return string.Format("{0}\\{1}", Environment.GetEnvironmentVariable("APPDATA"), fileName);
             }
             else
             {
-                return Environment.GetEnvironmentVariable("HOME");
+                return string.Format("{0}/.{1}", Environment.GetEnvironmentVariable("HOME"), fileName);
             }
-        }
-        public static string GetConfigFilePrefix()
-        {
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
-                return "";
-            }
-            else
-            {
-                return ".";
-            }            
         }
     }
 }

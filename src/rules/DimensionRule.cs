@@ -20,19 +20,40 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Rule describing the dimension requirements for a particular service class/package type combination.
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class DimensionRule
     {
+        /// <summary>
+        /// If true, this rule must be followed.
+        /// </summary>
         [JsonProperty("required")]
         virtual public Boolean Required{get; set;}
+        /// <summary>
+        /// How dimension is quantified.
+        /// </summary>
         [JsonProperty("unitOfMeasurement")]
         virtual public UnitOfDimension UnitOfMeasurement{get; set;}
+        /// <summary>
+        /// An object with the minimum dimensions for the parcel. 
+        /// </summary>
         [JsonProperty("minParcelDimensions")]
         virtual public IParcelDimension MinParcelDimensions{get; set;}
+        /// <summary>
+        /// An object with the maximum dimensions for the parcel. 
+        /// </summary>
         [JsonProperty("maxParcelDimensions")]
         virtual public IParcelDimension MaxParcelDimensions{get; set;}
+        /// <summary>
+        /// Minimum size allowed for length (the longest dimension) + girth.
+        /// </summary>
         [JsonProperty("minLengthPlusGirth")]
         virtual public Decimal MinLengthPlusGirth{get; set;}
+        /// <summary>
+        /// Maximum size allowed for length (the longest dimension) + girth.
+        /// </summary>
         [JsonProperty("maxLengthPlusGirth")]
         virtual public Decimal MaxLengthPlusGirth{get; set;}
     }

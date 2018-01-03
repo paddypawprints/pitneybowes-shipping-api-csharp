@@ -17,18 +17,45 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// An object containing the merchant’s name, address, company, phone, and email for the merchant signup render method.
+    /// </summary>
     public interface IUserInfo
     {
+        /// <summary>
+        /// Merchant first name. Optional.
+        /// </summary>
         string FirstName { get; set; }
+        /// <summary>
+        /// Merchant last name. Optional.
+        /// </summary>
         string LastName { get; set; }
+        /// <summary>
+        /// Merchant company name. Required.
+        /// </summary>
         string Company { get; set; }
+        /// <summary>
+        /// Merchant address. Required.
+        /// </summary>
         IAddress Address { get; set; }
+        /// <summary>
+        /// Merchant phone number. Required.
+        /// </summary>
         string Phone { get; set; }
+        /// <summary>
+        /// Merchant email address. Required.
+        /// </summary>
         string Email { get; set; }
     }
 
     public static partial class InterfaceValidators
     {
+        /// <summary>
+        /// Extension method validator for IUserInfo.
+        /// If false, the object is not valid. If true, the object may or may not be valid.
+        /// </summary>
+        /// <param name="u"></param>
+        /// <returns></returns>
         public static bool IsValid(this IUserInfo u)
         {
             if (u.Company == null || u.Company.Equals("")) return false;

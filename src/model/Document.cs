@@ -73,6 +73,10 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// </summary>
         /// <value>The pages.</value>
         virtual public IEnumerable<IPage> Pages { get; set; }
+        /// <summary>
+        /// Add a page to existing list of pages.
+        /// </summary>
+        /// <param name="s"></param>
         virtual public void AddPage(IPage s)
         {
             ModelHelper.AddToEnumerable<IPage, Page>(s, () => Pages, (x) => Pages = x);

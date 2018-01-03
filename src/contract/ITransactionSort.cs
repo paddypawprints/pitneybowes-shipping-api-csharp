@@ -21,13 +21,31 @@ using System.Text;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Sort information for transaction and manifest reports
+    /// </summary>
     [CodeGeneration(GenerateJsonWrapper = true, GenerateModel = false)]
     public interface ITransactionSort
     {
+        /// <summary>
+        /// Whether the result set is sorted
+        /// </summary>
         string Ascending { get; set; }
+        /// <summary>
+        /// ASC, DESC
+        /// </summary>
         string Direction { get; set; }
+        /// <summary>
+        /// Whether case was ignored when sorting
+        /// </summary>
         string IgnoreCase { get; set; }
+        /// <summary>
+        /// NATIVE or ???
+        /// </summary>
         string NullHandling { get; set; }
+        /// <summary>
+        /// Field that the sort was done on
+        /// </summary>
         string Property { get; set; }
     }
 }

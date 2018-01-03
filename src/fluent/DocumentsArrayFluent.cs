@@ -28,14 +28,24 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
         /// <summary>
         /// Factory method to create an instance - use instead of new to start the method chain.
         /// </summary>
-        /// <returns>The create.</returns>
+        /// <returns>The created object.</returns>
         public static DocumentsArrayFluent<T> Create()
         {
             return new DocumentsArrayFluent<T>();
         }
+        /// <summary>
+        /// Use a cast to get the underlying List
+        /// </summary>
+        /// <param name="d"></param>
         public static implicit operator List<IDocument>(DocumentsArrayFluent<T> d) => d._list;
 
+        /// <summary>
+        /// Underlying List
+        /// </summary>
         protected List<IDocument> _list = new List<IDocument>();
+        /// <summary>
+        /// Current list item. The class maintains the concept of a current item in the list. Most methods operate on the current item.
+        /// </summary>
         protected T _current = default(T);
         /// <summary>
         /// Add a new document to the end of the list. Current will point to it.

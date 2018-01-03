@@ -17,6 +17,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Special-service parameters. Each object in the array defines a different special-service parameter.
+    /// </summary>
     public interface IParameter
     {
         /// <summary>

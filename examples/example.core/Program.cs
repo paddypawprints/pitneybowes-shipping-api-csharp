@@ -427,15 +427,14 @@ namespace example
             var configurationBuilder = new ConfigurationBuilder();
             
             configurationBuilder
-                .SetBasePath(Globals.GetConfigPath())
                 .AddInMemoryCollection(configs)
-                .AddJsonFile(Globals.GetConfigFilePrefix() + "shippingapisettings.json", optional: true, reloadOnChange: true);
+                .AddJsonFile(Globals.GetConfigPath("shippingapisettings.json") , optional: true, reloadOnChange: true);
             Configuration = configurationBuilder.Build();
 #else
             try
             {
 
-                using (StreamReader file = File.OpenText(Globals.GetConfigPath() + "/.shippingapisettings.json"))
+                using (StreamReader file = File.OpenText(Globals.GetConfigPath(shippingapisettings.json) ))
                 {
                     var deserializer = new JsonSerializer();
                     Configuration = (Dictionary<string, string>)deserializer.Deserialize(file, typeof(Dictionary<string, string>));
@@ -447,7 +446,7 @@ namespace example
             }
 #endif
         }
-    #endregion
+        #endregion
     }
     #region Logger example only, implement your own
     // Example logger - use your own

@@ -74,6 +74,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <value>The pages.</value>
         IEnumerable<IPage> Pages { get; set; }
+        /// <summary>
+        /// Add a page to the Pages IEnumerable
+        /// </summary>
+        /// <param name="p"></param>
         void AddPage(IPage p);
     }
 

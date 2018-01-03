@@ -20,24 +20,80 @@ using System.Threading.Tasks;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Carrier rules (rating-services) request object
+    /// </summary>
     public class RatingServicesRequest : ShippingApiRequest
     {
+        /// <summary>
+        /// http header content-type. application/json.
+        /// </summary>
         public override string ContentType => "application/json";
-
+        /// <summary>
+        /// OAUTH token.
+        /// </summary>
         [ShippingApiHeader("Bearer")]
         public override StringBuilder Authorization {get;set;}
-
+        /// <summary>
+        /// REQUIRED. The carrier name. Currently this must be set to: USPS
+        /// </summary>
         [ShippingApiQuery("carrier")]
         public Carrier Carrier { get; set; }
+        /// <summary>
+        /// REQUIRED. The two-character ISO country code for the country where the shipment originates.
+        /// </summary>
         [ShippingApiQuery("originCountryCode")]
         public string OriginCountryCode { get; set; }
+        /// <summary>
+        /// REQUIRED. The two-character ISO country code for the country of the shipment’s destination address.
+        /// </summary>
         [ShippingApiQuery("destinationCountryCode")]
         public string DestinationCountryCode { get; set; }
     }
 
+    /// <summary>
+    /// Before posting a shipment, you can retrieve the carrier’s shipment rules, including the available services and parcel types, with 
+    /// weight and dimension restrictions.
+    ///
+    /// Things to Consider:
+    ///     * The call to retrieve rate rules is an expensive API call because of the size of the returned data.It is recommended that you 
+    ///     cache the returned data and make the API call only once a day.
+    ///     * At the top level, rules are organized by service type.
+    ///     * Within a service type, each set of rules applies to a combination of parcel type (parcelTypeRules.parcelType) and rate type 
+    ///     (parcelTypeRules.rateTypeId).
+    ///
+    /// Rules tell you:
+    ///     * Compatible special services (parcelTypeRules.specialServiceRules)
+    ///     * Required special services (parcelTypeRules.specialServiceRules.prerequisiteRules)
+    ///     * Incompatible special services (parcelTypeRules.specialServiceRules.incompatibleSpecialServices)
+    ///     * Required input parameters (parcelTypeRules.specialServiceRules.inputParameterRules)
+    ///     * Weight constraints (parcelTypeRules.weightRules)
+    ///     * Dimension constraints (parcelTypeRules.dimensionRules)
+    /// </summary>
     public static class CarrierRulesMethods
     {
-
+        /// <summary>
+        /// Before posting a shipment, you can retrieve the carrier’s shipment rules, including the available services and parcel types, with 
+        /// weight and dimension restrictions.
+        ///
+        /// Things to Consider:
+        ///     * The call to retrieve rate rules is an expensive API call because of the size of the returned data.It is recommended that you 
+        ///     cache the returned data and make the API call only once a day.
+        ///     * At the top level, rules are organized by service type.
+        ///     * Within a service type, each set of rules applies to a combination of parcel type (parcelTypeRules.parcelType) and rate type 
+        ///     (parcelTypeRules.rateTypeId).
+        ///
+        /// Rules tell you:
+        ///     * Compatible special services (parcelTypeRules.specialServiceRules)
+        ///     * Required special services (parcelTypeRules.specialServiceRules.prerequisiteRules)
+        ///     * Incompatible special services (parcelTypeRules.specialServiceRules.incompatibleSpecialServices)
+        ///     * Required input parameters (parcelTypeRules.specialServiceRules.inputParameterRules)
+        ///     * Weight constraints (parcelTypeRules.weightRules)
+        ///     * Dimension constraints (parcelTypeRules.dimensionRules)
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+        /// </summary>
         public async static Task<ShippingApiResponse<CarrierRule>> RatingServices(RatingServicesRequest request, ISession session = null) 
         {
             var response =  await WebMethod.Get<ServiceRule[], RatingServicesRequest>("/shippingservices/v1/information/rules/rating-services", request, session);

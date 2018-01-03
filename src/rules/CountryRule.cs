@@ -20,11 +20,20 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Load an cache the list of country codes.
+    /// </summary>
     public class CountryRule
     {
 
         private static object _lock = new object();
+        /// <summary>
+        /// List of countries
+        /// </summary>
         public static Dictionary<string, string> Rules = new Dictionary<string, string>();
+        /// <summary>
+        /// Last time the rules were downloaded from the server
+        /// </summary>
         public static DateTimeOffset? LastUpdate { get; set; }
 
         private static void Load(ISession session = null)
@@ -56,6 +65,12 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
                 }
             }
         }
+        /// <summary>
+        /// Validate a country against the country list in the rules. 
+        /// </summary>
+        /// <param name="countryCode"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public static bool Validate(string countryCode, ISession session)
         {
             Load(session);

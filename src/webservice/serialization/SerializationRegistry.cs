@@ -22,11 +22,18 @@ using PitneyBowes.Developer.ShippingApi.Json;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Class to manage object creation during the serialization and deserialization process. A wrapper class is used to specify the JSON 
+    /// attributes during both serialization and deserialization. During deserialization an object implementing the service data constract
+    /// is created. The SerializationRegistry holds the relationship between the data contract interface, the wrapper and the deserialization class.
+    /// </summary>
     public class SerializationRegistry
     {
         private Dictionary<Type, JsonConverter> _serializationRegistry = new Dictionary<Type, JsonConverter>();
         private Dictionary<Type, Type> _wrapperRegistry = new Dictionary<Type, Type>();
-
+        /// <summary>
+        /// Default constructor - initializes the structures.
+        /// </summary>
         public SerializationRegistry()
         {
             _serializationRegistry.Add(typeof(SpecialServiceCodes), new SpecialServiceCodesConverter());
@@ -37,7 +44,7 @@ namespace PitneyBowes.Developer.ShippingApi
             RegisterSerializationWrappers();
         }
 
-        public JsonConverter GetConverter(Type type)
+        internal JsonConverter GetConverter(Type type)
         {
             if (_serializationRegistry.ContainsKey(type))
             {
@@ -46,6 +53,12 @@ namespace PitneyBowes.Developer.ShippingApi
             return null;
         }
 
+        /// <summary>
+        /// Register a type for the deserializer to create. Works like an IoC container. Would be good to be able to plug in an IoC container here
+        /// but JSON.net doesnt have support for this.
+        /// </summary>
+        /// <typeparam name="I">Data contract interface</typeparam>
+        /// <typeparam name="T">Type of object to create</typeparam>
         public void RegisterSerializationTypes<I, T>() where T : I
         {
             Type interfaceType = typeof(I);

@@ -17,11 +17,30 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Interface for all rate rule visitor classes
+    /// </summary>
     public interface IRateRuleVisitor
     {
+        /// <summary>
+        /// Visit CarrierRule node
+        /// </summary>
+        /// <param name="carrierRule"></param>
         void Visit(CarrierRule carrierRule);
+        /// <summary>
+        /// Visit ServiceRule node
+        /// </summary>
+        /// <param name="serviceRule"></param>
         void Visit(ServiceRule serviceRule);
+        /// <summary>
+        /// Visit ParcelRule node
+        /// </summary>
+        /// <param name="parcelRule"></param>
         void Visit(ParcelTypeRule parcelRule);
+        /// <summary>
+        /// Visit SpecialServices rule node
+        /// </summary>
+        /// <param name="specialServicesRule"></param>
         void Visit(SpecialServicesRule specialServicesRule);
     }
 }

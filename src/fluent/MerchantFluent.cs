@@ -22,6 +22,10 @@ using PitneyBowes.Developer.ShippingApi;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
+    /// <summary>
+    /// Allows easy creation of merchant objects to send in API requests.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     class MerchantFluent<T> where T : IMerchant, new()
     {
         private T _merchant;
@@ -111,52 +115,104 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             return null;
 
         }
-
+        /// <summary>
+        /// The merchant’s full name.
+        /// </summary>
+        /// <param name="f"></param>
+        /// <returns></returns>
         public MerchantFluent<T> FullName( string f)
         {
             _merchant.FullName = f;
             return this;
         }
+        /// <summary>
+        /// The merchant’s email address.
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public MerchantFluent<T> Email( string e)
         {
             _merchant.Email = e;
             return this;
         }
+        /// <summary>
+        /// The date that the merchant’s PB Postage Account was registered
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
         public MerchantFluent<T> RegisteredDate(DateTimeOffset d)
         {
             _merchant.RegisteredDate = d;
             return this;
         }
+        /// <summary>
+        /// The Pitney Bowes customer account number assigned to the merchant.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public MerchantFluent<T> PaymentAccountNumber(string p)
         {
             _merchant.PaymentAccountNumber = p;
             return this;
         }
+        /// <summary>
+        /// An enterprise account number that is associated with the merchant.
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public MerchantFluent<T> EnterpriseAccount(string e)
         {
             _merchant.EnterpriseAccount = e;
             return this;
         }
+        /// <summary>
+        /// Any subscription account that the merchant might have.
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public MerchantFluent<T> SubscriptionAccount( string s)
         {
             _merchant.SubscriptionAccount = s;
             return this;
         }
+        /// <summary>
+        /// The unique ID used to identify the merchant.  Note: This value is also the merchant’s Shipper ID.You must specify 
+        /// Shipper ID when creating a shipment.        
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public MerchantFluent<T> PostalReportingNumber( string p)
         {
             _merchant.PostalReportingNumber = p;
             return this;
         }
+        /// <summary>
+        /// The merchant’s status.
+        /// </summary>
+        /// <param name="m"></param>
+        /// <returns></returns>
         public MerchantFluent<T> MerchantStatus( string m)
         {
             _merchant.MerchantStatus = m;
             return this;
         }
+        /// <summary>
+        /// If you change a merchant’s status from ACTIVE to INACTIVE, you must give a reason for the change. The reason is recorded here. 
+        /// For an active merchant, the field is set to null.
+        /// </summary>
+        /// <param name="m"></param>
+        /// <returns></returns>
         public MerchantFluent<T>  MerchantStatusReason( string m)
         {
             _merchant.MerchantStatusReason = m;
             return this;
         }
+        /// <summary>
+        /// The date the merchant’s PB Postage Account was deactivated, if applicable. For an active merchant, the field is set to null.
+        /// A deactivated merchant can no longer print labels.
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
         public MerchantFluent<T> DeactivatedDate( DateTimeOffset d)
         {
             _merchant.DeactivatedDate = d;

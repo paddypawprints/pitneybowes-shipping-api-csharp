@@ -19,13 +19,44 @@ using System.Threading.Tasks;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// POST, PUT, GET, DELETE
+    /// </summary>
     public enum HttpVerb
     {
-        POST, PUT, GET, DELETE
+        /// <summary>
+        /// Http POST
+        /// </summary>
+        POST,
+        /// <summary>
+        /// Http PUT
+        /// </summary>
+        PUT,
+        /// <summary>
+        /// Http GET
+        /// </summary>
+        GET,
+        /// <summary>
+        /// Http DELETE
+        /// </summary>
+        DELETE
     }
-
+    /// <summary>
+    /// Interface for http call. Allows the call to be replaced by a mock for testing.
+    /// </summary>
     public interface IHttpRequest
     {
+        /// <summary>
+        /// Http request method.
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="resource"></param>
+        /// <param name="verb"></param>
+        /// <param name="request"></param>
+        /// <param name="deleteBody"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
          Task<ShippingApiResponse<Response>> HttpRequest<Response, Request>(string resource, HttpVerb verb, Request request, bool deleteBody = false, ISession session = null) where Request : IShippingApiRequest;
     }
 }

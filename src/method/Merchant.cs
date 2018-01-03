@@ -57,7 +57,9 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         [JsonProperty("renderType")]
         public string RenderType { get; set; }
-
+        /// <summary>
+        /// The URL for the payment page will redirect to (on your site) after successful signup.
+        /// </summary>
         [JsonProperty("returnUrl")]
         public string ReturnUrl { get; set; }
         /// <summary>
@@ -198,10 +200,14 @@ namespace PitneyBowes.Developer.ShippingApi
         /// REQUIRED. The identifier for the developer
         /// </summary>
         public string DeveloperId { get; set; }
-
+        /// <summary>
+        /// Merchant user name for merchant portal
+        /// </summary>
         [JsonProperty("username")]
         public string UserName { get; set; }
-
+        /// <summary>
+        /// Merchant password for merchant portal
+        /// </summary>
         [JsonProperty("password")]
         public string Password { get; set; }
         /// <summary>
@@ -259,6 +265,9 @@ namespace PitneyBowes.Developer.ShippingApi
         public bool Residential { get;set;}
     }
 
+    /// <summary>
+    /// Request and response object for the MerchantAutoRefillRule web method
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class MerchantAutoRefillRuleRequest : ShippingApiRequest
     {
@@ -271,14 +280,52 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         [ShippingApiHeader("Bearer")]
         public override StringBuilder Authorization { get; set; }
+        /// <summary>
+        /// REQUIRED. The identifier for the developer
+        /// </summary>
         public string DeveloperId { get; set; }
+        /// <summary>
+        /// REQUIRED. The postalReportingNumber of the merchant, as found in the merchant object. The postalReportingNumber 
+        /// is the unique ID used to identify the merchant.
+        /// </summary>
         public string ShipperId { get; set; }
+        /// <summary>
+        /// 	
+        /// REQUIRED.The value of this field depends on whether the object is part of the request or the response:
+        /// Request: This field is set to the postalReportingNumber for the merchant, as found in the merchant object.
+        /// Response: This field is set to the paymentAccountNumber for the merchant, as found in the merchant object.
+        /// Note: The merchant’s postalReportingNumber is separate from the merchant’s paymentAccountNumber.
+        /// </summary>
         [JsonProperty("merchantID")]
         public string MerchantID { get; set; }
+        /// <summary>
+        /// CONDITIONAL. The amount at which the merchant’s PB Postage Account is refilled. The account refills when the balance 
+        /// falls below this value.
+        ///
+        /// This field is required in a request if you are doing any of the following:
+        ///     * enabling automatic refill
+        ///     * updating the threshold
+        ///     * updating the refill amount
+        /// If you do not include this field, the value is set to null, which effectively disables automatic refill for the account.
+        /// </summary>
         [JsonProperty("threshold")]
         public decimal Threshold { get; set; }
+        /// <summary>
+        /// CONDITIONAL. The amount added to the merchant’s PB Postage Account when the balance falls below the threshold value.
+        ///
+        /// This field is required in a request if you are doing any of the following:
+        ///     * enabling automatic refill
+        ///     * updating the threshold
+        ///     * updating the refill amount
+        /// If you do not include this field, the value is set to null, which effectively disables automatic refill for the account.
+        /// </summary>
         [JsonProperty("addAmount")]
         public decimal AddAmount { get; set; }
+        /// <summary>
+        /// CONDITIONAL. If set to true, automatic refill is enabled.
+        ///
+        /// Note: If you do not include this field in a request, the value is set to false.
+        /// </summary>
         [JsonProperty("enabled")]
         public Boolean Enabled { get; set; }
 
@@ -324,7 +371,9 @@ namespace PitneyBowes.Developer.ShippingApi
         [JsonProperty("currencyCode")]
         string CurrencyCode { get; set; }
     }
-
+    /// <summary>
+    /// Request object for the Mechantdeactivate call
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class MerchantDeactivateRequest : ShippingApiRequest
     {
@@ -337,9 +386,14 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         [ShippingApiHeader("Bearer")]
         public override StringBuilder Authorization { get; set; }
-
+        /// <summary>
+        /// REQUIRED. The identifier for the developer.
+        /// </summary>
         public string DeveloperId { get; set; }
-
+        /// <summary>
+        /// REQUIRED. The postalReportingNumber of the merchant, as found in the merchant object. The postalReportingNumber is 
+        /// the unique ID used to identify the merchant.
+        /// </summary>
         public string AccountId { get; set; }
 
         [JsonProperty("reason")]
@@ -477,7 +531,7 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <returns></returns>
     public async static Task<ShippingApiResponse<IMerchant>> MerchantDeactivateAccount<IMerchant>(MerchantDeactivateRequest request, ISession session = null)
         {
-            return await WebMethod.Get<IMerchant, MerchantDeactivateRequest>("/shippingservices/v2/developers/{DeveloperId}/accounts/{ShipperId}/deactivate ", request, session);
+            return await WebMethod.Get<IMerchant, MerchantDeactivateRequest>("/shippingservices/v2/developers/{DeveloperId}/accounts/{AccountId}/deactivate ", request, session);
         }
     }
 }

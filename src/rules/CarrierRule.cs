@@ -17,13 +17,32 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Root of the carrier rules. Defines allowed combination or carrier and origin and destination countries.
+    /// </summary>
     public class CarrierRule : IRateRule
     {
+        /// <summary>
+        /// Carrier
+        /// </summary>
         public Carrier Carrier { get; set; }
+        /// <summary>
+        /// Origin country
+        /// </summary>
         public string OriginCountry { get; set; }
+        /// <summary>
+        /// Desitnation country
+        /// </summary>
         public string DestinationCountry { get; set; }
+        /// <summary>
+        /// Services rules for this carrier
+        /// </summary>
         public IndexedList<Services, ServiceRule> ServiceRules { get; set; }
 
+        /// <summary>
+        /// Accept method for the visitor pattern
+        /// </summary>
+        /// <param name="visitor"></param>
         public void Accept(IRateRuleVisitor visitor)
         {
             visitor.Visit(this);

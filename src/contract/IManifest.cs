@@ -96,6 +96,11 @@ namespace PitneyBowes.Developer.ShippingApi
 
     public static partial class InterfaceValidators
     {
+        /// <summary>
+        /// If false, the object underlying the interface is not valid. If true, the object may or may not be valid.
+        /// </summary>
+        /// <param name="manifest"></param>
+        /// <returns></returns>
         public static bool IsValid(this IManifest manifest)
         {
             if (manifest.TransactionId.Length > 25) return false;

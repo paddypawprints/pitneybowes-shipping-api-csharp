@@ -28,40 +28,92 @@ using PitneyBowes.Developer.ShippingApi.Report;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
-
+    /// <summary>
+    /// Request object for Transaction Page service call
+    /// </summary>
     public class ReportRequest : ShippingApiRequest, IReportRequest
     {
+        /// <summary>
+        /// If recorded, the file will be named by the developer id and the page number
+        /// </summary>
         public override string RecordingSuffix => DeveloperId+"-Page"+Page;
+        /// <summary>
+        /// /Developer Id
+        /// </summary>
         public string DeveloperId { get; set; }
+        /// <summary>
+        /// The beginning of the date range for transactions.
+        /// </summary>
         [ShippingApiQuery("fromDate",Format = "{0:yyyy-MM-ddTHH:mm:ssZ}")]
         public DateTimeOffset FromDate { get; set; }
+        /// <summary>
+        /// The end of the date range for transactions.
+        /// </summary>
         [ShippingApiQuery("toDate",Format = "{0:yyyy-MM-ddTHH:mm:ssZ}")]
         public DateTimeOffset ToDate { get; set; }
+        /// <summary>
+        /// Unique identifier used while creating the shipment.
+        /// Note: Prefix the transactionId with a % symbol.
+        /// For example: %12343345
+        /// </summary>
         [ShippingApiQuery("transactionId", true)]
         public string TransactionId { get; set; }
+        /// <summary>
+        /// 	Parcel tracking number of the shipment.
+        /// </summary>
         [ShippingApiQuery("parcelTrackingNumber", true)]
         public string ParcelTrackingNumber { get; set; }
+        /// <summary>
+        /// The value of the postalReportingNumber element in the merchant object. This value is also the merchant’s Shipper ID.
+        /// </summary>
         [ShippingApiQuery("merchantId", true)]
         public string MerchantId { get; set; }
+        /// <summary>
+        /// Transaction Type.
+        /// </summary>
         [ShippingApiQuery("transactionType", true)]
         public TransactionType? TransactionType { get; set; }
+        /// Page size of the result set for the specified query filters.Specifically, the number of transactions to return per page in the result set.Default page size is 20.
         [ShippingApiQuery("size", true)]
         public int? PageSize { get; set; }
+        /// <summary>
+        /// The index number of the page to return. Page index numbering starts at 0. Specifying page=0 returns the first page of the result set.
+        /// </summary>
         [ShippingApiQuery("page", true)]
         public int Page { get; set; }
+        /// <summary>
+        /// Define a property to sort on and a sort order.Use the following form: property name,sort direction
+        ///     * Sort direction can be ascending (asc) or descending (desc).
+        ///     * For example, the following indicates the result set should be sorted in descending order of the transactionId:
+        ///         sort= transactionId, desc
+        /// </summary>
         [ShippingApiQuery("sort", true)]
         public string Sort { get; set; }
-        [ShippingApiHeaderAttribute("Bearer")]
+        /// <summary>
+        /// Authentication token
+        /// </summary>
+        [ShippingApiHeader("Bearer")]
         public override StringBuilder Authorization { get; set; }
-        [ShippingApiHeaderAttribute("Accept-Language")]
+        /// <summary>
+        /// Http header accept-language
+        /// </summary>
+        [ShippingApiHeader("Accept-Language")]
         public string AcceptLanguage { get; set; }
+        /// <summary>
+        /// Http header content type - application/json
+        /// </summary>
         public override string ContentType { get => "application/json";}
-
+        /// <summary>
+        /// Constructor - sets AcceptLanguage
+        /// </summary>
         public ReportRequest()
         {
             AcceptLanguage = CultureInfo.CurrentCulture.Name;
         }
-
+        /// <summary>
+        /// Validate that the request is ok.
+        /// </summary>
+        /// <returns></returns>
         public bool Validate()
         {
             return ToDate != null && FromDate != null;

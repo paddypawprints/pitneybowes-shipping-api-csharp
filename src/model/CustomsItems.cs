@@ -19,6 +19,9 @@ using System;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// The commodity information about each item in an international shipment used for customs clearance. 
+    /// </summary>
     public class CustomsItems : ICustomsItems
     {
         /// <summary>
@@ -52,5 +55,4 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// <value>The origin country code.</value>
         virtual public string OriginCountryCode {get;set;}
     }
-
 }

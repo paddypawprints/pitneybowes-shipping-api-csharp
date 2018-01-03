@@ -23,17 +23,33 @@ using System.Linq.Expressions;
 
 namespace PitneyBowes.Developer.ShippingApi.Report
 {
+    /// <summary>
+    /// Base report class implementing common functionality to support linq queries. Works closely with ReportProviderBase 
+    /// - extend both to implement your report.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ReportBase<T> : IOrderedQueryable<T>
     {
-
+        /// <summary>
+        /// Linq Query provider. Extend ReportProviderBase to implement your report.
+        /// </summary>
         public IQueryProvider Provider { get; protected set; }
+        /// <summary>
+        /// Linq expression
+        /// </summary>
         public Expression Expression { get; private set; }
-
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public ReportBase()
         {
             Expression = Expression.Constant(this);
         }
-
+        /// <summary>
+        /// Constructor as required by LINQ
+        /// </summary>
+        /// <param name="provider"></param>
+        /// <param name="expression"></param>
         public ReportBase(IQueryProvider provider, Expression expression)
         {
             if (expression == null)
@@ -49,17 +65,25 @@ namespace PitneyBowes.Developer.ShippingApi.Report
             Provider = provider ?? throw new ArgumentNullException("provider is null");
             Expression = expression;
         }
-
+        /// <summary>
+        /// Type of object returned - row in a report.
+        /// </summary>
         public Type ElementType
         {
             get => typeof(T);
         }
-
+        /// <summary>
+        /// Enumerator for the result set
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator<T> GetEnumerator()
         {
             return (Provider.Execute<IEnumerable<T>>(Expression)).GetEnumerator();
         }
-
+        /// <summary>
+        /// Untyped Enumerator for the result set (not used)
+        /// </summary>
+        /// <returns></returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return (Provider.Execute<IEnumerable>(Expression)).GetEnumerator();

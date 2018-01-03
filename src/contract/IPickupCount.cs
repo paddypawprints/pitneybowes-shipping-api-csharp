@@ -17,6 +17,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Count and total weight of parcels to be picked up (for a given carrier service)
+    /// </summary>
     public interface  IPickupCount
     {
         /// <summary>
@@ -39,6 +42,11 @@ namespace PitneyBowes.Developer.ShippingApi
 
     public static partial class InterfaceValidators
     {
+        /// <summary>
+        /// If false, the object underlying the interface is not valid. If true, the object may or may not be valid.
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public static bool IsValid(this IPickupCount c)
         {
             return c.Count > 0;

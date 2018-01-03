@@ -51,8 +51,10 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
     /// </summary>
     public enum PMODPaymentMethod
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         ELECTRONIC,
         NONELECTRONIC
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 
     /// <summary>

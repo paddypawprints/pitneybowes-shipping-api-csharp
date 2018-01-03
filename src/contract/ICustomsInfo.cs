@@ -102,8 +102,19 @@ namespace PitneyBowes.Developer.ShippingApi
         string CertificateNumber { get; set; }
     }
 
+    /// <summary>
+    /// This class contains extension methods to validate the interfaces that define the shipping objects. Extension methods are used 
+    /// because interfaces cannot have code.
+    /// 
+    /// Use partial class so that the method can be located with the interface. 
+    /// </summary>
     public static partial class InterfaceValidators
     {
+        /// <summary>
+        /// If false, the object underlying the interface is not valid. If true, the object may or may not be valid.
+        /// </summary>
+        /// <param name="customsInfo"></param>
+        /// <returns></returns>
         public static bool IsValid( this ICustomsInfo customsInfo )
         {
             if (customsInfo.ReasonForExport != ReasonForExport.OTHER) return true;

@@ -21,16 +21,35 @@ using Newtonsoft.Json.Converters;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
-
+    /// <summary>
+    /// At the top level, rules are organized by service type. Within a service type, each set of rules applies to a combination of parcel 
+    /// type(parcelTypeRules.parcelType) and rate type(parcelTypeRules.rateTypeId).
+    ///
+    /// Rules tell you:
+    ///     * Compatible special services(parcelTypeRules.specialServiceRules)
+    ///     * Required special services(parcelTypeRules.specialServiceRules.prerequisiteRules)
+    ///     * Incompatible special services(parcelTypeRules.specialServiceRules.incompatibleSpecialServices)
+    ///     * Required input parameters(parcelTypeRules.specialServiceRules.inputParameterRules)
+    ///     * Weight constraints(parcelTypeRules.weightRules)
+    ///     * Dimension constraints(parcelTypeRules.dimensionRules)
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class ServiceRule : IRateRule
     {
-
+        /// <summary>
+        ///  The abbreviated name of the carrier-specific service.
+        /// </summary>
         [JsonProperty("serviceId")]
         [JsonConverter(typeof(StringEnumConverter))]
         public Services ServiceId { get; set; }
+        /// <summary>
+        /// The full name of the service.
+        /// </summary>
         [JsonProperty("brandedName")]
         public string BrandedName { get; set; }
+        /// <summary>
+        /// 	The available service options.
+        /// </summary>
         public IndexedList<ParcelType, ParcelTypeRule> ParcelTypeRules { get; internal set; }
 
         [JsonProperty("parcelTypeRules")]
@@ -46,7 +65,10 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
                 
             }
         }
-
+        /// <summary>
+        /// Required for visitor interface
+        /// </summary>
+        /// <param name="visitor"></param>
         public void Accept(IRateRuleVisitor visitor)
         {
             visitor.Visit(this);

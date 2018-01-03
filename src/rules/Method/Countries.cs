@@ -24,21 +24,42 @@ using System.IO;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Request object for the countries call
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     [JsonObject(MemberSerialization.OptIn)]
     public class CountriesRequest<T> : IShippingApiRequest where T : Country, new()
     {
+        /// <summary>
+        /// Suffix to add to the file name when recording the response to a file
+        /// </summary>
         public string RecordingSuffix => "";
+        /// <summary>
+        /// Path to use when recording the file
+        /// </summary>
+        /// <param name="resource"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public string RecordingFullPath(string resource, ISession session)
         {
             return ShippingApiRequest.RecordingFullPath(this, resource, session);
         }
-
+        /// <summary>
+        /// REQUIRED. Carrier. Valid value(s): usps
+        /// </summary>
         [ShippingApiQuery("carrier")]
         public Carrier Carrier { get; set; }
-
+        /// <summary>
+        /// REQUIRED. Carrier. Valid value(s): usps
+        /// </summary>
         [ShippingApiQuery("originCountryCode")]
         public string OriginCountryCode { get; set; }
-
+        /// <summary>
+        /// Return the URI for the method (after inserting properties)
+        /// </summary>
+        /// <param name="baseUrl"></param>
+        /// <returns></returns>
         public string GetUri(string baseUrl)
         {
             StringBuilder uri = new StringBuilder(baseUrl);
@@ -46,28 +67,45 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             ShippingApiRequest.AddRequestQuery(this, uri);
             return uri.ToString();
         }
-
+        /// <summary>
+        /// Return http header values.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders()
         {
             return ShippingApiRequest.GetHeaders(this);
         }
-
+        /// <summary>
+        /// Serialize request body for http request
+        /// </summary>
+        /// <param name="writer"></param>
+        /// <param name="session"></param>
         public void SerializeBody(StreamWriter writer, ISession session)
         {
             ShippingApiRequest.SerializeBody(this, writer, session);
         }
-
-        [JsonProperty("destinationZone")]
-
+        /// <summary>
+        /// http content-type header. "application/json"
+        /// </summary>
         public string ContentType => "application/json";
-
+        /// <summary>
+        /// OAUTH token
+        /// </summary>
         [ShippingApiHeaderAttribute("Bearer")]
         public StringBuilder Authorization { get; set; }
     }
-
+    /// <summary>
+    /// This operation returns a list of supported destination countries to which the carrier offers international shipping services.
+    /// </summary>
     public static class CountriesMethods
     {
-
+        /// <summary>
+        /// This operation returns a list of supported destination countries to which the carrier offers international shipping services.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         public async static Task<ShippingApiResponse<IEnumerable<T>>> Countries<T>(CountriesRequest<T> request, ISession session = null) where T : Country, new()
         {
             return await WebMethod.Get<IEnumerable<T>, CountriesRequest<T>>("/shippingservices/v1/countries", request, session);

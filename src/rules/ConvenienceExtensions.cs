@@ -19,8 +19,19 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Extension methods to make working with the rules easier. They apply to interfaces and, therefore need to be extension methods rather than 
+    /// regular methods.
+    /// </summary>
     public static class ConvenienceExtensions
     {
+        /// <summary>
+        /// Extension method to determine if an IEnumberable contains a value.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="enumerable"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static bool Contains<T>(this IEnumerable<T> enumerable, T value)
         {
             foreach( var t in enumerable)
@@ -30,6 +41,12 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
             }
             return false;
         }
+        /// <summary>
+        /// Is the parcel within the boundaries set by the DimensioRule.
+        /// </summary>
+        /// <param name="parcel"></param>
+        /// <param name="rule"></param>
+        /// <returns></returns>
         public static bool IsWithin(this IParcelDimension parcel, DimensionRule rule)
         {
             // TODO: convert to parcel units
@@ -43,6 +60,12 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
  //               return false;
             return true;
         }
+        /// <summary>
+        /// Is the parce weight within the boundaries set by the WeightRule.
+        /// </summary>
+        /// <param name="parcel"></param>
+        /// <param name="rule"></param>
+        /// <returns></returns>
         public static bool IsWithin(this IParcelWeight parcel, WeightRule rule)
         {
             // TODO: convert to parce units

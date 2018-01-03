@@ -19,11 +19,21 @@ using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi.Rules
 {
+    /// <summary>
+    /// Prerequisites for applying the special service. If you select this special service, you must also select the other special 
+    /// services in this array.
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class ServicesPrerequisiteRule 
     {
+        /// <summary>
+        /// Id of the service
+        /// </summary>
         [JsonProperty("specialServiceId")]
         virtual public SpecialServiceCodes SpecialServiceId{get; set;}
+        /// <summary>
+        /// Minimul value, if numeric
+        /// </summary>
         [JsonProperty("minInputValue")]
         virtual public decimal MinInputValue{get; set;}
     }

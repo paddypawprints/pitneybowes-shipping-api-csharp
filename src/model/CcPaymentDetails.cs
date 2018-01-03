@@ -17,12 +17,31 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// CREDIT CARD ONLY. The credit card information. This field is required if the paymentMethod field is set to CC.
+    /// </summary>
     public class CcPaymentDetails : ICcPaymentDetails
     {
+        /// <summary>
+        /// The type of credit card - visa, mastercard etc
+        /// </summary>
         virtual public CreditCardType CcType{get; set;}
+        /// <summary>
+        /// The tokenized credit card number.
+        /// </summary>
         virtual public string CcTokenNumber{get; set;}
+        /// <summary>
+        /// The month and year the card expires, entered as the two-digit month and four-digit year separated by a backslash. 
+        /// For example: 06/2021
+        /// </summary>
         virtual public string CcExpirationDate{get; set;}
+        /// <summary>
+        /// The three- or four-digit Card Verification Value.
+        /// </summary>
         virtual public string CccvvNumber{get; set;}
+        /// <summary>
+        /// The address associated with the credit card account.
+        /// </summary>
         virtual public IAddress CcAddress{get; set;}
     }
 }

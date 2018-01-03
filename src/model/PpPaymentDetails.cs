@@ -22,9 +22,19 @@ using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// PURCHASE POWER ONLY. The merchant’s encrypted TIN and, if applicable, encrypted BPN. The object includes an encrypted BPN 
+    /// only if the merchant already has a Purchase Power account.
+    /// </summary>
     public class PpPaymentDetails : IPpPaymentDetails
     {
+        /// <summary>
+        /// The merchant’s encrypted TIN (Taxpayer Identification Number).
+        /// </summary>
         virtual public string EncryptedTIN{get; set;}
+        /// <summary>
+        /// The merchant’s encrypted BPN (Business Partner Number), applicable only if the merchant already has a Purchase Power account.
+        /// </summary>
         virtual public string EncryptedBPN{get; set;}
     }
 }

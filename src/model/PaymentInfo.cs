@@ -17,11 +17,34 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
+    /// <summary>
+    /// A merchant’s payment method.
+    /// </summary>
     public class PaymentInfo : IPaymentInfo
     {
+        /// <summary>
+        ///  REQUIRED.The payment type.Set this to the following:
+        ///     * For Purchase Power, either:
+        ///         - Create one one paymentInfo object with paymentType to POSTAGE_AND_SUBSCRIPTION, or
+        ///         - Create two paymentInfo objects, one with paymentType set to SUBSCRIPTION and the other with paymentType set to POSTAGE.
+        ///     * For Credit Card payment: Create two paymentInfo objects, one with paymentType set to SUBSCRIPTION and the other with 
+        ///     paymentType set to POSTAGE.
+        /// </summary>
         virtual public PaymentType PaymentType{get; set;}
+        /// <summary>
+        /// REQUIRED. The payment method. Possible values:
+        /// For Purchase Power payment, set this to PurchasePower.
+        /// For Credit Card payment, set this to CC.
+        /// </summary>
         virtual public PaymentMethod PaymentMethod{get; set;}
+        /// <summary>
+        /// PURCHASE POWER ONLY. The merchant’s encrypted TIN and, if applicable, encrypted BPN. The object includes an encrypted BPN only if the 
+        /// merchant already has a Purchase Power account.
+        /// </summary>
         virtual public IPpPaymentDetails PpPaymentDetails{get; set;}
+        /// <summary>
+        /// CREDIT CARD ONLY.The credit card information.This field is required if the paymentMethod field is set to CC.
+        /// </summary>
         virtual public ICcPaymentDetails CcPaymentDetails{get; set;}
     }
 }

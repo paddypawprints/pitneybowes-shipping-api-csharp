@@ -17,8 +17,15 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 namespace PitneyBowes.Developer.ShippingApi
 {
+    /// <summary>
+    /// Allow for common behaviour between report implementations
+    /// </summary>
     public interface IReportRequest
     {
+        /// <summary>
+        /// If true, the inputs to the report are valid and the report can be run.
+        /// </summary>
+        /// <returns></returns>
         bool Validate();
     }
 }
