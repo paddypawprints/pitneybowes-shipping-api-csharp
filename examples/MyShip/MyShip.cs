@@ -13,10 +13,10 @@ namespace MyShip
         {
             var sandbox = new Session() { EndPoint = "https://api-sandbox.pitneybowes.com", Requester = new ShippingApiHttpRequest() };
 
-            sandbox.AddConfigItem("ApiKey", "Ci4vEAgBP8Aww7TBwGOKhr43uKTPNyfO");
-            sandbox.AddConfigItem("ApiSecret", "wgNEtZkNbP0iV8h0");
-            sandbox.AddConfigItem("ShipperID", "9014888410");
-            sandbox.AddConfigItem("DeveloperID", "46841939");
+            sandbox.AddConfigItem("ApiKey", "your api key");
+            sandbox.AddConfigItem("ApiSecret", "your api secret");
+            sandbox.AddConfigItem("ShipperID", "your shipper id");
+            sandbox.AddConfigItem("DeveloperID", "your developer id");
 
             Model.RegisterSerializationTypes(sandbox.SerializationRegistry);
             Globals.DefaultSession = sandbox;
@@ -41,7 +41,7 @@ namespace MyShip
                .Documents((List<IDocument>)DocumentsArrayFluent<Document>.Create()
                     .ShippingLabel(ContentType.URL, Size.DOC_4X6, FileFormat.PDF))
                .ShipmentOptions(ShipmentOptionsArrayFluent<ShipmentOptions>.Create()
-                    .ShipperId("9014888410")
+                    .ShipperId("your shipper id")    // ******* dont forget this one too *******
                     )
                .TransactionId(Guid.NewGuid().ToString().Substring(15));
 
