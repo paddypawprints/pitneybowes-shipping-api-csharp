@@ -16,6 +16,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 */
 
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -34,12 +35,18 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Default session - so you dont need to pass it to all of the methods
         /// </summary>
-        public static ISession DefaultSession { get; set; } 
+        public static ISession DefaultSession { get; set; }
+        private static int _timeOutMilliseconds = 100000; //default .net value
         /// <summary>
         /// Web service call timeout. Has to be set when the HttpClient is initialized and cannot be changed.
         /// </summary>
-        public static int TimeOutMilliseconds = 100000; //default .net value
+        public static int TimeOutMilliseconds { get { return _timeOutMilliseconds; } set { _timeOutMilliseconds = value; } }
         private static Dictionary<string, HttpClient> _clientLookup = new Dictionary<string, HttpClient>();
+        private static string _userAgent = "Pitney Bowes CSharp SDK 1.0";
+        /// <summary>
+        /// User agent string provided by each http call. Useful for server side troubleshooting and analytics.
+        /// </summary>
+        public static string UserAgent { get { return _userAgent; } set { _userAgent = value; } }
         /// <summary>
         /// Per microsoft documentation, you should only have one http client object per url. The client objects are fully thread safe and 
         /// performance is affected if you create them on the fly.
@@ -55,6 +62,10 @@ namespace PitneyBowes.Developer.ShippingApi
                     if (!_clientLookup.TryGetValue(baseUrl, out client))
                     {
                         client = new HttpClient() { BaseAddress = new Uri(baseUrl) };
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Accept.Clear();
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        client.DefaultRequestHeaders.Add("user-agent", UserAgent);
                         client.Timeout = new TimeSpan(0, 0, 0, 0, TimeOutMilliseconds);
                         _clientLookup.Add(baseUrl, client);
                     }

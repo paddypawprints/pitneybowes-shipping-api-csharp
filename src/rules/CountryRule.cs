@@ -27,17 +27,31 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
     {
 
         private static object _lock = new object();
+
+        private static Dictionary<string, string> _rules = new Dictionary<string, string>();
         /// <summary>
         /// List of countries
         /// </summary>
-        public static Dictionary<string, string> Rules = new Dictionary<string, string>();
+        public static Dictionary<string, string> Rules
+        {
+            get
+            {
+                Load();
+                return _rules;
+            }
+        }
+        /// <summary>
+        /// Session
+        /// </summary>
+        public static ISession Session { get; set; }
         /// <summary>
         /// Last time the rules were downloaded from the server
         /// </summary>
         public static DateTimeOffset? LastUpdate { get; set; }
 
-        private static void Load(ISession session = null)
+        private static void Load()
         {
+            if (Session == null) Session = Globals.DefaultSession;
             if (LastUpdate == null || DateTimeOffset.Now - LastUpdate > TimeSpan.FromHours(1))
             {
                 lock (_lock)
@@ -48,19 +62,20 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
                         Carrier = Carrier.USPS,
                         OriginCountryCode = "US"
                     };
-                    var countriesResponse = CountriesMethods.Countries(countriesRequest, session).GetAwaiter().GetResult();
+                    var countriesResponse = CountriesMethods.Countries(countriesRequest, Session).GetAwaiter().GetResult();
                     if (countriesResponse.Success)
                     {
-                        Rules.Clear();
+                        _rules.Clear();
                         foreach (var c in countriesResponse.APIResponse)
                         {
-                            Rules[c.CountryCode] = c.CountryName;
+                            _rules[c.CountryCode] = c.CountryName;
                         }
                         LastUpdate = DateTimeOffset.Now;
                     }
                     else
                     {
-                        //TODO: Unhappy
+                        if (Session != null)
+                            Session.LogError(countriesResponse.ToString());
                     }
                 }
             }
@@ -69,14 +84,13 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
         /// Validate a country against the country list in the rules. 
         /// </summary>
         /// <param name="countryCode"></param>
-        /// <param name="session"></param>
         /// <returns></returns>
-        public static bool Validate(string countryCode, ISession session)
+        public static bool Validate(string countryCode)
         {
-            Load(session);
+            Load();
             lock (_lock)
             {
-                return Rules.ContainsKey(countryCode);
+                return _rules.ContainsKey(countryCode);
             }
         }
     }

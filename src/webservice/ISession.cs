@@ -39,10 +39,6 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         string EndPoint { get; set; }
         /// <summary>
-        /// User agent string provided by each http call. Useful for server side troubleshooting and analytics.
-        /// </summary>
-        string UserAgent { get; set; }
-        /// <summary>
         /// Defines whether to throw exceptions due to deserialization and http errors. If exceptions are not thrown, errors can be seen in the 
         /// Errors member of the response object.
         /// </summary>

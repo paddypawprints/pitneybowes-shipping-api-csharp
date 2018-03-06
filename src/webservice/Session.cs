@@ -28,6 +28,7 @@ namespace PitneyBowes.Developer.ShippingApi
     public class Session : ISession
     {
         private Dictionary<string, string> _configs = new Dictionary<string, string>();
+        private object _lock;
         /// <summary>
         /// Constructor sets defaults for most items so the system can run with minimal configuration.
         /// 
@@ -56,7 +57,6 @@ namespace PitneyBowes.Developer.ShippingApi
             Retries = 3;
             _configs.Add("SANDBOX_ENDPOINT", "https://api-sandbox.pitneybowes.com");
             _configs.Add("PRODUCTION_ENDPOINT", "https://api-sandbox.pitneybowes.com");
-            UserAgent = "Pitney Bowes CSharp SDK 1.0";
             ThrowExceptions = false;
             GetConfigItem = (s) => { return _configs[s]; };
             AddConfigItem  = (k, v) => { _configs.Add(k, v); };
@@ -67,7 +67,7 @@ namespace PitneyBowes.Developer.ShippingApi
             GetApiSecret = () => { return new StringBuilder(GetConfigItem("ApiSecret")); };
             SerializationRegistry = new SerializationRegistry();
             Counters = new Dictionary<string, Counters>();
-
+            _lock = new object();
         }
         /// <summary>
         /// Object to hold mappings between the service contract interfaces, wrapper classes that implement the json/web service messages 
@@ -83,10 +83,6 @@ namespace PitneyBowes.Developer.ShippingApi
         /// The current token is cached in the session.
         /// </summary>
         public Token AuthToken { get; set; }
-        /// <summary>
-        /// User agent string provided by each http call. Useful for server side troubleshooting and analytics.
-        /// </summary>
-        public string UserAgent { get; set; }
         /// <summary>
         /// Time out for the call. The SDK will attempt to return within the timeout, although this is not guaranteed when token 
         /// authentication is required.
@@ -160,7 +156,16 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <param name="time">Call duration in milliseconds</param>
         public void UpdateCounters(string uri, bool success, TimeSpan time)
         {
-            if (!Counters.ContainsKey(uri)) Counters.Add(uri, new Counters());
+            if (!Counters.ContainsKey(uri))
+            {
+                lock (_lock)
+                {
+                    if (!Counters.ContainsKey(uri))
+                    {
+                        Counters.Add(uri, new Counters());
+                    }
+                }
+            }
             if (!success) 
             {
                 Counters[uri].ErrorCount++;

@@ -25,6 +25,14 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public class Counters
     {
+        private object _lock;
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public Counters()
+        {
+            _lock = new object();
+        }
         /// <summary>
         /// Count of the number or error responses
         /// </summary>
@@ -41,8 +49,17 @@ namespace PitneyBowes.Developer.ShippingApi
         public void AddCall(TimeSpan t)
         {
             int bucket = ((int)t.TotalMilliseconds) / 10; // 10 millisecond buckets
-            if (!CallHistogram.ContainsKey((bucket))) CallHistogram.Add(bucket, 0);
-            CallHistogram[bucket] = CallHistogram[bucket] + 1;
+            if (!CallHistogram.ContainsKey((bucket)))
+            {
+                lock (_lock)
+                {
+                    if (!CallHistogram.ContainsKey((bucket)))
+                    {
+                        CallHistogram.Add(bucket, 0);
+                    }
+                }
+            }
+            CallHistogram[bucket]++;
         }
     }
 }

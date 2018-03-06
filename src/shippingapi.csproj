@@ -3,12 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <AssemblyName>shippingapi</AssemblyName>
-    <Version>1.0.7</Version>
+    <Version>1.0.10</Version>
     <PackageId>shippingapi</PackageId>
-    <PackageVersion>1.0.7</PackageVersion>
+    <PackageVersion>1.0.10</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.7</AssemblyVersion>
-    <FileVersion>1.0.7.0</FileVersion>
+    <AssemblyVersion>1.0.10</AssemblyVersion>
+    <FileVersion>1.0.10.0</FileVersion>
     <Authors>Patrick Farry</Authors>
     <Company>Pitney Bowes</Company>
     <Description>Package that provides a local interface to the Pitney Bowes Shipping API. Features and fluent API, strong type support, mocking, linq interface to transaction reports.</Description>

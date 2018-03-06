@@ -30,18 +30,17 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public class ShippingApiHttpRequest : IHttpRequest
     {
-        internal static void AddRequestHeaders(HttpClient client, ShippingApiHeaderAttribute attribute, string propValue, string propName)
+        internal static void AddRequestHeaders(HttpRequestMessage request, ShippingApiHeaderAttribute attribute, string propValue, string propName)
         {
             if (attribute.OmitIfEmpty && (propValue == null || propValue.Equals(String.Empty))) return;
             switch (propName)
             {
                 case "Authorization":
-                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(attribute.Name, propValue);
+                    request.Headers.Authorization = new AuthenticationHeaderValue(attribute.Name, propValue);
                     break;
 
                 default:
-                    client.DefaultRequestHeaders.Remove(attribute.Name);
-                    client.DefaultRequestHeaders.Add(attribute.Name, propValue);
+                    request.Headers.Add(attribute.Name, propValue);
                     break;
             }
         }
@@ -64,59 +63,58 @@ namespace PitneyBowes.Developer.ShippingApi
         {
             if (session == null) session = Globals.DefaultSession;
             var client = Globals.Client(session.EndPoint);
-            client.DefaultRequestHeaders.Clear();
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("user-agent", session.UserAgent);
-            foreach (var h in request.GetHeaders())
-            {
-                AddRequestHeaders(client, h.Item1, h.Item2, h.Item3);
-            }
 
 //            client.Timeout = new TimeSpan(0, 0, 0, 0, session.TimeOutMilliseconds);
 
             string uriBuilder = request.GetUri(resource);
 
             HttpResponseMessage httpResponseMessage;
-
-            if (verb == HttpVerb.PUT || verb == HttpVerb.POST || (verb == HttpVerb.DELETE && deleteBody))
+            using (HttpRequestMessage requestMessage = new HttpRequestMessage())
             {
-                using (var stream = new MemoryStream())
-                using (var writer = new StreamWriter(stream))
+                foreach (var h in request.GetHeaders())
                 {
-                    request.SerializeBody(writer, session);
-                    stream.Seek(0, SeekOrigin.Begin);
+                    AddRequestHeaders(requestMessage, h.Item1, h.Item2, h.Item3);
+                }
+                if (verb == HttpVerb.PUT || verb == HttpVerb.POST || (verb == HttpVerb.DELETE && deleteBody))
+                {
+                    using (var stream = new MemoryStream())
+                    using (var writer = new StreamWriter(stream))
                     using (var reqContent = new StreamContent(stream))
                     {
+                        request.SerializeBody(writer, session);
+                        stream.Seek(0, SeekOrigin.Begin);
+                        requestMessage.Content = reqContent;
                         reqContent.Headers.ContentType = new MediaTypeHeaderValue(request.ContentType);
                         if (verb == HttpVerb.PUT)
                         {
-                            httpResponseMessage = await client.PutAsync(uriBuilder, reqContent);
+                            requestMessage.Method = HttpMethod.Put;
                         }
                         else if (verb == HttpVerb.DELETE)
                         {
-                            HttpRequestMessage deleteReq = new HttpRequestMessage
-                            {
-                                Content = reqContent,
-                                Method = HttpMethod.Delete,
-                                RequestUri = new Uri(client.BaseAddress + uriBuilder)
-                            };
-                            httpResponseMessage = await client.SendAsync(deleteReq);
+                            requestMessage.Method = HttpMethod.Delete;
                         }
                         else
                         {
-                            httpResponseMessage = await client.PostAsync(uriBuilder, reqContent);
+                            requestMessage.Method = HttpMethod.Post;
                         }
-                    }
+                        requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
+                        httpResponseMessage = await client.SendAsync(requestMessage);
+                    }              
                 }
-            }
-            else if (verb == HttpVerb.DELETE)
-            {
-                httpResponseMessage = await client.DeleteAsync(uriBuilder);
-            }
-            else
-            {
-                httpResponseMessage = await client.GetAsync(uriBuilder);
+                else if (verb == HttpVerb.DELETE)
+                {
+                    requestMessage.Method = HttpMethod.Delete;
+                    requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
+                    httpResponseMessage = await client.SendAsync(requestMessage);
+
+                }
+                else
+                {
+                    requestMessage.Method = HttpMethod.Get;
+                    requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
+                    httpResponseMessage = await client.SendAsync(requestMessage);
+
+                }
             }
 
             using (var respStream = await httpResponseMessage.Content.ReadAsStreamAsync())

@@ -18,6 +18,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 using System;
 using System.Threading.Tasks;
 using System.IO;
+using System.Net.Http;
 using System.Net.Http.Headers;
 
 namespace PitneyBowes.Developer.ShippingApi
@@ -92,8 +93,9 @@ namespace PitneyBowes.Developer.ShippingApi
                 default:
                     break;
             }
-            client.DefaultRequestHeaders.Add("user-agent", session.UserAgent);
-            var httpResponseMessage = await client.GetAsync(page);
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, page);
+            requestMessage.Headers.Add("user-agent", Globals.UserAgent); 
+            var httpResponseMessage = await client.SendAsync(requestMessage);
             await httpResponseMessage.Content.CopyToAsync(stream);
             await stream.FlushAsync();
         }
