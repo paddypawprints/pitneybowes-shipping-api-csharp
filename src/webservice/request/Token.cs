@@ -61,7 +61,8 @@ namespace PitneyBowes.Developer.ShippingApi
 
         public void Dispose()
         {
-            Authorization.Clear();
+            if (Authorization!=null)
+                Authorization.Clear();
         }
 
     }

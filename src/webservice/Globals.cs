@@ -48,6 +48,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         public static string UserAgent { get { return _userAgent; } set { _userAgent = value; } }
         /// <summary>
+        /// Maximum number of http connections allowed for http client
+        /// </summary>
+        public static int MaxHttpConnections { get; set; }
+        /// <summary>
         /// Per microsoft documentation, you should only have one http client object per url. The client objects are fully thread safe and 
         /// performance is affected if you create them on the fly.
         /// </summary>
@@ -61,7 +65,18 @@ namespace PitneyBowes.Developer.ShippingApi
                 {
                     if (!_clientLookup.TryGetValue(baseUrl, out client))
                     {
-                        client = new HttpClient() { BaseAddress = new Uri(baseUrl) };
+                        if (MaxHttpConnections > 0)
+                        {
+                            client = new HttpClient(new HttpClientHandler
+                            {
+                                MaxConnectionsPerServer = MaxHttpConnections
+                            });
+                        }
+                        else
+                        {
+                            client = new HttpClient();
+                        }
+                        client.BaseAddress = new Uri(baseUrl);
                         client.DefaultRequestHeaders.Clear();
                         client.DefaultRequestHeaders.Accept.Clear();
                         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));

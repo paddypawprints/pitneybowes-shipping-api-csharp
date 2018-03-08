@@ -19,6 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Threading;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
@@ -28,7 +29,7 @@ namespace PitneyBowes.Developer.ShippingApi
     public class Session : ISession
     {
         private Dictionary<string, string> _configs = new Dictionary<string, string>();
-        private object _lock;
+        private ReaderWriterLockSlim _lock;
         /// <summary>
         /// Constructor sets defaults for most items so the system can run with minimal configuration.
         /// 
@@ -58,7 +59,11 @@ namespace PitneyBowes.Developer.ShippingApi
             _configs.Add("SANDBOX_ENDPOINT", "https://api-sandbox.pitneybowes.com");
             _configs.Add("PRODUCTION_ENDPOINT", "https://api-sandbox.pitneybowes.com");
             ThrowExceptions = false;
-            GetConfigItem = (s) => { return _configs[s]; };
+            GetConfigItem = (s) => {
+                if (!_configs.ContainsKey(s))
+                    throw new ArgumentException(string.Format("Config string {0} not found", s));
+                return _configs[s];
+            };
             AddConfigItem  = (k, v) => { _configs.Add(k, v); };
             LogWarning = (s) => { };
             LogError = (s) => { };
@@ -67,7 +72,7 @@ namespace PitneyBowes.Developer.ShippingApi
             GetApiSecret = () => { return new StringBuilder(GetConfigItem("ApiSecret")); };
             SerializationRegistry = new SerializationRegistry();
             Counters = new Dictionary<string, Counters>();
-            _lock = new object();
+            _lock = new ReaderWriterLockSlim();
         }
         /// <summary>
         /// Object to hold mappings between the service contract interfaces, wrapper classes that implement the json/web service messages 
@@ -148,6 +153,23 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Counters holds statistics for each method call.
         /// </summary>
         public Dictionary<string, Counters> Counters { get; internal set; }
+
+        private void AddCounterIfRequired(string key)
+        {
+            _lock.EnterWriteLock();
+            try
+            {
+                if (!Counters.ContainsKey(key))
+                {
+                    Counters.Add(key, new Counters());
+                }
+            }
+            finally
+            {
+                _lock.ExitWriteLock();
+            }
+
+        }
         /// <summary>
         /// Update the performance counters with the result of the latest service call.
         /// </summary>
@@ -156,23 +178,37 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <param name="time">Call duration in milliseconds</param>
         public void UpdateCounters(string uri, bool success, TimeSpan time)
         {
-            if (!Counters.ContainsKey(uri))
+            AddCounterIfRequired(uri);
+            _lock.EnterReadLock();
+            try
             {
-                lock (_lock)
+                if (!success)
                 {
-                    if (!Counters.ContainsKey(uri))
-                    {
-                        Counters.Add(uri, new Counters());
-                    }
+                    Counters[uri].ErrorCount++;
+                }
+                else
+                {
+                    Counters[uri].AddCall(time);
                 }
             }
-            if (!success) 
+            finally
             {
-                Counters[uri].ErrorCount++;
+                _lock.ExitReadLock();
             }
-            else
+        }
+        /// <summary>
+        /// Reset the counters
+        /// </summary>
+        public void ClearCounters()
+        {
+            _lock.EnterWriteLock();
+            try
             {
-                Counters[uri].AddCall(time);
+                Counters.Clear();
+            }
+            finally
+            {
+                _lock.ExitWriteLock();
             }
         }
     }

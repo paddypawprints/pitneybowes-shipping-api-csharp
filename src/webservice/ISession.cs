@@ -107,5 +107,9 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <param name="success">Whether the call was successful</param>
         /// <param name="time">Call duration in milliseconds</param>
         void UpdateCounters(string uri, bool success, TimeSpan time);
+        /// <summary>
+        /// Resets the counters to 0
+        /// </summary>
+        void ClearCounters();
     }
 }

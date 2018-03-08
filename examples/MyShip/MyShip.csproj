@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="shippingapi" Version="1.0.7" />
+    <PackageReference Include="shippingapi" Version="1.0.10" />
   </ItemGroup>
 
 </Project>

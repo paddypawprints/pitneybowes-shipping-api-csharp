@@ -51,7 +51,7 @@ namespace PitneyBowes.Developer.ShippingApi
                 {
                     if (session.AuthToken == null || session.AuthToken.AccessToken == null ) //TODO: Check if token should have expired
                     {
-                        var tokenResponse = TokenMethods.token().GetAwaiter().GetResult();
+                        var tokenResponse = await TokenMethods.token();
                         if (!tokenResponse.Success)
                         {
                             session.AuthToken = null;

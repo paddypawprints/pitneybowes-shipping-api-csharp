@@ -16,6 +16,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 */
 
 using System;
+using System.Threading;
 using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
@@ -25,13 +26,13 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public class Counters
     {
-        private object _lock;
+        private ReaderWriterLockSlim _lock;
         /// <summary>
         /// Constructor
         /// </summary>
         public Counters()
         {
-            _lock = new object();
+            _lock = new ReaderWriterLockSlim();
         }
         /// <summary>
         /// Count of the number or error responses
@@ -42,24 +43,41 @@ namespace PitneyBowes.Developer.ShippingApi
         /// statistrics in the case where the SDK has been running a long time. 
         /// </summary>
         public Dictionary<int, int> CallHistogram = new Dictionary<int, int>();
+        private void AddBucketIfRequired(int key)
+        {
+            _lock.EnterWriteLock();
+            try
+            {
+                if (!CallHistogram.ContainsKey(key))
+                {
+                    CallHistogram.Add(key, 0);
+                }
+            }
+            finally
+            {
+                _lock.ExitWriteLock();
+            }
+
+        }
+
         /// <summary>
         /// Look up the bucket and increment the count
         /// </summary>
         /// <param name="t"></param>
         public void AddCall(TimeSpan t)
         {
-            int bucket = ((int)t.TotalMilliseconds) / 10; // 10 millisecond buckets
-            if (!CallHistogram.ContainsKey((bucket)))
+            int bucket = (((int)t.TotalMilliseconds) / 10)*10; // 10 millisecond buckets
+            AddBucketIfRequired(bucket);
+            _lock.EnterReadLock();
+            try
             {
-                lock (_lock)
-                {
-                    if (!CallHistogram.ContainsKey((bucket)))
-                    {
-                        CallHistogram.Add(bucket, 0);
-                    }
-                }
+                CallHistogram[bucket]++;
             }
-            CallHistogram[bucket]++;
+            finally
+            {
+                _lock.ExitReadLock();
+            }
+            
         }
     }
 }
