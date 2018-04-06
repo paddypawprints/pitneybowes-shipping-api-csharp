@@ -10,7 +10,7 @@ Mono and Xamarin are also supported.
 
 ## Features:
 * **full wrapping of the API**. Hides (encapsulates) all protocol details, including authentication and report pagination..
-* **strong typing** – objects for all entities. Enums for all options – which really helps in visual studio intellisense.
+* **strong typing** â€“ objects for all entities. Enums for all options â€“ which really helps in visual studio intellisense.
 * **Contract via interfaces** as well as DTOs to reduce the need to copy data
 * **Linq provider** for reports
 * **Fluent interface** - less typing and really good way to extend with extension methods
@@ -61,7 +61,7 @@ If you are developing on Windows, I'd recommend that you install [Telerik Fiddle
    PM> install-package ShippingAPI
    ```
 
-3. Get the example program from Github and replace your Program.cs file with [this one](https://github.com/paddypawprints/shippingAPI/blob/master/example/Program.cs).
+3. Get the example program from Github and replace your Program.cs file with [this one](https://raw.githubusercontent.com/PitneyBowes/pitneybowes-shipping-api-csharp/master/examples/example/Program.cs).
 
 4. Add your own IDs. IDs are case-sensitive. Do one of the following:
 
