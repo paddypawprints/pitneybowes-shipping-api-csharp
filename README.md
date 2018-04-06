@@ -35,13 +35,13 @@ Mono and Xamarin are also supported.
 
 - dotnet core 2.0
 
-- git command line (required if [building the system out-of-box](https://github.com/paddypawprints/shippingAPI#building-the-system-out-of-box))
+- git command line (required if [building the system out-of-box](https://github.com/PitneyBowes/pitneybowes-shipping-api-csharp#building-the-system-out-of-box))
 
 ## Getting Started
    You can get started by doing either of the following:
 
-   - [Using the NuGet Package](https://github.com/paddypawprints/shippingAPI#using-the-nuget-package)
-   - [Building the System Out-of-Box](https://github.com/paddypawprints/shippingAPI#building-the-system-out-of-box)
+   - [Using the NuGet Package](https://github.com/PitneyBowes/pitneybowes-shipping-api-csharp#using-the-nuget-package)
+   - [Building the System Out-of-Box](https://github.com/PitneyBowes/pitneybowes-shipping-api-csharp#building-the-system-out-of-box)
 
 ## Using the NuGet Package
 If you just want to use the solution without building it, download it from [on nuget.org](https://www.nuget.org/packages/shippingapi/).
@@ -63,25 +63,21 @@ If you are developing on Windows, I'd recommend that you install [Telerik Fiddle
 
 3. Get the example program from Github and replace your Program.cs file with [this one](https://github.com/paddypawprints/shippingAPI/blob/master/example/Program.cs).
 
-4. Add your own IDs. Either:
+4. Add your own IDs. IDs are case-sensitive. Do one of the following:
 
    - Replace the values in the code below:
      ```csharp
-         var configs = new Dictionary<string, string>
-         {
-             { "ApiKey", "YOUR_API_KEY" },
-             { "ApiSecret", "YOUR_API_SECRET" },
-             { "RatePlan", "YOUR_RATE_PLAN" },
-             { "ShipperID", "YOUR_SHIPPER_ID" },
-             { "DeveloperID", "YOUR_DEVELOPER_ID" }
-         };
+
+     sandbox.AddConfigItem("ApiKey", "your api key");
+     sandbox.AddConfigItem("ApiSecret", "your api secret");
+     sandbox.AddConfigItem("ShipperID", "your shipper id");
+     sandbox.AddConfigItem("DeveloperID", "your developer id");
      ```
    - Or create a shippingapisettings.json file in `%APPDATA%`:
      ```json
      { 
          "ApiKey": "!###",
          "ApiSecret": "###",
-         "RatePlan": "PP_SRP_NEWBLUE",
          "ShipperID": "1234567890",
          "DeveloperID": "1234567890" 
      }
@@ -89,53 +85,44 @@ If you are developing on Windows, I'd recommend that you install [Telerik Fiddle
 
 5. To create a shipping label:
    ```csharp
-       // Create shipment
-       var shipment = ShipmentFluent<Shipment>.Create()
-           .ToAddress((Address)AddressFluent<Address>.Create()
-               .Company("ABC Company")
-               .Person("Rufous Sirius Canid", "323 555-1212", "rs.canid@gmail.com")
-               .Residential(false)
-               .AddressLines("643 Greenway RD")
-               .CityTown("Boone")
-               .StateProvince("NC")
-               .PostalCode("28607")
-               .CountryCode("US")
-               .Verify() // calls the service for address validation
-               )
-           .MinimalAddressValidation("true")
-           .ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan"))
-           .FromAddress((Address)AddressFluent<Address>.Create()
-               .Company("Pitney Bowes Inc.")
-               .AddressLines("27 Waterview Drive")
-               .Residential(false)
-               .CityTown("Shelton")
-               .StateProvince("CT")
-               .PostalCode("06484")
-               .CountryCode("US")
-               .Person("Paul Wright", "203-555-1213", "john.publica@pb.com")
-               )
-           .Parcel((Parcel)ParcelFluent<Parcel>.Create()
-               .Dimension(12, 12, 10)
-               .Weight(16m, UnitOfWeight.OZ)
-               )
-           .Rates(RatesArrayFluent<Rates>.Create()
-               .USPSPriority<Rates, Parameter>()
-               .InductionPostalCode("06484")
-               )
-           .Documents(DocumentsArrayFluent<Document>.Create()
-               .ShippingLabel()
-               )
-           .ShipmentOptions(ShipmentOptionsArrayFluent<ShipmentOptions>.Create()
-               .ShipperId(sandbox.GetConfigItem("ShipperID"))
-               .AddToManifest()
-               )
-           .TransactionId(Guid.NewGuid().ToString().Substring(15));
+   var shipment = ShipmentFluent<Shipment>.Create()
+       .ToAddress((Address)AddressFluent<Address>.Create()
+           .AddressLines("643 Greenway Rd")
+           .PostalCode("28607")
+           .CountryCode("US")
+           .Verify())
+      .FromAddress((Address)AddressFluent<Address>.Create()
+           .Company("Pitney Bowes Inc")
+           .AddressLines("27 Waterview Drive")
+           .CityTown("Shelton").StateProvince("CT").PostalCode("06484")
+           .CountryCode("US")
+           )
+      .Parcel((Parcel)ParcelFluent<Parcel>.Create()
+           .Dimension(12, 12, 10)
+           .Weight(16m, UnitOfWeight.OZ))
+      .Rates(RatesArrayFluent<Rates>.Create()
+           .USPSPriority<Rates, Parameter>())
+      .Documents((List<IDocument>)DocumentsArrayFluent<Document>.Create()
+           .ShippingLabel(ContentType.URL, Size.DOC_4X6, FileFormat.PDF))
+      .ShipmentOptions(ShipmentOptionsArrayFluent<ShipmentOptions>.Create()
+           .ShipperId("your shipper id")    // ******* dont forget this one too *******
+           )
+      .TransactionId(Guid.NewGuid().ToString().Substring(15));
 
-       var label = ShipmentsMethods.CreateShipment((Shipment)shipment).GetAwaiter().GetResult();
-
-       if (label.Success)
+   var label = Api.CreateShipment((Shipment)shipment).GetAwaiter().GetResult();
+   if (label.Success)
+   {
+       var sw = new StreamWriter("label.pdf");
+       foreach (var d in label.APIResponse.Documents)
        {
+           Api.WriteToStream(d, sw.BaseStream).GetAwaiter().GetResult();
+       }
+   }
    ```
+
+#### Support
+
+If you encounter problems, please contact Support at <ShippingAPISupport@pb.com>.
 
 ## Building the System Out-of-Box
 
