@@ -61,7 +61,18 @@ If you are developing on Windows, I'd recommend that you install [Telerik Fiddle
    PM> install-package ShippingAPI
    ```
 
-3. Get the example program from Github and replace your Program.cs file with [this one](https://raw.githubusercontent.com/PitneyBowes/pitneybowes-shipping-api-csharp/master/examples/example/Program.cs).
+3. Replace your Program.cs file with one of the following from the
+   [provided examples](https://github.com/PitneyBowes/pitneybowes-shipping-api-csharp/tree/master/examples):
+
+   - [The MyShip.cs sample file](https://raw.githubusercontent.com/PitneyBowes/pitneybowes-shipping-api-csharp/master/examples/MyShip/MyShip.cs).
+     This builds an app that generates a label. The remainder of these steps
+     explain how to configure this app.
+
+   - [The Program.cs sample file](https://raw.githubusercontent.com/PitneyBowes/pitneybowes-shipping-api-csharp/master/examples/example/Program.cs).
+     This builds an app that that integrates your logging and configuration
+     systems. This also uses all the API's methods. If you use this file, plug
+     in your logging and configuration information appropriately and skip the
+     rest of these steps.
 
 4. Add your own IDs. IDs are case-sensitive. Do one of the following:
 
