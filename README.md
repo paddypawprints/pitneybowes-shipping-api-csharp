@@ -22,7 +22,7 @@ Mono and Xamarin are also supported.
 
 ## Prerequisites
 
-- To generate shipping labels, you will need a Pitney Bowes Shipping API sandbox account. The account is free and gives access to a fully functional sandbox environment. Sign up for the account here: [Shipping API Signup](https://signup.pitneybowes.com/signup/shipping).
+- To use the C# client to generate shipping labels, you will need a Pitney Bowes Shipping API sandbox account. The account is free and gives access to a fully functional sandbox environment. Sign up for the account here: [Shipping API Signup](https://signup.pitneybowes.com/signup/shipping).
 
   You will need the following information from your Shipping API account. To get the information, see [Getting Started](https://shipping.pitneybowes.com/getting-started.html).
 
