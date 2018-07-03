@@ -37,9 +37,13 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         {
             return ShippingApiRequest.RecordingFullPath(this, resource, session);
         }
+
         public string GetUri(string baseUrl)
         {
-            return baseUrl;
+            StringBuilder uri = new StringBuilder(baseUrl);
+            ShippingApiRequest.SubstitueResourceParameters(this, uri);
+            ShippingApiRequest.AddRequestQuery(this, uri);
+            return uri.ToString();
         }
 
         public IEnumerable<Tuple<ShippingApiHeaderAttribute, string, string>> GetHeaders()
@@ -77,6 +81,12 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         {
             get => Wrapped.ShipperRatePlan;
             set { Wrapped.ShipperRatePlan = value; }
+        }
+
+        [ShippingApiQuery("includeDeliveryCommitment" )]
+        public bool IncludeDeliveryCommitment {
+            get => Wrapped.IncludeDeliveryCommitment;
+            set { Wrapped.IncludeDeliveryCommitment = value;  }
         }
 
         [JsonProperty("fromAddress")]

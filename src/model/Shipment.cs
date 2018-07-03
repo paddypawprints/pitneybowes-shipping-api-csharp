@@ -46,6 +46,10 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// </summary>
         virtual public string MinimalAddressValidation { get; set; }
         /// <summary>
+        /// Request devlivery commitment
+        /// </summary>
+        virtual public bool IncludeDeliveryCommitment { get; set; }
+        /// <summary>
         /// REQUIRED. A unique identifier for each transaction that cannot exceed 25 characters.
         /// </summary>
         virtual public string TransactionId { get; set; }

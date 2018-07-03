@@ -38,6 +38,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         string ShipperRatePlan { get; set; }
         /// <summary>
+        /// Request devlivery commitment
+        /// </summary>
+        bool IncludeDeliveryCommitment { get; set; }
+        /// <summary>
         /// REQUIRED. Origin address. See Create a Shipment for considerations when specifying multiple address lines when using 
         /// MINIMAL_ADDRESS_VALIDATION.
         /// </summary>
