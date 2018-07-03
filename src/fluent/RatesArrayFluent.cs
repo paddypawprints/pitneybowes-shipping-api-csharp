@@ -96,6 +96,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             _current.Carrier = c;
             return this;
         }
+
         /// <summary>
         /// Carrier service
         /// </summary>
@@ -107,6 +108,15 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             return this;
         }
         /// <summary>
+        /// Used in rating call to rate shop service.
+        /// </summary>
+        /// <returns></returns>
+        public RatesArrayFluent<T> RateShopService()
+        {
+            _current.ServiceId = null;
+            return this;
+        }
+        /// <summary>
         /// The parcel type
         /// </summary>
         /// <param name="t">Parcel type</param>
@@ -114,6 +124,15 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
         public RatesArrayFluent<T> ParcelType(ParcelType t) 
         {
             _current.ParcelType = t;
+            return this;
+        }
+        /// <summary>
+        /// Used in rating call to rate shop parcel type.
+        /// </summary>
+        /// <returns></returns>
+        public RatesArrayFluent<T> RateShopParcelType()
+        {
+            _current.ParcelType = null;
             return this;
         }
         /// <summary>

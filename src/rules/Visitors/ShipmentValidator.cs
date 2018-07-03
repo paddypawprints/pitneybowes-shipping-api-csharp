@@ -122,13 +122,13 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
                 Reason = string.Format("Origin country {0} is not contained in rules", Shipment.FromAddress.CountryCode);
                 return;
             }
-            if (!carrierRule.ServiceRules.ContainsKey(_rate.ServiceId))
+            if (!carrierRule.ServiceRules.ContainsKey((Services)_rate.ServiceId))
             {
                 _state = ValidationState.INVALID;
                 Reason = string.Format("Carrier {0} does not support format {1}", _rate.Carrier, _rate.ServiceId);
                 return;
             }
-            foreach (var rule in carrierRule.ServiceRules[_rate.ServiceId])
+            foreach (var rule in carrierRule.ServiceRules[(Services)_rate.ServiceId])
             {
                 if ( _state == ValidationState.PROCESSING)
                     rule.Accept(this);
@@ -145,15 +145,15 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
         /// <param name="serviceRule"></param>
         public void Visit(ServiceRule serviceRule)
         {
-            if (_rate.ServiceId != serviceRule.ServiceId) return;
+            if (_rate.ServiceId == null ||_rate.ServiceId != serviceRule.ServiceId) return;
 
-            if (!serviceRule.ParcelTypeRules.ContainsKey(_rate.ParcelType))
+            if (!serviceRule.ParcelTypeRules.ContainsKey((ParcelType)_rate.ParcelType))
             {
                 _state = ValidationState.INVALID;
                 Reason = string.Format("Service {0} does not support parcel type {1}", serviceRule.ServiceId, _rate.ParcelType);
                 return;
             }
-            foreach ( var rule in serviceRule.ParcelTypeRules[_rate.ParcelType])
+            foreach ( var rule in serviceRule.ParcelTypeRules[(ParcelType)_rate.ParcelType])
             {
                 if (_state == ValidationState.PROCESSING)
                     rule.Accept(this);
@@ -166,7 +166,7 @@ namespace PitneyBowes.Developer.ShippingApi.Rules
         /// <param name="parcelRule"></param>
         public void Visit(ParcelTypeRule parcelRule)
         {
-            if (_rate.ParcelType != parcelRule.ParcelType) return;
+            if (_rate.ParcelType == null || _rate.ParcelType != parcelRule.ParcelType) return;
 
             foreach (var ss in _rate.SpecialServices)
             {

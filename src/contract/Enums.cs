@@ -527,7 +527,11 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// 8 by 11 inch letter sheet
         /// </summary>
-        DOC_8X11
+        DOC_8X11,
+        /// <summary>
+        /// 6 by 4 inch thermal label
+        /// </summary>
+        DOC_6X4
     }
 
     /// <summary>

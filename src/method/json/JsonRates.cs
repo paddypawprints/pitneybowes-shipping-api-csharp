@@ -46,14 +46,14 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         }
         [JsonProperty("serviceId", Order = 4)]
         [JsonConverter(typeof(StringEnumConverter))]
-        public Services ServiceId
+        public Services? ServiceId
         {
             get => Wrapped.ServiceId;
             set { Wrapped.ServiceId = value; }
         }
         [JsonProperty("parcelType", Order = 1)]
         [JsonConverter(typeof(StringEnumConverter))]
-        public ParcelType ParcelType
+        public ParcelType? ParcelType
         {
             get => Wrapped.ParcelType;
             set { Wrapped.ParcelType = value; }
@@ -150,7 +150,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         }
 
         [JsonProperty("destinationZone")]
-        public int DestinationZone
+        public int? DestinationZone
         {
             get => Wrapped.DestinationZone;
             set { Wrapped.DestinationZone = value; }

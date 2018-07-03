@@ -31,11 +31,11 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Carrier service
         /// </summary>
-        Services ServiceId { get; set; }
+        Services? ServiceId { get; set; }
         /// <summary>
         /// The parcel type
         /// </summary>
-        ParcelType ParcelType { get; set; }
+        ParcelType? ParcelType { get; set; }
         /// <summary>
         /// The requested special services.
         /// In a return object, this includes the service fees and optional tax information.
@@ -91,6 +91,6 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Response only. Destination Zone based on the fromAddress and toAddress specified.
         /// </summary>
-        int DestinationZone { get; set; }
+        int? DestinationZone { get; set; }
     }
 }
