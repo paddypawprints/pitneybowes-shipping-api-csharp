@@ -28,6 +28,7 @@ using PitneyBowes.Developer.ShippingApi.Model;
 using PitneyBowes.Developer.ShippingApi.Rules;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration; // Required for windows
+using Newtonsoft.Json;
 
 #endregion
 
@@ -434,7 +435,7 @@ namespace example
             try
             {
 
-                using (StreamReader file = File.OpenText(Globals.GetConfigPath(shippingapisettings.json) ))
+                using (StreamReader file = File.OpenText(Globals.GetConfigPath("shippingapisettings.json") ))
                 {
                     var deserializer = new JsonSerializer();
                     Configuration = (Dictionary<string, string>)deserializer.Deserialize(file, typeof(Dictionary<string, string>));
