@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+ï»¿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -23,17 +23,17 @@ using System.Collections.Generic;
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
     /// <summary>
-    /// PURCHASE POWER ONLY. The merchant’s encrypted TIN and, if applicable, encrypted BPN. The object includes an encrypted BPN 
+    /// PURCHASE POWER ONLY. The merchantæŠ¯ encrypted TIN and, if applicable, encrypted BPN. The object includes an encrypted BPN 
     /// only if the merchant already has a Purchase Power account.
     /// </summary>
     public class PpPaymentDetails : IPpPaymentDetails
     {
         /// <summary>
-        /// The merchant’s encrypted TIN (Taxpayer Identification Number).
+        /// The merchantæŠ¯ encrypted TIN (Taxpayer Identification Number).
         /// </summary>
         virtual public string EncryptedTIN{get; set;}
         /// <summary>
-        /// The merchant’s encrypted BPN (Business Partner Number), applicable only if the merchant already has a Purchase Power account.
+        /// The merchantæŠ¯ encrypted BPN (Business Partner Number), applicable only if the merchant already has a Purchase Power account.
         /// </summary>
         virtual public string EncryptedBPN{get; set;}
     }

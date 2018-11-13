@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+ï»¿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -25,15 +25,15 @@ namespace PitneyBowes.Developer.ShippingApi.Model
     public class Merchant : IMerchant
     {
         /// <summary>
-        /// The merchant’s full name.
+        /// The merchantæŠ¯ full name.
         /// </summary>
         virtual public string FullName {get;set;}
         /// <summary>
-        /// The merchant’s email address.
+        /// The merchantæŠ¯ email address.
         /// </summary>
         virtual public string Email {get;set;}
         /// <summary>
-        /// The date that the merchant’s PB Postage Account was registered
+        /// The date that the merchantæŠ¯ PB Postage Account was registered
         /// </summary>
         virtual public DateTimeOffset RegisteredDate { get;set;}
         /// <summary>
@@ -49,24 +49,34 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// </summary>
         virtual public string SubscriptionAccount {get;set;}
         /// <summary>
-        /// The unique ID used to identify the merchant.  Note: This value is also the merchant’s Shipper ID.You must specify 
+        /// The unique ID used to identify the merchant.  Note: This value is also the merchantæŠ¯ Shipper ID.You must specify 
         /// Shipper ID when creating a shipment.
         /// </summary>
         virtual public string PostalReportingNumber {get;set;}
         /// <summary>
-        /// The merchant’s status.
+        /// The merchantæŠ¯ status.
         /// </summary>
         virtual public string MerchantStatus {get;set;}
         /// <summary>
-        /// If you change a merchant’s status from ACTIVE to INACTIVE, you must give a reason for the change. The reason is recorded here. 
+        /// If you change a merchantæŠ¯ status from ACTIVE to INACTIVE, you must give a reason for the change. The reason is recorded here. 
         /// For an active merchant, the field is set to null.
         /// </summary>
         virtual public string MerchantStatusReason {get;set;}
         /// <summary>
-        /// The date the merchant’s PB Postage Account was deactivated, if applicable. For an active merchant, the field is set to null.
+        /// The date the merchantæŠ¯ PB Postage Account was deactivated, if applicable. For an active merchant, the field is set to null.
         /// A deactivated merchant can no longer print labels.
         /// </summary>
-        virtual public DateTimeOffset DeactivatedDate {get;set;}       
+        virtual public DateTimeOffset DeactivatedDate {get;set;}
+        /// <summary>
+        /// If true, the merchant can choose to insure a parcel with PB Parcel Protection when creating a shipment.
+        /// </summary>
+        /// <value>The parcel protection.</value>
+        public bool? ParcelProtection { get; set; }
+        /// <summary>
+        /// This is returned only for the Authorize Merchant API call. This field indicates the payment method for the merchantâ€™s PB Postage Account.
+        /// </summary>
+        /// <value>The payment method.</value>
+        public MerchantPaymentMethod PaymentMethod { get; set; }
     }
 
 }

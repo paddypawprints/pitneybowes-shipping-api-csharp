@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+ï»¿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -74,11 +74,11 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// </summary>
         virtual public string SignedBy{get; set;}
         /// <summary>
-        /// Unit of measure for the package’s weight.
+        /// Unit of measure for the packageæŠ¯ weight.
         /// </summary>
         virtual public Decimal Weight{get; set;}
         /// <summary>
-        /// Unit of measure for the package’s weight.
+        /// Unit of measure for the packageæŠ¯ weight.
         /// </summary>
         virtual public UnitOfWeight? WeightOUM{get; set;}
         /// <summary>

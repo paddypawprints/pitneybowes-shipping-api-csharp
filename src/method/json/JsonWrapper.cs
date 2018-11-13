@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -14,6 +14,7 @@ OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHE
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
+using Newtonsoft.Json;
 
 namespace PitneyBowes.Developer.ShippingApi.Json
 {
@@ -34,6 +35,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
             return j.Wrapped;
         }
 
+        [JsonIgnore]
         public virtual T Wrapped { get; set; }
 
      }

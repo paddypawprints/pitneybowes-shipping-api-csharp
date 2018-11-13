@@ -4,3 +4,4 @@ packages
 .vs
 .vscode
 .suo
+.DS_store

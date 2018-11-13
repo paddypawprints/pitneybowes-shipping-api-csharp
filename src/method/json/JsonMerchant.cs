@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -32,64 +32,77 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public string FullName
         {
             get => Wrapped.FullName;
-            set { Wrapped.FullName = value; }
+            set => Wrapped.FullName = value;
         }
         [JsonProperty("email")]
         public string Email
         {
             get => Wrapped.Email;
-            set { Wrapped.Email = value; }
+            set => Wrapped.Email = value;
         }
         [JsonProperty("registeredDate")]
         [JsonConverter(typeof(JavaScriptDateTimeConverter))]
         public DateTimeOffset RegisteredDate
         {
             get => Wrapped.RegisteredDate;
-            set { Wrapped.RegisteredDate = value; }
+            set => Wrapped.RegisteredDate = value;
         }
         [JsonProperty("paymentAccountNumber")]
         public string PaymentAccountNumber
         {
             get => Wrapped.PaymentAccountNumber;
-            set { Wrapped.PaymentAccountNumber = value; }
+            set => Wrapped.PaymentAccountNumber = value;
         }
         [JsonProperty("enterpriseAccount")]
         public string EnterpriseAccount
         {
             get => Wrapped.EnterpriseAccount;
-            set { Wrapped.EnterpriseAccount = value; }
+            set => Wrapped.EnterpriseAccount = value;
         }
         [JsonProperty("subscriptionAccount")]
         public string SubscriptionAccount
         {
             get => Wrapped.SubscriptionAccount;
-            set { Wrapped.SubscriptionAccount = value; }
+            set => Wrapped.SubscriptionAccount = value;
         }
         [JsonProperty("postalReportingNumber")]
         public string PostalReportingNumber
         {
             get => Wrapped.PostalReportingNumber;
-            set { Wrapped.PostalReportingNumber = value; }
+            set => Wrapped.PostalReportingNumber = value;
         }
         [JsonProperty("merchantStatus")]
         public string MerchantStatus
         {
             get => Wrapped.MerchantStatus;
-            set { Wrapped.MerchantStatus = value; }
+            set => Wrapped.MerchantStatus = value;
         }
         [JsonProperty("merchantStatusReason")]
         public string MerchantStatusReason
         {
             get => Wrapped.MerchantStatusReason;
-            set { Wrapped.MerchantStatusReason = value; }
+            set => Wrapped.MerchantStatusReason = value;
         }
         [JsonProperty("deactivatedDate")]
         [JsonConverter(typeof(JavaScriptDateTimeConverter))]
         public DateTimeOffset DeactivatedDate
         {
             get => Wrapped.DeactivatedDate;
-            set { Wrapped.DeactivatedDate = value; }
+            set => Wrapped.DeactivatedDate = value;
         }
+        [JsonProperty("parcelProtection")]
+        public bool? ParcelProtection
+        {
+            get => Wrapped.ParcelProtection;
+            set => Wrapped.ParcelProtection = value;
+        }
+        [JsonProperty("paymentMethod")]
+        public MerchantPaymentMethod PaymentMethod
+        {
+            get => Wrapped.PaymentMethod;
+            set => Wrapped.PaymentMethod = value;
+        }
+
     }
 
 }

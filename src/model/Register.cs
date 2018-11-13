@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -36,6 +36,7 @@ namespace PitneyBowes.Developer.ShippingApi.Model
             registry.RegisterSerializationTypes<ICustomsInfo, CustomsInfo>();
             registry.RegisterSerializationTypes<IDeliveryCommitment, DeliveryCommitment>();
             registry.RegisterSerializationTypes<IDocument, Document>();
+            registry.RegisterSerializationTypes<IDocTab, DocTab>();
             registry.RegisterSerializationTypes<IManifest, Manifest>();
             registry.RegisterSerializationTypes<IMerchant, Merchant>();
             registry.RegisterSerializationTypes<IPage, Page>();
@@ -47,7 +48,8 @@ namespace PitneyBowes.Developer.ShippingApi.Model
             registry.RegisterSerializationTypes<IPickup, Pickup>();
             registry.RegisterSerializationTypes<IPickupCount, PickupCount>();
             registry.RegisterSerializationTypes<IPpPaymentDetails, PpPaymentDetails>();
-            registry.RegisterSerializationTypes<IRates, Rates>();
+            registry.RegisterSerializationTypes<IRates, Rates>(); 
+            registry.RegisterSerializationTypes<IReference, Reference>();
             registry.RegisterSerializationTypes<IShipment, Shipment>();
             registry.RegisterSerializationTypes<IShipmentOptions, ShipmentOptions>();
             registry.RegisterSerializationTypes<ISpecialServices, SpecialServices>();

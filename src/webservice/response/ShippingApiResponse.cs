@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -123,13 +123,10 @@ namespace PitneyBowes.Developer.ShippingApi
             deserializer.Error += DeserializationError;
             deserializer.ContractResolver = new ShippingApiContractResolver();
             ((ShippingApiContractResolver)deserializer.ContractResolver).Registry = session.SerializationRegistry;
-            var recording = respStream.IsRecording;
-            respStream.IsRecording = false;
             respStream.Seek(streamPos, SeekOrigin.Begin);
             JsonConverter converter = new ShippingApiResponseTypeConverter<Response>();
-            Type t = (Type)converter.ReadJson(new JsonTextReader(new StreamReader(respStream)), typeof(Type), null, deserializer);
+            Type t = (Type)converter.ReadJson(new JsonTextReader(new StreamReader(respStream.BaseStream)), typeof(Type), null, deserializer);
             respStream.Seek(streamPos, SeekOrigin.Begin);
-            respStream.IsRecording = recording;
             if (t == typeof(ErrorFormat1))
             {
                 var error = (ErrorFormat1[])deserializer.Deserialize(new StreamReader(respStream), typeof(ErrorFormat1[]));

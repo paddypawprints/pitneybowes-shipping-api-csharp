@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -27,7 +27,7 @@ using PitneyBowes.Developer.ShippingApi.Fluent;
 using PitneyBowes.Developer.ShippingApi.Model;
 using PitneyBowes.Developer.ShippingApi.Rules;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Configuration; // Required for windows
+using Microsoft.Extensions.Configuration; 
 using Newtonsoft.Json;
 
 #endregion
@@ -38,11 +38,9 @@ namespace example
     {
         #region Example statics
         private static ILogger Logger { get; } = ApplicationLogging.CreateLogger<Program>();
-#if !OSX
+
         private static IConfiguration Configuration { get; set; }
-#else
-        private static Dictionary<string, string> Configuration { get; set; }
-#endif
+
         private static SecureString ApiKey;
         #endregion
         static void Main(string[] args)
@@ -53,6 +51,7 @@ namespace example
             #endregion
 
             #region ConfigureFramework
+
             var sandbox = new Session() { EndPoint = "https://api-sandbox.pitneybowes.com", Requester = new ShippingApiHttpRequest() };
 
             // Initialize framework
@@ -72,8 +71,10 @@ namespace example
             // Hook in your secure API key decryption
             sandbox.GetApiSecret = GetApiKey;
 
-            //sandbox.Requester = new ShippingAPIMock(); // use this if you want to get events replayed from a file instead of calling the web service
-            //sandbox.Record = true; // write responses to recording files
+            if (Configuration["Mock"] == "true")
+            {
+                sandbox.Requester = new ShippingAPIMock();
+            }
 
             Globals.DefaultSession = sandbox;
             #endregion
@@ -81,9 +82,47 @@ namespace example
 
             try
             {
+                /*                // Create shipment
+                                var shipment = ShipmentFluent<Shipment>.Create()
+                                    .ToAddress((Address)AddressFluent<Address>.Create()
+                                        .AddressLines("643 Greenway RD")
+                                        .PostalCode("28607")
+                                        .CountryCode("US")
+                                        .Verify() // calls the service for address validation - will populate city and state from the zip
+                                        )
+                                    .MinimalAddressValidation("true")
+                                    //.ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan")) // use if you have a custom rate plan
+                                    .FromAddress((Address)AddressFluent<Address>.Create()
+                                        .Company("Pitney Bowes Inc.")
+                                        .AddressLines("27 Waterview Drive")
+                                        .Residential(false)
+                                        .CityTown("Shelton")
+                                        .StateProvince("CT")
+                                        .PostalCode("06484")
+                                        .CountryCode("US")
+                                        .Person("Paul Wright", "203-555-1213", "john.publica@pb.com")
+                                        )
+                                    .Parcel((Parcel)ParcelFluent<Parcel>.Create()
+                                        .Dimension(12, 12, 10)
+                                        .Weight(16m, UnitOfWeight.OZ)
+                                        )
+                                    .Rates(RatesArrayFluent<Rates>.Create()
+                                        .USPSPriority<Rates, Parameter>()
+                                        .InductionPostalCode("06484")
+                                        )
+                                    .Documents((List<IDocument>)DocumentsArrayFluent<Document>.Create()
+                                        .ShippingLabel(ContentType.BASE64, Size.DOC_4X6, FileFormat.ZPL2)
+                                        )
+                                    .ShipmentOptions(ShipmentOptionsArrayFluent<ShipmentOptions>.Create()
+                                        .ShipperId(sandbox.GetConfigItem("ShipperID"))
+                                        .AddToManifest()
+                                        )
+                                    .TransactionId(Guid.NewGuid().ToString().Substring(15));*/
+
                 // Create shipment
                 var shipment = ShipmentFluent<Shipment>.Create()
                     .ToAddress((Address)AddressFluent<Address>.Create()
+                        .Name("Ron Receiver")
                         .AddressLines("643 Greenway RD")
                         .PostalCode("28607")
                         .CountryCode("US")
@@ -101,13 +140,13 @@ namespace example
                         .CountryCode("US")
                         .Person("Paul Wright", "203-555-1213", "john.publica@pb.com")
                         )
-                    .Parcel((Parcel)ParcelFluent<Parcel>.Create()
+                    .NewgisticsParcel<Shipment,ShipmentOptions>((Parcel)ParcelFluent<Parcel>.Create()
                         .Dimension(12, 12, 10)
                         .Weight(16m, UnitOfWeight.OZ)
                         )
-                    .Rates(RatesArrayFluent<Rates>.Create()
-                        .USPSPriority<Rates, Parameter>()
-                        .InductionPostalCode("06484")
+                    .Rates(RatesArrayFluent<Rates>.Create().Add()
+                           .NewgisticsRates(Services.PSLW )
+                           .Notifications<Rates, SpecialServices, Parameter>(RecipientNotificationType.ON_DELIVER, "john.publica@pb.com")
                         )
                     .Documents((List<IDocument>)DocumentsArrayFluent<Document>.Create()
                         .ShippingLabel(ContentType.BASE64, Size.DOC_4X6, FileFormat.ZPL2)
@@ -115,8 +154,10 @@ namespace example
                     .ShipmentOptions(ShipmentOptionsArrayFluent<ShipmentOptions>.Create()
                         .ShipperId(sandbox.GetConfigItem("ShipperID"))
                         .AddToManifest()
+                        .NewgisticsOptions("0093", "1585")
                         )
-                    .TransactionId(Guid.NewGuid().ToString().Substring(15));
+                    .TransactionId(Guid.NewGuid().ToString().Substring(15))
+                    .Reference<Shipment, Reference>("OR1234", "CC123456", "CC4321");
 
                 var label = Api.CreateShipment((Shipment)shipment).GetAwaiter().GetResult();
                 
@@ -249,13 +290,13 @@ namespace example
                     ToDate = DateTimeOffset.Now,
                     DeveloperId = sandbox.GetConfigItem("DeveloperID")
                 };
-                foreach (var t in TransactionsReport<Transaction>.Report(transactionsReportRequest, x => x.CreditCardFee == null || x.CreditCardFee > 10.0M))
+                foreach (var t in TransactionsReport<Transaction>.Report(transactionsReportRequest, x => x.CreditCardFee == null || x.CreditCardFee > 10.0M, maxPages: 2))
                 {
                     Console.WriteLine(t.DestinationAddress);
                 }
 
                 // Transaction report with LINQ
-                TransactionsReport<Transaction> report = new TransactionsReport<Transaction>(sandbox.GetConfigItem("DeveloperID"));
+                TransactionsReport<Transaction> report = new TransactionsReport<Transaction>(sandbox.GetConfigItem("DeveloperID"), maxPages: 2);
                 var query = from transaction in report
                             where transaction.TransactionDateTime >= DateTimeOffset.Parse("6/30/2017") && transaction.TransactionDateTime <= DateTimeOffset.Now && transaction.TransactionType == TransactionType.POSTAGE_PRINT
                             select new { transaction.TransactionId };
@@ -416,7 +457,6 @@ namespace example
         #region Configuration example only, implement your own
         private static void SetupConfigProvider()
         {
-#if !OSX
             var configs = new Dictionary<string, string>
             {
                 { "ApiKey", "YOUR_API_KEY" },
@@ -431,21 +471,6 @@ namespace example
                 .AddInMemoryCollection(configs)
                 .AddJsonFile(Globals.GetConfigPath("shippingapisettings.json") , optional: true, reloadOnChange: true);
             Configuration = configurationBuilder.Build();
-#else
-            try
-            {
-
-                using (StreamReader file = File.OpenText(Globals.GetConfigPath("shippingapisettings.json") ))
-                {
-                    var deserializer = new JsonSerializer();
-                    Configuration = (Dictionary<string, string>)deserializer.Deserialize(file, typeof(Dictionary<string, string>));
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-#endif
         }
         #endregion
     }

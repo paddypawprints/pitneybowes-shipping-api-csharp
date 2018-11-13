@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -163,6 +163,11 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         decimal? CreditCardFee { get; set; }
         /// <summary>
+        /// Gets or sets the print status.
+        /// </summary>
+        /// <value>The print status.</value>
+        SBRPrintStatus? PrintStatus { get; set; }
+        /// <summary>
         /// Refund status.
         /// </summary>
         string RefundStatus { get; set; }
@@ -170,5 +175,23 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Reason for refund denial.
         /// </summary>
         string RefundDenialReason { get; set; }
+        /// <summary>
+        /// Indicates who requested the refund.
+        /// </summary>
+        /// <value>The refund requestor.</value>
+        string RefundRequestor { get; set; }
+        /// <summary>
+        /// APV Adjustments Only. The reason for an APV adjustment based on the new information received from USPS. 
+        /// </summary>
+        /// <value>The adjustment reason.</value>
+        AdjustmentReason? AdjustmentReason { get; set; }
+        /// <summary>
+        /// Applies only to the following:
+        /// APV Adjustments: The unique identifier that USPS assigned to the APV adjustment.If you want to appeal 
+        /// the adjustment, you must send this identifier to USPS.
+        /// Holiday Guarantee Refunds: The claim number assigned by the the Holiday Guarantee program.
+        /// </summary>
+        /// <value>The external identifier.</value>
+        string ExternalId { get; set; }
     }
 }

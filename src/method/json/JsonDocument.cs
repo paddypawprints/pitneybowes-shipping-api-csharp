@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -33,47 +33,60 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public DocumentType Type
         {
             get => Wrapped.Type;
-            set { Wrapped.Type = value;  }
+            set => Wrapped.Type = value;
         }
         [JsonProperty("size", Order = 0)]
         [JsonConverter(typeof(StringEnumConverter))]
         public Size Size
         {
             get => Wrapped.Size;
-            set { Wrapped.Size = value; }
+            set => Wrapped.Size = value;
         }
         [JsonProperty("fileFormat", Order = 4)]
         [JsonConverter(typeof(StringEnumConverter))]
         public FileFormat FileFormat
         {
             get => Wrapped.FileFormat;
-            set { Wrapped.FileFormat = value; }
+            set => Wrapped.FileFormat = value;
         }
         [JsonProperty("contentType", Order = 3)]
         [JsonConverter(typeof(StringEnumConverter))]
         public ContentType ContentType
         {
             get => Wrapped.ContentType;
-            set { Wrapped.ContentType = value; }
+            set => Wrapped.ContentType = value;
         }
         [JsonProperty("printDialogOption", Order = 1)]
         [JsonConverter(typeof(StringEnumConverter))]
         public PrintDialogOption PrintDialogOption
         {
             get => Wrapped.PrintDialogOption;
-            set { Wrapped.PrintDialogOption = value; }
+            set => Wrapped.PrintDialogOption = value;
         }
         [JsonProperty("contents")]
         virtual public string Contents
         {
             get => Wrapped.Contents;
-            set { Wrapped.Contents = value; }
+            set => Wrapped.Contents = value;
+        }
+        [JsonProperty("docTab")]
+        public IEnumerable<IDocTab> DocTab 
+        { 
+            get => Wrapped.DocTab; 
+            set => Wrapped.DocTab = value; 
+        }
+
+        [JsonProperty("resolution")]
+        public Resolution? Resolution 
+        {
+            get => Wrapped.Resolution;
+            set => Wrapped.Resolution = value;
         }
         [JsonProperty("pages")]
         public IEnumerable<IPage> Pages
         {
             get => Wrapped.Pages;
-            set { Wrapped.Pages = value;  }
+            set => Wrapped.Pages = value;
         }
         public void AddPage(IPage s)
         {

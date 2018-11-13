@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -115,14 +115,32 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <returns></returns>
         public static string GetConfigPath(string fileName)
         {
+            return GetPath(GetConfigBaseDirectory(), GetConfigFileName(fileName));
+        }
+        /// <summary>
+        /// Get platform appropriate config file directory. %APPDATA% on windows and $HOME on unix type platforms.
+        /// </summary>
+        /// <returns></returns>
+        public static string GetConfigBaseDirectory()
+        {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                return string.Format("{0}\\{1}", Environment.GetEnvironmentVariable("APPDATA"), fileName);
+                return Environment.GetEnvironmentVariable("APPDATA");
             }
             else
             {
-                return string.Format("{0}/.{1}", Environment.GetEnvironmentVariable("HOME"), fileName);
+                return Environment.GetEnvironmentVariable("HOME");
             }
         }
+        /// <summary>
+        /// For plaform specific file names - note file names on OSX beginning with a . dont work :(.
+        /// </summary>
+        /// <returns></returns>
+
+        public static string GetConfigFileName(string fileName)
+        {
+            return fileName;
+        }
+
     }
 }

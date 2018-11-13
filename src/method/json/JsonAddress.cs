@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -108,6 +108,28 @@ namespace PitneyBowes.Developer.ShippingApi.Json
             get => Wrapped.Residential;
             set { Wrapped.Residential = value; }
         }
+
+        [JsonProperty("deliveryPoint", Order = 10)]
+        public string DeliveryPoint
+        {
+            get => Wrapped.DeliveryPoint;
+            set { Wrapped.DeliveryPoint = value; }
+        }
+
+        [JsonProperty("carrierRoute", Order = 11)]
+        public string CarrierRoute
+        {
+            get => Wrapped.CarrierRoute;
+            set { Wrapped.CarrierRoute = value; }
+        }
+
+        [JsonProperty("taxId", Order =12)]
+        public string TaxId
+        {
+            get => Wrapped.TaxId;
+            set { Wrapped.TaxId = value; }
+        }
+
         public bool ShouldSerializeStatus() => false;
         [JsonProperty("status")]
         [JsonConverter(typeof(StringEnumConverter))]
@@ -116,6 +138,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
             get => Wrapped.Status;
             set { Wrapped.Status = value; }
         }
+
 
         public string ContentType { get => "application/json"; }
 

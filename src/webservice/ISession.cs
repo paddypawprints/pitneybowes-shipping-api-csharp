@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -29,6 +29,7 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Adds an item to the default configuration provider - a dictionary stored in the session.
         /// </summary>
+        [Obsolete("Use configuration settings")]
         Action<string, string> AddConfigItem { get; set; }
         /// <summary>
         /// The current token is cached in the session.
@@ -42,6 +43,7 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Defines whether to throw exceptions due to deserialization and http errors. If exceptions are not thrown, errors can be seen in the 
         /// Errors member of the response object.
         /// </summary>
+        [Obsolete("Use configuration setting \"ThrowExceptions\"=\"false\"")]
         bool ThrowExceptions { get; set; }
         /// <summary>
         /// Delegate to get the API secret. Best practice is to store the API secret encrypted and only decrypt at the last minute. The SDK
@@ -73,14 +75,17 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Flag to indicate whether messages should be recorded. Recorded messages can be used for debugging or for replay by the mock requester.
         /// </summary>
+        [Obsolete("Use configuration setting \"RecordAPICalls\"=\"true\" instead")]
         bool Record { get; set; }
         /// <summary>
         /// Flag to indicate whether to overwrite existing recording files.
         /// </summary>
+        [Obsolete("Use configuration setting \"RecordOverwrite\"=\"true\" instead")]
         bool RecordOverwrite { get; set; }
         /// <summary>
         /// Path for the recording files.
         /// </summary>
+        [Obsolete("Use configuration setting RecordRoot instead")]
         string RecordPath { get; set; }
         /// <summary>
         /// Requester encapsulates the http request and response. Two subclasses are provided, one that calls the web service and the other 
@@ -90,6 +95,7 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Number of retries in the event of network errors.
         /// </summary>
+        [Obsolete("Use configuration setting Retries instead")]
         int Retries { get; set; }
         /// <summary>
         /// Object to hold mappings between the service contract interfaces, wrapper classes that implement the json/web service messages 

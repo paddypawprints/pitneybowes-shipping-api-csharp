@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -38,6 +38,10 @@ namespace PitneyBowes.Developer.ShippingApi
                     return TransactionType.POSTAGE_PRINT;
                 case "POSTAGE REFUND":
                     return TransactionType.POSTAGE_REFUND;
+                case "APV-POSTAGE OVERPAID":
+                    return TransactionType.APV_POSTAGE_OVERPAID;
+                case "APV-POSTAGE UNDERPAID":
+                    return TransactionType.APV_POSTAGE_UNDERPAID;
                 default:
                     var converter = new StringEnumConverter();
                     return converter.ReadJson(reader, objectType, existingValue, serializer);
@@ -58,6 +62,12 @@ namespace PitneyBowes.Developer.ShippingApi
                     break;
                 case TransactionType.POSTAGE_REFUND:
                     writer.WriteValue("POSTAGE REFUND");
+                    break;
+                case TransactionType.APV_POSTAGE_OVERPAID:
+                    writer.WriteValue("APV-POSTAGE OVERPAID");
+                    break;
+                case TransactionType.APV_POSTAGE_UNDERPAID:
+                    writer.WriteValue("APV-POSTAGE UNDERPAID");
                     break;
                 default:
                     var converter = new StringEnumConverter();

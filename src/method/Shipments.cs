@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+Ôªø/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -123,7 +123,7 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Things to Consider:
         ///    * All addresses are validated for accuracy prior to processing a shipment request.Complete addresses, including address line(s) and 
         ///    city/state/zip, are always validated by default. An error is returned if validation fails.You can modify this behavior in the 
-        ///    request bodyís shipmentOptions field:
+        ///    request body‚Äôs shipmentOptions field:
         ///       - If the MINIMAL_ADDRESS_VALIDATION option is set to true, the address line(s) are not included in the validation check.Only 
         ///       the city/state/zip line is checked for validity.The address line(s) are printed on the label exactly as specified in the request.
         ///       - When the MINIMAL_ADDRESS_VALIDATION option is set to true, the shipper takes 100% responsibility for any undelivered packages 
@@ -132,7 +132,7 @@ namespace PitneyBowes.Developer.ShippingApi
         ///       - When the MINIMAL_ADDRESS_VALIDATION option is set to false (default), the complete address is included in the validation 
         ///       check, including all address line(s) and the city/state/zip line.
         ///    * In order to successfully print a shipment label, you must specify a SHIPPER_ID in shipment.shipmentOptions and set its value to 
-        ///    the merchantís postalReportingNumber, which is found in the merchant object.
+        ///    the merchant‚Äôs postalReportingNumber, which is found in the merchant object.
         ///    * Parcels cannot measure more than 108 inches in length and girth combined, with the exception of those using USPS Parcel Select.
         ///    Parcels using Parcel Select can measure up to 130 inches in length and girth combined.
         ///    * For all parcels, the PB Shipping APIs configure length as the longest dimension, followed by height, followed by width.The APIs 
@@ -183,7 +183,7 @@ namespace PitneyBowes.Developer.ShippingApi
         ///     * Set shipmentType to RETURN.
         ///     * Set the toAddress to the address where the merchandise is returned to.
         ///     * Set the fromAddress to the address of the user who is returning the merchandise.The following fields are required for the 
-        ///     senderís address:
+        ///     sender‚Äôs address:
         ///        - name or company
         ///        - email
         ///        - phone
@@ -197,7 +197,7 @@ namespace PitneyBowes.Developer.ShippingApi
         ///       stream.
         ///
         /// To view transaction history for SBR labels, use the Transaction Reports API.The API returns the printStatus field, which displays a 
-        /// labelís status:
+        /// label‚Äôs status:
         ///        - SBRPrinted: The SBR label is printed but not yet scanned in to the USPS mailstream.
         ///        - SBRCharged: The SBR label is scanned into the USPS mailstream.
         ///        - NULL: The label is not an SBR label.
@@ -225,11 +225,11 @@ namespace PitneyBowes.Developer.ShippingApi
         ///         - Field Value
         ///         - rates.serviceId PMOD
         ///         - rates.parcelType -Set to one of the following parcel types:
-        ///             - SACK ó Sack
-        ///             - FTTB ó Flat Tub Tray
-        ///             - HTB ó Half Tray Box
-        ///             - FTB ó Full Tray Box
-        ///             - EMMTB ó Extended Managed Mail Tray Box
+        ///             - SACK ‚Äî Sack
+        ///             - FTTB ‚Äî Flat Tub Tray
+        ///             - HTB ‚Äî Half Tray Box
+        ///             - FTB ‚Äî Full Tray Box
+        ///             - EMMTB ‚Äî Extended Managed Mail Tray Box
         ///         - rates.specialServices.specialServiceId PMOD_OPTIONS
         ///         - rates.specialServices.inputParameters Add an object for each PMOD option.See PMOD Options for the list of options and their 
         ///         possible values. You must add each option to the array.
@@ -266,7 +266,7 @@ namespace PitneyBowes.Developer.ShippingApi
         ///     * All unused labels must be submitted for electronic refund to USPS within 30 days of printing.
         ///     * It can take up to 14 days for USPS to process and refund the value of the shipment label after submission.
         ///     * Approved postage refunds will be automatically credited to the payment account used to print the shipment label.
-        ///     * You cannot request refunds for SBR labels (i.e., labels created with ìshipmentTypeî set to ìRETURNî). SBR labels do not incur 
+        ///     * You cannot request refunds for SBR labels (i.e., labels created with ‚ÄúshipmentType‚Äù set to ‚ÄúRETURN‚Äù). SBR labels do not incur 
         ///     charges unless they are used.
         /// </summary>
         /// <param name="request"></param>
@@ -293,5 +293,6 @@ namespace PitneyBowes.Developer.ShippingApi
         {
             return  await WebMethod.Get<T, ReprintShipmentRequest>( "/shippingservices/v1/shipments/{Shipment}", request, session );
         }
+        //TODO: Retry shipment
     }
 }

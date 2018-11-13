@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -30,19 +30,22 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public class ShippingApiHttpRequest : IHttpRequest
     {
-        internal static void AddRequestHeaders(HttpRequestMessage request, ShippingApiHeaderAttribute attribute, string propValue, string propName)
+        internal static void AddRequestHeaders(HttpRequestMessage request, ShippingApiHeaderAttribute attribute, string propValue, string propName, RecordingStream recordingStream)
         {
             if (attribute.OmitIfEmpty && (propValue == null || propValue.Equals(String.Empty))) return;
             switch (propName)
             {
                 case "Authorization":
                     request.Headers.Authorization = new AuthenticationHeaderValue(attribute.Name, propValue);
+                    recordingStream.WriteRecordCRLF(string.Format("Authorization: {0} {1}", attribute.Name, propValue));
                     break;
 
                 default:
                     request.Headers.Add(attribute.Name, propValue);
+                    recordingStream.WriteRecordCRLF(string.Format("{0}:{1}", attribute.Name, propValue));
                     break;
             }
+
         }
         /// <summary>
         /// Call the web service and return the response
@@ -64,80 +67,94 @@ namespace PitneyBowes.Developer.ShippingApi
             if (session == null) session = Globals.DefaultSession;
             var client = Globals.Client(session.EndPoint);
 
-//            client.Timeout = new TimeSpan(0, 0, 0, 0, session.TimeOutMilliseconds);
+            //            client.Timeout = new TimeSpan(0, 0, 0, 0, session.TimeOutMilliseconds);
 
-            string uriBuilder = request.GetUri(resource);
-
-            HttpResponseMessage httpResponseMessage;
-            using (HttpRequestMessage requestMessage = new HttpRequestMessage())
+            using (var recordingStream = new RecordingStream(null, request.RecordingFullPath(resource, session), FileMode.Create, RecordingStream.RecordType.MultipartMime))
             {
-                foreach (var h in request.GetHeaders())
-                {
-                    AddRequestHeaders(requestMessage, h.Item1, h.Item2, h.Item3);
-                }
-                if (verb == HttpVerb.PUT || verb == HttpVerb.POST || (verb == HttpVerb.DELETE && deleteBody))
+                recordingStream.OpenRecord(session.Record);
+
+                string uriBuilder = request.GetUri(resource);
+
+                HttpResponseMessage httpResponseMessage;
+                using (HttpRequestMessage requestMessage = new HttpRequestMessage())
                 {
                     using (var stream = new MemoryStream())
-                    using (var writer = new StreamWriter(stream))
-                    using (var reqContent = new StreamContent(stream))
                     {
-                        request.SerializeBody(writer, session);
-                        stream.Seek(0, SeekOrigin.Begin);
-                        requestMessage.Content = reqContent;
-                        reqContent.Headers.ContentType = new MediaTypeHeaderValue(request.ContentType);
-                        if (verb == HttpVerb.PUT)
+                        recordingStream.SetBaseStream(stream, "text/httpRequest");
+                        recordingStream.WriteRecordCRLF(string.Format("{0} {1} HTTP/1.1", verb.ToString(), uriBuilder));
+
+                        foreach (var h in request.GetHeaders())
                         {
-                            requestMessage.Method = HttpMethod.Put;
+                            AddRequestHeaders(requestMessage, h.Item1, h.Item2, h.Item3, recordingStream);
                         }
+                        recordingStream.WriteRecordCRLF("");
+
+                        if (verb == HttpVerb.PUT || verb == HttpVerb.POST || (verb == HttpVerb.DELETE && deleteBody))
+                        {
+
+                            using (var writer = new StreamWriter(recordingStream))
+                            using (var reqContent = new StreamContent(stream))
+                            {
+                                request.SerializeBody(writer, session);
+                                stream.Seek(0, SeekOrigin.Begin);
+                                requestMessage.Content = reqContent;
+                                reqContent.Headers.ContentType = new MediaTypeHeaderValue(request.ContentType);
+                                if (verb == HttpVerb.PUT)
+                                {
+                                    requestMessage.Method = HttpMethod.Put;
+                                }
+                                else if (verb == HttpVerb.DELETE)
+                                {
+                                    requestMessage.Method = HttpMethod.Delete;
+                                }
+                                else
+                                {
+                                    requestMessage.Method = HttpMethod.Post;
+                                }
+                                requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
+                                httpResponseMessage = await client.SendAsync(requestMessage);
+                            }
+                        }
+
                         else if (verb == HttpVerb.DELETE)
                         {
                             requestMessage.Method = HttpMethod.Delete;
+                            requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
+                            httpResponseMessage = await client.SendAsync(requestMessage);
+
                         }
                         else
                         {
-                            requestMessage.Method = HttpMethod.Post;
+                            requestMessage.Method = HttpMethod.Get;
+                            requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
+                            httpResponseMessage = await client.SendAsync(requestMessage);
+
                         }
-                        requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
-                        httpResponseMessage = await client.SendAsync(requestMessage);
-                    }              
-                }
-                else if (verb == HttpVerb.DELETE)
-                {
-                    requestMessage.Method = HttpMethod.Delete;
-                    requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
-                    httpResponseMessage = await client.SendAsync(requestMessage);
-
-                }
-                else
-                {
-                    requestMessage.Method = HttpMethod.Get;
-                    requestMessage.RequestUri = new Uri(client.BaseAddress + uriBuilder);
-                    httpResponseMessage = await client.SendAsync(requestMessage);
-
-                }
-            }
-
-            using (var respStream = await httpResponseMessage.Content.ReadAsStreamAsync())
-            {
-                using (var recordingStream = new RecordingStream(respStream, request.RecordingFullPath(resource, session), FileMode.Create))
-                {
-                    if (session.Record)
-                    {
-                        recordingStream.OpenRecord();
                     }
+                }
+
+                using (var respStream = await httpResponseMessage.Content.ReadAsStreamAsync())
+                {
+                    recordingStream.SetBaseStream( respStream, "text/httpResponse");
+
+                    recordingStream.WriteRecordCRLF(string.Format("HTTP/1.1 {0} {1}", (int)httpResponseMessage.StatusCode, httpResponseMessage.ReasonPhrase));
+                    recordingStream.WriteRecordCRLF(string.Format("Content-Length: {0}", httpResponseMessage.Content.Headers.ContentLength));
+                    recordingStream.WriteRecordCRLF(string.Format("Content-Type: {0}", httpResponseMessage.Content.Headers.ContentType));
+                    recordingStream.WriteRecordCRLF("");
 
                     if (httpResponseMessage.IsSuccessStatusCode)
                     {
                         var apiResponse = new ShippingApiResponse<Response> { HttpStatus = httpResponseMessage.StatusCode, Success = httpResponseMessage.IsSuccessStatusCode };
-                        recordingStream.IsRecording = true;
                         var sb = new StringBuilder();
                         foreach (var h in httpResponseMessage.Headers)
                         {
                             apiResponse.ProcessResponseAttribute(h.Key, h.Value);
-                            foreach( var s in h.Value )
+                            foreach (var s in h.Value)
                             {
                                 sb.Append(s);
+                                sb.Append(',');
                             }
+                            sb.Remove(sb.Length - 2, 1);
                             recordingStream.WriteRecordCRLF(string.Format("{0}:{1}", h.Key, sb.ToString()));
                             sb.Clear();
                         }
@@ -148,8 +165,6 @@ namespace PitneyBowes.Developer.ShippingApi
                     else
                     {
                         var apiResponse = new ShippingApiResponse<Response> { HttpStatus = httpResponseMessage.StatusCode, Success = httpResponseMessage.IsSuccessStatusCode };
-                        recordingStream.IsRecording = true;
-                        recordingStream.WriteRecordCRLF("");
                         try
                         {
                             ShippingApiResponse<Response>.Deserialize(session, recordingStream, apiResponse);
@@ -164,6 +179,5 @@ namespace PitneyBowes.Developer.ShippingApi
                 }
             }
         }
-
     }
 }

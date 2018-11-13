@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -189,9 +189,9 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <param name="developerId"></param>
         /// <param name="session">Optional session - if omitted or null this will look for the DefaultSession in the Globals object</param>
-        public TransactionsReport( string developerId, ISession session = null) : base()
+        public TransactionsReport( string developerId, int maxPages = -1, ISession session = null) : base()
         {
-            Provider = new TransactionsReportProvider(developerId, session);
+            Provider = new TransactionsReportProvider(developerId, session, maxPages);
             DeveloperId = developerId;
             _session = session;
         }
@@ -227,9 +227,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <param name="request">Page request object</param>
         /// <param name="filter">Delegate to filter out report rows that are not of interest. Note the filtering occurs client side, after the page has been fetched, not server side.</param>
+        /// <param name="maxPages">Maximum number of pages to fetch. (-1 means no limit)</param>
         /// <param name="session">Optional session - if omitted or null this will look for the DefaultSession in the Globals object</param>
         /// <returns></returns>
-        public static IEnumerable<Transaction> Report(ReportRequest request, Func<Transaction, bool> filter = null, ISession session = null)
+        public static IEnumerable<Transaction> Report(ReportRequest request, Func<Transaction, bool> filter = null, int maxPages = -1, ISession session = null)
         {
             if (session == null) session = Globals.DefaultSession;
             request.Page = 0;
@@ -244,7 +245,7 @@ namespace PitneyBowes.Developer.ShippingApi
                 {
                     if ( filter == null || (filter != null && filter(t)) ) yield return t;
                 }
-            } while (!page.LastPage);
+            } while (!page.LastPage && ( maxPages == -1 || request.Page < maxPages) );
         }
     }
 
@@ -255,16 +256,19 @@ namespace PitneyBowes.Developer.ShippingApi
     {
         private string _developerId;
         internal ISession _session;
+        private int _maxPages;
 
         /// <summary>
         /// Constructor for query provider for the shipping API transactions report
         /// </summary>
         /// <param name="developerId"></param>
         /// <param name="session"></param>
-        public TransactionsReportProvider( string developerId, ISession session) :base()
+        /// <param name="maxPages">Maximum number of pages to fetch (-1 means no limit)</param>
+        public TransactionsReportProvider( string developerId, ISession session, int maxPages = -1) :base()
         {
             _developerId = developerId;
             _session = session;
+            _maxPages = maxPages;
         }
 
         /// <summary>
@@ -283,14 +287,14 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <typeparam name="TResult"></typeparam>
         /// <param name="expression"></param>
-        /// <param name="isEnumerable"></param>
+        /// <param name="IsEnumerable"></param>
         /// <returns></returns>
-        public override object Execute<TResult>(Expression expression, bool isEnumerable)
+        public override object Execute<TResult>(Expression expression, bool IsEnumerable)
         {
             return Execute<TResult, Transaction, ReportRequest, ReportRequestFinder>(
                 expression,
-                isEnumerable,
-                x => TransactionsReport<Transaction>.Report( x, null, _session),
+                IsEnumerable,
+                x => TransactionsReport<Transaction>.Report( x, null, _maxPages, _session),
                 x => x.DeveloperId = _developerId
             );
         }

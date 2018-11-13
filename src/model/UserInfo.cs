@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -18,7 +18,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 namespace PitneyBowes.Developer.ShippingApi.Model
 {
     /// <summary>
-    /// An object containing the merchant�s name, address, company, phone, and email for the merchant signup render method.
+    /// An object containing the merchant抯 name, address, company, phone, and email for the merchant signup render method.
     /// </summary>
     public class UserInfo : IUserInfo
     {

@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -17,6 +17,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 using System;
 using System.Net;
+using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
 using System.IO;
 using System.Reflection;
@@ -54,36 +55,37 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <returns></returns>
         public static string RecordingFullPath(IShippingApiRequest request, string resource, ISession session)
         { 
-            string dirname = session.RecordPath;
-            StringBuilder uriBuilder = new StringBuilder(resource);
+            var dirname = session.RecordPath;
+            var uriBuilder = new StringBuilder(resource);
             ShippingApiRequest.SubstitueResourceParameters(request, uriBuilder);
-
-            string fullPath = (dirname + uriBuilder.ToString().ToLower() + @"\")
-                .Replace('?', Path.DirectorySeparatorChar)
-                .Replace('&', Path.DirectorySeparatorChar)
-                .Replace('/', Path.DirectorySeparatorChar)
-                .Replace('=', '-');
-            string fileName = "default";
-
-            if (session == null) session = Globals.DefaultSession;
-
-            foreach (var h in request.GetHeaders())
-            {
-                if (h.Item3.ToLower().Equals("authorization"))
-                {
-                    if (fileName.Equals("default"))
-                    {
-                        fileName = h.Item2.Substring(0, 8).ToLower();
-                    }
-                }
-                if (h.Item1.Name.ToLower().Equals("x-pb-transactionid"))
-                {
-                    fileName = h.Item2.ToLower();
-                }
+            var pathBuilder = new StringBuilder("/");
+            var uriComponents = uriBuilder.ToString().Split('/');
+            for (int i = 1; i < Math.Min(3, uriComponents.Length); i++ ) {
+                pathBuilder.Append(uriComponents[i]);
+                pathBuilder.Append(Path.DirectorySeparatorChar);
             }
-            fileName += request.RecordingSuffix;
-            fileName += ".http";
-            return fullPath + Path.DirectorySeparatorChar + fileName;
+            var fileNameBuilder = new StringBuilder();
+            for (int i = 3; i < uriComponents.Length; i++)
+            {
+                fileNameBuilder.Append(uriComponents[i]);
+                fileNameBuilder.Append('_');
+            }
+            var s = fileNameBuilder.ToString().ToLower();
+            string fileName = "";
+            if (s.Length > 0)
+            {
+                fileName = s.Substring(0, s.Length - 1)
+                .Replace('?', '-')
+                .Replace('&', '-')
+                .Replace('=', '.');
+            }
+
+            // At this point
+            // dirname is base directory
+            // pathBuilder.ToString() is the relative path based on 2 levels of uri path
+            // fileName is the name built from the remaining uri path and any parameters
+            return dirname + pathBuilder.ToString() + fileName + request.RecordingSuffix + ".mime";
+
         }
 
         private static void ProcessRequestAttributes<Attribute>(object o, Action<Attribute, string, string, string> propAction) where Attribute : ShippingApiAttribute
@@ -163,7 +165,18 @@ namespace PitneyBowes.Developer.ShippingApi
             switch (request.ContentType)
             {
                 case "application/json":
-                    var serializer = new JsonSerializer() { ContractResolver = new ShippingApiContractResolver() };
+                    var serializer = new JsonSerializer() 
+                    { 
+                        ContractResolver = new ShippingApiContractResolver() 
+                    };
+                    serializer.Error += delegate(object sender, Newtonsoft.Json.Serialization.ErrorEventArgs args)
+                    {
+                        // only log an error once
+                        if (args.CurrentObject == args.ErrorContext.OriginalObject)
+                        {
+                            session.LogError(args.ErrorContext.Error.Message);
+                        }
+                    };
                     ((ShippingApiContractResolver)serializer.ContractResolver).Registry = session.SerializationRegistry;
                     serializer.NullValueHandling = NullValueHandling.Ignore;
                     serializer.Formatting = Formatting.Indented;

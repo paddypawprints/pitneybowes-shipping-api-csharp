@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -55,42 +55,50 @@ namespace PitneyBowes.Developer.ShippingApi
         public async Task<ShippingApiResponse<Response>> HttpRequest<Response, Request>(string resource, HttpVerb verb, Request request, bool deleteBody, ISession session = null) where Request : IShippingApiRequest
         {
             string fullPath = request.RecordingFullPath(resource, session);
-            string cwd = Directory.GetCurrentDirectory();
 
             if ( File.Exists(fullPath))
             {
                 var apiResponse = new ShippingApiResponse<Response> { HttpStatus = HttpStatusCode.OK, Success = true };
                 long jsonPosition = 0;
                 using (var fileStream = new FileStream(fullPath, FileMode.Open, FileAccess.Read))
-                using (var fileReader = new StreamReader(fileStream))
+                using (var mimeStream = new MimeStream(fileStream))
                 {
+                    mimeStream.SeekNextPart(); //request
+                    mimeStream.SeekNextPart(); //response
+                    mimeStream.ClearHeaders();
+                    mimeStream.ReadHeaders(); // reads http headers as well
+                    if (!mimeStream.FirstLine.StartsWith("HTTP"))
+                    {
+                        apiResponse = new ShippingApiResponse<Response> { HttpStatus = HttpStatusCode.InternalServerError, Success = false };
+                        session.LogDebug(string.Format("Mock request failed {0}", fullPath));
+                        apiResponse.Errors.Add(new ErrorDetail() { ErrorCode = "Mock 500", Message = "Bad format " + fullPath });
+                        return apiResponse;
+                    }
+                    var hrc = mimeStream.FirstLine.Split(' ');
+                    apiResponse.HttpStatus = (HttpStatusCode)int.Parse(hrc[1]);
+                    apiResponse.Success = apiResponse.HttpStatus == HttpStatusCode.OK;
 
-                    for (var line = await fileReader.ReadLineAsync(); line!=string.Empty; line = await fileReader.ReadLineAsync())
+                    foreach (var h in mimeStream.Headers)
                     {
-                        jsonPosition += line.Length + 2; // + CRLF
-                        if (line.IndexOf(':') == -1) continue;
-                        var headerName = line.Substring(0, line.IndexOf(':'));
-                        var headerValue = line.IndexOf(':') == line.Length? string.Empty : line.Substring( line.IndexOf(':')+1 );
-                        apiResponse.ProcessResponseAttribute(headerName, headerValue.Split(','));
+                        apiResponse.ProcessResponseAttribute(h.Key, h.Value);
                     }
-                }
-                using (var fileStream = new FileStream(fullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-                using (var recordingStream = new RecordingStream(fileStream, request.RecordingFullPath(resource, session), FileMode.Create))
-                {
-                    try
+
+                    using (var recordingStream = new RecordingStream(mimeStream, request.RecordingFullPath(resource, session), FileMode.Create, RecordingStream.RecordType.PlainText))
                     {
-                        //dont open the record file
-                        ShippingApiResponse<Response>.Deserialize(session, recordingStream, apiResponse, jsonPosition);
-                    }
-                    catch (Exception ex)
-                    {
-                        session.LogError(string.Format("Mock request {0} got deserialization exception {1}", fullPath, ex.Message));
-                        throw ex;
+                        try
+                        {
+                            //dont open the record file
+                            recordingStream.IsRecording = false;
+                            ShippingApiResponse<Response>.Deserialize(session, recordingStream, apiResponse, jsonPosition);
+                        }
+                        catch (Exception ex)
+                        {
+                            session.LogError(string.Format("Mock request {0} got deserialization exception {1}", fullPath, ex.Message));
+                            throw ex;
+                        }
                     }
                 }
                 return apiResponse;
-
-
             }
 
             else

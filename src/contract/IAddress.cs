@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -91,6 +91,23 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <value><c>true</c> if residential; otherwise, <c>false</c>.</value>
         bool Residential { get; set; }
+        /// <summary>
+        /// The 2-digit delivery point, when available.
+        /// </summary>
+        /// <value>The delivery point.</value>
+        string DeliveryPoint { get; set; }
+        /// <summary>
+        /// The last four characters of the USPS carrier route code. The carrier route is the area served by a 
+        /// particular USPS mail carrier. The full carrier route code is a nine-character string comprising the 
+        /// five-digit postal code appended by these four characters.
+        /// </summary>
+        /// <value>The carrier route.</value>
+        string CarrierRoute { get; set; }
+        /// <summary>
+        /// Pickup Request Only. Tax identification number. This is optional for pickup requests.
+        /// </summary>
+        /// <value>The tax identifier.</value>
+        string TaxId { get; set; }
         /// <summary>
         /// The response returns this field only if
         /// ``MINIMAL_ADDRESS_VALIDATION`` is **NOT** enabled

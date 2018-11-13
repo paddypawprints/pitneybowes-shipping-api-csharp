@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -529,9 +529,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <param name="request"></param>
         /// <param name="session"></param>
         /// <returns></returns>
-    public async static Task<ShippingApiResponse<IMerchant>> MerchantDeactivateAccount<IMerchant>(MerchantDeactivateRequest request, ISession session = null)
+        public async static Task<ShippingApiResponse<IMerchant>> MerchantDeactivateAccount<IMerchant>(MerchantDeactivateRequest request, ISession session = null)
         {
             return await WebMethod.Get<IMerchant, MerchantDeactivateRequest>("/shippingservices/v2/developers/{DeveloperId}/accounts/{AccountId}/deactivate ", request, session);
         }
+        //TODO: Get Merchants
     }
 }

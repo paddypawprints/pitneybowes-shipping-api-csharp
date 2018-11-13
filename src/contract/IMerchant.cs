@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -63,9 +63,19 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         string MerchantStatusReason { get; set; }
         /// <summary>
+        ///     If true, the merchant can choose to insure a parcel with PB Parcel Protection when creating a shipment.
+        /// </summary>
+        /// <value>The parcel protection.</value>
+        bool? ParcelProtection { get; set; }
+        /// <summary>
         /// The date the merchant’s PB Postage Account was deactivated, if applicable. For an active merchant, the field is set to null.
         /// A deactivated merchant can no longer print labels.
         /// </summary>
         DateTimeOffset DeactivatedDate { get; set; }
+        /// <summary>
+        /// This is returned only for the Authorize Merchant API call. This field indicates the payment method for the merchant’s PB Postage Account.
+        /// </summary>
+        /// <value>The payment method.</value>
+        MerchantPaymentMethod PaymentMethod { get; set;}
     }
 }
