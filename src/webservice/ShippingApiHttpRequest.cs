@@ -149,12 +149,19 @@ namespace PitneyBowes.Developer.ShippingApi
                         foreach (var h in httpResponseMessage.Headers)
                         {
                             apiResponse.ProcessResponseAttribute(h.Key, h.Value);
+                            bool firstValue = true;
                             foreach (var s in h.Value)
                             {
+                                if (firstValue)
+                                {
+                                    firstValue = false;
+                                }
+                                else
+                                {
+                                    sb.Append(';');
+                                }
                                 sb.Append(s);
-                                sb.Append(',');
                             }
-                            sb.Remove(sb.Length - 2, 1);
                             recordingStream.WriteRecordCRLF(string.Format("{0}:{1}", h.Key, sb.ToString()));
                             sb.Clear();
                         }
