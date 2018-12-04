@@ -82,47 +82,9 @@ namespace example
 
             try
             {
-                /*                // Create shipment
-                                var shipment = ShipmentFluent<Shipment>.Create()
-                                    .ToAddress((Address)AddressFluent<Address>.Create()
-                                        .AddressLines("643 Greenway RD")
-                                        .PostalCode("28607")
-                                        .CountryCode("US")
-                                        .Verify() // calls the service for address validation - will populate city and state from the zip
-                                        )
-                                    .MinimalAddressValidation("true")
-                                    //.ShipperRatePlan(Globals.DefaultSession.GetConfigItem("RatePlan")) // use if you have a custom rate plan
-                                    .FromAddress((Address)AddressFluent<Address>.Create()
-                                        .Company("Pitney Bowes Inc.")
-                                        .AddressLines("27 Waterview Drive")
-                                        .Residential(false)
-                                        .CityTown("Shelton")
-                                        .StateProvince("CT")
-                                        .PostalCode("06484")
-                                        .CountryCode("US")
-                                        .Person("Paul Wright", "203-555-1213", "john.publica@pb.com")
-                                        )
-                                    .Parcel((Parcel)ParcelFluent<Parcel>.Create()
-                                        .Dimension(12, 12, 10)
-                                        .Weight(16m, UnitOfWeight.OZ)
-                                        )
-                                    .Rates(RatesArrayFluent<Rates>.Create()
-                                        .USPSPriority<Rates, Parameter>()
-                                        .InductionPostalCode("06484")
-                                        )
-                                    .Documents((List<IDocument>)DocumentsArrayFluent<Document>.Create()
-                                        .ShippingLabel(ContentType.BASE64, Size.DOC_4X6, FileFormat.ZPL2)
-                                        )
-                                    .ShipmentOptions(ShipmentOptionsArrayFluent<ShipmentOptions>.Create()
-                                        .ShipperId(sandbox.GetConfigItem("ShipperID"))
-                                        .AddToManifest()
-                                        )
-                                    .TransactionId(Guid.NewGuid().ToString().Substring(15));*/
-
                 // Create shipment
                 var shipment = ShipmentFluent<Shipment>.Create()
                     .ToAddress((Address)AddressFluent<Address>.Create()
-                        .Name("Ron Receiver")
                         .AddressLines("643 Greenway RD")
                         .PostalCode("28607")
                         .CountryCode("US")
@@ -140,13 +102,13 @@ namespace example
                         .CountryCode("US")
                         .Person("Paul Wright", "203-555-1213", "john.publica@pb.com")
                         )
-                    .NewgisticsParcel<Shipment,ShipmentOptions>((Parcel)ParcelFluent<Parcel>.Create()
+                    .Parcel((Parcel)ParcelFluent<Parcel>.Create()
                         .Dimension(12, 12, 10)
                         .Weight(16m, UnitOfWeight.OZ)
                         )
-                    .Rates(RatesArrayFluent<Rates>.Create().Add()
-                           .NewgisticsRates(Services.PSLW )
-                           .Notifications<Rates, SpecialServices, Parameter>(RecipientNotificationType.ON_DELIVER, "john.publica@pb.com")
+                    .Rates(RatesArrayFluent<Rates>.Create()
+                        .USPSPriority<Rates, Parameter>()
+                        .InductionPostalCode("06484")
                         )
                     .Documents((List<IDocument>)DocumentsArrayFluent<Document>.Create()
                         .ShippingLabel(ContentType.BASE64, Size.DOC_4X6, FileFormat.ZPL2)
@@ -154,10 +116,9 @@ namespace example
                     .ShipmentOptions(ShipmentOptionsArrayFluent<ShipmentOptions>.Create()
                         .ShipperId(sandbox.GetConfigItem("ShipperID"))
                         .AddToManifest()
-                        .NewgisticsOptions("0093", "1585")
                         )
-                    .TransactionId(Guid.NewGuid().ToString().Substring(15))
-                    .Reference<Shipment, Reference>("OR1234", "CC123456", "CC4321");
+                    .TransactionId(Guid.NewGuid().ToString().Substring(15));
+
 
                 var label = Api.CreateShipment((Shipment)shipment).GetAwaiter().GetResult();
                 
