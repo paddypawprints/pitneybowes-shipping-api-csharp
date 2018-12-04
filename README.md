@@ -20,6 +20,9 @@ Mono and Xamarin are also supported.
 * **Plug in your own configuration and log providers**
 * **Keeps the API secret out of cleartext**
 
+Latest changes - [CHANGES](CHANGES.md)
+
+
 ## Prerequisites
 
 - To use the C# client to generate shipping labels, you will need a Pitney Bowes Shipping API sandbox account. The account is free and gives access to a fully functional sandbox environment. Sign up for the account here: [Shipping API Signup](https://signup.pitneybowes.com/signup/shipping).
