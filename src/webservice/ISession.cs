@@ -17,6 +17,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 using System;
 using System.Text;
+using Newtonsoft.Json.Serialization;
 using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
@@ -72,6 +73,11 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Delegate to log warnings. Plug in your own logger here.
         /// </summary>
         Action<string> LogWarning { get; set; }
+        /// <summary>
+        /// Gets or sets the JSON.Net trace writer.
+        /// </summary>
+        /// <value>The trace writer.</value>
+        ITraceWriter TraceWriter { get; set; }
         /// <summary>
         /// Flag to indicate whether messages should be recorded. Recorded messages can be used for debugging or for replay by the mock requester.
         /// </summary>

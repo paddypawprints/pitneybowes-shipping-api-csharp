@@ -23,12 +23,12 @@ using System.Runtime.InteropServices;
 using System.IO;
 using System.Collections.Generic;
 using PitneyBowes.Developer.ShippingApi;
+using PitneyBowes.Developer.ShippingApi.Mock;
 using PitneyBowes.Developer.ShippingApi.Fluent;
 using PitneyBowes.Developer.ShippingApi.Model;
 using PitneyBowes.Developer.ShippingApi.Rules;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration; 
-using Newtonsoft.Json;
 
 #endregion
 

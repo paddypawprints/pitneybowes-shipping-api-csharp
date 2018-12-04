@@ -18,6 +18,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 using System;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
@@ -34,6 +35,7 @@ namespace PitneyBowes.Developer.ShippingApi
         private RecordType _recordType = RecordType.PlainText;
         private bool _wroteMimeHeader = false;
         private Stream _baseStream = null;
+        private Dictionary<string, List<string>> _headers;
 
         /// <summary>
         /// Record either plain text or multipart mime.
@@ -80,7 +82,8 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <param name="path"></param>
         /// <param name="fileMode"></param>
         /// <param name="recordType"></param>
-        public RecordingStream(Stream baseStream, string path, FileMode fileMode, RecordType recordType)
+        /// <param name="headers"></param>
+        public RecordingStream(Stream baseStream, string path, FileMode fileMode, RecordType recordType, List<Dictionary<string, List<string>>> headers = null)
         {
             _recordType = recordType;
             _baseStream = baseStream;
@@ -89,7 +92,7 @@ namespace PitneyBowes.Developer.ShippingApi
             _recording = false;
         }
 
-        private void WriteMimeHeader()
+        private void WriteMimeHeader(Dictionary<string, List<string>> headers)
         {
             if (!IsRecording || _recordType != RecordType.MultipartMime ) return;
             if (!_wroteMimeHeader) 
@@ -108,9 +111,33 @@ namespace PitneyBowes.Developer.ShippingApi
             }
             _wroteMimeHeader = true;
         }
-
-        private void WriteMimeBoundary(string contentType )
+        private void WriteHeaders(Dictionary<string, List<string>> headers )
         {
+            if (headers == null) return;
+            foreach( var h in headers.Keys)
+            {
+                WriteRecord(h);
+                bool first = true;
+                StringBuilder val = new StringBuilder();
+                foreach ( var v in headers[h] )
+                {
+                    if (first)
+                    {
+                        first = false;
+                    }
+                    else
+                    {
+                        val.Append(";");
+                    }
+                    val.Append(headers[h]);
+                }
+                WriteRecordCRLF(val.ToString());
+            }
+        }
+
+        private void WriteMimeBoundary(string contentType, Dictionary<string,List<string>> headers = null )
+        {
+            _headers = headers;
             if (!IsRecording || _recordType != RecordType.MultipartMime) return;
 
             WriteRecordCRLF("");
@@ -119,6 +146,7 @@ namespace PitneyBowes.Developer.ShippingApi
             WriteRecordCRLF("MIME-Version: 1.0");
             WriteRecord("Content-Type: ");
             WriteRecordCRLF(contentType);
+            WriteHeaders(headers);
             WriteRecordCRLF("");
 
         }
@@ -148,7 +176,7 @@ namespace PitneyBowes.Developer.ShippingApi
                 }
                 if (!_recording && value ) {
                     _recording = value;
-                    WriteMimeHeader();
+                    WriteMimeHeader(_headers);
                 }
                 else
                     _recording = value;

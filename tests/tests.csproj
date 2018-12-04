@@ -21,4 +21,9 @@
   <ItemGroup>
     <Compile Remove="UnitTest1.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="testData\oauth\.DS_Store" />
+    <None Remove="testData\shippingservices\.DS_Store" />
+    <None Remove="testData\printLabel_soldToAddress.txt" />
+  </ItemGroup>
 </Project>

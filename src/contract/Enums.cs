@@ -725,6 +725,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Scan based returns - no status
         /// </summary>
+        SBR,
+        /// <summary>
+        /// The null response.
+        /// </summary>
         NULL
     }
 
@@ -1115,6 +1119,9 @@ namespace PitneyBowes.Developer.ShippingApi
         /// PMOD options
         /// </summary>
         PMOD_OPTIONS,
+        /// <summary>
+        /// Notifications.
+        /// </summary>
         NOTIFICATIONS
 
     }

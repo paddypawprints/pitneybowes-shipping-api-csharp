@@ -19,20 +19,20 @@ using System.IO;
 using System.Text;
 using System.Collections;
 using System.Collections.Generic;
-namespace PitneyBowes.Developer.ShippingApi
+namespace PitneyBowes.Developer.ShippingApi.Mock
 {
 	internal class StreamEnumerator 
     {
 
-        private byte[] _buffer = new byte[1024];
+        private readonly byte[] _buffer = new byte[1024];
         private int _size = 0;
-        public long Offset = -1;
+        public long Offset = 0;
         private Stream _stream;
         private bool _eof = false;
 
         public void OnSeek()
         {
-            Offset = -1;
+            Offset = 0;
             _size = 0;
             _eof = false;
         }
@@ -47,21 +47,25 @@ namespace PitneyBowes.Developer.ShippingApi
 
         public IEnumerator<byte> ByteEnumerator()
         {
-            while (!_eof)
+            while (true)
             {
-                if ((Offset % 1024) < (_size-1))
-                {
-                    var b = _buffer[Offset % 1024];
-                    Offset++;
-                    yield return b;
-                }
-                else
+                if (Offset % 1024 == 0)
                 {
                     _size = _stream.Read(_buffer, 0, 1024);
-                    Offset++;
-                    _eof = _size == 0;
+                    if (_size == 0)
+                    {
+                        break;
+                    }
                 }
+                if (Offset % 1024 == _size ) // only happens if size < 1024
+                {
+                    break;
+                }
+                var b = _buffer[Offset % 1024];
+                Offset++;
+                yield return b;
             }
+            _eof = true;
         }
 
         public IEnumerator<char> CharEnumerator()

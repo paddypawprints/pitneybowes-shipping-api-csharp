@@ -71,8 +71,9 @@ namespace PitneyBowes.Developer.ShippingApi
 
             using (var recordingStream = new RecordingStream(null, request.RecordingFullPath(resource, session), FileMode.Create, RecordingStream.RecordType.MultipartMime))
             {
+#pragma warning disable CS0618
                 recordingStream.OpenRecord(session.Record);
-
+#pragma warning restore CS0618
                 string uriBuilder = request.GetUri(resource);
 
                 HttpResponseMessage httpResponseMessage;
@@ -82,7 +83,7 @@ namespace PitneyBowes.Developer.ShippingApi
                     {
                         recordingStream.SetBaseStream(stream, "text/httpRequest");
                         recordingStream.WriteRecordCRLF(string.Format("{0} {1} HTTP/1.1", verb.ToString(), uriBuilder));
-
+                        recordingStream.WriteRecordCRLF(string.Format("{0}: {1}", "Content-Type", request.ContentType));
                         foreach (var h in request.GetHeaders())
                         {
                             AddRequestHeaders(requestMessage, h.Item1, h.Item2, h.Item3, recordingStream);

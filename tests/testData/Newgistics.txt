@@ -1,0 +1,118 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed;boundary = "ad369977-aee3-4f02-9a49-d47e7fbcaf4e"
+
+This is a multipart message in MIME format.
+
+
+--ad369977-aee3-4f02-9a49-d47e7fbcaf4e
+MIME-Version: 1.0
+Content-Type: text/httpRequest
+
+POST /shippingservices/v1/shipments?includeDeliveryCommitment=False HTTP/1.1
+x-pb-transactionId:9a9-b8e1-9395137992b1
+Authorization: Bearer 0wH85iHV0nVOrox5iLz9GK8GHeja
+minimaladdressvalidation:true
+Content-Type: application/json
+
+
+{
+  "fromAddress": {
+    "company": "Pitney Bowes Inc.",
+    "name": "Paul Wright",
+    "phone": "203-555-1213",
+    "email": "john.publica@pb.com",
+    "residential": false,
+    "addressLines": [
+      "27 Waterview Drive"
+    ],
+    "cityTown": "Shelton",
+    "stateProvince": "CT",
+    "postalCode": "06484",
+    "countryCode": "US"
+  },
+  "toAddress": {
+    "name": "Ron Receiver",
+    "residential": false,
+    "addressLines": [
+      "643 Greenway Rd"
+    ],
+    "cityTown": "Boone",
+    "stateProvince": "NC",
+    "postalCode": "28607-4819",
+    "countryCode": "US",
+    "deliveryPoint": "99",
+    "carrierRoute": "C010"
+  },
+  "parcel": {
+    "weight": {
+      "unitOfMeasurement": "OZ",
+      "weight": 16
+    },
+    "dimension": {
+      "unitOfMeasurement": "IN",
+      "length": 12,
+      "height": 12,
+      "width": 10
+    }
+  },
+  "rates": [
+    {
+      "carrier": "NEWGISTICS",
+      "parcelType": "PKG",
+      "specialServices": [
+        {
+          "specialServiceId": "NOTIFICATIONS",
+          "inputParameters": [
+            {
+              "name": "RECIPIENT_NOTIFICATION_TYPE",
+              "value": "ON_DELIVER"
+            },
+            {
+              "name": "RECIPIENT_NOTIFICATION_EMAIL",
+              "value": "john.publica@pb.com"
+            }
+          ]
+        }
+      ],
+      "serviceId": "PSLW"
+    }
+  ],
+  "documents": [
+    {
+      "size": "DOC_4X6",
+      "printDialogOption": "NO_PRINT_DIALOG",
+      "type": "SHIPPING_LABEL",
+      "contentType": "BASE64",
+      "fileFormat": "ZPL2"
+    }
+  ],
+  "shipmentOptions": [
+    {
+      "name": "SHIPPER_ID",
+      "value": "9026169668"
+    },
+    {
+      "name": "CLIENT_FACILITY_ID",
+      "value": "0093"
+    },
+    {
+      "name": "CARRIER_FACILITY_ID",
+      "value": "1585"
+    }
+  ],
+  "references": [
+    {
+      "name": "ReferenceNumber",
+      "value": "OR1234"
+    },
+    {
+      "name": "AddlRef1",
+      "value": "CC123456"
+    },
+    {
+      "name": "AddlRef2",
+      "value": "CC4321"
+    }
+  ]
+}
+--ad369977-aee3-4f02-9a49-d47e7fbcaf4e--

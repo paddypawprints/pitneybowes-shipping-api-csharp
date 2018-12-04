@@ -21,8 +21,19 @@ using PitneyBowes.Developer.ShippingApi.Model;
 
 namespace PitneyBowes.Developer.ShippingApi.Fluent
 {
+    /// <summary>
+    /// Newgistics extensions.
+    /// </summary>
     public static class NewgisticsExtensions
     {
+        /// <summary>
+        /// Newgistics the options.
+        /// </summary>
+        /// <returns>The options.</returns>
+        /// <param name="f">The object.</param>
+        /// <param name="clientFacility">Client facility.</param>
+        /// <param name="carrierFacility">Carrier facility.</param>
+        /// <typeparam name="T">The 1st type parameter.</typeparam>
         public static ShipmentOptionsArrayFluent<T> NewgisticsOptions<T>(
             this ShipmentOptionsArrayFluent<T> f,
             string clientFacility,
@@ -34,6 +45,13 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
              .Add().Option(ShipmentOption.CARRIER_FACILITY_ID, carrierFacility);
             return f;
         }
+        /// <summary>
+        /// Newgistics rates.
+        /// </summary>
+        /// <returns>The rates.</returns>
+        /// <param name="f">The object</param>
+        /// <param name="s">Service</param>
+        /// <typeparam name="T">The 1st type parameter.</typeparam>
         public static RatesArrayFluent<T> NewgisticsRates<T>(
             this RatesArrayFluent<T> f,
             Services s
@@ -45,7 +63,16 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
                 .ParcelType(ParcelType.PKG);
             return f;
         }
-
+        /// <summary>
+        /// Reference the specified f, referenceNumber, addlRef1 and addlRef2.
+        /// </summary>
+        /// <returns>The reference.</returns>
+        /// <param name="f">The object</param>
+        /// <param name="referenceNumber">Reference number.</param>
+        /// <param name="addlRef1">Addl ref1.</param>
+        /// <param name="addlRef2">Addl ref2.</param>
+        /// <typeparam name="T">IShipment concrete class.</typeparam>
+        /// <typeparam name="R">IReference concrete class.</typeparam>
         public static ShipmentFluent<T> Reference<T, R>(
             this ShipmentFluent<T> f,
             string referenceNumber,
@@ -83,6 +110,16 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             }
             return f;
         }
+        /// <summary>
+        /// Added notifications to the rate object.
+        /// </summary>
+        /// <returns>The notifications.</returns>
+        /// <param name="r">Fluent object.</param>
+        /// <param name="recipientNotificationType">Recipient notification type.</param>
+        /// <param name="email">Email.</param>
+        /// <typeparam name="T">IRates concrete class.</typeparam>
+        /// <typeparam name="S">ISpecialServices concrete class.</typeparam>
+        /// <typeparam name="P">IParameter concrete class.</typeparam>
         public static RatesArrayFluent<T> Notifications<T, S, P>(
             this RatesArrayFluent<T> r,
             RecipientNotificationType recipientNotificationType,
@@ -105,6 +142,14 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
             r.SpecialService(s);
             return r;
         }
+        /// <summary>
+        /// Adds newgistics style parcel to the Shipment.
+        /// </summary>
+        /// <returns>The parcel.</returns>
+        /// <param name="f">Fluent object.</param>
+        /// <param name="p">Parcel to add</param>
+        /// <typeparam name="T">IShipment concrete type.</typeparam>
+        /// <typeparam name="O">IShipmentOptions concrete type.</typeparam>
         public static ShipmentFluent<T> NewgisticsParcel<T,O>(
             this ShipmentFluent<T> f,
             IParcel p

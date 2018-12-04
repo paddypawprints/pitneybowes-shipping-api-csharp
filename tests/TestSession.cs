@@ -18,11 +18,13 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration; // Required for windows
 using PitneyBowes.Developer.ShippingApi;
+using PitneyBowes.Developer.ShippingApi.Mock;
 using PitneyBowes.Developer.ShippingApi.Model;
 using System.IO;
 using System.Text;
 using Xunit.Abstractions;
 using Microsoft.Extensions.Logging.Xunit;
+using Newtonsoft.Json.Serialization;
 
 namespace tests
 {
@@ -82,7 +84,10 @@ namespace tests
                 // Hook in your secure API key decryption
                 sandbox.GetApiSecret = ()=>new StringBuilder(Configuration["ApiSecret"]);
 
+                sandbox.TraceWriter = new MemoryTraceWriter();
+
                 Globals.DefaultSession = sandbox;
+
 
             }
         }

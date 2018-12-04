@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Threading;
+using Newtonsoft.Json.Serialization;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
@@ -212,6 +213,11 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Counters holds statistics for each method call.
         /// </summary>
         public Dictionary<string, Counters> Counters { get; internal set; }
+        /// <summary>
+        /// Gets or sets the JSON.Net trace writer.
+        /// </summary>
+        /// <value>The trace writer.</value>
+        public ITraceWriter TraceWriter { get; set; }
 
         private void AddCounterIfRequired(string key)
         {

@@ -1,0 +1,46 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed;boundary = "523d1498-5afa-4409-8c34-4e4681620e12"
+
+This is a multipart message in MIME format.
+
+
+--523d1498-5afa-4409-8c34-4e4681620e12
+MIME-Version: 1.0
+Content-Type: text/httpRequest
+
+POST /shippingservices/v1/addresses/verify HTTP/1.1
+Authorization: Bearer 0wH85iHV0nVOrox5iLz9GK8GHeja
+Content-Type: application/json
+
+{
+  "name": "Ron Receiver",
+  "residential": false,
+  "addressLines": [
+    "643 Greenway RD"
+  ],
+  "postalCode": "28607",
+  "countryCode": "US"
+}
+--523d1498-5afa-4409-8c34-4e4681620e12
+MIME-Version: 1.0
+Content-Type: text/httpResponse
+
+HTTP/1.1 200 OK
+Content-Length: 243
+Content-Type: application/json
+
+Date:Mon, 03 Dec 2018 20:15:20 GMT
+Vary:Accept-Encoding
+X-PB-CorrelationId:c0917e5b22bc445a8265963f52f99b71
+X-PB-DeveloperId:46841939
+X-PB-IntegratorId:46841939
+X-PB-IsCharged:true
+X-PB-MessageWeight:1
+X-PB-PartnerId:325584758
+X-PB-TransactionId:1543868120802
+Connection:keep-alive
+X-Iinfo:0-15142287-15142290 SNNN RT(1543868118995 1288) q(0 0 0 -1) r(3 3) U5
+X-CDN:Incapsula
+
+{"addressLines":["643 Greenway Rd"],"cityTown":"Boone","stateProvince":"NC","postalCode":"28607-4819","countryCode":"US","name":"Ron Receiver","residential":false,"deliveryPoint":"99","carrierRoute":"C010","status":"VALIDATED_AND_NOT_CHANGED"}
+--523d1498-5afa-4409-8c34-4e4681620e12--

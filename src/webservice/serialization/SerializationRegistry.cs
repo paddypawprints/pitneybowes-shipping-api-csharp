@@ -32,6 +32,15 @@ namespace PitneyBowes.Developer.ShippingApi
         private Dictionary<Type, JsonConverter> _serializationRegistry = new Dictionary<Type, JsonConverter>();
         private Dictionary<Type, Type> _wrapperRegistry = new Dictionary<Type, Type>();
         /// <summary>
+        /// Gets the wrapper for given interface.
+        /// </summary>
+        /// <returns>The wrapper for.</returns>
+        /// <param name="type">Type.</param>
+        public Type GetWrapperFor(Type type)
+        {
+            return _wrapperRegistry[type];
+        }
+        /// <summary>
         /// Default constructor - initializes the structures.
         /// </summary>
         public SerializationRegistry()

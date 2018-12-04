@@ -54,8 +54,10 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <param name="session"></param>
         /// <returns></returns>
         public static string RecordingFullPath(IShippingApiRequest request, string resource, ISession session)
-        { 
+        {
+#pragma warning disable CS0618
             var dirname = session.RecordPath;
+#pragma warning restore CS0618
             var uriBuilder = new StringBuilder(resource);
             ShippingApiRequest.SubstitueResourceParameters(request, uriBuilder);
             var pathBuilder = new StringBuilder("/");
@@ -84,11 +86,11 @@ namespace PitneyBowes.Developer.ShippingApi
             // dirname is base directory
             // pathBuilder.ToString() is the relative path based on 2 levels of uri path
             // fileName is the name built from the remaining uri path and any parameters
-            return dirname + pathBuilder.ToString() + fileName + request.RecordingSuffix + ".mime";
+            return dirname + pathBuilder.ToString() + fileName + request.RecordingSuffix + ".txt";
 
         }
 
-        private static void ProcessRequestAttributes<Attribute>(object o, Action<Attribute, string, string, string> propAction) where Attribute : ShippingApiAttribute
+        internal static void ProcessRequestAttributes<Attribute>(object o, Action<Attribute, string, string, string> propAction) where Attribute : ShippingApiAttribute
         {
             foreach (var propertyInfo in o.GetType().GetProperties())
             { 

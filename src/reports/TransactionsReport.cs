@@ -189,6 +189,7 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <param name="developerId"></param>
         /// <param name="session">Optional session - if omitted or null this will look for the DefaultSession in the Globals object</param>
+        /// <param name="maxPages">Maximum number of pages to return.</param>
         public TransactionsReport( string developerId, int maxPages = -1, ISession session = null) : base()
         {
             Provider = new TransactionsReportProvider(developerId, session, maxPages);

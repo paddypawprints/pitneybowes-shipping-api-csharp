@@ -31,7 +31,7 @@ namespace PitneyBowes.Developer.ShippingApi
         public object Wrap(object o)
         {
             if (_wrapperType == null) return o;
-            return Activator.CreateInstance(_wrapperType, new object[] { o, });
+            return Activator.CreateInstance(_wrapperType, new object[] { o });
         }
 
         public ShippingApiConverter( Type objectType, Type wrapperType )

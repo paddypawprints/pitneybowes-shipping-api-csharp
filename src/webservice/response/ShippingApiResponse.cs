@@ -65,6 +65,11 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Whether the API call succeeded.
         /// </summary>
         public bool Success { get; set; }
+        /// <summary>
+        /// Gets the response object.
+        /// </summary>
+        /// <value>The response object.</value>
+        public virtual object ResponseObject { get;}
     }
 
     /// <summary>
@@ -110,6 +115,17 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Response object from the request. If the call was not successful this opject will be null
         /// </summary>
         public Response APIResponse = default(Response);
+
+        /// <summary>
+        /// Gets the response as object, not typed.
+        /// </summary>
+        /// <value>The response object.</value>
+        public override object ResponseObject {
+            get
+            {
+                return APIResponse;
+            }
+        }
 
 
         private static void DeserializationError(object sender, Newtonsoft.Json.Serialization.ErrorEventArgs e)

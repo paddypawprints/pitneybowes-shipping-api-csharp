@@ -20,7 +20,7 @@ using System.Net;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace PitneyBowes.Developer.ShippingApi
+namespace PitneyBowes.Developer.ShippingApi.Mock
 {
     /// <summary>
     /// Mock class for testing. Instead of calling the API the Mock looks for a file in the file system and returns its contents.
@@ -40,7 +40,7 @@ namespace PitneyBowes.Developer.ShippingApi
         /// Root directory for the mock files
         /// </summary>
         public string Dirname { get; set; }
-
+#pragma warning disable CS1998 // No async operations in mock
         /// <summary>
         /// Implements the same method as the real service interface allowing the mock to be plugged in
         /// </summary>
@@ -67,7 +67,7 @@ namespace PitneyBowes.Developer.ShippingApi
                     mimeStream.SeekNextPart(); //response
                     mimeStream.ClearHeaders();
                     mimeStream.ReadHeaders(); // reads http headers as well
-                    if (!mimeStream.FirstLine.StartsWith("HTTP"))
+                    if (!mimeStream.FirstLine.StartsWith("HTTP", StringComparison.InvariantCulture))
                     {
                         apiResponse = new ShippingApiResponse<Response> { HttpStatus = HttpStatusCode.InternalServerError, Success = false };
                         session.LogDebug(string.Format("Mock request failed {0}", fullPath));
@@ -110,7 +110,7 @@ namespace PitneyBowes.Developer.ShippingApi
 
             }
         }
-
+#pragma warning restore CS1998
     }
 }
 
