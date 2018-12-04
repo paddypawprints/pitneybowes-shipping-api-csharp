@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -50,6 +50,12 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <value>The file format.</value>
         FileFormat FileFormat { get; set; }
         /// <summary>
+        /// USPS Shipping Labels Only. If fileFormat is set to PNG, you can specify the DPI (Dots Per Inch) for a USPS shipping label. 
+        /// By default, the PB Shipping APIs use 300 DPI. Note: This field does not apply to 4X8 labels, COD labels, and PMOD labels.
+        /// </summary>
+        /// <value>The resolution.</value>
+        Resolution? Resolution { get; set; }
+        /// <summary>
         /// Gets or sets the type of the content.
         /// </summary>
         /// <value>The type of the content.</value>
@@ -67,6 +73,12 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         /// <value>The contents.</value>
         string Contents { get; set; }
+        /// <summary>
+        /// 4X8 Labels Only. In a shipment request, this defines additional information to be printed on the 2-inch Doc Tab of a 4X8 label. 
+        /// You can specify information returned by the Create Shipment API as well as custom information.
+        /// </summary>
+        /// <value>The document tab.</value>
+        IEnumerable<IDocTab> DocTab { get; set; }
         /// <summary>
         ///  When ``contentType`` is ``BASE64``, this field value will have the encoded
         /// base64 string of the shipment label.This structure will repeat if

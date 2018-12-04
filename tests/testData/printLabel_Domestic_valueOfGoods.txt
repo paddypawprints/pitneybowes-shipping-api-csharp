@@ -1,0 +1,105 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed;boundary = "71257ef3-dd43-4204-ac66-0079a70fa985"
+
+This is a multipart message in MIME format.
+
+
+--71257ef3-dd43-4204-ac66-0079a70fa985
+MIME-Version: 1.0
+Content-Type: text/httpRequest
+
+POST /shippingservices/v1/shipments?includeDeliveryCommitment=False HTTP/1.1
+x-pb-transactionId:418-b195-f9677d1206a1
+Authorization: Bearer Qu5KS6hi7xXhAtbYsTAlll9A5ZWx
+minimaladdressvalidation:true
+Content-Type: application/json
+
+
+{
+    "parcel": {
+        "weight": {
+            "unitOfMeasurement": "OZ",
+            "weight": 5
+        },
+        "dimension": {
+            "unitOfMeasurement": "IN",
+            "length": 7.5,
+            "width": 5.5,
+            "height": 4
+        },
+        "valueOfGoods":20
+    },
+    "documents": [
+        {
+            "size": "DOC_4X6",
+            "printDialogOption": "NO_PRINT_DIALOG",
+            "type": "SHIPPING_LABEL",
+            "contentType": "URL",
+            "fileFormat": "PDF"
+        }
+    ],
+    "rates": [
+        {
+            "carrier": "USPS",
+            "parcelType": "PKG",
+            "inductionPostalCode": "06790",
+            "specialServices": [
+                
+                {
+                    "specialServiceId": "DelCon",
+                    "inputParameters": [
+                        {
+                            "name": "INPUT_VALUE",
+                            "value": "0"
+                        }
+                    ]
+                }
+            ],
+            "serviceId": "PM"
+        }
+    ],
+    "fromAddress": {
+        "residential": true,
+        "phone": "2032032033",
+        "countryCode": "US",
+        "postalCode": "06790",
+        "name": "sender_fname",
+        "cityTown": "Torrington",
+        "stateProvince": "CT",
+        "company": "Pitney Bowes Inc.",
+        "addressLines": [
+            "244 Harvard Dr"
+        ],
+        "email": "sender@email.com"
+    },
+    "toAddress": {
+        "residential": true,
+        "phone": "2222222222",
+        "countryCode": "US",
+        "postalCode": "06790",
+        "name": "Mike",
+        "cityTown": "Torrington",
+        "company": "Mikerosoft",
+        "addressLines": [
+            "244 Harvard Dr.",
+            "",
+            ""
+        ],
+        "email": "receiver@email.com"
+    },
+    "shipmentOptions": [
+        {
+            "name": "SHIPPER_ID",
+            "value": "1465804556"
+        },
+        {
+            "name": "MINIMAL_ADDRESS_VALIDATION",
+            "value": "true"
+        },
+        {
+            "name": "ADD_TO_MANIFEST",
+            "value": "true"
+        }
+    ]
+}
+--71257ef3-dd43-4204-ac66-0079a70fa985--

@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -14,6 +14,8 @@ OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHE
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
+
+using System; 
 
 namespace PitneyBowes.Developer.ShippingApi
 {
@@ -35,7 +37,32 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         NOT_CHANGED
     }
-
+    /// <summary>
+    /// APV Adjustments Only. The reason for an APV adjustment based on the new information received from USPS. 
+    /// </summary>
+    public enum AdjustmentReason
+    {
+        /// <summary>
+        /// The weight.
+        /// </summary>
+        Weight,
+        /// <summary>
+        /// The dimension.
+        /// </summary>
+        Dimension,
+        /// <summary>
+        /// The package.
+        /// </summary>
+        Package,
+        /// <summary>
+        /// The zone.
+        /// </summary>
+        Zone,
+        /// <summary>
+        /// Duplicate.
+        /// </summary>
+        Duplicate
+    }
     /// <summary>
     /// Shipping carriers.
     /// </summary>
@@ -48,7 +75,11 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Pitney Powes Presort Services
         /// </summary>
-        PBPRESORT
+        PBPRESORT,
+        /// <summary>
+        /// Newgistics.
+        /// </summary>
+        NEWGISTICS
     }
 
     /// <summary>
@@ -153,7 +184,78 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Specifies the type of manifest. Required if the manifest type is other than a USPS SCAN form, which is the default. Valid Values are:
         /// </summary>
-        MANIFEST_TYPE
+        MANIFEST_TYPE,
+        /// <summary>
+        /// Newgistics Only. The Newgistics Merchant ID. If testing in the sandbox environment, set this to NGST.
+        /// </summary>
+        CLIENT_ID,
+        /// <summary>
+        /// Newgistics Only. Each instance of this parameter lists the Newgistics Facility ID of shipments to be closed out.
+        /// To close out shipments associated with multiple facilities, repeat this parameter for each facility, 
+        /// starting with CARRIER_FACILITY_ID_1 and incrementing by 1 up to CARRIER_FACILITY_ID_5. Set each parameter’s 
+        /// value to a facility ID.
+        /// Important: To close out shipments associated with more than 5 facility IDs, you must issue the API call again.
+        /// If you are testing in the sandbox environment and include this parameter, include just one instance of the 
+        /// parameter and set its value to 1585.
+        /// </summary>
+        CARRIER_FACILITY_ID_1,
+        /// <summary>
+        /// Newgistics Only. Each instance of this parameter lists the Newgistics Facility ID of shipments to be closed out.
+        /// To close out shipments associated with multiple facilities, repeat this parameter for each facility, 
+        /// starting with CARRIER_FACILITY_ID_1 and incrementing by 1 up to CARRIER_FACILITY_ID_5. Set each parameter’s 
+        /// value to a facility ID.
+        /// Important: To close out shipments associated with more than 5 facility IDs, you must issue the API call again.
+        /// If you are testing in the sandbox environment and include this parameter, include just one instance of the 
+        /// parameter and set its value to 1585.
+        /// </summary>
+        CARRIER_FACILITY_ID_2,
+        /// <summary>
+        /// Newgistics Only. Each instance of this parameter lists the Newgistics Facility ID of shipments to be closed out.
+        /// To close out shipments associated with multiple facilities, repeat this parameter for each facility, 
+        /// starting with CARRIER_FACILITY_ID_1 and incrementing by 1 up to CARRIER_FACILITY_ID_5. Set each parameter’s 
+        /// value to a facility ID.
+        /// Important: To close out shipments associated with more than 5 facility IDs, you must issue the API call again.
+        /// If you are testing in the sandbox environment and include this parameter, include just one instance of the 
+        /// parameter and set its value to 1585.
+        /// </summary>
+        CARRIER_FACILITY_ID_3,
+        /// <summary>
+        /// Newgistics Only. Each instance of this parameter lists the Newgistics Facility ID of shipments to be closed out.
+        /// To close out shipments associated with multiple facilities, repeat this parameter for each facility, 
+        /// starting with CARRIER_FACILITY_ID_1 and incrementing by 1 up to CARRIER_FACILITY_ID_5. Set each parameter’s 
+        /// value to a facility ID.
+        /// Important: To close out shipments associated with more than 5 facility IDs, you must issue the API call again.
+        /// If you are testing in the sandbox environment and include this parameter, include just one instance of the 
+        /// parameter and set its value to 1585.
+        /// </summary>
+        CARRIER_FACILITY_ID_4,
+        /// <summary>
+        /// Newgistics Only. Each instance of this parameter lists the Newgistics Facility ID of shipments to be closed out.
+        /// To close out shipments associated with multiple facilities, repeat this parameter for each facility, 
+        /// starting with CARRIER_FACILITY_ID_1 and incrementing by 1 up to CARRIER_FACILITY_ID_5. Set each parameter’s 
+        /// value to a facility ID.
+        /// Important: To close out shipments associated with more than 5 facility IDs, you must issue the API call again.
+        /// If you are testing in the sandbox environment and include this parameter, include just one instance of the 
+        /// parameter and set its value to 1585.
+        /// </summary>
+        CARRIER_FACILITY_ID_5
+
+    }
+
+    /// <summary>
+    /// Specifies the type of manifest. Required if creating a PMOD manifest(PS Form 3152).
+    /// </summary>
+    public enum ManifestType 
+    {
+        /// <summary>
+        /// Creates a PS Form 3152 for PMOD shipments.
+        /// </summary>
+        PMOD,
+        /// <summary>
+        /// For USPS and PB Presort this creates the correct form for the carrier. This is the default setting for those carriers. 
+        /// The parameter can be left out of the API call.
+        /// </summary>
+        NORMAL
     }
 
     /// <summary>
@@ -191,9 +293,59 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Redirect to alternative address
         /// </summary>
-        redirect
+        redirect,
+        /// <summary>
+        /// USPS endorsement, address service requested.
+        /// </summary>
+        AddressServiceRequested,
+        /// <summary>
+        /// USPS endorsement, address service requested bprs.
+        /// </summary>
+        AddressServiceRequestedBPRS,
+        /// <summary>
+        /// USPS endorsement, return service requested.
+        /// </summary>
+        ReturnServiceRequested,
+        /// <summary>
+        /// USPS endorsement, return service requested bprs.
+        /// </summary>
+        ReturnServiceRequestedBPRS,
+        /// <summary>
+        /// USPS endorsement, change service requested.
+        /// </summary>
+        ChangeServiceRequested,
+        /// <summary>
+        /// USPS endorsement, forwarding service requested.
+        /// </summary>
+        ForwardingServiceRequested,
+        /// <summary>
+        /// USPS endorsement, electronic service requested.
+        /// </summary>
+        ElectronicServiceRequested,
     }
-
+    /// <summary>
+    /// You can subscribe the shipment to receive provisioned transit triggers by including the NOTIFICATIONS special service 
+    /// in the request. The merchant must be configured for Newgistics transit triggers to use this feature.
+    /// </summary>
+    public enum NotificationsServiceOptions
+    {
+        /// <summary>
+        /// Required. The event to receive notifications for. Set this to either of the following:
+        ///     ON_INTRANSIT
+        ///     ON_DELIVER
+        /// </summary>
+        RECIPIENT_NOTIFICATION_TYPE,
+        /// <summary>
+        /// Required. Enables email notification. Set this to the email address to receive notifications. 
+        /// You must use the same email address for all events. Newgistics accepts only one email address for all notifications.
+        /// </summary>
+        RECIPIENT_NOTIFICATION_EMAIL,
+        /// <summary>
+        /// (FOR FUTURE USE) Enables text notification. Enter the phone number as a string of continuous numbers, without spaces 
+        /// or punctuation. For example: 1234567890
+        /// </summary>
+        RECIPIENT_NOTIFICATION_PHONE
+    }
     /// <summary>
     /// Package identifier type.
     /// </summary>
@@ -405,6 +557,21 @@ namespace PitneyBowes.Developer.ShippingApi
     }
 
     /// <summary>
+    /// This is returned only for the Authorize Merchant API call. This field indicates the payment method for the merchant’s PB Postage Account.
+    /// </summary>
+    public enum MerchantPaymentMethod
+    {
+        /// <summary>
+        /// PB Line of Credit
+        /// </summary>
+        LineOfCredit,
+        /// <summary>
+        /// Credit Card
+        /// </summary>
+        CreditCard
+    }
+   
+    /// <summary>
     /// Services for parcels for pickup
     /// </summary>
     public enum PickupService
@@ -462,7 +629,21 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// The refund process has been initiated.
         /// </summary>
-        INITIATED
+        [Obsolete]
+        INITIATED,
+        /// <summary>
+        /// Refund requested. Once the request is made, USPS takes several steps in its process to cancel/void the transaction, 
+        /// including waiting up to 14 days to make sure the parcel was not submitted to USPS for delivery. 
+        /// </summary>
+        REQUESTED,
+        /// <summary>
+        /// If the status is ACCEPTED, the money is credited back to your PB Postage Account.
+        /// </summary>
+        ACCEPTED,
+        /// <summary>
+        /// If the status is DENIED, the money is not credited back.
+        /// </summary>
+        DENIED
     }
 
     /// <summary>
@@ -495,6 +676,38 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         OTHER
     }
+    /// <summary>
+    /// Recipient notification type.
+    /// </summary>
+    public enum RecipientNotificationType
+    {
+        /// <summary>
+        /// The on intransit.
+        /// </summary>
+        ON_INTRANSIT,
+        /// <summary>
+        /// The on deliver.
+        /// </summary>
+        ON_DELIVER
+    }
+
+    /// <summary>
+    /// USPS Shipping Labels Only. If fileFormat is set to PNG, you can specify 
+    /// the DPI (Dots Per Inch) for a USPS shipping label. By default, the PB Shipping 
+    /// APIs use 300 DPI.
+    /// Note: This field does not apply to 4X8 labels, COD labels, and PMOD labels.
+    /// </summary>
+    public enum Resolution
+    {
+        /// <summary>
+        /// The label uses 203 DPI.
+        /// </summary>
+        DPI_203,
+        /// <summary>
+        /// The label uses 300 DPI.
+        /// </summary>
+        DPI_300
+    }
 
     /// <summary>
     /// Scan based return package status.
@@ -511,6 +724,10 @@ namespace PitneyBowes.Developer.ShippingApi
         SBRCharged,
         /// <summary>
         /// Scan based returns - no status
+        /// </summary>
+        SBR,
+        /// <summary>
+        /// The null response.
         /// </summary>
         NULL
     }
@@ -531,7 +748,15 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// 6 by 4 inch thermal label
         /// </summary>
-        DOC_6X4
+        DOC_6X4,
+        /// <summary>
+        /// (Newgistics labels only)
+        /// </summary>
+        DOC_4x5,
+        /// <summary>
+        /// 4 by 8 inch thermal label. 4x6 label with doctab.
+        /// </summary>
+        DOC_4x8
     }
 
     /// <summary>
@@ -598,7 +823,15 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Priority Mail Open and Distribute
         /// </summary>
-        PMOD
+        PMOD,
+        /// <summary>
+        /// Bound Printed Matter
+        /// </summary>
+        BPM,
+        /// <summary>
+        /// Parcel Select Lightweight
+        /// </summary>
+        PSLW
 
     }
 
@@ -618,7 +851,7 @@ namespace PitneyBowes.Developer.ShippingApi
         MINIMAL_ADDRESS_VALIDATION,
         /// <summary>
         /// The Shipper ID of the merchant on whose behalf the label is being printed. 
-        /// The merchant�s Shipper ID is found in the postalReportingNumber field in the merchant object.
+        /// The merchant抯 Shipper ID is found in the postalReportingNumber field in the merchant object.
         /// </summary>
         SHIPPER_ID,
         /// <summary>
@@ -649,8 +882,8 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         FUTURE_SHIPMENT_DATE,
         /// <summary>
-        /// Adds the sender�s signature and the date on CN22 and CP72 shipping labels.
-        /// Enter the signature as a string. The sender�s signature date is automatically populated.
+        /// Adds the sender抯 signature and the date on CN22 and CP72 shipping labels.
+        /// Enter the signature as a string. The sender抯 signature date is automatically populated.
         /// </summary>
         SHIPPING_LABEL_SENDER_SIGNATURE,
         /// <summary>
@@ -660,10 +893,12 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Shipper base chage
         /// </summary>
+        [Obsolete]
         SHIPPER_BASE_CHARGE,
         /// <summary>
         /// Shipper total charge
         /// </summary>
+        [Obsolete]
         SHIPPER_TOTAL_CHARGE,
         /// <summary>
         /// PMOD origin entry facility
@@ -688,7 +923,33 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Postage correction type indicium
         /// </summary>
-        POSTAGE_CORRECTION
+        POSTAGE_CORRECTION,
+        /// <summary>
+        /// Enter the Newgistics Facility ID in this field. If testing in sandbox, set this to 1585.
+        /// </summary>
+        CARRIER_FACILITY_ID,
+        /// <summary>
+        /// Enter the Client Facility ID in this field. If testing in sandbox, set this to 0093.
+        /// </summary>
+        CLIENT_FACILITY_ID,
+        /// <summary>
+        /// For a Newgistics shipment, if IS_RECTANGULAR is false, then you must set a value for irregularParcelGirth 
+        /// in the parcel object.
+        /// </summary>
+        IS_RECTANGULAR,
+        /// <summary>
+        /// The merchant’s permit number for flats. You must include the merchant’s permit number in the request 
+        /// when shipping letters and flats through PB Presort.
+        /// </summary>
+        PERMIT_NUMBER,
+        /// <summary>
+        /// Uses ASCII instead of Unicode to generate labels. This option is intended for older ZPL printers that do not 
+        /// support Unicode. By default, the PB Shipping APIs generate labels using the Unicode character set, which supports international characters.
+        /// Important: If you request ASCII, international characters might not print properly. Consider contacting your Zebra printer provider to 
+        /// update your printer’s firmware to a version that supports Unicode.
+        /// To request ASCII, set this option to ZP500 (which simply means generate with ASCII and does not mean your printer must be a ZP500):
+        /// </summary>
+        PRINTER_MODEL
     }
 
     /// <summary>
@@ -857,7 +1118,37 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// PMOD options
         /// </summary>
-        PMOD_OPTIONS
+        PMOD_OPTIONS,
+        /// <summary>
+        /// Notifications.
+        /// </summary>
+        NOTIFICATIONS
+
+    }
+    /// <summary>
+    /// You can subscribe the shipment to receive provisioned transit triggers by including the NOTIFICATIONS special service in the request. 
+    /// The merchant must be configured for Newgistics transit triggers to use this feature.
+    /// In the rates.specialServices array, create a special service with the specialServiceId set to NOTIFICATIONS.In the inputParameters array, 
+    /// add the following parameters.
+    /// </summary>
+    public enum NotificationType
+    {
+        /// <summary>
+        /// Required. The event to receive notifications for. Set this to either of the following:
+        ///      ON_INTRANSIT
+        ///      ON_DELIVER
+        /// </summary>
+        RECIPIENT_NOTIFICATION_TYPE,
+        /// <summary>
+        /// Required. Enables email notification. Set this to the email address to receive notifications. You must use the same email address 
+        /// for all events. Newgistics accepts only one email address for all notifications.
+        /// </summary>
+        RECIPIENT_NOTIFICATION_EMAIL,
+        /// <summary>
+        /// (FOR FUTURE USE) Enables text notification. Enter the phone number as a string of continuous numbers, without spaces or 
+        /// punctuation. For example: 1234567890
+        /// </summary>
+        RECIPIENT_NOTIFICATION_PHONE
     }
     /// <summary>
     /// Transaction type in the tracking report.
@@ -875,7 +1166,15 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Electronic label refund
         /// </summary>
-        POSTAGE_REFUND
+        POSTAGE_REFUND,
+        /// <summary>
+        /// An APV adjustment for an overpayment.
+        /// </summary>
+        APV_POSTAGE_OVERPAID,
+        /// <summary>
+        /// An APV adjustment for an underpayment.
+        /// </summary>
+         APV_POSTAGE_UNDERPAID
     }
 
     /// <summary>

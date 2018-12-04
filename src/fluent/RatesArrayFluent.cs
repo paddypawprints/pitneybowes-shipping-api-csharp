@@ -1,9 +1,9 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using PitneyBowes.Developer.ShippingApi.Model;
 
 /*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -169,7 +169,7 @@ namespace PitneyBowes.Developer.ShippingApi.Fluent
         /// <summary>
         /// Sets the postal code for the current rates item where the shipment is tendered to the carrier. Postal code of Shipment fromAddress is 
         /// used in absence of this field. When an inductionPostalCode is present, this postal code is used instead of the postal code in the 
-        /// shipment�s fromAddress when calculating rates and when determining if the shipment can be added to a manifest.
+        /// shipment抯 fromAddress when calculating rates and when determining if the shipment can be added to a manifest.
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>

@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -167,5 +167,25 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// Reason for refund denial.
         /// </summary>
         virtual public string RefundDenialReason { get; set; }
+        /// <summary>
+        /// Gets or sets the print status.
+        /// </summary>
+        /// <value>The print status.</value>
+        virtual public SBRPrintStatus? PrintStatus { get; set; }
+        /// <summary>
+        /// Gets or sets the refund requestor.
+        /// </summary>
+        /// <value>The refund requestor.</value>
+        virtual public string RefundRequestor { get; set; }
+        /// <summary>
+        /// Gets or sets the adjustment reason.
+        /// </summary>
+        /// <value>The adjustment reason.</value>
+        virtual public AdjustmentReason? AdjustmentReason { get; set; }
+        /// <summary>
+        /// Gets or sets the external identifier.
+        /// </summary>
+        /// <value>The external identifier.</value>
+        virtual public string ExternalId { get; set; }
     }
 }

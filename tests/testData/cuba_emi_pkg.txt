@@ -1,0 +1,133 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed;boundary = "523d1498-5afa-4409-8c34-4e4681620e12"
+
+This is a multipart message in MIME format.
+
+
+--523d1498-5afa-4409-8c34-4e4681620e12
+MIME-Version: 1.0
+Content-Type: text/httpRequest
+
+POST /shippingservices/v1/shipments?includeDeliveryCommitment=False HTTP/1.1
+Authorization: Bearer 0wH85iHV0nVOrox5iLz9GK8GHeja
+Content-Type: application/json
+
+{
+    "fromAddress" : {
+        "company" : "Pitney Bowes Inc.",
+        "name" : "Paul Wright",
+        "phone" : "",
+        "email" : "",
+        "residential" : false,
+        "addressLines" : [
+            "27 Waterview Drive",
+            "",
+            ""
+        ],
+        "cityTown" : "Shelton",
+        "stateProvince" : "CT",
+        "postalCode" : "06484",
+        "countryCode" : "US"
+    },
+    "toAddress" : {
+        "company" : "ABC Company",
+        "name" : "Sasha Sekrotov",
+        "phone" : "323 555-1212",
+        "email" : "rs.canid@gmail.com",
+        "residential" : false,
+        "addressLines" : [
+            "Avenida 5ta A 76 -80",
+            "",
+            ""
+        ],
+        "cityTown" : "Miramar District",
+        "stateProvince" : "Havana",
+        "postalCode" : "00000",
+        "countryCode" : "CU"
+    },
+    "parcel" : {
+        "weight" : {
+            "unitOfMeasurement" : "OZ",
+            "weight" : 35.00
+        },
+        "dimension" : {
+            "unitOfMeasurement" : "IN",
+            "length" : 6.000,
+            "width" : 6.000,
+            "height" : 6.000
+        }
+    },
+    "rates" : [
+        {
+            "carrier" : "USPS",
+            "serviceId" : "PMI",
+            "parcelType" : "PKG",
+            "inductionPostalCode" : "06484"
+        }
+    ],
+    "documents" : [
+        {
+            "type" : "SHIPPING_LABEL",
+            "contentType" : "URL",
+            "size" : "DOC_8X11",
+            "fileFormat" : "PDF",
+            "printDialogOption" : "NO_PRINT_DIALOG"
+        }
+    ],
+    "customs" : {
+        "customsInfo" : {
+            "reasonForExport" : "MERCHANDISE",
+            "comments" : "test comment",
+            "invoiceNumber" : "001189223",
+            "importerCustomsReference" : "987654",
+            "insuredNumber" : "insuredNumber0",
+            "insuredAmount" : 20,
+            "sdrValue" : 23.32,
+            "EELPFC" : "NOEEI 30.2D2",
+            "currencyCode" : "CAD",
+            "fromCustomsReference" : "11111",
+            "licenseNumber" : "456ABC123",
+            "certificateNumber" : "987"
+        },
+        "customsItems" : [
+            {
+                "description" : "Books",
+                "quantity" : 3,
+                "unitPrice" : 100,
+                "unitWeight" : {
+                    "unitOfMeasurement" : "OZ",
+                    "weight" : 0.05
+                },
+                "hSTariffCode" : "AST559",
+                "originCountryCode" : "US"
+            }
+        ]
+    },
+    "shipmentOptions" : [
+        {
+            "name" : "SHIPPER_ID",
+            "value" : "88888888"
+        },
+        {
+            "name" : "ADD_TO_MANIFEST",
+            "value" : "true"
+        },
+        {
+            "name" : "HIDE_TOTAL_CARRIER_CHARGE",
+            "value" : "true"
+        },
+        {
+            "name" : "PRINT_CUSTOM_MESSAGE_1",
+            "value" : "custom message for label"
+        },
+        {
+            "name" : "SHIPPING_LABEL_RECEIPT",
+            "value" : "RECEIPT_WITH_INSTRUCTIONS"
+        },
+        {
+            "name" : "NON_DELIVERY_OPTION",
+            "value" : "return"
+        }
+    ]
+}
+--523d1498-5afa-4409-8c34-4e4681620e12--

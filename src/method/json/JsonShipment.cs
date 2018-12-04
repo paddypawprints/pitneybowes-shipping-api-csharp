@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -32,7 +32,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
 
         public JsonShipment(T t) : base(t) { }
 
-        public string RecordingSuffix => "";
+        public string RecordingSuffix => TransactionId;
         public string RecordingFullPath(string resource, ISession session)
         {
             return ShippingApiRequest.RecordingFullPath(this, resource, session);
@@ -60,7 +60,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public string TransactionId
         {
             get => Wrapped.TransactionId;
-            set { Wrapped.TransactionId = value; }
+            set => Wrapped.TransactionId = value;
         }
 
         public string ContentType { get => "application/json"; }
@@ -72,7 +72,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public string MinimalAddressValidation
         {
             get => Wrapped.MinimalAddressValidation;
-            set { Wrapped.MinimalAddressValidation = value; }
+            set => Wrapped.MinimalAddressValidation = value;
         }
 
 
@@ -80,44 +80,44 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public string ShipperRatePlan
         {
             get => Wrapped.ShipperRatePlan;
-            set { Wrapped.ShipperRatePlan = value; }
+            set => Wrapped.ShipperRatePlan = value;
         }
 
         [ShippingApiQuery("includeDeliveryCommitment" )]
         public bool IncludeDeliveryCommitment {
             get => Wrapped.IncludeDeliveryCommitment;
-            set { Wrapped.IncludeDeliveryCommitment = value;  }
+            set => Wrapped.IncludeDeliveryCommitment = value;
         }
 
         [JsonProperty("fromAddress")]
         public IAddress FromAddress
         {
             get => Wrapped.FromAddress;
-            set { Wrapped.FromAddress = value; }
+            set => Wrapped.FromAddress = value;
         }
         [JsonProperty("toAddress")]
         public IAddress ToAddress
         {
             get => Wrapped.ToAddress;
-            set { Wrapped.ToAddress = value; }
+            set => Wrapped.ToAddress = value;
         }
         [JsonProperty("altReturnAddress")]
         public IAddress AltReturnAddress
         {
             get => Wrapped.AltReturnAddress;
-            set { Wrapped.AltReturnAddress = value; }
+            set => Wrapped.AltReturnAddress = value;
         }
         [JsonProperty("parcel")]
         public IParcel Parcel
         {
-            get=>Wrapped.Parcel;
-            set { Wrapped.Parcel = value; }
+            get => Wrapped.Parcel;
+            set => Wrapped.Parcel = value;
         }
         [JsonProperty("rates")]
         public IEnumerable<IRates> Rates
         {
             get => Wrapped.Rates;
-            set { Wrapped.Rates = value; }
+            set => Wrapped.Rates = value;
         }
         public IRates AddRates(IRates r)
         {
@@ -127,7 +127,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public IEnumerable<IDocument> Documents
         {
             get => Wrapped.Documents;
-            set { Wrapped.Documents = value; }
+            set => Wrapped.Documents = value;
         }
         public IDocument AddDocument(IDocument d)
         {
@@ -138,7 +138,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public IEnumerable<IShipmentOptions> ShipmentOptions
         {
             get => Wrapped.ShipmentOptions;
-            set { Wrapped.ShipmentOptions = value; }
+            set => Wrapped.ShipmentOptions = value;
         }
         public IShipmentOptions AddShipmentOptions(IShipmentOptions s)
         {
@@ -148,7 +148,7 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public ICustoms Customs
         {
             get => Wrapped.Customs;
-            set { Wrapped.Customs = value; }
+            set => Wrapped.Customs = value;
         }
         public bool ShouldSerializeShipmentType() => ShipmentType == ShipmentType.RETURN;
         [JsonProperty("shipmentType")]
@@ -156,19 +156,27 @@ namespace PitneyBowes.Developer.ShippingApi.Json
         public ShipmentType ShipmentType
         {
             get => Wrapped.ShipmentType;
-            set { Wrapped.ShipmentType = value; }
+            set => Wrapped.ShipmentType = value;
         }
+
+        [JsonProperty("references")]
+        public IEnumerable<IReference> References 
+        { 
+            get => Wrapped.References; 
+            set => Wrapped.References = value; 
+        }
+
         [JsonProperty("shipmentId")]
         public string ShipmentId
-        { 
+        {
             get => Wrapped.ShipmentId;
-            set { Wrapped.ShipmentId = value; }
+            set => Wrapped.ShipmentId = value;
         }
         [JsonProperty("parcelTrackingNumber")]
         public string ParcelTrackingNumber
         {
             get => Wrapped.ParcelTrackingNumber;
-            set { Wrapped.ParcelTrackingNumber = value; }
+            set => Wrapped.ParcelTrackingNumber = value;
         }
     }
 }

@@ -1,0 +1,11 @@
+﻿{
+    "ApiKey":     "YOUR_API_KEY",
+    "ApiSecret":  "YOUR_API_SECRET",
+    "RatePlan":   "",
+    "ShipperID":  "YOUR_SHIPPER_ID",
+    "DeveloperID":"YOUR_DEVELOPER_ID",
+    "Retries":  "3",
+    "RecordAPICalls": "true",
+    "RecordRoot" :  ".",
+    "RecordOverwrite": "false"
+}

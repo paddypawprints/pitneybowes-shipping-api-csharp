@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Threading;
+using Newtonsoft.Json.Serialization;
 
 namespace PitneyBowes.Developer.ShippingApi
 {
@@ -52,13 +53,8 @@ namespace PitneyBowes.Developer.ShippingApi
         /// </summary>
         public Session()
         {
-            Record = false;
-            RecordPath = Globals.GetPath(Path.GetTempPath(), "recordings", "shippingApi");
-            RecordOverwrite = false;
-            Retries = 3;
             _configs.Add("SANDBOX_ENDPOINT", "https://api-sandbox.pitneybowes.com");
             _configs.Add("PRODUCTION_ENDPOINT", "https://api-sandbox.pitneybowes.com");
-            ThrowExceptions = false;
             GetConfigItem = (s) => {
                 if (!_configs.ContainsKey(s))
                     throw new ArgumentException(string.Format("Config string {0} not found", s));
@@ -96,12 +92,41 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Number of retries in the event of network errors.
         /// </summary>
-        public int Retries { get; set; }
+        public int Retries { 
+            get 
+            {
+                if ( GetConfigItem("Retries") == null)
+                {
+                    return _retries;
+                }
+                else
+                {
+                    return int.Parse(GetConfigItem("Retries"));
+                }
+            } 
+            set => _retries = value; 
+        }
+        private int _retries = 3;
         /// <summary>
         /// Defines whether to throw exceptions due to deserialization and http errors. If exceptions are not thrown, errors can be seen in the 
         /// Errors member of the response object.
         /// </summary>
-        public bool ThrowExceptions { get; set; }
+        public bool ThrowExceptions 
+        {
+            get
+            {
+                if (GetConfigItem("ThrowExceptions") == null)
+                {
+                    return _throwExceptions;
+                }
+                else
+                {
+                    return bool.Parse(GetConfigItem("ThrowExceptions"));
+                }
+            }
+            set => _throwExceptions = value;
+        }
+        private bool _throwExceptions = false;
         /// <summary>
         /// Delegate to return a configuration item. Plug in your own config provider.
         /// </summary>
@@ -140,19 +165,59 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Flag to indicate whether messages should be recorded. Recorded messages can be used for debugging or for replay by the mock requester.
         /// </summary>
-        public bool Record { get; set; }
+        public bool Record 
+        {
+            get
+            {
+                if (GetConfigItem("RecordAPICalls") == null)
+                {
+                    return _record;
+                }
+                else
+                {
+                    return bool.Parse(GetConfigItem("RecordAPICalls"));
+                }
+            }
+            set => _record = value;
+
+        }
+        private bool _record = false;
         /// <summary>
         /// Path for the recording files.
         /// </summary>
-        public string RecordPath { get; set; }
+        public string RecordPath {
+            get => GetConfigItem("RecordRoot") ??  _recordPath;
+            set => _recordPath = value;
+        }
+        private string _recordPath = Globals.GetPath(Path.GetTempPath(), "recordings", "shippingApi");
         /// <summary>
         /// Flag to indicate whether to overwrite existing recording files.
         /// </summary>
-        public bool RecordOverwrite { get; set; }
+        public bool RecordOverwrite 
+        {
+            get
+            {
+                if (GetConfigItem("RecordOverwrite") == null)
+                {
+                    return _recordOverwrite;
+                }
+                else
+                {
+                    return bool.Parse(GetConfigItem("RecordOverwrite"));
+                }
+            }
+            set => _recordOverwrite = value;
+        }
+        private bool _recordOverwrite = true;
         /// <summary>
         /// Counters holds statistics for each method call.
         /// </summary>
         public Dictionary<string, Counters> Counters { get; internal set; }
+        /// <summary>
+        /// Gets or sets the JSON.Net trace writer.
+        /// </summary>
+        /// <value>The trace writer.</value>
+        public ITraceWriter TraceWriter { get; set; }
 
         private void AddCounterIfRequired(string key)
         {

@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2016 Pitney Bowes Inc.
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -31,6 +31,15 @@ namespace PitneyBowes.Developer.ShippingApi
     {
         private Dictionary<Type, JsonConverter> _serializationRegistry = new Dictionary<Type, JsonConverter>();
         private Dictionary<Type, Type> _wrapperRegistry = new Dictionary<Type, Type>();
+        /// <summary>
+        /// Gets the wrapper for given interface.
+        /// </summary>
+        /// <returns>The wrapper for.</returns>
+        /// <param name="type">Type.</param>
+        public Type GetWrapperFor(Type type)
+        {
+            return _wrapperRegistry[type];
+        }
         /// <summary>
         /// Default constructor - initializes the structures.
         /// </summary>
@@ -80,6 +89,7 @@ namespace PitneyBowes.Developer.ShippingApi
             _wrapperRegistry.Add(typeof(ICustomsItems), typeof(JsonCustomsItems<>));
             _wrapperRegistry.Add(typeof(IDeliveryCommitment), typeof(JsonDeliveryCommitment<>));
             _wrapperRegistry.Add(typeof(IDocument), typeof(JsonDocument<>));
+            _wrapperRegistry.Add(typeof(IDocTab), typeof(JsonDocTab<>));
             _wrapperRegistry.Add(typeof(IManifest), typeof(JsonManifest<>));
             _wrapperRegistry.Add(typeof(IMerchant), typeof(JsonMerchant<>));
             _wrapperRegistry.Add(typeof(IPage), typeof(JsonPage<>));
@@ -92,6 +102,7 @@ namespace PitneyBowes.Developer.ShippingApi
             _wrapperRegistry.Add(typeof(IPickupCount), typeof(JsonPickupCount<>));
             _wrapperRegistry.Add(typeof(IPpPaymentDetails), typeof(JsonPpPaymentDetails<>));
             _wrapperRegistry.Add(typeof(IRates), typeof(JsonRates<>));
+            _wrapperRegistry.Add(typeof(IReference), typeof(JsonReference<>));
             _wrapperRegistry.Add(typeof(ISpecialServices), typeof(JsonSpecialServices<>));
             _wrapperRegistry.Add(typeof(IShipmentOptions), typeof(JsonShipmentOptions<>));
             _wrapperRegistry.Add(typeof(IShipment), typeof(JsonShipment<>));

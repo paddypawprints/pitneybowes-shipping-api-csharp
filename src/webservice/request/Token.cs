@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -27,17 +27,21 @@ namespace PitneyBowes.Developer.ShippingApi
     [JsonObject(MemberSerialization.OptIn)]
     internal class TokenRequest : ShippingApiRequest, IDisposable
     {
+        private string _key; 
+
         [JsonProperty(PropertyName="grant_type")]
         public string GrantType {get => "client_credentials";}
 
         [ShippingApiHeaderAttribute("Basic")]
         public override StringBuilder Authorization {get;set;}
 
+        public override string RecordingSuffix => _key;
 
         public override string ContentType  => "application/x-www-form-urlencoded"; 
 
         public void BasicAuth(string key, StringBuilder secret ) //TODO: make this better
         {
+            _key = key;
             var authHeader = new StringBuilder();
             authHeader.Append( key).Append(':').Append( secret);
             secret.Clear();

@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -60,7 +60,7 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         virtual public IAddress FromAddress { get; set; }
         /// <summary>
         /// REQUIRED.Destination address.
-        /// Note: You can specify multiple address lines in the shipment�s destination address.See address object for information on how 
+        /// Note: You can specify multiple address lines in the shipment抯 destination address.See address object for information on how 
         /// the API processes multiple address lines.
         /// </summary>
         virtual public IAddress ToAddress { get; set; }
@@ -131,5 +131,14 @@ namespace PitneyBowes.Developer.ShippingApi.Model
         /// Tracking number assigned to the shipment by the system.
         /// </summary>
         virtual public string ParcelTrackingNumber { get; set; }
+        /// <summary>
+        /// Newgistics Only. This array maps client-generated identifiers to fields in the Newgistics package record. 
+        /// The information in this array does not appear on the shipping label. The array takes up to three objects, 
+        /// and each object maps an identifier to a specific Newgistics field.An object’s sequence in the array 
+        /// determines which Newgistics field the object maps to.The first object in the array maps to the Newgistics 
+        /// “ReferenceNumber” field; the second to the “AddlRef1” field; and the third to the “AddlRef2” field.
+        /// </summary>
+        /// <value>The references.</value>
+        public IEnumerable<IReference> References { get; set; }
     }
 }

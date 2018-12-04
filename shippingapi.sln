@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "generateWrapper", "Tools\GenerateWrapper.core\generateWrapper.csproj", "{C45BCFE0-208D-4F60-9389-29035E7FD6AB}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shippingapi", "src\shippingapi.csproj", "{3F9138C6-CD2A-4761-A23F-9B10E1497D91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shippingapi", "src\shippingapi.csproj", "{3F9138C6-CD2A-4761-A23F-9B10E1497D91}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D81D820E-2E80-4679-B2B1-C9464EBC6718}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,19 +13,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE.md = LICENSE.md
 		nuget.md = nuget.md
 		README.md = README.md
+		shippingapisettings.json = shippingapisettings.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tests", "tests\tests.core\tests.csproj", "{7AAECB19-343F-46E6-BECF-F55D52AF52B4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example", "examples\example\example.csproj", "{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "example", "examples\example\example.csproj", "{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{55B6D21D-E784-4873-BF82-A720F796A84B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShip", "examples\MyShip\MyShip.csproj", "{6F234ECC-B46D-450B-B3D5-A50525B6AD20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShip", "examples\MyShip\MyShip.csproj", "{6F234ECC-B46D-450B-B3D5-A50525B6AD20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThread", "MultiThread\MultiThread.csproj", "{4F106FC8-8A33-4AE9-BC63-48AF81D5F718}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThread", "examples\MultiThread\MultiThread.csproj", "{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiThread", "examples\MultiThread\MultiThread.csproj", "{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{D0244834-EE1A-43E1-8B76-3548D5BE9C13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,24 +33,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C45BCFE0-208D-4F60-9389-29035E7FD6AB}.Debug OSX|Any CPU.ActiveCfg = Debug|Any CPU
-		{C45BCFE0-208D-4F60-9389-29035E7FD6AB}.Debug OSX|Any CPU.Build.0 = Debug|Any CPU
-		{C45BCFE0-208D-4F60-9389-29035E7FD6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C45BCFE0-208D-4F60-9389-29035E7FD6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C45BCFE0-208D-4F60-9389-29035E7FD6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C45BCFE0-208D-4F60-9389-29035E7FD6AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F9138C6-CD2A-4761-A23F-9B10E1497D91}.Debug OSX|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F9138C6-CD2A-4761-A23F-9B10E1497D91}.Debug OSX|Any CPU.Build.0 = Debug|Any CPU
 		{3F9138C6-CD2A-4761-A23F-9B10E1497D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F9138C6-CD2A-4761-A23F-9B10E1497D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9138C6-CD2A-4761-A23F-9B10E1497D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F9138C6-CD2A-4761-A23F-9B10E1497D91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7AAECB19-343F-46E6-BECF-F55D52AF52B4}.Debug OSX|Any CPU.ActiveCfg = Debug|Any CPU
-		{7AAECB19-343F-46E6-BECF-F55D52AF52B4}.Debug OSX|Any CPU.Build.0 = Debug|Any CPU
-		{7AAECB19-343F-46E6-BECF-F55D52AF52B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7AAECB19-343F-46E6-BECF-F55D52AF52B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7AAECB19-343F-46E6-BECF-F55D52AF52B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7AAECB19-343F-46E6-BECF-F55D52AF52B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}.Debug OSX|Any CPU.ActiveCfg = Debug|Any CPU
 		{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}.Debug OSX|Any CPU.Build.0 = Debug|Any CPU
 		{4ABBBA5A-C424-4CBA-A527-0DF3E65EA197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -66,18 +51,18 @@ Global
 		{6F234ECC-B46D-450B-B3D5-A50525B6AD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F234ECC-B46D-450B-B3D5-A50525B6AD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F234ECC-B46D-450B-B3D5-A50525B6AD20}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F106FC8-8A33-4AE9-BC63-48AF81D5F718}.Debug OSX|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F106FC8-8A33-4AE9-BC63-48AF81D5F718}.Debug OSX|Any CPU.Build.0 = Debug|Any CPU
-		{4F106FC8-8A33-4AE9-BC63-48AF81D5F718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F106FC8-8A33-4AE9-BC63-48AF81D5F718}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F106FC8-8A33-4AE9-BC63-48AF81D5F718}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F106FC8-8A33-4AE9-BC63-48AF81D5F718}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}.Debug OSX|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}.Debug OSX|Any CPU.Build.0 = Debug|Any CPU
 		{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E8A543B-D3C8-4A65-B6DC-5701B4364D6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0244834-EE1A-43E1-8B76-3548D5BE9C13}.Debug OSX|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0244834-EE1A-43E1-8B76-3548D5BE9C13}.Debug OSX|Any CPU.Build.0 = Debug|Any CPU
+		{D0244834-EE1A-43E1-8B76-3548D5BE9C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0244834-EE1A-43E1-8B76-3548D5BE9C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0244834-EE1A-43E1-8B76-3548D5BE9C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0244834-EE1A-43E1-8B76-3548D5BE9C13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

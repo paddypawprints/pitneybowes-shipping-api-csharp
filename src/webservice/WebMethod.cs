@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -47,7 +47,10 @@ namespace PitneyBowes.Developer.ShippingApi
             try
             {
                 int timeout = Globals.TimeOutMilliseconds;
-                for (int retries = session.Retries; retries > 0; retries--)
+#pragma warning disable CS0618
+                int configRetries = session.Retries;
+#pragma warning restore CS0618
+                for (int retries = configRetries; retries > 0; retries--)
                 {
                     if (session.AuthToken == null || session.AuthToken.AccessToken == null ) //TODO: Check if token should have expired
                     {
@@ -86,6 +89,7 @@ namespace PitneyBowes.Developer.ShippingApi
             }
             catch(JsonSerializationException j)
             {
+#pragma warning disable CS0618
                 response.HttpStatus = HttpStatusCode.InternalServerError;
                 response.Errors.Add(new ErrorDetail(){ ErrorCode = "Deserialization error", Message = j.Message});
                 if (session.ThrowExceptions)
@@ -100,6 +104,7 @@ namespace PitneyBowes.Developer.ShippingApi
             {
                 throw new ShippingAPIException(response);
             }
+#pragma warning restore CS0618
             return response;
         }
         /// <summary>
@@ -117,6 +122,20 @@ namespace PitneyBowes.Developer.ShippingApi
             return await Request<Response, Request>(uri, HttpVerb.POST, request, false, session);
         }
         /// <summary>
+        /// Synchronous call to a http POST endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
+        public static ShippingApiResponse<Response> PostSync<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        {
+            return Request<Response, Request>(uri, HttpVerb.POST, request, false, session).GetAwaiter().GetResult();
+        }
+        /// <summary>
         /// Call a http PUT endpoint with PB Ecommerce cloud authentication token
         /// </summary>
         /// <typeparam name="Response"></typeparam>
@@ -128,6 +147,19 @@ namespace PitneyBowes.Developer.ShippingApi
         public async static Task<ShippingApiResponse<Response>> Put<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.PUT, request, false, session);
+        }
+        /// <summary>
+        /// Call a http PUT endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+        public static ShippingApiResponse<Response> PutSync<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        {
+            return Request<Response, Request>(uri, HttpVerb.PUT, request, false, session).GetAwaiter().GetResult();
         }
         /// <summary>
         /// Call a http GET endpoint with PB Ecommerce cloud authentication token
@@ -144,6 +176,21 @@ namespace PitneyBowes.Developer.ShippingApi
             return await Request<Response, Request>( uri, HttpVerb.GET, request, false, session); 
         }
         /// <summary>
+        /// Call a http GET endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
+        public static ShippingApiResponse<Response> GetSync<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        {
+            return Request<Response, Request>(uri, HttpVerb.GET, request, false, session).GetAwaiter().GetResult();
+        }
+
+        /// <summary>
         /// Call a http DELETE endpoint with PB Ecommerce cloud authentication token
         /// </summary>
         /// <typeparam name="Response"></typeparam>
@@ -158,6 +205,21 @@ namespace PitneyBowes.Developer.ShippingApi
             return await Request<Response, Request>( uri, HttpVerb.DELETE, request, false, session);
         }
         /// <summary>
+        /// Call a http DELETE endpoint with PB Ecommerce cloud authentication token
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
+        public static ShippingApiResponse<Response> DeleteSync<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        {
+            return Request<Response, Request>(uri, HttpVerb.DELETE, request, false, session).GetAwaiter().GetResult();
+        }
+
+        /// <summary>
         /// Call a http DELETE endpoint with PB Ecommerce cloud authentication token. Seems to be ambiguous in the standards whetner DELETE can have a 
         /// request body. A shipping API call does this so it is supported in this method.
         /// </summary>
@@ -171,6 +233,21 @@ namespace PitneyBowes.Developer.ShippingApi
         public async static Task<ShippingApiResponse<Response>> DeleteWithBody<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
         {
             return await Request<Response, Request>(uri, HttpVerb.DELETE, request, true, session);
+        }
+        /// <summary>
+        /// Call a http DELETE endpoint with PB Ecommerce cloud authentication token. Seems to be ambiguous in the standards whetner DELETE can have a 
+        /// request body. A shipping API call does this so it is supported in this method.
+        /// </summary>
+        /// <typeparam name="Response"></typeparam>
+        /// <typeparam name="Request"></typeparam>
+        /// <param name="uri"></param>
+        /// <param name="request"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
+
+        public static ShippingApiResponse<Response> DeleteWithBodySync<Response, Request>(string uri, Request request, ISession session = null) where Request : IShippingApiRequest
+        {
+            return Request<Response, Request>(uri, HttpVerb.DELETE, request, true, session).GetAwaiter().GetResult();
         }
 
     }

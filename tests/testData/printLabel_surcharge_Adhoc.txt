@@ -1,0 +1,82 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed;boundary = "71257ef3-dd43-4204-ac66-0079a70fa985"
+
+This is a multipart message in MIME format.
+
+
+--71257ef3-dd43-4204-ac66-0079a70fa985
+MIME-Version: 1.0
+Content-Type: text/httpRequest
+
+POST /shippingservices/v1/shipments?includeDeliveryCommitment=False HTTP/1.1
+x-pb-transactionId:418-b195-f9677d1206a1
+Authorization: Bearer Qu5KS6hi7xXhAtbYsTAlll9A5ZWx
+minimaladdressvalidation:true
+Content-Type: application/json
+
+
+{
+	"fromAddress": {
+		"addressLines": ["120 Lakeside ave", "ste 101"],
+		"cityTown": "Seattle",
+		"stateProvince": "WA",
+		"postalCode": "98122",
+		"countryCode": "US",
+		"company": "ZFirm LLC",
+		"name": "ZFirm Test",
+		"phone": "2062065555"
+	},
+	"toAddress": {
+		"addressLines": ["1234 NORTH ST # 123", ""],
+		"cityTown": "SANTA ROSA",
+		"stateProvince": "CA",
+		"postalCode": "95404",
+		"countryCode": "US",
+		"name": "BRUCE LEE",
+		"phone": "2061112222",
+		"email": "test@zfirmllc.com"
+	},
+	"parcel": {
+		"weight": {
+			"weight": 56.0,
+			"unitOfMeasurement": "OZ"
+		},
+		"dimension": {
+			"length": 24.0,
+			"width": 24.0,
+			"height": 24.0,
+			"unitOfMeasurement": "IN"
+		}
+	},
+	"rates": [{
+		"carrier": "usps",
+		"serviceId": "PRCLSEL",
+		"parcelType": "PKG",
+		"specialServices": [{
+			"specialServiceId": "DelCon",
+			"inputParameters": [{
+				"name": "INPUT_VALUE",
+				"value": "0"
+			}],
+			"fee": 0.0
+		}],
+		"totalCarrierCharge": 0.0,
+		"totalTaxAmount": 0.0,
+		"baseCharge": 0.0
+	}],
+	"shipmentOptions": [{
+			"name": "SHIPPER_ID",
+			"value": "9021730423"
+		},
+		{
+			"name": "MINIMAL_ADDRESS_VALIDATION",
+			"value": "true"
+		},
+		{
+			"name": "ADD_TO_MANIFEST",
+			"value": "true"
+		}
+	]
+}
+
+--71257ef3-dd43-4204-ac66-0079a70fa985--

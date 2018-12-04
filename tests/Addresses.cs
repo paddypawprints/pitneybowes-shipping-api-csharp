@@ -1,5 +1,5 @@
-/*
-Copyright 2016 Pitney Bowes Inc.
+﻿/*
+Copyright 2018 Pitney Bowes Inc.
 
 Licensed under the MIT License(the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License in the README file or at
@@ -20,22 +20,21 @@ using PitneyBowes.Developer.ShippingApi.Fluent;
 using PitneyBowes.Developer.ShippingApi.Model;
 using System.Collections.Generic;
 using Xunit;
-
+using Xunit.Abstractions;
 
 namespace tests
 {
-    public class Addresses
+    public class Addresses : TestSession
     {
+        public Addresses(ITestOutputHelper testOutputHelper) : base(testOutputHelper)
+        {
+            InitializeFramework();
+        }
 
         [Fact]
         public void HappyPath()
         {
-            // $(SolutionDir)\tests\testData\shippingservices\v1\addresses\verify\1234567828607.http
-            TestSession.Initialize();
-            var warnings = new List<string>();
-            Globals.DefaultSession.LogWarning = (s) => warnings.Add(s);
-            var errors = new List<string>();
-            Globals.DefaultSession.LogError = (s) => errors.Add(s);
+            // $(SolutionDir)\tests\testData\shippingservices\v1\addresses\verify\1234567828607.htt
 
             var company = "ABC Company";
             var name = "Rufous Sirius Canid";
