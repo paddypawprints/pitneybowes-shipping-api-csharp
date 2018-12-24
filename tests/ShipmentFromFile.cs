@@ -32,7 +32,7 @@ namespace tests
         }
 
         [Fact]
-        public void testDataFiles()
+        public void TestDataFiles()
         {
             var pwd = Directory.GetCurrentDirectory();
             var directories = pwd.Split(Path.DirectorySeparatorChar);

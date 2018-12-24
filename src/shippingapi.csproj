@@ -1,14 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>shippingapi</AssemblyName>
-    <Version>1.0.10</Version>
+    <Version>1.1.0</Version>
     <PackageId>shippingapi</PackageId>
-    <PackageVersion>1.0.11</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.10</AssemblyVersion>
-    <FileVersion>1.0.10.0</FileVersion>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <Authors>Patrick Farry</Authors>
     <Company>Pitney Bowes</Company>
     <Description>Package that provides a local interface to the Pitney Bowes Shipping API. Features and fluent API, strong type support, mocking, linq interface to transaction reports.</Description>
@@ -42,8 +42,10 @@
     <DocumentationFile>bin\Release\netstandard1.3\shippingapi.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0-preview.18572.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+    <PackageReference Include="System.Net.Http.WinHttpHandler" Version="4.6.0-preview.18571.3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="webservice\mock\" />

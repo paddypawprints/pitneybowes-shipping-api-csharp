@@ -98,7 +98,7 @@ namespace PitneyBowes.Developer.ShippingApi
                             {
                                 request.SerializeBody(writer, session);
                                 stream.Seek(0, SeekOrigin.Begin);
-                                requestMessage.Content = reqContent;
+                                requestMessage.Content = reqContent; 
                                 reqContent.Headers.ContentType = new MediaTypeHeaderValue(request.ContentType);
                                 if (verb == HttpVerb.PUT)
                                 {
