@@ -19,6 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Net;
 using System.Threading;
 using Newtonsoft.Json.Serialization;
 
@@ -31,6 +32,7 @@ namespace PitneyBowes.Developer.ShippingApi
     {
         private Dictionary<string, string> _configs = new Dictionary<string, string>();
         private ReaderWriterLockSlim _lock;
+        private string _endPoint;
         /// <summary>
         /// Constructor sets defaults for most items so the system can run with minimal configuration.
         /// 
@@ -161,7 +163,21 @@ namespace PitneyBowes.Developer.ShippingApi
         /// <summary>
         /// Sets the endpoint for the service.
         /// </summary>
-        public string EndPoint { get; set; }
+        public string EndPoint {
+            get
+            {
+                return _endPoint;
+            }
+            set
+            {
+                if (_endPoint != value )
+                {
+                    var sp = ServicePointManager.FindServicePoint(new Uri(value));
+                    sp.ConnectionLeaseTimeout = 60 * 1000; // 1 minute
+                }
+                _endPoint = value;
+            }
+        }
         /// <summary>
         /// Flag to indicate whether messages should be recorded. Recorded messages can be used for debugging or for replay by the mock requester.
         /// </summary>

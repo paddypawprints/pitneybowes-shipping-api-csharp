@@ -31,7 +31,7 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public static class Globals
     {
-        private static object _clientLock = new object();
+        private static readonly object _clientLock = new object();
         /// <summary>
         /// Default session - so you dont need to pass it to all of the methods
         /// </summary>

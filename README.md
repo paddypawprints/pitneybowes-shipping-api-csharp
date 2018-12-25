@@ -1,10 +1,10 @@
 # Pitney Bowes Shipping API C# Client
 
 This project has the code for a NuGet package that provides a fluent C# interface to the Pitney Bowes Shipping API.
-The package uses the [.NET Standard 1.3 framework](https://docs.microsoft.com/en-us/dotnet/standard/net-standard), meaning 
+The package uses the [.NET Standard 2.0 framework](https://docs.microsoft.com/en-us/dotnet/standard/net-standard), meaning 
 it is compatible with:
-* .NET core 1.0 and 2.0
-* .NET framework 4.6 and above
+* .NET core 2.0
+* .NET framework 4.6.1 and above
 
 Mono and Xamarin are also supported.
 
@@ -19,6 +19,9 @@ Mono and Xamarin are also supported.
 * **Example** console app.
 * **Plug in your own configuration and log providers**
 * **Keeps the API secret out of cleartext**
+
+Latest changes - [CHANGES](CHANGES.md)
+
 
 ## Prerequisites
 
@@ -84,7 +87,7 @@ If you are developing on Windows, I'd recommend that you install [Telerik Fiddle
      sandbox.AddConfigItem("ShipperID", "your shipper id");
      sandbox.AddConfigItem("DeveloperID", "your developer id");
      ```
-   - Or create a shippingapisettings.json file in `%APPDATA%`:
+   - Or create a shippingapisettings.json file in `%APPDATA%` on Windows, or ~ on OSX and Linux:
      ```json
      { 
          "ApiKey": "!###",
@@ -137,8 +140,7 @@ If you encounter problems, please contact Support at <ShippingAPISupport@pb.com>
 
 ## Building the System Out-of-Box
 
-The following commands are specific to Windows. At one point the client
-did build on MacOS but I moved to Windows due to the complexity of dependency management in VSCode.
+The following commands are specific to Windows. The code also builds on macOS Sierra using Visual Studio Community edition.
 
 At the Visual Studio developer command prompt:
  
@@ -176,12 +178,11 @@ The tests use [xunit](https://xunit.github.io/). The API can run in either live 
 read from a file. The file is identified by certain attributes of the response - transaction ID in the case of a shipment, so different test
 scenarios can be set up using the mocked interface. 
 
-There are not many tests, as yet. I had trouble running the playback in the debugger, where Visual Studio would occasionally hang when reading from the response file. Not sure why yet. Consequently, most of the testing has been done with the example program.
-
-
+Tests can also be run from sample messages - the message is deserialized from a file and an API request is created and sent. See the files in the testData folder for examples.
 ## Built With
 
-* [NewtonSoft.JSON](http://www.dropwizard.io/1.0.2/docs/) - Awesome serialization
+* [NewtonSoft.JSON](http://www.dropwizard.io/1.0.2/docs/) 
+* [xUnit](https://xunit.github.io/)
 
 ## Contributing
 

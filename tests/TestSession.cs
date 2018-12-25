@@ -43,7 +43,7 @@ namespace tests
 
         private static IConfiguration Configuration { get; set; }
 
-        static object lockObject = new object();
+        static readonly object lockObject = new object();
         static bool _initialized = false;
 
         public void InitializeFramework( )

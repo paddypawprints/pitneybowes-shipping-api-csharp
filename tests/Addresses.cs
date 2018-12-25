@@ -32,10 +32,10 @@ namespace tests
         }
 
         [Fact]
-        public void HappyPath()
+        public void VerifyAddress()
         {
-            // $(SolutionDir)\tests\testData\shippingservices\v1\addresses\verify\1234567828607.htt
 
+       
             var company = "ABC Company";
             var name = "Rufous Sirius Canid";
             var phone = "323 555-1212";

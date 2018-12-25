@@ -27,12 +27,12 @@ namespace PitneyBowes.Developer.ShippingApi
     /// </summary>
     public sealed class RecordingStream : Stream, IDisposable
     {
-        private string _path;
+        private readonly string _path;
         private FileStream _recorder = null;
-        private FileMode _fileMode;
+        private readonly FileMode _fileMode;
         private bool _recording;
         private string _mimeBoundary = null;
-        private RecordType _recordType = RecordType.PlainText;
+        private readonly RecordType _recordType = RecordType.PlainText;
         private bool _wroteMimeHeader = false;
         private Stream _baseStream = null;
         private Dictionary<string, List<string>> _headers;
